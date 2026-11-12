@@ -1,9 +1,9 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1794494494.948341,
-  "generated_at_iso": "2026-11-12T14:41:34.948341+00:00",
-  "generated_at_et": "2026-11-12 09:41:34 ET",
+  "generated_at": 1794494512.7478201,
+  "generated_at_iso": "2026-11-12T14:41:52.747820+00:00",
+  "generated_at_et": "2026-11-12 09:41:52 ET",
   "today_date": "2026-11-12",
   "default_active_date": "2026-11-11",
   "available_dates": [
@@ -17,16 +17,16 @@
     "status": "ACTIVE",
     "currency": "USD",
     "cash": 88619.6,
-    "buying_power": 381635.99,
-    "equity": 98619.49,
+    "buying_power": 381712.37,
+    "equity": 98646.77,
     "last_equity": 98548.56,
     "baseline_equity": 97541.35,
-    "daily_change_usd": 70.93,
-    "daily_change_pct": 0.07,
-    "vs_baseline_usd": 1078.14,
-    "vs_baseline_pct": 1.11,
-    "deployed_capital": 9999.47,
-    "open_unrealized_pnl": 70.5,
+    "daily_change_usd": 98.21,
+    "daily_change_pct": 0.1,
+    "vs_baseline_usd": 1105.42,
+    "vs_baseline_pct": 1.13,
+    "deployed_capital": 10027.23,
+    "open_unrealized_pnl": 98.27,
     "open_positions_count": 8,
     "cumulative_realized_gross": "-1422.16",
     "total_confirmed_fills": 508
@@ -37,12 +37,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1794494492.1402812,
-    "observed_at_et": "2026-11-12 09:41:32 ET",
-    "reconciliation_at": 1794494466.7452831,
-    "reconciliation_at_et": "2026-11-12 09:41:06 ET",
-    "heartbeat_age_seconds": 3.6,
-    "reconciliation_age_seconds": 29.0,
+    "observed_at": 1794494508.183715,
+    "observed_at_et": "2026-11-12 09:41:48 ET",
+    "reconciliation_at": 1794494495.346145,
+    "reconciliation_at_et": "2026-11-12 09:41:35 ET",
+    "heartbeat_age_seconds": 5.3,
+    "reconciliation_age_seconds": 18.1,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Mandatory Before-Close Flattening (0 overnight exposure)",
     "allocation_rule": "$1,000 max per trade \u00b7 Max 10 concurrent positions \u00b7 Limit @ NBBO Ask"
@@ -58,17 +58,17 @@
       "POLICY_EXIT": 926,
       "PREMARKET_READINESS_AUDIT": 33,
       "PREMARKET_READINESS_CHECK": 1,
-      "RECONCILE": 4137,
+      "RECONCILE": 4138,
       "REDEPLOY": 1,
       "REDUCE": 10
     },
     "latest_reconcile": {
-      "id": "reconcile-1794494495-807e3d",
-      "timestamp_sec": 1794494495,
-      "time_et": "2026-11-12 09:41:35 ET",
+      "id": "reconcile-1794494508-5a97f1",
+      "timestamp_sec": 1794494508,
+      "time_et": "2026-11-12 09:41:48 ET",
       "free_cash": 88619.6,
-      "position_value": 10002.819999999992,
-      "total_equity": 98622.42,
+      "position_value": 10018.709999999992,
+      "total_equity": 98638.31,
       "rationale": "Automated market surveillance ledger reconciliation"
     },
     "lifecycle_log": [
@@ -663,7 +663,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "CRML",
@@ -677,7 +677,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "KLAC",
@@ -691,7 +691,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "MRVL",
@@ -705,7 +705,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "SMCI",
@@ -719,7 +719,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "TSM",
@@ -733,7 +733,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "VRT",
@@ -747,7 +747,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "AAPL",
@@ -760,7 +760,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "AMD",
@@ -773,7 +773,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "ARM",
@@ -786,7 +786,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "CBRS",
@@ -799,7 +799,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "MU",
@@ -812,7 +812,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "NVDA",
@@ -825,7 +825,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "PL",
@@ -838,7 +838,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "SNDK",
@@ -851,7 +851,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "ASML",
@@ -864,7 +864,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "CAMT",
@@ -877,7 +877,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "DHI",
@@ -890,7 +890,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "EQT",
@@ -903,7 +903,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "POWL",
@@ -916,7 +916,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "VLO",
@@ -929,7 +929,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-12 09:41:35 ET"
+        "observed_et": "2026-11-12 09:41:53 ET"
       },
       {
         "symbol": "MARA",
@@ -977,13 +977,13 @@
       "asset_class": "us_equity",
       "qty": 3.0,
       "avg_entry_price": 557.89,
-      "current_price": 571.6,
-      "market_value": 1714.8,
-      "unrealized_pl": 41.13,
-      "unrealized_plpc": 0.02457,
-      "unrealized_plpc_pct": 2.46,
-      "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
-      "stop_floor": 541.15
+      "current_price": 575.0251,
+      "market_value": 1725.0753,
+      "unrealized_pl": 51.41,
+      "unrealized_plpc": 0.03071,
+      "unrealized_plpc_pct": 3.07,
+      "ratchet_tier": "Tier 1 \u00b7 Breakeven Lock (+0.2% floor)",
+      "stop_floor": 562.17
     },
     {
       "symbol": "AVGO",
@@ -991,27 +991,13 @@
       "asset_class": "us_equity",
       "qty": 3.0,
       "avg_entry_price": 360.373333,
-      "current_price": 364.96,
-      "market_value": 1094.88,
-      "unrealized_pl": 13.76,
-      "unrealized_plpc": 0.01273,
-      "unrealized_plpc_pct": 1.27,
+      "current_price": 365.635,
+      "market_value": 1096.905,
+      "unrealized_pl": 15.79,
+      "unrealized_plpc": 0.0146,
+      "unrealized_plpc_pct": 1.46,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 349.56
-    },
-    {
-      "symbol": "SMCI",
-      "side": "long",
-      "asset_class": "us_equity",
-      "qty": 36.0,
-      "avg_entry_price": 27.702223,
-      "current_price": 27.88,
-      "market_value": 1003.68,
-      "unrealized_pl": 6.4,
-      "unrealized_plpc": 0.00642,
-      "unrealized_plpc_pct": 0.64,
-      "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
-      "stop_floor": 26.87
     },
     {
       "symbol": "MRVL",
@@ -1019,11 +1005,11 @@
       "asset_class": "us_equity",
       "qty": 12.0,
       "avg_entry_price": 162.3,
-      "current_price": 162.78,
-      "market_value": 1953.36,
-      "unrealized_pl": 5.76,
-      "unrealized_plpc": 0.00296,
-      "unrealized_plpc_pct": 0.3,
+      "current_price": 163.26,
+      "market_value": 1959.12,
+      "unrealized_pl": 11.52,
+      "unrealized_plpc": 0.00591,
+      "unrealized_plpc_pct": 0.59,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 157.43
     },
@@ -1033,13 +1019,27 @@
       "asset_class": "us_equity",
       "qty": 5.0,
       "avg_entry_price": 96.27,
-      "current_price": 97.115,
-      "market_value": 485.575,
-      "unrealized_pl": 4.22,
-      "unrealized_plpc": 0.00878,
-      "unrealized_plpc_pct": 0.88,
+      "current_price": 97.87,
+      "market_value": 489.35,
+      "unrealized_pl": 8.0,
+      "unrealized_plpc": 0.01662,
+      "unrealized_plpc_pct": 1.66,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 93.38
+    },
+    {
+      "symbol": "SMCI",
+      "side": "long",
+      "asset_class": "us_equity",
+      "qty": 36.0,
+      "avg_entry_price": 27.702223,
+      "current_price": 27.915,
+      "market_value": 1004.94,
+      "unrealized_pl": 7.66,
+      "unrealized_plpc": 0.00768,
+      "unrealized_plpc_pct": 0.77,
+      "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
+      "stop_floor": 26.87
     },
     {
       "symbol": "MU",
@@ -1047,11 +1047,11 @@
       "asset_class": "us_equity",
       "qty": 1.0,
       "avg_entry_price": 791.16,
-      "current_price": 792.31,
-      "market_value": 792.31,
-      "unrealized_pl": 1.15,
-      "unrealized_plpc": 0.00145,
-      "unrealized_plpc_pct": 0.14,
+      "current_price": 794.845,
+      "market_value": 794.845,
+      "unrealized_pl": 3.69,
+      "unrealized_plpc": 0.00466,
+      "unrealized_plpc_pct": 0.47,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 767.43
     },
@@ -1061,11 +1061,11 @@
       "asset_class": "us_equity",
       "qty": 2.0,
       "avg_entry_price": 408.15,
-      "current_price": 407.99,
-      "market_value": 815.98,
-      "unrealized_pl": -0.32,
-      "unrealized_plpc": -0.00039,
-      "unrealized_plpc_pct": -0.04,
+      "current_price": 408.89,
+      "market_value": 817.78,
+      "unrealized_pl": 1.48,
+      "unrealized_plpc": 0.00181,
+      "unrealized_plpc_pct": 0.18,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 395.91
     },
@@ -1075,11 +1075,11 @@
       "asset_class": "us_equity",
       "qty": 6.0,
       "avg_entry_price": 356.746667,
-      "current_price": 356.48,
-      "market_value": 2138.88,
-      "unrealized_pl": -1.6,
-      "unrealized_plpc": -0.00075,
-      "unrealized_plpc_pct": -0.07,
+      "current_price": 356.535,
+      "market_value": 2139.21,
+      "unrealized_pl": -1.27,
+      "unrealized_plpc": -0.00059,
+      "unrealized_plpc_pct": -0.06,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 346.04
     }
