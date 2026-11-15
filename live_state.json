@@ -1,9 +1,9 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1794757414.992239,
-  "generated_at_iso": "2026-11-15T15:43:34.992239+00:00",
-  "generated_at_et": "2026-11-15 10:43:34 ET",
+  "generated_at": 1794757463.2274802,
+  "generated_at_iso": "2026-11-15T15:44:23.227480+00:00",
+  "generated_at_et": "2026-11-15 10:44:23 ET",
   "today_date": "2026-11-15",
   "default_active_date": "2026-11-13",
   "available_dates": [
@@ -41,8 +41,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1794757415.328801,
-    "observed_at_et": "2026-11-15 10:43:35 ET",
+    "observed_at": 1794757463.938591,
+    "observed_at_et": "2026-11-15 10:44:23 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -54,12 +54,12 @@
   "auto_decisions": {
     "decision_counts": {
       "CASH_PROTECT": 38,
-      "EMERGENCY_EXIT": 362,
+      "EMERGENCY_EXIT": 363,
       "EXIT": 224,
-      "FILL": 1381,
+      "FILL": 1384,
       "HOLD": 1,
       "ORDER_SUBMITTED": 109,
-      "POLICY_EXIT": 965,
+      "POLICY_EXIT": 967,
       "PREMARKET_READINESS_AUDIT": 33,
       "PREMARKET_READINESS_CHECK": 1,
       "RECONCILE": 9692,
@@ -652,7 +652,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "CRML",
@@ -666,7 +666,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "KLAC",
@@ -680,7 +680,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "MRVL",
@@ -694,7 +694,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "SMCI",
@@ -708,7 +708,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "TSM",
@@ -722,7 +722,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "VRT",
@@ -736,7 +736,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "AAPL",
@@ -749,7 +749,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "AMD",
@@ -762,7 +762,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "ARM",
@@ -775,7 +775,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "CBRS",
@@ -788,7 +788,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "MU",
@@ -801,7 +801,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "NVDA",
@@ -814,7 +814,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "PL",
@@ -827,7 +827,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "SNDK",
@@ -840,7 +840,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "ASML",
@@ -853,7 +853,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "CAMT",
@@ -866,7 +866,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "DHI",
@@ -879,7 +879,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "EQT",
@@ -892,7 +892,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "POWL",
@@ -905,7 +905,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "VLO",
@@ -918,7 +918,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-15 10:43:35 ET"
+        "observed_et": "2026-11-15 10:44:23 ET"
       },
       {
         "symbol": "MARA",
