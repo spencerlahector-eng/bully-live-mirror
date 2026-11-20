@@ -1,9 +1,9 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1795198242.379394,
-  "generated_at_iso": "2026-11-20T18:10:42.379394+00:00",
-  "generated_at_et": "2026-11-20 13:10:42 ET",
+  "generated_at": 1795198266.0874739,
+  "generated_at_iso": "2026-11-20T18:11:06.087474+00:00",
+  "generated_at_et": "2026-11-20 13:11:06 ET",
   "today_date": "2026-11-20",
   "default_active_date": "2026-11-20",
   "available_dates": [
@@ -23,19 +23,19 @@
     "status": "ACTIVE",
     "currency": "USD",
     "cash": 80348.94,
-    "buying_power": 330471.79,
-    "equity": 87388.97,
+    "buying_power": 330469.41,
+    "equity": 87388.12,
     "last_equity": 87425.0,
     "baseline_equity": 97541.35,
-    "daily_change_usd": -36.03,
+    "daily_change_usd": -36.88,
     "daily_change_pct": -0.04,
-    "vs_baseline_usd": -10152.38,
+    "vs_baseline_usd": -10153.23,
     "vs_baseline_pct": -10.41,
-    "deployed_capital": 7039.62,
-    "open_unrealized_pnl": -29.95,
+    "deployed_capital": 7039.18,
+    "open_unrealized_pnl": -30.4,
     "open_positions_count": 7,
     "cumulative_realized_gross": "-1422.16",
-    "total_confirmed_fills": 1034
+    "total_confirmed_fills": 1049
   },
   "runtime": {
     "execution_owner": "render",
@@ -44,8 +44,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795198243.132951,
-    "observed_at_et": "2026-11-20 13:10:43 ET",
+    "observed_at": 1795198266.719577,
+    "observed_at_et": "2026-11-20 13:11:06 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -139,7 +139,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "CRML",
@@ -153,7 +153,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "KLAC",
@@ -167,7 +167,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "MRVL",
@@ -181,7 +181,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "SMCI",
@@ -195,7 +195,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "TSM",
@@ -209,7 +209,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "VRT",
@@ -223,7 +223,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "AAPL",
@@ -236,7 +236,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "AMD",
@@ -249,7 +249,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "ARM",
@@ -262,7 +262,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "CBRS",
@@ -275,7 +275,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "MU",
@@ -288,7 +288,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "NVDA",
@@ -301,7 +301,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "PL",
@@ -314,7 +314,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "SNDK",
@@ -327,7 +327,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "ASML",
@@ -340,7 +340,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "CAMT",
@@ -353,7 +353,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "DHI",
@@ -366,7 +366,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "EQT",
@@ -379,7 +379,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "POWL",
@@ -392,7 +392,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "VLO",
@@ -405,7 +405,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-20 13:10:43 ET"
+        "observed_et": "2026-11-20 13:11:06 ET"
       },
       {
         "symbol": "MARA",
@@ -805,17 +805,17 @@
       "asset_class": "us_equity",
       "qty": 7.0,
       "avg_entry_price": 129.618571,
-      "current_price": 129.57,
-      "market_value": 906.99,
-      "unrealized_pl": -0.34,
-      "unrealized_plpc": -0.00037,
-      "unrealized_plpc_pct": -0.04,
+      "current_price": 129.55,
+      "market_value": 906.85,
+      "unrealized_pl": -0.48,
+      "unrealized_plpc": -0.00053,
+      "unrealized_plpc_pct": -0.05,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 125.73,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 7,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 1.54
+      "dist_to_runner_pct": 1.55
     },
     {
       "symbol": "UHS",
@@ -841,17 +841,17 @@
       "asset_class": "us_equity",
       "qty": 3.0,
       "avg_entry_price": 126.77,
-      "current_price": 126.31,
-      "market_value": 378.93,
-      "unrealized_pl": -1.38,
-      "unrealized_plpc": -0.00363,
-      "unrealized_plpc_pct": -0.36,
+      "current_price": 126.27,
+      "market_value": 378.81,
+      "unrealized_pl": -1.5,
+      "unrealized_plpc": -0.00394,
+      "unrealized_plpc_pct": -0.39,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 122.97,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 3,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 1.86
+      "dist_to_runner_pct": 1.89
     },
     {
       "symbol": "DHI",
@@ -859,35 +859,17 @@
       "asset_class": "us_equity",
       "qty": 3.0,
       "avg_entry_price": 147.54,
-      "current_price": 146.86,
-      "market_value": 440.58,
-      "unrealized_pl": -2.04,
-      "unrealized_plpc": -0.00461,
-      "unrealized_plpc_pct": -0.46,
+      "current_price": 146.94,
+      "market_value": 440.82,
+      "unrealized_pl": -1.8,
+      "unrealized_plpc": -0.00407,
+      "unrealized_plpc_pct": -0.41,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 143.11,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 3,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 1.96
-    },
-    {
-      "symbol": "ELV",
-      "side": "long",
-      "asset_class": "us_equity",
-      "qty": 1.0,
-      "avg_entry_price": 405.36,
-      "current_price": 402.99,
-      "market_value": 402.99,
-      "unrealized_pl": -2.37,
-      "unrealized_plpc": -0.00585,
-      "unrealized_plpc_pct": -0.58,
-      "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
-      "stop_floor": 393.2,
-      "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
-      "eod_sell_qty": 1,
-      "eod_retain_qty": 0,
-      "dist_to_runner_pct": 2.08
+      "dist_to_runner_pct": 1.91
     },
     {
       "symbol": "CI",
@@ -895,17 +877,35 @@
       "asset_class": "us_equity",
       "qty": 1.0,
       "avg_entry_price": 279.71,
-      "current_price": 277.275,
-      "market_value": 277.275,
-      "unrealized_pl": -2.44,
-      "unrealized_plpc": -0.00871,
-      "unrealized_plpc_pct": -0.87,
+      "current_price": 277.2561,
+      "market_value": 277.2561,
+      "unrealized_pl": -2.45,
+      "unrealized_plpc": -0.00877,
+      "unrealized_plpc_pct": -0.88,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 271.32,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 1,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 2.37
+      "dist_to_runner_pct": 2.38
+    },
+    {
+      "symbol": "ELV",
+      "side": "long",
+      "asset_class": "us_equity",
+      "qty": 1.0,
+      "avg_entry_price": 405.36,
+      "current_price": 402.78,
+      "market_value": 402.78,
+      "unrealized_pl": -2.58,
+      "unrealized_plpc": -0.00636,
+      "unrealized_plpc_pct": -0.64,
+      "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
+      "stop_floor": 393.2,
+      "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
+      "eod_sell_qty": 1,
+      "eod_retain_qty": 0,
+      "dist_to_runner_pct": 2.14
     },
     {
       "symbol": "COST",
@@ -913,10 +913,10 @@
       "asset_class": "us_equity",
       "qty": 4.0,
       "avg_entry_price": 1118.5925,
-      "current_price": 1113.585,
-      "market_value": 4454.34,
-      "unrealized_pl": -20.03,
-      "unrealized_plpc": -0.00448,
+      "current_price": 1113.535,
+      "market_value": 4454.14,
+      "unrealized_pl": -20.23,
+      "unrealized_plpc": -0.00452,
       "unrealized_plpc_pct": -0.45,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 1085.03,
@@ -931,34 +931,349 @@
       "date": "2026-11-20",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-20T16:42:19.256555+00:00",
-      "observed_at_et": "2026-11-20 11:42:19 ET",
-      "fill_count": 1,
+      "observed_at": "2026-11-20T18:11:02.507945+00:00",
+      "observed_at_et": "2026-11-20 13:11:02 ET",
+      "fill_count": 16,
       "realized_gross": null,
       "realized_net": null,
       "account_fees": null,
       "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
       "fee_status": "PER_FILL_FEES_NOT_SUPPLIED",
-      "symbols_count": 1,
+      "symbols_count": 8,
       "closed_symbols_count": 1,
       "symbols_summary": [
         {
-          "symbol": "AMZN",
-          "state": "CLOSED",
-          "fill_count": 1,
-          "buy_qty": "1",
-          "avg_buy_price": 258.05,
-          "buy_notional": 258.05,
+          "symbol": "WMT",
+          "state": "OPEN",
+          "fill_count": 5,
+          "buy_qty": "7",
+          "avg_buy_price": 129.6186,
+          "buy_notional": 907.33,
           "sell_qty": "0",
           "avg_sell_price": null,
           "sell_notional": 0.0,
           "realized_gross": null,
           "realized_net": null,
           "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
-          "last_time_et": "2026-11-20 09:55:34 ET"
+          "last_time_et": "2026-11-20 12:33:06 ET"
+        },
+        {
+          "symbol": "PHM",
+          "state": "OPEN",
+          "fill_count": 2,
+          "buy_qty": "3",
+          "avg_buy_price": 126.77,
+          "buy_notional": 380.31,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 11:51:24 ET"
+        },
+        {
+          "symbol": "DHI",
+          "state": "OPEN",
+          "fill_count": 2,
+          "buy_qty": "3",
+          "avg_buy_price": 147.54,
+          "buy_notional": 442.62,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 11:52:35 ET"
+        },
+        {
+          "symbol": "COST",
+          "state": "OPEN",
+          "fill_count": 2,
+          "buy_qty": "4",
+          "avg_buy_price": 1118.5925,
+          "buy_notional": 4474.37,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 12:05:28 ET"
+        },
+        {
+          "symbol": "CI",
+          "state": "OPEN",
+          "fill_count": 1,
+          "buy_qty": "1",
+          "avg_buy_price": 279.71,
+          "buy_notional": 279.71,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 11:51:14 ET"
+        },
+        {
+          "symbol": "UHS",
+          "state": "OPEN",
+          "fill_count": 1,
+          "buy_qty": "1",
+          "avg_buy_price": 179.88,
+          "buy_notional": 179.88,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 11:51:23 ET"
+        },
+        {
+          "symbol": "ELV",
+          "state": "OPEN",
+          "fill_count": 1,
+          "buy_qty": "1",
+          "avg_buy_price": 405.36,
+          "buy_notional": 405.36,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 11:52:18 ET"
+        },
+        {
+          "symbol": "AMZN",
+          "state": "CLOSED",
+          "fill_count": 2,
+          "buy_qty": "1",
+          "avg_buy_price": 258.05,
+          "buy_notional": 258.05,
+          "sell_qty": "1",
+          "avg_sell_price": 251.57,
+          "sell_notional": 251.57,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-20 11:47:55 ET"
         }
       ],
       "fills": [
+        {
+          "id": "20261120123306606::8d522dd7-fc7c-47e0-a778-3975b6c72565",
+          "order_id": "2f351db4-10ad-45f5-b6ab-4c58b44ae1cc",
+          "symbol": "WMT",
+          "side": "buy",
+          "qty": "1",
+          "price": "129.62",
+          "notional": 129.62,
+          "transaction_time": "2026-11-20T17:33:06.606811Z",
+          "time_et": "2026-11-20 12:33:06 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120123306377::d6812c80-e5ab-4da0-add4-d291ee7ae455",
+          "order_id": "2f351db4-10ad-45f5-b6ab-4c58b44ae1cc",
+          "symbol": "WMT",
+          "side": "buy",
+          "qty": "1",
+          "price": "129.6",
+          "notional": 129.6,
+          "transaction_time": "2026-11-20T17:33:06.377863Z",
+          "time_et": "2026-11-20 12:33:06 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120123305084::ae33dc0d-e4da-4401-81d5-2ae704af3fd0",
+          "order_id": "2f351db4-10ad-45f5-b6ab-4c58b44ae1cc",
+          "symbol": "WMT",
+          "side": "buy",
+          "qty": "3",
+          "price": "129.62",
+          "notional": 388.86,
+          "transaction_time": "2026-11-20T17:33:05.084276Z",
+          "time_et": "2026-11-20 12:33:05 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120123304707::1f8f7966-7027-4bbd-b0e3-6086e9dc45b1",
+          "order_id": "2f351db4-10ad-45f5-b6ab-4c58b44ae1cc",
+          "symbol": "WMT",
+          "side": "buy",
+          "qty": "1",
+          "price": "129.62",
+          "notional": 129.62,
+          "transaction_time": "2026-11-20T17:33:04.707761Z",
+          "time_et": "2026-11-20 12:33:04 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120123303611::98cdec22-9c46-433c-826a-d4c0500541a7",
+          "order_id": "2f351db4-10ad-45f5-b6ab-4c58b44ae1cc",
+          "symbol": "WMT",
+          "side": "buy",
+          "qty": "1",
+          "price": "129.63",
+          "notional": 129.63,
+          "transaction_time": "2026-11-20T17:33:03.611978Z",
+          "time_et": "2026-11-20 12:33:03 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120120528545::a43b0098-ae30-4733-91ad-31e1396b14ff",
+          "order_id": "fe775626-de67-4d92-be75-09c836e3453d",
+          "symbol": "COST",
+          "side": "buy",
+          "qty": "1",
+          "price": "1118.48",
+          "notional": 1118.48,
+          "transaction_time": "2026-11-20T17:05:28.54568Z",
+          "time_et": "2026-11-20 12:05:28 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120120527894::d760ba3a-934d-4721-a2ed-571aef6f0cf6",
+          "order_id": "fe775626-de67-4d92-be75-09c836e3453d",
+          "symbol": "COST",
+          "side": "buy",
+          "qty": "3",
+          "price": "1118.63",
+          "notional": 3355.89,
+          "transaction_time": "2026-11-20T17:05:27.894544Z",
+          "time_et": "2026-11-20 12:05:27 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115235395::8d6d7647-e80b-4ecf-8e06-d4f50e87c20e",
+          "order_id": "36bdb455-6805-4493-8b6b-32fa2ee4a75f",
+          "symbol": "DHI",
+          "side": "buy",
+          "qty": "1",
+          "price": "147.54",
+          "notional": 147.54,
+          "transaction_time": "2026-11-20T16:52:35.395141Z",
+          "time_et": "2026-11-20 11:52:35 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115234759::dde03883-db71-48de-885e-22f06e2bd547",
+          "order_id": "36bdb455-6805-4493-8b6b-32fa2ee4a75f",
+          "symbol": "DHI",
+          "side": "buy",
+          "qty": "2",
+          "price": "147.54",
+          "notional": 295.08,
+          "transaction_time": "2026-11-20T16:52:34.759255Z",
+          "time_et": "2026-11-20 11:52:34 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115218223::d53f201b-3cfe-4b36-839b-e8fc3aa67355",
+          "order_id": "6c451a99-8fec-4258-9f7a-ddbc89c9b2bc",
+          "symbol": "ELV",
+          "side": "buy",
+          "qty": "1",
+          "price": "405.36",
+          "notional": 405.36,
+          "transaction_time": "2026-11-20T16:52:18.22342Z",
+          "time_et": "2026-11-20 11:52:18 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115124181::c630e678-c659-4fb9-98ca-bf2be78105c8",
+          "order_id": "c8acf00e-70e8-48bd-994c-a3ca1821ce5d",
+          "symbol": "PHM",
+          "side": "buy",
+          "qty": "1",
+          "price": "126.77",
+          "notional": 126.77,
+          "transaction_time": "2026-11-20T16:51:24.181827Z",
+          "time_et": "2026-11-20 11:51:24 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115123398::afb90849-e354-4145-acf5-0f159497f75d",
+          "order_id": "c8acf00e-70e8-48bd-994c-a3ca1821ce5d",
+          "symbol": "PHM",
+          "side": "buy",
+          "qty": "2",
+          "price": "126.77",
+          "notional": 253.54,
+          "transaction_time": "2026-11-20T16:51:23.398464Z",
+          "time_et": "2026-11-20 11:51:23 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115123321::52c18a9e-9fe3-4d96-ad77-5d9528a89f93",
+          "order_id": "9cc71f7f-ab89-4d61-8473-4b638c800432",
+          "symbol": "UHS",
+          "side": "buy",
+          "qty": "1",
+          "price": "179.88",
+          "notional": 179.88,
+          "transaction_time": "2026-11-20T16:51:23.321217Z",
+          "time_et": "2026-11-20 11:51:23 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120115114292::354647a5-9182-43fe-b9d8-a9fbbdc4715f",
+          "order_id": "803168e8-096e-40cb-90b3-b5f169275e3b",
+          "symbol": "CI",
+          "side": "buy",
+          "qty": "1",
+          "price": "279.71",
+          "notional": 279.71,
+          "transaction_time": "2026-11-20T16:51:14.292302Z",
+          "time_et": "2026-11-20 11:51:14 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261120114755611::40f0fc92-2fb6-4c44-9698-c6b4c998d009",
+          "order_id": "f2258cd1-fdb3-4264-80fc-c344bbf610a0",
+          "symbol": "AMZN",
+          "side": "sell",
+          "qty": "1",
+          "price": "251.57",
+          "notional": 251.57,
+          "transaction_time": "2026-11-20T16:47:55.611309Z",
+          "time_et": "2026-11-20 11:47:55 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
         {
           "id": "20261120095534914::e72e4c6c-f75f-48e7-ba29-92eae5354970",
           "order_id": "ba4a5680-b9dd-4a34-ad23-6e7fe841a964",
