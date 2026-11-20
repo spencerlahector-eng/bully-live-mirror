@@ -399,11 +399,12 @@
       for (const u of ordered) {
         try {
           const data = await tryFetchUrl(u, u.startsWith('/api') ? 5000 : 4500);
+          const prevToday = currentSnap?.today_date || null;
           currentSnap = data;
           lastFetchSuccessMs = Date.now();
           activeSourceLabel = u.includes('mirror-snapshot') ? 'LIVE MAC STREAM' : 'CLOUD SYNC MIRROR';
           try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (_) {}
-          if (!selectedDate || !data.sessions || !data.sessions[selectedDate]) {
+          if (!selectedDate || !data.sessions || !data.sessions[selectedDate] || (prevToday && data.today_date && data.today_date !== prevToday && selectedDate === prevToday)) {
             selectedDate = data.default_active_date || data.today_date;
           }
           render(data);
