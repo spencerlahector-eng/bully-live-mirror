@@ -70,8 +70,20 @@
     }
     .status-strip.aged { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.4); color: #fde68a; }
     .nav-tabs {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px;
       background: var(--card); padding: 5px; border-radius: 10px; border: 1px solid var(--border);
+    }
+    .intake-field { display: flex; flex-direction: column; gap: 4px; }
+    .intake-input, .intake-textarea {
+      width: 100%; font: inherit; font-size: 16px; color: var(--text);
+      background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+      padding: 9px 10px; outline: none;
+    }
+    .intake-input:focus, .intake-textarea:focus { border-color: var(--cyan); }
+    .intake-textarea { min-height: 82px; resize: vertical; line-height: 1.35; }
+    .btn-primary {
+      background: linear-gradient(135deg, rgba(6,182,212,0.28), rgba(16,185,129,0.28));
+      border-color: var(--cyan); color: #fff; font-weight: 700;
     }
     .nav-tab {
       font: inherit; font-size: 11.5px; font-weight: 700; color: var(--muted);
@@ -139,9 +151,10 @@
 
     <nav class="nav-tabs" aria-label="Mirror sections">
       <button type="button" class="nav-tab active" data-tab="all">All Live</button>
-      <button type="button" class="nav-tab" data-tab="decisions">AUTO Decisions</button>
+      <button type="button" class="nav-tab" data-tab="decisions">Decisions</button>
       <button type="button" class="nav-tab" data-tab="positions">Positions</button>
-      <button type="button" class="nav-tab" data-tab="trades">Trades &amp; P/L</button>
+      <button type="button" class="nav-tab" data-tab="trades">Trades</button>
+      <button type="button" class="nav-tab" data-tab="intake">📲 Intake</button>
     </nav>
 
     <!-- 1. MONEY & P/L SCOREBOARD -->
@@ -247,6 +260,66 @@
       <div class="list" id="fills-list"></div>
     </section>
 
+    <!-- 5. MOBILE CHATGPT INTAKE & BOUNDED PAPER OVERRIDES -->
+    <section class="card" data-section="intake">
+      <div class="card-head">
+        <span class="card-title">5 · iPhone ChatGPT Intake &amp; Live Paper Tuning</span>
+        <span class="pill pill-ok mono" id="intake-status-pill">PAPER LOCK · REAL $ OFF</span>
+      </div>
+      <div class="stat-sub">
+        Paste research/catalyst notes from ChatGPT on your phone or adjust bounded Paper AUTO gates during trading hours (syncs to Render &amp; Mac on the next 15s cycle; real-money execution remains locked off).
+      </div>
+
+      <div class="intake-field">
+        <label class="stat-label" for="intake-note">Paste ChatGPT Catalyst / Setup Note (Auto-Scores &amp; Stages)</label>
+        <textarea id="intake-note" class="intake-textarea" placeholder="e.g. NVDA breakout on hyperscaler capex raise; watch VRT and POWL call spreads…"></textarea>
+      </div>
+
+      <div class="grid-2">
+        <div class="intake-field">
+          <label class="stat-label" for="intake-watched">+ Watch Tickers (Comma-Separated)</label>
+          <input id="intake-watched" class="intake-input mono" type="text" autocapitalize="characters" placeholder="NVDA, VRT, POWL">
+        </div>
+        <div class="intake-field">
+          <label class="stat-label" for="intake-blocked">⛔ Block Tickers Today</label>
+          <input id="intake-blocked" class="intake-input mono" type="text" autocapitalize="characters" placeholder="e.g. SMCI">
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="intake-field">
+          <label class="stat-label" for="intake-spread">Max Option Spread % (1–15%)</label>
+          <input id="intake-spread" class="intake-input mono" type="number" step="0.5" min="1" max="15" value="6.0">
+        </div>
+        <div class="intake-field">
+          <label class="stat-label" for="intake-alloc">Max Trade Size $ ($100–$1k)</label>
+          <input id="intake-alloc" class="intake-input mono" type="number" step="50" min="100" max="1000" value="500">
+        </div>
+        <div class="intake-field">
+          <label class="stat-label" for="intake-pause">New Entries Gate</label>
+          <select id="intake-pause" class="intake-input">
+            <option value="false">ACTIVE (Allow Admitted)</option>
+            <option value="true">PAUSED (Ratchets/Exits Only)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row-between" style="padding-top:4px;">
+        <button type="button" class="btn btn-primary" id="btn-submit-intake">📲 Apply Live Paper Update</button>
+        <button type="button" class="btn" id="btn-reset-intake">↺ Reset Defaults</button>
+      </div>
+      <div class="stat-sub mono" id="intake-feedback" style="color:var(--lime);"></div>
+
+      <div class="stat" id="active-overrides-box">
+        <span class="stat-label">Active Engine Mobile Overrides</span>
+        <span class="stat-val mono" id="val-active-overrides">Spread &le; 6.0% · Max $500/trade · Entries ACTIVE</span>
+        <span class="stat-sub mono" id="sub-active-overrides">Watched: None · Blocked: None</span>
+      </div>
+
+      <div class="stat-label" style="color:var(--cyan);margin-top:4px;">Recent Mobile ChatGPT Notes</div>
+      <div class="list" id="intake-notes-list"></div>
+    </section>
+
     <footer class="footnote">
       BULLY SCAN 7.0 Live Mirror · Strictly Read-Only (`trading_enabled: false`) · Unknown fees/basis remain unknown
     </footer>
@@ -289,6 +362,8 @@
           sec.hidden = sec.dataset.section !== 'positions' && sec.dataset.section !== 'overview';
         } else if (tab === 'trades') {
           sec.hidden = sec.dataset.section !== 'trades' && sec.dataset.section !== 'overview';
+        } else if (tab === 'intake') {
+          sec.hidden = sec.dataset.section !== 'intake' && sec.dataset.section !== 'overview';
         }
       });
     }
@@ -633,6 +708,121 @@
           fillsList.append(el);
         });
       }
+
+      if (data.mobile_overrides) {
+        renderMobileOverrides(data.mobile_overrides, false);
+      }
+    }
+
+    let intakeFormDirty = false;
+    ['intake-watched', 'intake-blocked', 'intake-spread', 'intake-alloc', 'intake-pause'].forEach(id => {
+      const el = $(id);
+      if (el) el.addEventListener('input', () => { intakeFormDirty = true; });
+    });
+
+    function escHtml(s) {
+      return String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    }
+
+    function renderMobileOverrides(ov, syncInputs = false) {
+      if (!ov || typeof ov !== 'object') return;
+      const paused = Boolean(ov.pause_new_entries);
+      const spread = Number(ov.max_option_entry_spread_pct ?? 6.0).toFixed(1);
+      const alloc = Number(ov.max_allocation_per_trade_usd ?? 500).toFixed(0);
+      const watched = Array.isArray(ov.watched_symbols) ? ov.watched_symbols : [];
+      const blocked = Array.isArray(ov.blocked_symbols) ? ov.blocked_symbols : [];
+
+      $('intake-status-pill').textContent = paused ? 'ENTRIES PAUSED · PAPER' : 'ENTRIES ACTIVE · PAPER';
+      $('intake-status-pill').className = 'pill mono ' + (paused ? 'pill-warn' : 'pill-ok');
+      $('val-active-overrides').textContent = `Spread ≤ ${spread}% · Max $${alloc}/trade · Entries ${paused ? 'PAUSED' : 'ACTIVE'}`;
+      $('sub-active-overrides').textContent = `Watched: ${watched.length ? watched.join(', ') : 'None'} · Blocked: ${blocked.length ? blocked.join(', ') : 'None'} · Updated: ${ov.updated_at_et || 'Baseline'}`;
+
+      if (syncInputs || !intakeFormDirty) {
+        $('intake-watched').value = watched.join(', ');
+        $('intake-blocked').value = blocked.join(', ');
+        $('intake-spread').value = spread;
+        $('intake-alloc').value = alloc;
+        $('intake-pause').value = paused ? 'true' : 'false';
+      }
+
+      const notesList = $('intake-notes-list');
+      notesList.replaceChildren();
+      const notes = Array.isArray(ov.recent_notes) ? ov.recent_notes : [];
+      if (!notes.length) {
+        const empty = document.createElement('div');
+        empty.className = 'item stat-sub';
+        empty.textContent = 'No mobile ChatGPT notes submitted yet.';
+        notesList.append(empty);
+      } else {
+        notes.slice(0, 8).forEach(n => {
+          const item = document.createElement('div');
+          item.className = 'item';
+          item.innerHTML = `
+            <div class="row-between">
+              <div>
+                <span class="sym">${escHtml(n.symbol || 'NOTE')}</span>
+                <span class="pill pill-cyan" style="margin-left:6px;">${escHtml(n.catalyst_label || 'RESEARCH')}</span>
+                <span class="pill ${n.sentiment === 'BULLISH' ? 'pill-ok' : n.sentiment === 'BEARISH' ? 'pill-err' : 'pill-purple'}" style="margin-left:4px;">${escHtml(n.sentiment || 'NEUTRAL')} · ${Number(n.confluence_score || 50).toFixed(0)}</span>
+              </div>
+              <span class="mono stat-sub">${escHtml(n.created_at_et || '')}</span>
+            </div>
+            <div class="stat-sub" style="color:#e2e8f0;">${escHtml(n.text || '')}</div>
+          `;
+          notesList.append(item);
+        });
+      }
+    }
+
+    async function submitMobileIntake(payload) {
+      const fb = $('intake-feedback');
+      fb.style.color = 'var(--cyan)';
+      fb.textContent = 'Syncing mobile Paper update to local engine & Render Cloud…';
+      try {
+        const res = await fetch('/api/mobile-intake', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || ('HTTP ' + res.status));
+        intakeFormDirty = false;
+        $('intake-note').value = '';
+        renderMobileOverrides(data, true);
+        fb.style.color = 'var(--lime)';
+        const noteMsg = data.last_ingested_notification
+          ? ` · Scored ${data.last_ingested_notification.symbol} (${data.last_ingested_notification.sentiment}, ${data.last_ingested_notification.confluence_score})`
+          : '';
+        fb.textContent = `✓ Live Paper overrides saved (${data.updated_at_et}) & queued for Render sync${noteMsg}`;
+      } catch (err) {
+        fb.style.color = 'var(--amber)';
+        fb.textContent = `Direct POST unavailable on static mirror (${err.message}). Open Mobile Server (:8888) on Wi-Fi/Tailscale or commit to data/mobile_live_overrides.json via ChatGPT Codex on your phone.`;
+      }
+    }
+
+    $('btn-submit-intake').onclick = () => {
+      void submitMobileIntake({
+        source: 'CHATGPT_IPHONE_MIRROR_UI',
+        note: $('intake-note').value.trim(),
+        watched_symbols: $('intake-watched').value,
+        blocked_symbols: $('intake-blocked').value,
+        max_option_entry_spread_pct: Number($('intake-spread').value || 6.0),
+        max_allocation_per_trade_usd: Number($('intake-alloc').value || 500),
+        pause_new_entries: $('intake-pause').value === 'true'
+      });
+    };
+
+    $('btn-reset-intake').onclick = () => {
+      void submitMobileIntake({ action: 'reset_defaults' });
+    };
+
+    async function refreshIntakeDirect() {
+      try {
+        const res = await fetch('/api/mobile-intake?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const ov = await res.json();
+          if (ov && ov.trading_enabled === false) renderMobileOverrides(ov, false);
+        }
+      } catch (_) {}
     }
 
     $('btn-refresh').onclick = () => { void refreshSnapshot(); };
