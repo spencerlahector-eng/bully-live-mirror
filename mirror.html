@@ -858,6 +858,7 @@
     } catch (_) {}
 
     void refreshSnapshot();
+    void refreshIntakeDirect();
     setInterval(() => { if (!document.hidden) void refreshSnapshot(); }, 6000);
     setInterval(() => updateConnectionBanner(false), 1000);
   </script>
