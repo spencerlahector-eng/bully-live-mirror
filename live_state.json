@@ -1,9 +1,9 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1795403478.3777542,
-  "generated_at_iso": "2026-11-23T03:11:18.377754+00:00",
-  "generated_at_et": "2026-11-22 22:11:18 ET",
+  "generated_at": 1795404400.5904262,
+  "generated_at_iso": "2026-11-23T03:26:40.590426+00:00",
+  "generated_at_et": "2026-11-22 22:26:40 ET",
   "today_date": "2026-11-22",
   "default_active_date": "2026-11-20",
   "available_dates": [
@@ -21,20 +21,21 @@
   ],
   "account": {
     "account_id": "PAPER-READONLY",
-    "status": "ACTIVE",
+    "status": "RETAINED_RECONCILE",
     "currency": "USD",
-    "cash": 76958.06,
-    "buying_power": 307832.24,
-    "equity": 76958.06,
-    "last_equity": 76958.06,
+    "cash": 86711.72,
+    "buying_power": null,
+    "equity": 87678.87,
+    "last_equity": null,
     "baseline_equity": 97541.35,
-    "daily_change_usd": 0.0,
-    "daily_change_pct": 0.0,
-    "vs_baseline_usd": -20583.29,
-    "vs_baseline_pct": -21.1,
+    "daily_change_usd": null,
+    "daily_change_pct": null,
+    "vs_baseline_usd": -9862.48,
+    "vs_baseline_pct": -10.11,
     "deployed_capital": 0.0,
     "open_unrealized_pnl": 0.0,
     "open_positions_count": 0,
+    "error": "[Errno 54] Connection reset by peer",
     "cumulative_realized_gross": "-1422.16",
     "total_confirmed_fills": 1087
   },
@@ -45,8 +46,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795403479.020318,
-    "observed_at_et": "2026-11-22 22:11:19 ET",
+    "observed_at": 1795405395.622899,
+    "observed_at_et": "2026-11-22 22:43:15 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -94,7 +95,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "CRML",
@@ -108,7 +109,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "KLAC",
@@ -122,7 +123,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "MRVL",
@@ -136,7 +137,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "SMCI",
@@ -150,7 +151,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "TSM",
@@ -164,7 +165,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "VRT",
@@ -178,7 +179,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "AAPL",
@@ -191,7 +192,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "AMD",
@@ -204,7 +205,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "ARM",
@@ -217,7 +218,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "CBRS",
@@ -230,7 +231,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "MU",
@@ -243,7 +244,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "NVDA",
@@ -256,7 +257,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "PL",
@@ -269,7 +270,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "SNDK",
@@ -282,7 +283,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "ASML",
@@ -295,7 +296,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "CAMT",
@@ -308,7 +309,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "DHI",
@@ -321,7 +322,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "EQT",
@@ -334,7 +335,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "POWL",
@@ -347,7 +348,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "VLO",
@@ -360,7 +361,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-22 22:11:19 ET"
+        "observed_et": "2026-11-22 22:43:15 ET"
       },
       {
         "symbol": "MARA",
