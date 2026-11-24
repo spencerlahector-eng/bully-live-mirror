@@ -1,11 +1,11 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1795550846.44206,
-  "generated_at_iso": "2026-11-24T20:07:26.442060+00:00",
-  "generated_at_et": "2026-11-24 15:07:26 ET",
+  "generated_at": 1795550871.2700632,
+  "generated_at_iso": "2026-11-24T20:07:51.270063+00:00",
+  "generated_at_et": "2026-11-24 15:07:51 ET",
   "today_date": "2026-11-24",
-  "default_active_date": "2026-11-20",
+  "default_active_date": "2026-11-24",
   "available_dates": [
     "2026-11-24",
     "2026-11-20",
@@ -16,27 +16,26 @@
     "2026-11-13",
     "2026-11-12",
     "2026-11-11",
-    "2026-11-10",
-    "2026-11-09"
+    "2026-11-10"
   ],
   "account": {
     "account_id": "PAPER-READONLY",
     "status": "ACTIVE",
     "currency": "USD",
     "cash": 74854.5,
-    "buying_power": 304833.58,
-    "equity": 76788.64,
+    "buying_power": 304834.18,
+    "equity": 76788.85,
     "last_equity": 76790.79,
     "baseline_equity": 97541.35,
-    "daily_change_usd": -2.15,
+    "daily_change_usd": -1.94,
     "daily_change_pct": -0.0,
-    "vs_baseline_usd": -20752.71,
+    "vs_baseline_usd": -20752.5,
     "vs_baseline_pct": -21.28,
-    "deployed_capital": 1934.13,
-    "open_unrealized_pnl": -2.16,
+    "deployed_capital": 1934.35,
+    "open_unrealized_pnl": -1.94,
     "open_positions_count": 4,
     "cumulative_realized_gross": "-1422.16",
-    "total_confirmed_fills": 1087
+    "total_confirmed_fills": 1089
   },
   "runtime": {
     "execution_owner": "render",
@@ -45,8 +44,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795550846.9967701,
-    "observed_at_et": "2026-11-24 15:07:26 ET",
+    "observed_at": 1795550871.903619,
+    "observed_at_et": "2026-11-24 15:07:51 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -94,7 +93,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "CRML",
@@ -108,7 +107,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "KLAC",
@@ -122,7 +121,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "MRVL",
@@ -136,7 +135,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "SMCI",
@@ -150,7 +149,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "TSM",
@@ -164,7 +163,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "VRT",
@@ -178,7 +177,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "AAPL",
@@ -191,7 +190,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "AMD",
@@ -204,7 +203,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "ARM",
@@ -217,7 +216,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "CBRS",
@@ -230,7 +229,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "MU",
@@ -243,7 +242,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "NVDA",
@@ -256,7 +255,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "PL",
@@ -269,7 +268,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "SNDK",
@@ -282,7 +281,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "ASML",
@@ -295,7 +294,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "CAMT",
@@ -308,7 +307,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "DHI",
@@ -321,7 +320,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "EQT",
@@ -334,7 +333,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "POWL",
@@ -347,7 +346,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "VLO",
@@ -360,7 +359,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-24 15:07:27 ET"
+        "observed_et": "2026-11-24 15:07:51 ET"
       },
       {
         "symbol": "MARA",
@@ -404,15 +403,15 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-24T20:06:34.276882+00:00",
-    "timestamp_et": "2026-11-24 15:06:34 ET",
-    "observed_at": 1795550794.276882,
+    "timestamp_utc": "2026-11-24T20:07:50.034706+00:00",
+    "timestamp_et": "2026-11-24 15:07:50 ET",
+    "observed_at": 1795550870.034706,
     "gate_phase": "RTH_ACTIVE_ENTRY_AND_RATCHET",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
     "account": {
       "status": "ACTIVE",
-      "equity": 76788.43,
+      "equity": 76788.85,
       "cash": 74854.5,
       "last_equity": 76790.79
     },
@@ -438,52 +437,52 @@
         "symbol": "CMG",
         "qty": 6,
         "entry_price": 37.28,
-        "current_price": 37.26,
-        "pl_usd": -0.12,
-        "pl_pct": -0.05,
+        "current_price": 37.265,
+        "pl_usd": -0.09,
+        "pl_pct": -0.04,
         "intraday_stop_px": 36.16,
         "eod_1550_decision": "CUT_UNCUSHIONED_EOD",
         "eod_sell_qty": 6,
         "eod_retain_qty": 0,
         "runner_target_pct": 1.5,
         "runner_target_px": 37.8392,
-        "dist_to_runner_pct": 1.55,
-        "dist_to_runner_px": 0.58,
-        "rationale": "Equity -0.05% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
+        "dist_to_runner_pct": 1.54,
+        "dist_to_runner_px": 0.57,
+        "rationale": "Equity -0.04% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
       },
       {
         "symbol": "PEP",
         "qty": 6,
         "entry_price": 142.89,
-        "current_price": 142.455,
-        "pl_usd": -2.61,
-        "pl_pct": -0.3,
+        "current_price": 142.475,
+        "pl_usd": -2.49,
+        "pl_pct": -0.29,
         "intraday_stop_px": 138.6,
         "eod_1550_decision": "CUT_UNCUSHIONED_EOD",
         "eod_sell_qty": 6,
         "eod_retain_qty": 0,
         "runner_target_pct": 1.5,
         "runner_target_px": 145.0333,
-        "dist_to_runner_pct": 1.8,
-        "dist_to_runner_px": 2.58,
-        "rationale": "Equity -0.30% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
+        "dist_to_runner_pct": 1.79,
+        "dist_to_runner_px": 2.56,
+        "rationale": "Equity -0.29% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
       },
       {
         "symbol": "DLTR",
         "qty": 3,
         "entry_price": 156.11,
-        "current_price": 153.95,
-        "pl_usd": -6.48,
-        "pl_pct": -1.38,
+        "current_price": 154.04,
+        "pl_usd": -6.21,
+        "pl_pct": -1.33,
         "intraday_stop_px": 151.43,
         "eod_1550_decision": "CUT_UNCUSHIONED_EOD",
         "eod_sell_qty": 3,
         "eod_retain_qty": 0,
         "runner_target_pct": 1.5,
         "runner_target_px": 158.4517,
-        "dist_to_runner_pct": 2.88,
-        "dist_to_runner_px": 4.5,
-        "rationale": "Equity -1.38% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
+        "dist_to_runner_pct": 2.83,
+        "dist_to_runner_px": 4.41,
+        "rationale": "Equity -1.33% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
       }
     ],
     "admitted_count": 3,
@@ -491,27 +490,27 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": -3.77,
+        "lead_chg_pct": -3.72,
         "down_chg_pct": 0.0,
         "score": 96.0,
         "reasons": [
-          "Lead AVGO -3.8% (|chg|>=2.0%, dir=SHORT, sign=+1)",
+          "Lead AVGO -3.7% (|chg|>=2.0%, dir=SHORT, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.75)",
-          "DOWNSTREAM_BREAKDOWN_CONFIRMED(-1.71%)"
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.76)",
+          "DOWNSTREAM_BREAKDOWN_CONFIRMED(-1.73%)"
         ]
       },
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": -3.77,
+        "lead_chg_pct": -3.72,
         "down_chg_pct": 0.0,
         "score": 95.0,
         "reasons": [
-          "Lead AVGO -3.8% (|chg|>=2.0%, dir=SHORT, sign=+1)",
+          "Lead AVGO -3.7% (|chg|>=2.0%, dir=SHORT, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)",
-          "DOWNSTREAM_BREAKDOWN_CONFIRMED(-1.59%)"
+          "DOWNSTREAM_BREAKDOWN_CONFIRMED(-1.61%)"
         ]
       },
       {
@@ -523,7 +522,7 @@
         "reasons": [
           "Lead ELV +3.8% (|chg|>=2.0%, dir=LONG, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.80)",
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.81)",
           "RC11_SEC_10K_TNIC_PRODUCT_SIMILARITY(+4.0,sim=0.36)"
         ]
       }
@@ -532,7 +531,7 @@
       {
         "lead": "HUM",
         "symbol": "ELV",
-        "lead_chg_pct": 5.74,
+        "lead_chg_pct": 5.87,
         "down_chg_pct": 0.0,
         "score": 55.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -543,7 +542,7 @@
       {
         "lead": "CEG",
         "symbol": "CCJ",
-        "lead_chg_pct": -3.12,
+        "lead_chg_pct": -3.09,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -554,7 +553,7 @@
       {
         "lead": "FIX",
         "symbol": "EME",
-        "lead_chg_pct": -5.43,
+        "lead_chg_pct": -5.41,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -565,7 +564,7 @@
       {
         "lead": "ABBV",
         "symbol": "BMY",
-        "lead_chg_pct": 3.9,
+        "lead_chg_pct": 3.96,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -576,7 +575,18 @@
       {
         "lead": "LLY",
         "symbol": "DXCM",
-        "lead_chg_pct": 3.42,
+        "lead_chg_pct": 3.43,
+        "down_chg_pct": 0.0,
+        "score": 45.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "MCK",
+        "symbol": "CAH",
+        "lead_chg_pct": 3.01,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -587,7 +597,7 @@
       {
         "lead": "LEN",
         "symbol": "DHI",
-        "lead_chg_pct": 4.2,
+        "lead_chg_pct": 4.24,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -598,7 +608,7 @@
       {
         "lead": "DHI",
         "symbol": "LEN",
-        "lead_chg_pct": 3.55,
+        "lead_chg_pct": 3.54,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -609,7 +619,7 @@
       {
         "lead": "LMT",
         "symbol": "BWXT",
-        "lead_chg_pct": 3.02,
+        "lead_chg_pct": 3.14,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -618,20 +628,9 @@
         ]
       },
       {
-        "lead": "MCK",
-        "symbol": "CAH",
-        "lead_chg_pct": 2.97,
-        "down_chg_pct": 0.0,
-        "score": 40.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
         "lead": "MS",
         "symbol": "GS",
-        "lead_chg_pct": -2.16,
+        "lead_chg_pct": -2.15,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -649,12 +648,12 @@
     "app_health": {
       "backend_50425": {
         "ok": true,
-        "latency_ms": 1.7,
+        "latency_ms": 1.6,
         "trading_enabled": false
       },
       "gateway_50426": {
         "ok": true,
-        "latency_ms": 3.9,
+        "latency_ms": 3.5,
         "trading_enabled": false
       }
     }
@@ -714,11 +713,11 @@
       "asset_class": "us_equity",
       "qty": 1.0,
       "avg_entry_price": 386.94,
-      "current_price": 393.86,
-      "market_value": 393.86,
-      "unrealized_pl": 6.92,
-      "unrealized_plpc": 0.01788,
-      "unrealized_plpc_pct": 1.79,
+      "current_price": 393.79,
+      "market_value": 393.79,
+      "unrealized_pl": 6.85,
+      "unrealized_plpc": 0.0177,
+      "unrealized_plpc_pct": 1.77,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 375.33,
       "eod_exit_decision": "BANK_100PCT_INTRADAY_PROFIT",
@@ -732,17 +731,17 @@
       "asset_class": "us_equity",
       "qty": 6.0,
       "avg_entry_price": 37.28,
-      "current_price": 37.26,
-      "market_value": 223.56,
-      "unrealized_pl": -0.12,
-      "unrealized_plpc": -0.00054,
-      "unrealized_plpc_pct": -0.05,
+      "current_price": 37.265,
+      "market_value": 223.59,
+      "unrealized_pl": -0.09,
+      "unrealized_plpc": -0.0004,
+      "unrealized_plpc_pct": -0.04,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 36.16,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 6,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 1.55
+      "dist_to_runner_pct": 1.54
     },
     {
       "symbol": "PEP",
@@ -750,17 +749,17 @@
       "asset_class": "us_equity",
       "qty": 6.0,
       "avg_entry_price": 142.89,
-      "current_price": 142.45,
-      "market_value": 854.7,
-      "unrealized_pl": -2.64,
-      "unrealized_plpc": -0.00308,
-      "unrealized_plpc_pct": -0.31,
+      "current_price": 142.475,
+      "market_value": 854.85,
+      "unrealized_pl": -2.49,
+      "unrealized_plpc": -0.0029,
+      "unrealized_plpc_pct": -0.29,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 138.6,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 6,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 1.81
+      "dist_to_runner_pct": 1.79
     },
     {
       "symbol": "DLTR",
@@ -768,17 +767,17 @@
       "asset_class": "us_equity",
       "qty": 3.0,
       "avg_entry_price": 156.11,
-      "current_price": 154.005,
-      "market_value": 462.015,
-      "unrealized_pl": -6.32,
-      "unrealized_plpc": -0.01348,
-      "unrealized_plpc_pct": -1.35,
+      "current_price": 154.04,
+      "market_value": 462.12,
+      "unrealized_pl": -6.21,
+      "unrealized_plpc": -0.01326,
+      "unrealized_plpc_pct": -1.33,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 151.43,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 3,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 2.85
+      "dist_to_runner_pct": 2.83
     }
   ],
   "sessions": {
@@ -786,18 +785,220 @@
       "date": "2026-11-24",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-24T14:48:48.573743+00:00",
-      "observed_at_et": "2026-11-24 09:48:48 ET",
-      "fill_count": 0,
+      "observed_at": "2026-11-24T20:07:28.800873+00:00",
+      "observed_at_et": "2026-11-24 15:07:28 ET",
+      "fill_count": 10,
       "realized_gross": null,
       "realized_net": null,
       "account_fees": null,
       "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
       "fee_status": "PER_FILL_FEES_NOT_SUPPLIED",
-      "symbols_count": 0,
+      "symbols_count": 4,
       "closed_symbols_count": 0,
-      "symbols_summary": [],
-      "fills": []
+      "symbols_summary": [
+        {
+          "symbol": "PEP",
+          "state": "OPEN",
+          "fill_count": 4,
+          "buy_qty": "6",
+          "avg_buy_price": 142.89,
+          "buy_notional": 857.34,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-24 10:54:26 ET"
+        },
+        {
+          "symbol": "CMG",
+          "state": "OPEN",
+          "fill_count": 3,
+          "buy_qty": "6",
+          "avg_buy_price": 37.28,
+          "buy_notional": 223.68,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-24 14:04:14 ET"
+        },
+        {
+          "symbol": "DLTR",
+          "state": "OPEN",
+          "fill_count": 2,
+          "buy_qty": "3",
+          "avg_buy_price": 156.11,
+          "buy_notional": 468.33,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-24 14:03:14 ET"
+        },
+        {
+          "symbol": "ELV",
+          "state": "OPEN",
+          "fill_count": 1,
+          "buy_qty": "1",
+          "avg_buy_price": 386.94,
+          "buy_notional": 386.94,
+          "sell_qty": "0",
+          "avg_sell_price": null,
+          "sell_notional": 0.0,
+          "realized_gross": null,
+          "realized_net": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED",
+          "last_time_et": "2026-11-24 11:02:16 ET"
+        }
+      ],
+      "fills": [
+        {
+          "id": "20261124140414564::72b5a665-bfd6-4088-be77-9f8bdb5d1e50",
+          "order_id": "9af6e769-42d7-41d5-a518-e93288d6d254",
+          "symbol": "CMG",
+          "side": "buy",
+          "qty": "1",
+          "price": "37.28",
+          "notional": 37.28,
+          "transaction_time": "2026-11-24T19:04:14.564681Z",
+          "time_et": "2026-11-24 14:04:14 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124140413865::2228855a-937f-4d01-afb0-e4acd4a55200",
+          "order_id": "9af6e769-42d7-41d5-a518-e93288d6d254",
+          "symbol": "CMG",
+          "side": "buy",
+          "qty": "1",
+          "price": "37.28",
+          "notional": 37.28,
+          "transaction_time": "2026-11-24T19:04:13.865261Z",
+          "time_et": "2026-11-24 14:04:13 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124140412698::073bd399-d13b-4ea2-88c4-ec16e00fa71c",
+          "order_id": "9af6e769-42d7-41d5-a518-e93288d6d254",
+          "symbol": "CMG",
+          "side": "buy",
+          "qty": "4",
+          "price": "37.28",
+          "notional": 149.12,
+          "transaction_time": "2026-11-24T19:04:12.698579Z",
+          "time_et": "2026-11-24 14:04:12 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124140314997::665e2351-6cfb-410f-a039-871287636019",
+          "order_id": "2486562b-f9ab-4442-9c2c-d458d85df565",
+          "symbol": "DLTR",
+          "side": "buy",
+          "qty": "1",
+          "price": "156.11",
+          "notional": 156.11,
+          "transaction_time": "2026-11-24T19:03:14.997339Z",
+          "time_et": "2026-11-24 14:03:14 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124140314489::bcea29c2-125e-4f86-bd6c-4e3579e93eea",
+          "order_id": "2486562b-f9ab-4442-9c2c-d458d85df565",
+          "symbol": "DLTR",
+          "side": "buy",
+          "qty": "2",
+          "price": "156.11",
+          "notional": 312.22,
+          "transaction_time": "2026-11-24T19:03:14.48902Z",
+          "time_et": "2026-11-24 14:03:14 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124110216697::82dbbb6c-3824-4b1e-ba02-7cfbe128e64f",
+          "order_id": "4455794b-1ef7-4471-8c89-ddf61260479e",
+          "symbol": "ELV",
+          "side": "buy",
+          "qty": "1",
+          "price": "386.94",
+          "notional": 386.94,
+          "transaction_time": "2026-11-24T16:02:16.697803Z",
+          "time_et": "2026-11-24 11:02:16 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124105426378::504d5931-b223-4a52-89f4-0f4ba91e201a",
+          "order_id": "838c5fc2-cba4-4d3d-8c04-0e7e472cbe5f",
+          "symbol": "PEP",
+          "side": "buy",
+          "qty": "1",
+          "price": "142.89",
+          "notional": 142.89,
+          "transaction_time": "2026-11-24T15:54:26.378552Z",
+          "time_et": "2026-11-24 10:54:26 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124105425366::b8c985a0-2954-4ac2-9c1f-1dc0326ee1f8",
+          "order_id": "838c5fc2-cba4-4d3d-8c04-0e7e472cbe5f",
+          "symbol": "PEP",
+          "side": "buy",
+          "qty": "1",
+          "price": "142.89",
+          "notional": 142.89,
+          "transaction_time": "2026-11-24T15:54:25.366095Z",
+          "time_et": "2026-11-24 10:54:25 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124105424811::0c6b3362-e306-416d-8b83-84680d95ba30",
+          "order_id": "838c5fc2-cba4-4d3d-8c04-0e7e472cbe5f",
+          "symbol": "PEP",
+          "side": "buy",
+          "qty": "1",
+          "price": "142.89",
+          "notional": 142.89,
+          "transaction_time": "2026-11-24T15:54:24.811642Z",
+          "time_et": "2026-11-24 10:54:24 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        },
+        {
+          "id": "20261124105423907::8daa2041-4719-4f05-b78e-da16c0f7316d",
+          "order_id": "838c5fc2-cba4-4d3d-8c04-0e7e472cbe5f",
+          "symbol": "PEP",
+          "side": "buy",
+          "qty": "3",
+          "price": "142.89",
+          "notional": 428.67,
+          "transaction_time": "2026-11-24T15:54:23.907925Z",
+          "time_et": "2026-11-24 10:54:23 ET",
+          "fee": null,
+          "realized_gross": null,
+          "accounting_status": "OPENING_INVENTORY_UNVERIFIED"
+        }
+      ]
     },
     "2026-11-20": {
       "date": "2026-11-20",
@@ -18230,182 +18431,6 @@
           "notional": 469.04,
           "transaction_time": "2026-11-10T11:45:14.733536Z",
           "time_et": "2026-11-10 06:45:14 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        }
-      ]
-    },
-    "2026-11-09": {
-      "date": "2026-11-09",
-      "status": "READY",
-      "coverage": "COMPLETE",
-      "observed_at": "2026-11-11T16:14:42.192815+00:00",
-      "observed_at_et": "2026-11-11 11:14:42 ET",
-      "fill_count": 8,
-      "realized_gross": "0",
-      "realized_net": null,
-      "account_fees": "0.01",
-      "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN",
-      "fee_status": "PER_FILL_FEES_NOT_SUPPLIED",
-      "symbols_count": 3,
-      "closed_symbols_count": 3,
-      "symbols_summary": [
-        {
-          "symbol": "AMD",
-          "state": "CLOSED",
-          "fill_count": 4,
-          "buy_qty": "4",
-          "avg_buy_price": 489.0325,
-          "buy_notional": 1956.13,
-          "sell_qty": "0",
-          "avg_sell_price": null,
-          "sell_notional": 0.0,
-          "realized_gross": null,
-          "realized_net": null,
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN",
-          "last_time_et": "2026-11-09 10:40:23 ET"
-        },
-        {
-          "symbol": "SOFI",
-          "state": "CLOSED",
-          "fill_count": 2,
-          "buy_qty": "9",
-          "avg_buy_price": 16.2,
-          "buy_notional": 145.8,
-          "sell_qty": "0",
-          "avg_sell_price": null,
-          "sell_notional": 0.0,
-          "realized_gross": null,
-          "realized_net": null,
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN",
-          "last_time_et": "2026-11-09 04:41:13 ET"
-        },
-        {
-          "symbol": "NVDA",
-          "state": "CLOSED",
-          "fill_count": 2,
-          "buy_qty": "2",
-          "avg_buy_price": 178.355,
-          "buy_notional": 356.71,
-          "sell_qty": "0",
-          "avg_sell_price": null,
-          "sell_notional": 0.0,
-          "realized_gross": null,
-          "realized_net": null,
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN",
-          "last_time_et": "2026-11-09 10:40:23 ET"
-        }
-      ],
-      "fills": [
-        {
-          "id": "20261109104023681::6141162c-5b02-4ea5-afb9-1d655b5f6db2",
-          "order_id": "d1879905-0e7e-4c2e-8d40-8472288bd799",
-          "symbol": "NVDA",
-          "side": "buy",
-          "qty": "1",
-          "price": "178.38",
-          "notional": 178.38,
-          "transaction_time": "2026-11-09T15:40:23.681434Z",
-          "time_et": "2026-11-09 10:40:23 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109104023034::2034aac7-ea5a-44b6-8276-796ef8049dbf",
-          "order_id": "3e7dbe20-fea3-4f7b-a317-c42adf6c30eb",
-          "symbol": "AMD",
-          "side": "buy",
-          "qty": "1",
-          "price": "490.92",
-          "notional": 490.92,
-          "transaction_time": "2026-11-09T15:40:23.034267Z",
-          "time_et": "2026-11-09 10:40:23 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109104021147::3989c0ba-e649-4a31-840a-2584f2042f4d",
-          "order_id": "e080d333-3732-49df-8247-0cfa7c03c6b1",
-          "symbol": "AMD",
-          "side": "buy",
-          "qty": "1",
-          "price": "490.86",
-          "notional": 490.86,
-          "transaction_time": "2026-11-09T15:40:21.147831Z",
-          "time_et": "2026-11-09 10:40:21 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109104020888::2e50c15e-f5b9-46d3-a2f5-f040afd72d86",
-          "order_id": "e9f8a016-c827-42a2-8a56-693929fcc637",
-          "symbol": "NVDA",
-          "side": "buy",
-          "qty": "1",
-          "price": "178.33",
-          "notional": 178.33,
-          "transaction_time": "2026-11-09T15:40:20.888998Z",
-          "time_et": "2026-11-09 10:40:20 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109100426040::7b15d990-35a5-4cc3-bc01-8f0096401cf1",
-          "order_id": "281636e6-8d05-4cf7-b437-4844df18b13c",
-          "symbol": "AMD",
-          "side": "buy",
-          "qty": "1",
-          "price": "487.08",
-          "notional": 487.08,
-          "transaction_time": "2026-11-09T15:04:26.040325Z",
-          "time_et": "2026-11-09 10:04:26 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109100414869::e2f9ed94-c19e-4a8a-aacb-35a48854bec1",
-          "order_id": "89d544f9-cc14-4181-92ce-e4f8ded1b458",
-          "symbol": "AMD",
-          "side": "buy",
-          "qty": "1",
-          "price": "487.27",
-          "notional": 487.27,
-          "transaction_time": "2026-11-09T15:04:14.869644Z",
-          "time_et": "2026-11-09 10:04:14 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109044113275::119ac27f-69aa-4475-b4cd-376dc7710844",
-          "order_id": "b94b227a-72bd-42b3-a653-6fba395b583e",
-          "symbol": "SOFI",
-          "side": "buy",
-          "qty": "7",
-          "price": "16.2",
-          "notional": 113.4,
-          "transaction_time": "2026-11-09T09:41:13.275982Z",
-          "time_et": "2026-11-09 04:41:13 ET",
-          "fee": null,
-          "realized_gross": "0",
-          "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
-        },
-        {
-          "id": "20261109044113011::42230fe1-5676-4250-807f-ed558866eee4",
-          "order_id": "b94b227a-72bd-42b3-a653-6fba395b583e",
-          "symbol": "SOFI",
-          "side": "buy",
-          "qty": "2",
-          "price": "16.2",
-          "notional": 32.4,
-          "transaction_time": "2026-11-09T09:41:13.011134Z",
-          "time_et": "2026-11-09 04:41:13 ET",
           "fee": null,
           "realized_gross": "0",
           "accounting_status": "FIFO_MATCHED_GROSS_FEES_UNKNOWN"
