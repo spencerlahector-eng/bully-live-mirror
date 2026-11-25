@@ -1,9 +1,9 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1795621434.6780548,
-  "generated_at_iso": "2026-11-25T15:43:54.678055+00:00",
-  "generated_at_et": "2026-11-25 10:43:54 ET",
+  "generated_at": 1795621459.854538,
+  "generated_at_iso": "2026-11-25T15:44:19.854538+00:00",
+  "generated_at_et": "2026-11-25 10:44:19 ET",
   "today_date": "2026-11-25",
   "default_active_date": "2026-11-24",
   "available_dates": [
@@ -24,16 +24,16 @@
     "status": "ACTIVE",
     "currency": "USD",
     "cash": 75775.87,
-    "buying_power": 305963.51,
-    "equity": 76797.31,
+    "buying_power": 305962.6,
+    "equity": 76796.99,
     "last_equity": 76794.48,
     "baseline_equity": 97541.35,
-    "daily_change_usd": 2.83,
+    "daily_change_usd": 2.51,
     "daily_change_pct": 0.0,
-    "vs_baseline_usd": -20744.04,
+    "vs_baseline_usd": -20744.36,
     "vs_baseline_pct": -21.27,
-    "deployed_capital": 1021.44,
-    "open_unrealized_pnl": 2.83,
+    "deployed_capital": 1021.12,
+    "open_unrealized_pnl": 2.5,
     "open_positions_count": 2,
     "cumulative_realized_gross": "-1422.16",
     "total_confirmed_fills": 1089
@@ -45,8 +45,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795621435.32895,
-    "observed_at_et": "2026-11-25 10:43:55 ET",
+    "observed_at": 1795621460.432849,
+    "observed_at_et": "2026-11-25 10:44:20 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -94,7 +94,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "CRML",
@@ -108,7 +108,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "KLAC",
@@ -122,7 +122,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "MRVL",
@@ -136,7 +136,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "SMCI",
@@ -150,7 +150,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "TSM",
@@ -164,7 +164,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "VRT",
@@ -178,7 +178,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "AAPL",
@@ -191,7 +191,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "AMD",
@@ -204,7 +204,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "ARM",
@@ -217,7 +217,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "CBRS",
@@ -230,7 +230,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "MU",
@@ -243,7 +243,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "NVDA",
@@ -256,7 +256,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "PL",
@@ -269,7 +269,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "SNDK",
@@ -282,7 +282,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "ASML",
@@ -295,7 +295,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "CAMT",
@@ -308,7 +308,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "DHI",
@@ -321,7 +321,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "EQT",
@@ -334,7 +334,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "POWL",
@@ -347,7 +347,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "VLO",
@@ -360,7 +360,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:43:55 ET"
+        "observed_et": "2026-11-25 10:44:20 ET"
       },
       {
         "symbol": "MARA",
@@ -404,15 +404,15 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-25T15:43:19.250711+00:00",
-    "timestamp_et": "2026-11-25 10:43:19 ET",
-    "observed_at": 1795621399.250711,
+    "timestamp_utc": "2026-11-25T15:44:18.252869+00:00",
+    "timestamp_et": "2026-11-25 10:44:18 ET",
+    "observed_at": 1795621458.252869,
     "gate_phase": "RTH_ACTIVE_ENTRY_AND_RATCHET",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
     "account": {
       "status": "ACTIVE",
-      "equity": 76799.08,
+      "equity": 76797.41,
       "cash": 75775.87,
       "last_equity": 76794.48
     },
@@ -421,47 +421,47 @@
         "symbol": "CPB",
         "qty": 28,
         "entry_price": 24.19,
-        "current_price": 24.455,
-        "pl_usd": 7.42,
-        "pl_pct": 1.09,
+        "current_price": 24.46,
+        "pl_usd": 7.56,
+        "pl_pct": 1.12,
         "intraday_stop_px": 23.46,
         "eod_1550_decision": "BANK_100PCT_INTRADAY_PROFIT",
         "eod_sell_qty": 28,
         "eod_retain_qty": 0,
         "runner_target_pct": 1.5,
         "runner_target_px": 24.5528,
-        "dist_to_runner_pct": 0.41,
-        "dist_to_runner_px": 0.1,
-        "rationale": "Modest intraday gain +1.09% (< +2.50% cushion gate, G\u00e2rleanu-Pedersen 2013): take home 100% cash profit before close."
+        "dist_to_runner_pct": 0.38,
+        "dist_to_runner_px": 0.09,
+        "rationale": "Modest intraday gain +1.12% (< +2.50% cushion gate, G\u00e2rleanu-Pedersen 2013): take home 100% cash profit before close."
       },
       {
         "symbol": "HPQ",
         "qty": 11,
         "entry_price": 31.0264,
-        "current_price": 30.77,
-        "pl_usd": -2.82,
-        "pl_pct": -0.83,
+        "current_price": 30.6,
+        "pl_usd": -4.69,
+        "pl_pct": -1.37,
         "intraday_stop_px": 30.1,
         "eod_1550_decision": "CUT_UNCUSHIONED_EOD",
         "eod_sell_qty": 11,
         "eod_retain_qty": 0,
         "runner_target_pct": 1.5,
         "runner_target_px": 31.4918,
-        "dist_to_runner_pct": 2.33,
-        "dist_to_runner_px": 0.72,
-        "rationale": "Equity -0.83% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
+        "dist_to_runner_pct": 2.87,
+        "dist_to_runner_px": 0.89,
+        "rationale": "Equity -1.37% <= 0.00% (Cont 2001 / Hasbrouck 1991): close 100% to eliminate unhedged overnight jump risk."
       }
     ],
-    "admitted_count": 5,
+    "admitted_count": 7,
     "admitted_candidates": [
       {
         "lead": "GS",
         "symbol": "MS",
-        "lead_chg_pct": -3.66,
+        "lead_chg_pct": -3.64,
         "down_chg_pct": 0.0,
         "score": 100.0,
         "reasons": [
-          "Lead GS -3.7% (|chg|>=2.5%, dir=SHORT, sign=+1)",
+          "Lead GS -3.6% (|chg|>=2.5%, dir=SHORT, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
           "CATALYST_CONFIRMED(ALPACA_NEWS,BENZINGA_RATINGS,TIER_1_WIRE)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
@@ -470,11 +470,11 @@
       {
         "lead": "MU",
         "symbol": "ONTO",
-        "lead_chg_pct": -10.45,
+        "lead_chg_pct": -10.65,
         "down_chg_pct": 0.0,
         "score": 100.0,
         "reasons": [
-          "Lead MU -10.4% (|chg|>=2.0%, dir=SHORT, sign=+1)",
+          "Lead MU -10.7% (|chg|>=2.0%, dir=SHORT, sign=+1)",
           "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
           "CATALYST_CONFIRMED(ALPACA_NEWS,BENZINGA_RATINGS,TIER_1_WIRE)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
@@ -483,11 +483,37 @@
       {
         "lead": "AMAT",
         "symbol": "KLAC",
-        "lead_chg_pct": -8.9,
+        "lead_chg_pct": -9.07,
         "down_chg_pct": 0.0,
         "score": 100.0,
         "reasons": [
-          "Lead AMAT -8.9% (|chg|>=2.0%, dir=SHORT, sign=+1)",
+          "Lead AMAT -9.1% (|chg|>=2.0%, dir=SHORT, sign=+1)",
+          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
+          "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
+          "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
+        ]
+      },
+      {
+        "lead": "CEG",
+        "symbol": "CCJ",
+        "lead_chg_pct": -4.8,
+        "down_chg_pct": 0.0,
+        "score": 95.5,
+        "reasons": [
+          "Lead CEG -4.8% (|chg|>=2.5%, dir=SHORT, sign=+1)",
+          "MODERATE_LEAD_SHOCK (>= 3.0%)",
+          "CATALYST_CONFIRMED(TIER_1_WIRE)",
+          "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "CAMT",
+        "lead_chg_pct": -7.02,
+        "down_chg_pct": 0.0,
+        "score": 94.5,
+        "reasons": [
+          "Lead TSM -7.0% (|chg|>=2.0%, dir=SHORT, sign=+1)",
           "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
           "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
@@ -496,7 +522,7 @@
       {
         "lead": "MPC",
         "symbol": "PSX",
-        "lead_chg_pct": -3.5,
+        "lead_chg_pct": -3.46,
         "down_chg_pct": 0.0,
         "score": 94.5,
         "reasons": [
@@ -509,7 +535,7 @@
       {
         "lead": "PWR",
         "symbol": "EME",
-        "lead_chg_pct": -7.34,
+        "lead_chg_pct": -7.3,
         "down_chg_pct": 0.0,
         "score": 89.0,
         "reasons": [
@@ -524,7 +550,7 @@
       {
         "lead": "TSM",
         "symbol": "AMAT",
-        "lead_chg_pct": -6.89,
+        "lead_chg_pct": -7.02,
         "down_chg_pct": 0.0,
         "score": 64.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -536,7 +562,7 @@
       {
         "lead": "MU",
         "symbol": "STX",
-        "lead_chg_pct": -10.45,
+        "lead_chg_pct": -10.65,
         "down_chg_pct": 0.0,
         "score": 64.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -548,7 +574,7 @@
       {
         "lead": "NVDA",
         "symbol": "COHR",
-        "lead_chg_pct": -8.05,
+        "lead_chg_pct": -8.18,
         "down_chg_pct": 0.0,
         "score": 64.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -560,7 +586,7 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": -8.96,
+        "lead_chg_pct": -9.02,
         "down_chg_pct": 0.0,
         "score": 64.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -572,18 +598,19 @@
       {
         "lead": "NVDA",
         "symbol": "LITE",
-        "lead_chg_pct": -8.05,
+        "lead_chg_pct": -8.18,
         "down_chg_pct": 0.0,
         "score": 63.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
         "lead": "ORCL",
         "symbol": "IBM",
-        "lead_chg_pct": -7.98,
+        "lead_chg_pct": -8.19,
         "down_chg_pct": 0.0,
         "score": 63.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -594,7 +621,7 @@
       {
         "lead": "DAL",
         "symbol": "AAL",
-        "lead_chg_pct": -4.51,
+        "lead_chg_pct": -4.64,
         "down_chg_pct": 0.0,
         "score": 62.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -605,7 +632,7 @@
       {
         "lead": "MSFT",
         "symbol": "NOW",
-        "lead_chg_pct": -3.21,
+        "lead_chg_pct": -3.28,
         "down_chg_pct": 0.0,
         "score": 62.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -616,7 +643,7 @@
       {
         "lead": "GOOGL",
         "symbol": "AMZN",
-        "lead_chg_pct": -4.8,
+        "lead_chg_pct": -4.96,
         "down_chg_pct": 0.0,
         "score": 58.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -628,7 +655,7 @@
       {
         "lead": "GLD",
         "symbol": "NEM",
-        "lead_chg_pct": -3.06,
+        "lead_chg_pct": -3.1,
         "down_chg_pct": 0.0,
         "score": 57.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -639,7 +666,7 @@
       {
         "lead": "MS",
         "symbol": "GS",
-        "lead_chg_pct": -3.35,
+        "lead_chg_pct": -3.47,
         "down_chg_pct": 0.0,
         "score": 57.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -651,18 +678,19 @@
       {
         "lead": "NEM",
         "symbol": "AEM",
-        "lead_chg_pct": -4.07,
+        "lead_chg_pct": -4.23,
         "down_chg_pct": 0.0,
         "score": 57.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
         "lead": "DAL",
         "symbol": "UAL",
-        "lead_chg_pct": -4.51,
+        "lead_chg_pct": -4.64,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -674,7 +702,7 @@
       {
         "lead": "ETN",
         "symbol": "PWR",
-        "lead_chg_pct": -4.41,
+        "lead_chg_pct": -4.63,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -684,31 +712,32 @@
         ]
       },
       {
-        "lead": "CEG",
-        "symbol": "CCJ",
-        "lead_chg_pct": -4.74,
+        "lead": "USO",
+        "symbol": "DAL",
+        "lead_chg_pct": 2.01,
         "down_chg_pct": 0.0,
-        "score": 49.0,
+        "score": 48.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       }
     ],
     "blocker_counts": {
       "BELOW_930_INTRADAY_OPEN": 19,
-      "BELOW_INTRADAY_VWAP": 14,
-      "UNQUALIFIED": 3
+      "BELOW_INTRADAY_VWAP": 16,
+      "UNQUALIFIED": 2
     },
     "app_health": {
       "backend_50425": {
         "ok": true,
-        "latency_ms": 1.1,
+        "latency_ms": 1.3,
         "trading_enabled": false
       },
       "gateway_50426": {
         "ok": true,
-        "latency_ms": 3.3,
+        "latency_ms": 4.1,
         "trading_enabled": false
       }
     }
@@ -768,17 +797,17 @@
       "asset_class": "us_equity",
       "qty": 28.0,
       "avg_entry_price": 24.19,
-      "current_price": 24.435,
-      "market_value": 684.18,
-      "unrealized_pl": 6.86,
-      "unrealized_plpc": 0.01013,
-      "unrealized_plpc_pct": 1.01,
+      "current_price": 24.445,
+      "market_value": 684.46,
+      "unrealized_pl": 7.14,
+      "unrealized_plpc": 0.01054,
+      "unrealized_plpc_pct": 1.05,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 23.46,
       "eod_exit_decision": "BANK_100PCT_INTRADAY_PROFIT",
       "eod_sell_qty": 28,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 0.49
+      "dist_to_runner_pct": 0.45
     },
     {
       "symbol": "HPQ",
@@ -786,17 +815,17 @@
       "asset_class": "us_equity",
       "qty": 11.0,
       "avg_entry_price": 31.026364,
-      "current_price": 30.66,
-      "market_value": 337.26,
-      "unrealized_pl": -4.03,
-      "unrealized_plpc": -0.01181,
-      "unrealized_plpc_pct": -1.18,
+      "current_price": 30.605,
+      "market_value": 336.655,
+      "unrealized_pl": -4.64,
+      "unrealized_plpc": -0.01358,
+      "unrealized_plpc_pct": -1.36,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 30.1,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 11,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 2.68
+      "dist_to_runner_pct": 2.86
     }
   ],
   "sessions": {
