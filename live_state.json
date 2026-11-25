@@ -1,9 +1,9 @@
 {
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
-  "generated_at": 1795620763.8129091,
-  "generated_at_iso": "2026-11-25T15:32:43.812909+00:00",
-  "generated_at_et": "2026-11-25 10:32:43 ET",
+  "generated_at": 1795620787.604575,
+  "generated_at_iso": "2026-11-25T15:33:07.604575+00:00",
+  "generated_at_et": "2026-11-25 10:33:07 ET",
   "today_date": "2026-11-25",
   "default_active_date": "2026-11-24",
   "available_dates": [
@@ -24,16 +24,16 @@
     "status": "ACTIVE",
     "currency": "USD",
     "cash": 75775.87,
-    "buying_power": 305967.91,
-    "equity": 76798.88,
+    "buying_power": 305960.4,
+    "equity": 76796.2,
     "last_equity": 76794.48,
     "baseline_equity": 97541.35,
-    "daily_change_usd": 4.4,
-    "daily_change_pct": 0.01,
-    "vs_baseline_usd": -20742.47,
+    "daily_change_usd": 1.72,
+    "daily_change_pct": 0.0,
+    "vs_baseline_usd": -20745.15,
     "vs_baseline_pct": -21.27,
-    "deployed_capital": 1022.35,
-    "open_unrealized_pnl": 3.74,
+    "deployed_capital": 1020.38,
+    "open_unrealized_pnl": 1.77,
     "open_positions_count": 2,
     "cumulative_realized_gross": "-1422.16",
     "total_confirmed_fills": 1089
@@ -45,8 +45,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795620764.401862,
-    "observed_at_et": "2026-11-25 10:32:44 ET",
+    "observed_at": 1795620790.632705,
+    "observed_at_et": "2026-11-25 10:33:10 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -94,7 +94,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "CRML",
@@ -108,7 +108,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "KLAC",
@@ -122,7 +122,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "MRVL",
@@ -136,7 +136,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "SMCI",
@@ -150,7 +150,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "TSM",
@@ -164,7 +164,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "VRT",
@@ -178,7 +178,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "AAPL",
@@ -191,7 +191,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "AMD",
@@ -204,7 +204,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "ARM",
@@ -217,7 +217,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "CBRS",
@@ -230,7 +230,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "MU",
@@ -243,7 +243,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "NVDA",
@@ -256,7 +256,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "PL",
@@ -269,7 +269,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "SNDK",
@@ -282,7 +282,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "ASML",
@@ -295,7 +295,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "CAMT",
@@ -308,7 +308,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "DHI",
@@ -321,7 +321,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "EQT",
@@ -334,7 +334,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "POWL",
@@ -347,7 +347,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "VLO",
@@ -360,7 +360,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-25 10:32:44 ET"
+        "observed_et": "2026-11-25 10:33:10 ET"
       },
       {
         "symbol": "MARA",
@@ -769,17 +769,17 @@
       "asset_class": "us_equity",
       "qty": 28.0,
       "avg_entry_price": 24.19,
-      "current_price": 24.385,
-      "market_value": 682.78,
-      "unrealized_pl": 5.46,
-      "unrealized_plpc": 0.00806,
-      "unrealized_plpc_pct": 0.81,
+      "current_price": 24.36,
+      "market_value": 682.08,
+      "unrealized_pl": 4.76,
+      "unrealized_plpc": 0.00703,
+      "unrealized_plpc_pct": 0.7,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 23.46,
       "eod_exit_decision": "BANK_100PCT_INTRADAY_PROFIT",
       "eod_sell_qty": 28,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 0.69
+      "dist_to_runner_pct": 0.8
     },
     {
       "symbol": "HPQ",
@@ -787,17 +787,17 @@
       "asset_class": "us_equity",
       "qty": 11.0,
       "avg_entry_price": 31.026364,
-      "current_price": 30.87,
-      "market_value": 339.57,
-      "unrealized_pl": -1.72,
-      "unrealized_plpc": -0.00504,
-      "unrealized_plpc_pct": -0.5,
+      "current_price": 30.755,
+      "market_value": 338.305,
+      "unrealized_pl": -2.99,
+      "unrealized_plpc": -0.00875,
+      "unrealized_plpc_pct": -0.88,
       "ratchet_tier": "Tier 0 \u00b7 Initial Stop (-3.0%)",
       "stop_floor": 30.1,
       "eod_exit_decision": "CUT_UNCUSHIONED_EOD",
       "eod_sell_qty": 11,
       "eod_retain_qty": 0,
-      "dist_to_runner_pct": 2.0
+      "dist_to_runner_pct": 2.38
     }
   ],
   "sessions": {
