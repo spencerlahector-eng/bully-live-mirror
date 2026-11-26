@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "mac_local",
-  "generated_at": 1795702144.100605,
-  "generated_at_iso": "2026-11-26T14:09:04.100605+00:00",
-  "generated_at_et": "2026-11-26 09:09:04 ET",
+  "generated_at": 1795704903.2037692,
+  "generated_at_iso": "2026-11-26T14:55:03.203769+00:00",
+  "generated_at_et": "2026-11-26 09:55:03 ET",
   "today_date": "2026-11-26",
   "default_active_date": "2026-11-25",
   "available_dates": [
@@ -46,13 +46,13 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795702144.735056,
-    "observed_at_et": "2026-11-26 09:09:04 ET",
+    "observed_at": 1795704903.815155,
+    "observed_at_et": "2026-11-26 09:55:03 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
     "reconciliation_age_seconds": null,
-    "session_window": "PRE_MARKET_SURVEILLANCE",
+    "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$350 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
   },
@@ -95,7 +95,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "CRML",
@@ -109,7 +109,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "KLAC",
@@ -123,7 +123,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "MRVL",
@@ -137,7 +137,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "SMCI",
@@ -151,7 +151,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "TSM",
@@ -165,7 +165,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "VRT",
@@ -179,7 +179,7 @@
           "JACKPOT_ATLAS",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "AAPL",
@@ -192,7 +192,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "AMD",
@@ -205,7 +205,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "ARM",
@@ -218,7 +218,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "CBRS",
@@ -231,7 +231,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "MU",
@@ -244,7 +244,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "NVDA",
@@ -257,7 +257,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "PL",
@@ -270,7 +270,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "SNDK",
@@ -283,7 +283,7 @@
           "BULLISH_CATALYST",
           "JACKPOT_ATLAS"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "ASML",
@@ -296,7 +296,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "CAMT",
@@ -309,7 +309,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "DHI",
@@ -322,7 +322,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "EQT",
@@ -335,7 +335,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "POWL",
@@ -348,7 +348,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "VLO",
@@ -361,7 +361,7 @@
           "BULLISH_CATALYST",
           "PROPAGATION_BENEFICIARY"
         ],
-        "observed_et": "2026-11-26 09:09:04 ET"
+        "observed_et": "2026-11-26 09:55:03 ET"
       },
       {
         "symbol": "MARA",
@@ -405,9 +405,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-26T13:42:47.303361+00:00",
-    "timestamp_et": "2026-11-26 08:42:47 ET",
-    "observed_at": 1795700567.303361,
+    "timestamp_utc": "2026-11-26T14:24:28.283154+00:00",
+    "timestamp_et": "2026-11-26 09:24:28 ET",
+    "observed_at": 1795703068.283154,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -420,108 +420,19 @@
     "position_projections": [],
     "admitted_count": 0,
     "admitted_candidates": [],
-    "blocked_candidates_sample": [
-      {
-        "lead": "PANW",
-        "symbol": "CRWD",
-        "lead_chg_pct": -3.73,
-        "down_chg_pct": 0.0,
-        "score": 42.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "PANW",
-        "symbol": "FTNT",
-        "lead_chg_pct": -3.73,
-        "down_chg_pct": 0.0,
-        "score": 38.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ARM",
-        "symbol": "AVGO",
-        "lead_chg_pct": 2.66,
-        "down_chg_pct": 0.0,
-        "score": 37.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "PANW",
-        "symbol": "ZS",
-        "lead_chg_pct": -3.73,
-        "down_chg_pct": 0.0,
-        "score": 32.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "STX",
-        "symbol": "WDC",
-        "lead_chg_pct": 2.36,
-        "down_chg_pct": 0.0,
-        "score": 27.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 2.05,
-        "down_chg_pct": 0.0,
-        "score": 27.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "MU",
-        "symbol": "CAMT",
-        "lead_chg_pct": 2.33,
-        "down_chg_pct": 0.0,
-        "score": 17.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "MU",
-        "symbol": "ONTO",
-        "lead_chg_pct": 2.33,
-        "down_chg_pct": 0.0,
-        "score": 17.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      }
-    ],
+    "blocked_candidates_sample": [],
     "blocker_counts": {
-      "UNQUALIFIED": 9
+      "EVALUATOR_WARN": 1
     },
     "app_health": {
       "backend_50425": {
         "ok": true,
-        "latency_ms": 2.1,
+        "latency_ms": 4.0,
         "trading_enabled": false
       },
       "gateway_50426": {
         "ok": true,
-        "latency_ms": 4.8,
+        "latency_ms": 9.8,
         "trading_enabled": false
       }
     }
@@ -556,17 +467,17 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-26 08:42:56 ET",
+    "updated_at_et": "2026-11-26 09:54:59 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-26T13:42:56.585872+00:00",
-        "last_published_utc": "2026-11-26T13:28:29+00:00"
+        "last_received_utc": "2026-11-26T14:54:59.448354+00:00",
+        "last_published_utc": "2026-11-26T14:45:40+00:00"
       },
       "chatgpt": {
-        "count": 15,
-        "last_received_utc": "2026-11-26T13:24:28.048754+00:00",
-        "last_published_utc": "2026-11-26T13:15:06+00:00"
+        "count": 17,
+        "last_received_utc": "2026-11-26T14:54:59.448354+00:00",
+        "last_published_utc": "2026-11-26T14:39:06+00:00"
       },
       "benzinga": {
         "count": 1,
@@ -585,16 +496,66 @@
       }
     },
     "summary": {
-      "total_items": 226,
-      "new_ingested_this_call": 10,
-      "recycled_suppressed_this_call": 34,
+      "total_items": 228,
+      "new_ingested_this_call": 2,
+      "recycled_suppressed_this_call": 0,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 14,
+      "confirmed_catalysts": 15,
       "hard_vetoed": 36,
-      "recycled_suppressed_total": 42275,
+      "recycled_suppressed_total": 42333,
       "rejected_pit_total": 8
     },
     "items": [
+      {
+        "id": "ext-chatgpt-7b131a2563",
+        "channel": "chatgpt",
+        "source": "CHATGPT_SCHEDULED_TASK",
+        "symbol": "IMB",
+        "headline": "Altria confirms possible cash takeover of Imperial Brands under UK Rule 2.4",
+        "url": "https://www.lse.co.uk/rns/IMB/statement-re-possible-offer-4x51c92d7kje017.html",
+        "publisher": "ChatGPT",
+        "published_at_utc": "2026-11-26T14:39:06+00:00",
+        "received_at_utc": "2026-11-26T14:54:59.448354+00:00",
+        "fingerprint": "c3bc27b0ef726d22",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_1_BINDING",
+        "catalyst_score": 65.0,
+        "action": "CATALYST_CONFIRMED_ROUTE_TO_L0_L1",
+        "confirmed_catalyst": true,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-chatgpt-a7e36c302d",
+        "channel": "chatgpt",
+        "source": "CHATGPT_SCHEDULED_TASK",
+        "symbol": "MKA",
+        "headline": "Crown PropTech shareholders approve Mkango Rare Earths combination; Nasdaq approval and cash conditions remain",
+        "url": "https://www.sec.gov/Archives/edgar/data/1827899/000121390026124181/ea0313551-8k425_crown.htm",
+        "publisher": "ChatGPT",
+        "published_at_utc": "2026-11-26T14:10:30+00:00",
+        "received_at_utc": "2026-11-26T14:54:59.448354+00:00",
+        "fingerprint": "4b8f39098f0fd155",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-chatgpt-0a9114557a",
         "channel": "chatgpt",
@@ -920,33 +881,6 @@
         "is_hard_veto": false,
         "hard_veto_flags": [],
         "ibkr_fee_rate_pct": 0.3738,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-chatgpt-c9ddef49d9",
-        "channel": "chatgpt",
-        "source": "CHATGPT_SCHEDULED_TASK",
-        "symbol": "DKI",
-        "headline": "DarkIris SEC amendment corrects mobile game acquisition consideration from $30M to $3M amid extreme share repricing",
-        "url": "https://www.sec.gov/Archives/edgar/data/2058584/000149315226054135/form6-ka.htm",
-        "publisher": "ChatGPT",
-        "published_at_utc": "2026-11-25T23:02:20+00:00",
-        "received_at_utc": "2026-11-25T23:03:29.201195+00:00",
-        "fingerprint": "29a7f2da7d794036",
-        "form_hint": "OTHER",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_WARRANT_OVERHANG"
-        ],
-        "ibkr_fee_rate_pct": 254.3765,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1505,31 +1439,6 @@
         "shadow_only": true,
         "trading_enabled": false,
         "promotion_allowed": false
-      },
-      {
-        "id": "ext-chatgpt-28fef1ca01",
-        "channel": "chatgpt",
-        "source": "CHATGPT_MOBILE_INTAKE",
-        "symbol": "DKS",
-        "headline": "Tuesday Nov 24 SEC 8-K Shockwave Watchlist (DKS, KSS, ANF, BURL, DLTR, KYMR, INSM, EMBC, BBY) with AAPL/TSLA mega-cap noise and toxic 424B5 diluters blocked.",
-        "url": null,
-        "publisher": "ChatGPT Research Intake",
-        "published_at_utc": "2026-11-24T14:38:30+00:00",
-        "received_at_utc": "2026-11-24T18:59:28.286876+00:00",
-        "fingerprint": "b9c50c1f093152c3",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_424B5_OFFERING"
-        ],
-        "ibkr_fee_rate_pct": 0.4389,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
       }
     ]
   },
@@ -1547,31 +1456,14 @@
       "2026-11-21",
       "2026-11-20"
     ],
-    "updated_at_et": "2026-11-26 09:09:04 ET",
-    "total_events": 216,
+    "updated_at_et": "2026-11-26 09:55:03 ET",
+    "total_events": 218,
     "counts_by_category": {
-      "BLOCKED": 1,
-      "HEARTBEAT": 215
+      "BLOCKED": 2,
+      "HEARTBEAT": 215,
+      "SHOCKWAVE": 1
     },
     "entries": [
-      {
-        "id": "fr-hb-126-1795678235",
-        "ts_et": "2026-11-26 02:30:35 ET",
-        "ts_utc": "2026-11-26T07:30:35Z",
-        "category": "HEARTBEAT",
-        "symbols": [],
-        "summary": "Scanning (PRE_MARKET_SURVEILLANCE) \u00b7 0 open pos \u00b7 0 admitted \u00b7 9 blocked",
-        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
-      },
-      {
-        "id": "fr-hb-127-1795678310",
-        "ts_et": "2026-11-26 02:31:50 ET",
-        "ts_utc": "2026-11-26T07:31:50Z",
-        "category": "HEARTBEAT",
-        "symbols": [],
-        "summary": "Scanning (PRE_MARKET_SURVEILLANCE) \u00b7 0 open pos \u00b7 0 admitted \u00b7 9 blocked",
-        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
-      },
       {
         "id": "fr-hb-128-1795678388",
         "ts_et": "2026-11-26 02:33:08 ET",
@@ -2633,6 +2525,26 @@
         "symbols": [],
         "summary": "Scanning (PRE_MARKET_SURVEILLANCE) \u00b7 0 open pos \u00b7 0 admitted \u00b7 9 blocked",
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
+      },
+      {
+        "id": "fr-blk-280-1795703068",
+        "ts_et": "2026-11-26 09:24:28 ET",
+        "ts_utc": "2026-11-26T14:24:28Z",
+        "category": "BLOCKED",
+        "symbols": [],
+        "summary": "BLOCKED gate summary: 1 EVALUATOR_WARN",
+        "detail": "phase=PRE_MARKET_SURVEILLANCE"
+      },
+      {
+        "id": "cat-4-1795703946",
+        "ts_et": "2026-11-26 09:39:06 ET",
+        "ts_utc": "2026-11-26T14:39:06Z",
+        "category": "SHOCKWAVE",
+        "symbols": [
+          "IMB"
+        ],
+        "summary": "CATALYST [CHATGPT] IMB: Altria confirms possible cash takeover of Imperial Brands under UK Rule 2.4",
+        "detail": "source=CHATGPT_SCHEDULED_TASK \u00b7 status=STAGED_REVIEW_SHADOW"
       }
     ]
   },
