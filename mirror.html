@@ -437,14 +437,8 @@
       document.querySelectorAll('[data-section]').forEach(sec => {
         if (tab === 'all') {
           sec.hidden = false;
-        } else if (tab === 'decisions') {
-          sec.hidden = sec.dataset.section !== 'decisions' && sec.dataset.section !== 'overview';
-        } else if (tab === 'positions') {
-          sec.hidden = sec.dataset.section !== 'positions' && sec.dataset.section !== 'overview';
-        } else if (tab === 'trades') {
-          sec.hidden = sec.dataset.section !== 'trades' && sec.dataset.section !== 'overview';
-        } else if (tab === 'intake') {
-          sec.hidden = sec.dataset.section !== 'intake' && sec.dataset.section !== 'overview';
+        } else {
+          sec.hidden = sec.dataset.section !== tab && sec.dataset.section !== 'overview';
         }
       });
     }
@@ -471,11 +465,11 @@
     }
 
     async function refreshSnapshot() {
-      // Determine priority order based on current host
+      // Cloud-first priority when running on GitHub Pages / cellular (zero 4.5s Tailscale timeout when Mac sleeps!)
       const isLocalOrTs = location.hostname === '127.0.0.1' || location.hostname === 'localhost' || location.hostname.endsWith('.ts.net');
       const ordered = isLocalOrTs
         ? ['/api/mirror-snapshot', './live_state.json', 'https://raw.githubusercontent.com/spencerlahector-eng/bully-live-mirror/main/live_state.json']
-        : ['https://larrys-macbook-air.tail2576f3.ts.net/api/mirror-snapshot', './live_state.json', 'https://raw.githubusercontent.com/spencerlahector-eng/bully-live-mirror/main/live_state.json'];
+        : ['https://raw.githubusercontent.com/spencerlahector-eng/bully-live-mirror/main/live_state.json', './live_state.json', 'https://larrys-macbook-air.tail2576f3.ts.net/api/mirror-snapshot'];
 
       for (const u of ordered) {
         try {
@@ -483,7 +477,13 @@
           const prevToday = currentSnap?.today_date || null;
           currentSnap = data;
           lastFetchSuccessMs = Date.now();
-          activeSourceLabel = u.includes('mirror-snapshot') ? 'LIVE MAC STREAM' : 'CLOUD SYNC MIRROR';
+          if (u.includes('mirror-snapshot')) {
+            activeSourceLabel = 'LIVE MAC STREAM';
+          } else if (data.publisher_host === 'render_cloud') {
+            activeSourceLabel = 'RENDER CLOUD';
+          } else {
+            activeSourceLabel = 'CLOUD SYNC MIRROR';
+          }
           try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (_) {}
           if (!selectedDate || !data.sessions || !data.sessions[selectedDate] || (prevToday && data.today_date && data.today_date !== prevToday && selectedDate === prevToday)) {
             selectedDate = data.default_active_date || data.today_date;
@@ -794,7 +794,136 @@
       if (data.mobile_overrides) {
         renderMobileOverrides(data.mobile_overrides, false);
       }
+      renderDecisionStream(data.decision_stream);
+      renderAlertsAndShockwave(data.notifications_feed);
     }
+
+    function renderDecisionStream(ds) {
+      const box = $('mirror-ds-log');
+      const pill = $('stream-count-pill');
+      const foot = $('mirror-ds-foot');
+      if (!box) return;
+      const entries = Array.isArray(ds?.entries) ? ds.entries : [];
+      const filtered = entries.filter(e => {
+        if (streamCatFilter !== 'ALL' && String(e.category || '').toUpperCase() !== streamCatFilter) return false;
+        if (streamSymFilter) {
+          const syms = Array.isArray(e.symbols) ? e.symbols.join(' ').toUpperCase() : '';
+          const txt = (String(e.summary || '') + ' ' + String(e.detail || '')).toUpperCase();
+          if (!syms.includes(streamSymFilter) && !txt.includes(streamSymFilter)) return false;
+        }
+        return true;
+      });
+      if (pill) pill.textContent = `${filtered.length} / ${ds?.total_events ?? entries.length} EVENTS`;
+      if (foot) foot.textContent = `Session: ${ds?.session_date_et || '—'} · Updated: ${ds?.updated_at_et || '—'} · Read-only (0% execution)`;
+      box.replaceChildren();
+      if (!filtered.length) {
+        const em = document.createElement('div');
+        em.className = 'stat-sub';
+        em.style.padding = '12px 4px';
+        em.textContent = 'No decision stream events match this filter yet.';
+        box.append(em);
+        return;
+      }
+      filtered.slice(-80).reverse().forEach(e => {
+        const row = document.createElement('div');
+        row.className = 'ds-line';
+        const shortT = String(e.ts_et || '').split(' ')[1] || String(e.ts_et || '');
+        const cat = String(e.category || 'HEARTBEAT').toUpperCase();
+        row.innerHTML = `
+          <span style="color:#64748b;font-size:10px;">${escHtml(shortT)}</span>
+          <span class="ds-cat ds-cat-${escHtml(cat)}">${escHtml(cat)}</span>
+          <div style="min-width:0;overflow-wrap:anywhere;">
+            <div style="color:#f1f5f9;font-weight:600;">${escHtml(e.summary || '')}</div>
+            ${e.detail ? `<div style="color:#94a3b8;font-size:10px;">${escHtml(e.detail)}</div>` : ''}
+          </div>
+        `;
+        box.append(row);
+      });
+    }
+
+    function renderAlertsAndShockwave(nf) {
+      const list = $('mirror-alerts-list');
+      const counts = $('mirror-alert-counts');
+      if (!list) return;
+      const ch = nf?.channels || {};
+      if (counts) {
+        counts.textContent = `SEC: ${ch.sec_edgar?.count ?? 0} · ChatGPT: ${ch.chatgpt?.count ?? 0} · Shockwave: ${ch.shockwave_watch?.count ?? 0} · Benzinga: ${ch.benzinga?.count ?? 0}`;
+      }
+      const items = Array.isArray(nf?.items) ? nf.items : [];
+      const filtered = items.filter(it => alertChannelFilter === 'ALL' || String(it.channel || '').toLowerCase() === alertChannelFilter);
+      list.replaceChildren();
+      if (!filtered.length) {
+        const em = document.createElement('div');
+        em.className = 'item stat-sub';
+        em.textContent = 'No live alerts in this channel yet (Shadow / Read-Only).';
+        list.append(em);
+        return;
+      }
+      filtered.slice(0, 35).forEach(it => {
+        const channel = String(it.channel || '').toLowerCase();
+        const isSw = channel === 'shockwave_watch';
+        const isVeto = Boolean(it.is_hard_veto);
+        const card = document.createElement('div');
+        card.className = 'item' + (isSw ? ' sw-shadow-card' : '') + (isVeto ? ' veto-card' : '');
+        const chTag = channel === 'sec_edgar' ? 'SEC' : channel === 'shockwave_watch' ? 'SHADOW SHOCKWAVE' : channel.toUpperCase();
+        const badgeCls = isVeto ? 'pill-err' : (isSw ? 'pill-purple' : (it.action === 'CATALYST_CONFIRMED_ROUTE_TO_L0_L1' ? 'pill-ok' : 'pill-cyan'));
+        const statusTxt = isVeto
+          ? ('HARD_VETO' + ((it.hard_veto_flags || []).length ? ': ' + it.hard_veto_flags[0] : ''))
+          : (isSw ? `${it.routing_tag || 'STOCK_ONLY'} · ${it.invalidation_state || 'ACTIVE'}` : (it.action === 'CATALYST_CONFIRMED_ROUTE_TO_L0_L1' ? 'CONFIRMED' : (it.clarity_tier || 'STAGED')));
+        const titleSym = isSw ? `${it.leader_ticker || '?'} → ${it.follower_ticker || it.symbol || '?'}` : (it.symbol || 'MARKET');
+        const linkHtml = it.url && String(it.url).startsWith('https://')
+          ? `<a href="${escHtml(it.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);font-size:11px;text-decoration:none;">Filing / Source ↗</a>`
+          : '';
+        card.innerHTML = `
+          <div class="row-between">
+            <div>
+              <span class="sym">${escHtml(titleSym)}</span>
+              <span class="pill pill-cyan" style="margin-left:5px;">${escHtml(chTag)}${it.form_hint ? ' ' + escHtml(it.form_hint) : ''}</span>
+              <span class="pill ${badgeCls}" style="margin-left:4px;">${escHtml(statusTxt)}</span>
+            </div>
+            <span class="mono stat-sub">score=${Number(it.catalyst_score || 0).toFixed(0)}</span>
+          </div>
+          <div class="stat-sub" style="color:#e2e8f0;">${escHtml(it.headline || '')}</div>
+          <div class="row-between">
+            <span class="mono stat-sub">${escHtml(it.published_at_utc || '')}</span>
+            ${linkHtml}
+          </div>
+        `;
+        list.append(card);
+      });
+    }
+
+    document.querySelectorAll('#mirror-ds-pills [data-ds-cat]').forEach(btn => {
+      btn.onclick = () => {
+        streamCatFilter = btn.getAttribute('data-ds-cat') || 'ALL';
+        document.querySelectorAll('#mirror-ds-pills [data-ds-cat]').forEach(b => b.classList.toggle('active', b === btn));
+        renderDecisionStream(currentSnap?.decision_stream);
+      };
+    });
+    if ($('mirror-ds-sym')) {
+      $('mirror-ds-sym').addEventListener('input', () => {
+        streamSymFilter = $('mirror-ds-sym').value.trim().toUpperCase();
+        renderDecisionStream(currentSnap?.decision_stream);
+      });
+    }
+    if ($('btn-copy-stream')) {
+      $('btn-copy-stream').onclick = async () => {
+        const entries = Array.isArray(currentSnap?.decision_stream?.entries) ? currentSnap.decision_stream.entries : [];
+        const txt = entries.map(e => `[${e.ts_et || ''}] [${e.category || ''}] ${e.summary || ''}`).join('\n');
+        try {
+          await navigator.clipboard.writeText(txt || 'No events');
+          $('btn-copy-stream').textContent = '✓ Copied';
+          setTimeout(() => { $('btn-copy-stream').textContent = '📋 Copy Stream'; }, 1400);
+        } catch (_) {}
+      };
+    }
+    document.querySelectorAll('#mirror-alert-pills [data-al-ch]').forEach(btn => {
+      btn.onclick = () => {
+        alertChannelFilter = btn.getAttribute('data-al-ch') || 'ALL';
+        document.querySelectorAll('#mirror-alert-pills [data-al-ch]').forEach(b => b.classList.toggle('active', b === btn));
+        renderAlertsAndShockwave(currentSnap?.notifications_feed);
+      };
+    });
 
     let intakeFormDirty = false;
     ['intake-watched', 'intake-blocked', 'intake-spread', 'intake-alloc', 'intake-pause'].forEach(id => {
@@ -809,8 +938,8 @@
     function renderMobileOverrides(ov, syncInputs = false) {
       if (!ov || typeof ov !== 'object') return;
       const paused = Boolean(ov.pause_new_entries);
-      const spread = Number(ov.max_option_entry_spread_pct ?? 6.0).toFixed(1);
-      const alloc = Number(ov.max_allocation_per_trade_usd ?? 500).toFixed(0);
+      const spread = Number(ov.max_option_entry_spread_pct ?? 8.0).toFixed(1);
+      const alloc = Number(ov.max_allocation_per_trade_usd ?? 350).toFixed(0);
       const watched = Array.isArray(ov.watched_symbols) ? ov.watched_symbols : [];
       const blocked = Array.isArray(ov.blocked_symbols) ? ov.blocked_symbols : [];
 
@@ -887,8 +1016,8 @@
         note: $('intake-note').value.trim(),
         watched_symbols: $('intake-watched').value,
         blocked_symbols: $('intake-blocked').value,
-        max_option_entry_spread_pct: Number($('intake-spread').value || 6.0),
-        max_allocation_per_trade_usd: Number($('intake-alloc').value || 500),
+        max_option_entry_spread_pct: Number($('intake-spread').value || 8.0),
+        max_allocation_per_trade_usd: Number($('intake-alloc').value || 350),
         pause_new_entries: $('intake-pause').value === 'true'
       });
     };
