@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795798947.4755082,
-  "generated_at_iso": "2026-11-27T17:02:27.475508+00:00",
-  "generated_at_et": "2026-11-27 12:02:27 ET",
+  "generated_at": 1795798998.0059402,
+  "generated_at_iso": "2026-11-27T17:03:18.005940+00:00",
+  "generated_at_et": "2026-11-27 12:03:18 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795798946.7011302,
-    "observed_at_et": "2026-11-27 12:02:26 ET",
-    "reconciliation_at": 1795798941.3478749,
-    "reconciliation_at_et": "2026-11-27 12:02:21 ET",
-    "heartbeat_age_seconds": 1.2,
-    "reconciliation_age_seconds": 6.5,
+    "observed_at": 1795798996.2932043,
+    "observed_at_et": "2026-11-27 12:03:16 ET",
+    "reconciliation_at": 1795798990.666858,
+    "reconciliation_at_et": "2026-11-27 12:03:10 ET",
+    "heartbeat_age_seconds": 2.1,
+    "reconciliation_age_seconds": 7.7,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 55,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 29912
+      "RECONCILE": 29920
     },
     "latest_reconcile": {
-      "id": "reconcile-1795798947-912977",
-      "timestamp_sec": 1795798947,
-      "time_et": "2026-11-27 12:02:27 ET",
+      "id": "reconcile-1795798997-0bd687",
+      "timestamp_sec": 1795798997,
+      "time_et": "2026-11-27 12:03:17 ET",
       "free_cash": 76832.71,
       "position_value": 0.0,
       "total_equity": 76832.71,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T17:02:05.722186+00:00",
-    "timestamp_et": "2026-11-27 12:02:05 ET",
-    "observed_at": 1795798925.722186,
+    "timestamp_utc": "2026-11-27T17:03:06.110739+00:00",
+    "timestamp_et": "2026-11-27 12:03:06 ET",
+    "observed_at": 1795798986.110739,
     "gate_phase": "RTH_ACTIVE_ENTRY_AND_RATCHET",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,32 +675,19 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 2,
+    "admitted_count": 1,
     "admitted_candidates": [
       {
         "lead": "MOS",
         "symbol": "CF",
-        "lead_chg_pct": 3.66,
+        "lead_chg_pct": 3.56,
         "down_chg_pct": 0.0,
         "score": 92.0,
         "reasons": [
-          "Lead MOS +3.7% (|chg|>=2.5%, dir=LONG, sign=+1)",
+          "Lead MOS +3.6% (|chg|>=2.5%, dir=LONG, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
           "SW_STALE_MULTIDAY_CATALYST_IGNORED(age=3.0h,rule=OVERNIGHT_PAST_1130ET)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
-        ]
-      },
-      {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.61,
-        "down_chg_pct": 0.0,
-        "score": 92.0,
-        "reasons": [
-          "Lead AVGO +3.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "SW_STALE_MULTIDAY_CATALYST_IGNORED(age=2.5h,rule=OVERNIGHT_PAST_1130ET)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.57)"
         ]
       }
     ],
@@ -708,7 +695,7 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": 5.85,
+        "lead_chg_pct": 5.37,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -717,20 +704,9 @@
         ]
       },
       {
-        "lead": "CRWD",
-        "symbol": "PANW",
-        "lead_chg_pct": 3.06,
-        "down_chg_pct": 0.0,
-        "score": 58.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 11.87,
+        "lead_chg_pct": 11.17,
         "down_chg_pct": 0.0,
         "score": 55.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -739,22 +715,11 @@
         ]
       },
       {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 5.18,
+        "lead": "CRWD",
+        "symbol": "PANW",
+        "lead_chg_pct": 2.69,
         "down_chg_pct": 0.0,
-        "score": 55.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "MPC",
-        "symbol": "PSX",
-        "lead_chg_pct": 5.03,
-        "down_chg_pct": 0.0,
-        "score": 55.0,
+        "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
@@ -763,7 +728,7 @@
       {
         "lead": "JPM",
         "symbol": "BAC",
-        "lead_chg_pct": 2.43,
+        "lead_chg_pct": 2.38,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -774,7 +739,7 @@
       {
         "lead": "JPM",
         "symbol": "C",
-        "lead_chg_pct": 2.43,
+        "lead_chg_pct": 2.38,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -785,7 +750,7 @@
       {
         "lead": "MU",
         "symbol": "ONTO",
-        "lead_chg_pct": 6.68,
+        "lead_chg_pct": 6.12,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -796,29 +761,18 @@
       {
         "lead": "COHR",
         "symbol": "FN",
-        "lead_chg_pct": 11.87,
+        "lead_chg_pct": 11.17,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN"
         ]
       },
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.61,
-        "down_chg_pct": 0.0,
-        "score": 50.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ZS",
-        "symbol": "CRWD",
-        "lead_chg_pct": 3.24,
+        "lead_chg_pct": 3.19,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -829,7 +783,7 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.61,
+        "lead_chg_pct": 3.19,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -838,9 +792,20 @@
         ]
       },
       {
+        "lead": "AVGO",
+        "symbol": "AMZN",
+        "lead_chg_pct": 3.19,
+        "down_chg_pct": 0.0,
+        "score": 50.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
         "lead": "TSM",
         "symbol": "KLAC",
-        "lead_chg_pct": 2.87,
+        "lead_chg_pct": 2.54,
         "down_chg_pct": 0.0,
         "score": 49.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -851,7 +816,19 @@
       {
         "lead": "TSM",
         "symbol": "AMAT",
-        "lead_chg_pct": 2.87,
+        "lead_chg_pct": 2.54,
+        "down_chg_pct": 0.0,
+        "score": 49.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "LRCX",
+        "lead_chg_pct": 2.54,
         "down_chg_pct": 0.0,
         "score": 49.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -860,11 +837,22 @@
         ]
       },
       {
-        "lead": "TSM",
-        "symbol": "LRCX",
-        "lead_chg_pct": 2.87,
+        "lead": "JPM",
+        "symbol": "GS",
+        "lead_chg_pct": 2.38,
         "down_chg_pct": 0.0,
-        "score": 49.0,
+        "score": 48.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
+        "lead": "JPM",
+        "symbol": "MS",
+        "lead_chg_pct": 2.38,
+        "down_chg_pct": 0.0,
+        "score": 48.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "BELOW_930_INTRADAY_OPEN"
@@ -872,9 +860,9 @@
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 22,
-      "BELOW_930_INTRADAY_OPEN": 22,
-      "BELOW_INTRADAY_VWAP": 1,
+      "BELOW_930_INTRADAY_OPEN": 23,
+      "UNQUALIFIED": 21,
+      "BELOW_INTRADAY_VWAP": 6,
       "LEAD_BELOW_2PCT_BREAKOUT": 1
     },
     "app_health": {
@@ -918,12 +906,12 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 12:02:14 ET",
+    "updated_at_et": "2026-11-27 12:03:14 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T16:53:09.651230+00:00",
-        "last_published_utc": "2026-11-27T16:49:30+00:00"
+        "last_received_utc": "2026-11-27T17:03:00.583398+00:00",
+        "last_published_utc": "2026-11-27T16:57:26+00:00"
       },
       "chatgpt": {
         "count": 18,
@@ -932,8 +920,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T17:02:14.399587+00:00",
-        "last_published_utc": "2026-11-27T17:01:59+00:00"
+        "last_received_utc": "2026-11-27T17:03:14.717713+00:00",
+        "last_published_utc": "2026-11-27T17:02:30+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -948,76 +936,26 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 10,
+      "new_ingested_this_call": 9,
       "recycled_suppressed_this_call": 0,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
       "hard_vetoed": 32,
-      "recycled_suppressed_total": 200959,
+      "recycled_suppressed_total": 201156,
       "rejected_pit_total": 6
     },
     "items": [
       {
-        "id": "ext-benzinga-f938b1c67f",
+        "id": "ext-benzinga-0d2c5b0730",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ELPC",
-        "headline": "Opposition Lawmaker in Paran\u00e1 Requests Explanations from Copel Regarding Recent Blackouts",
-        "url": "https://palotinapress.com.br/artigo/geral/deputado-anuncia-requerimento-para-cobrar-explicacoes-da-copel-sobre-apagoes-no-parana-C-23498",
+        "symbol": "ADDT.B",
+        "headline": "Addtech Acquires Germany's BaSyTec",
+        "url": "https://www.marketscreener.com/news/addtech-acquires-germany-s-basytec-ce7851d9de8bf624",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:59+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "33b5e31db61ad9d5",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 2.5146,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-2929c14e29",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ELPC",
-        "headline": "Procon of Toledo Opens Investigation into Copel Following Power Outage Complaints",
-        "url": "https://palotinapress.com.br/artigo/geral/procon-de-toledo-investiga-copel-apos-reclamacoes-de-falta-de-energia-C-23500",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:59+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "cf0ce9810c9dcc0b",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 2.5146,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-78c650eb73",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "SDZ",
-        "headline": "AlphaValue/Baader Europe Upgrades Sandoz Group AG to Add",
-        "url": "https://ch.marketscreener.com/boerse-nachrichten/sandoz-group-ag-alphavalue-baader-europe-erhoeht-auf-kaufen-vom-verkaufen-ce7851d9df8ef12d",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:58+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "7a969e2d95238025",
+        "published_at_utc": "2026-11-27T17:02:30+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "5d7ec5617155108e",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1033,16 +971,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-94795b8ccc",
+        "id": "ext-benzinga-3e9617742e",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "PROX",
-        "headline": "BICS Enables Europe's First Commercial 5G Standalone Roaming Connection",
-        "url": "https://telcomagazine.com/news/elisa-drei-launch-europes-first-5g-sa-roaming-service",
+        "symbol": "RCO",
+        "headline": "Berenberg Research Maintains Neutral Rating on R\u00e9my Cointreau",
+        "url": "https://de.marketscreener.com/boerse-nachrichten/remy-cointreau-berenberg-research-bleibt-neutral-ce7851d9df81f627",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:57+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "0aa5e24dd5e50a63",
+        "published_at_utc": "2026-11-27T17:02:24+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "c40e88c514db69c9",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1058,16 +996,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-6398bd5817",
+        "id": "ext-benzinga-8701116bf7",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "MBG",
-        "headline": "New Electric Mercedes-Benz C-Class Launched in Greece",
-        "url": "https://www.euro2day.gr/amp/news/highlights/article-news/2382236/lampei-to-asteri-ths-neas-amigos-hlektrikhs-mercedesbenz-cclass--aytonomia-eos-762-hlm.html",
+        "symbol": "LIFCO.B",
+        "headline": "Lifco acquires Italian company EG Medical",
+        "url": "https://www.avanza.se/nyheter.html?a=%2Fanalys%2Fskf-koplage-efter-avknoppningen-2026-11-27",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:53+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "1d875206a7c10133",
+        "published_at_utc": "2026-11-27T17:02:12+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "a8b8ac8e0d61c26b",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1083,16 +1021,41 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-cd148a0a77",
+        "id": "ext-benzinga-c33f7ba610",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "MBG",
-        "headline": "Mercedes-Benz Plans New Joint Venture in Beijing for Component Procurement",
-        "url": "https://worldautoforum.com/mercedes-benz-plans-new-china-jv-for-local-auto-part-supplies/",
+        "symbol": "CAN",
+        "headline": "Launch of the CANAL+ Academy in South Africa",
+        "url": "https://www.einnews.com/pr_news/959364382/president-cyril-ramaphosa-launch-of-the-canal-academy-in-south-africa",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:53+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "4734d97fce489c3d",
+        "published_at_utc": "2026-11-27T17:02:12+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "37c9ea957f0cd47b",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 1.4991,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-59b578e261",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "BVI",
+        "headline": "AlphaValue/Baader Europe Downgrades Bureau Veritas to Sell",
+        "url": "https://de.marketscreener.com/boerse-nachrichten/bureau-veritas-sa-alphavalue-baader-europe-stuft-von-kaufen-auf-verkaufen-zurueck-ce7851d9df8ef02d",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T17:02:07+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "cc1f4dc637c82ee1",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1108,16 +1071,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-6dde5f0ac2",
+        "id": "ext-benzinga-8bb257c5cd",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "SDF",
-        "headline": "Berenberg Lowers Price Target for K+S to \u20ac10.80, Maintains 'Sell' Rating",
-        "url": "https://www.finanzen.at/nachrichten/aktien/analyse-flash-berenberg-senkt-ziel-fuer-k+s-auf-10-80-euro-sell-1036805402",
+        "symbol": "CPR",
+        "headline": "Campari Group Identified as Highly Exposed to Proposed US Trade Tariffs",
+        "url": "https://www.milanofinanza.it/news/dazi-usa-ecco-le-7-azioni-di-piazza-affari-che-rischiano-di-piu-con-la-nuova-stretta-al-15-sull-202611271102016856",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:53+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "3de11f10c92a1f6c",
+        "published_at_utc": "2026-11-27T17:02:05+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "9b0d4a0783b08248",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1133,16 +1096,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-cd7e2ed510",
+        "id": "ext-benzinga-d3130cc40c",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "AC",
-        "headline": "Berenberg Research Downgrades Accor to Hold",
-        "url": "https://www.marketscreener.com/news/berenberg-research-downgrades-accor-to-hold-trims-pt-ce7851d9df8ff523",
+        "symbol": "EPI.A",
+        "headline": "AlphaValue/Baader Europe Downgrades Epiroc to Add Rating",
+        "url": "https://www.marketscreener.com/news/alphavalue-baader-europe-downgrades-epiroc-to-add-rating-ce7851d9df8ff52d",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:49+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "a60678b3bf65760e",
+        "published_at_utc": "2026-11-27T17:02:04+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "2c095a9a97fc4685",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1158,16 +1121,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-61ea90cae9",
+        "id": "ext-benzinga-f5844e0e65",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "EQT",
-        "headline": "EQT Healthcare Growth Strategy Fund to Acquire Majority Stake in Kelso Pharma",
-        "url": "https://www.marketscreener.com/news/eqt-unit-to-buy-majority-stake-in-specialty-pharmaceutical-company-kelso-pharma-ce7851d9dd88f624",
+        "symbol": "BNR",
+        "headline": "AlphaValue/Baader Europe Downgrades Brenntag",
+        "url": "https://de.marketscreener.com/boerse-nachrichten/brenntag-se-alphavalue-baader-europe-stuft-alphavalue-baader-europe-zum-verkauf-zurueck-ce7851d9df8eff20",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:47+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "c6d7f5c43351c06f",
+        "published_at_utc": "2026-11-27T17:02:04+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "56e9b7db0c6dc9bc",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1175,7 +1138,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2782,
+        "ibkr_fee_rate_pct": 7.6729,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1183,16 +1146,41 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-641c57d02c",
+        "id": "ext-benzinga-67dd64f437",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HOT",
-        "headline": "CIMIC Group's UGL Secures Hunter Transmission Project Contract",
-        "url": "https://news.europawire.eu/ugl-secures-contract-for-500kv-switching-stations-and-substation-upgrades-on-hunter-transmission-project/2026/11/27/17/43/04/190054/",
+        "symbol": "AZM",
+        "headline": "Azimut Group Proposes $250 Million Financing for Sanctuary Wealth",
+        "url": "https://www.negociosmagazine.com/sanctuary-wealth-asegura-un-compromiso-de-financiacion-de-us250-millones-para-impulsar-su-crecimiento-desde-miami/",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T17:01:47+00:00",
-        "received_at_utc": "2026-11-27T17:02:14.399587+00:00",
-        "fingerprint": "aa827383a0eb8012",
+        "published_at_utc": "2026-11-27T17:02:01+00:00",
+        "received_at_utc": "2026-11-27T17:03:14.717713+00:00",
+        "fingerprint": "bcdfc46fd90dc40f",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-11e2e97595",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "URW",
+        "headline": "Unibail-Rodamco-Westfield Hosts Investor Event on Data and AI Strategy",
+        "url": "https://www.abcbourse.com/marches/agenda-du-30-novembre-au-4-decembre-l-inflation-europeenne-et-l-emploi-us-en-li_706791",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T17:02:00+00:00",
+        "received_at_utc": "2026-11-27T17:03:13.403115+00:00",
+        "fingerprint": "4081e1ea42a14628",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -2124,53 +2112,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 12:02:27 ET",
-    "total_events": 204,
+    "updated_at_et": "2026-11-27 12:03:18 ET",
+    "total_events": 206,
     "counts_by_category": {
       "SEC": 15,
-      "BLOCKED": 123,
-      "ADMITTED": 59,
+      "BLOCKED": 124,
+      "ADMITTED": 60,
       "TRADE": 4,
       "RATCHET": 2,
       "HEARTBEAT": 1
     },
     "entries": [
-      {
-        "id": "fr-blk-60-1795794103",
-        "ts_et": "2026-11-27 10:41:43 ET",
-        "ts_utc": "2026-11-27T15:41:43Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AAL",
-          "AMZN",
-          "BAC",
-          "C",
-          "FN",
-          "GOOGL",
-          "LITE",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 16 BELOW_930_INTRADAY_OPEN, 10 UNQUALIFIED, 5 BELOW_INTRADAY_VWAP, 1 LEAD_BELOW_2PCT_BREAKOUT, 1 ROOT_ALREADY_HELD",
-        "detail": "Examples: AVGO->AMZN (sc=100.0, ROOT_ALREADY_HELD); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=59.0, UNQUALIFIED); JPM->C (sc=57.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=54.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
-      },
-      {
-        "id": "fr-blk-61-1795794187",
-        "ts_et": "2026-11-27 10:43:07 ET",
-        "ts_utc": "2026-11-27T15:43:07Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "BAC",
-          "C",
-          "FN",
-          "GOOGL",
-          "LITE",
-          "ROST",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 16 BELOW_930_INTRADAY_OPEN, 8 UNQUALIFIED, 7 BELOW_INTRADAY_VWAP, 1 LEAD_BELOW_2PCT_BREAKOUT, 1 ROOT_ALREADY_HELD",
-        "detail": "Examples: AVGO->AMZN (sc=100.0, ROOT_ALREADY_HELD); TJX->ROST (sc=78.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=59.0, UNQUALIFIED); JPM->C (sc=57.0, BELOW_930_INTRADAY_OPEN)"
-      },
       {
         "id": "fr-rat-61-1795794187",
         "ts_et": "2026-11-27 10:43:07 ET",
@@ -2758,7 +2710,7 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED); JPM->C (sc=57.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-98-1795795776",
+        "id": "sec-110-1795795776",
         "ts_et": "2026-11-27 11:09:36 ET",
         "ts_utc": "2026-11-27T16:09:36Z",
         "category": "SEC",
@@ -2927,7 +2879,7 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-95-1795796195",
+        "id": "sec-107-1795796195",
         "ts_et": "2026-11-27 11:16:35 ET",
         "ts_utc": "2026-11-27T16:16:35Z",
         "category": "SEC",
@@ -3853,7 +3805,7 @@
         "detail": "Examples: STX->WDC (sc=60.0, UNQUALIFIED); ZS->PANW (sc=58.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=55.0, UNQUALIFIED); JPM->BAC (sc=53.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-31-1795798767",
+        "id": "sec-41-1795798767",
         "ts_et": "2026-11-27 11:59:27 ET",
         "ts_utc": "2026-11-27T16:59:27Z",
         "category": "SEC",
@@ -3952,6 +3904,35 @@
         ],
         "summary": "BLOCKED gate summary: 22 BELOW_930_INTRADAY_OPEN, 22 UNQUALIFIED, 1 BELOW_INTRADAY_VWAP, 1 LEAD_BELOW_2PCT_BREAKOUT",
         "detail": "Examples: STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=58.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=55.0, UNQUALIFIED); MPC->PSX (sc=55.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-adm-124-1795798986",
+        "ts_et": "2026-11-27 12:03:06 ET",
+        "ts_utc": "2026-11-27T17:03:06Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "CF"
+        ],
+        "summary": "ADMITTED 1 candidate(s): CF",
+        "detail": "CF (lead MOS) score=92.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
+      },
+      {
+        "id": "fr-blk-124-1795798986",
+        "ts_et": "2026-11-27 12:03:06 ET",
+        "ts_utc": "2026-11-27T17:03:06Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "ANET",
+          "BAC",
+          "C",
+          "FN",
+          "LITE",
+          "ONTO",
+          "PANW",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 23 BELOW_930_INTRADAY_OPEN, 21 UNQUALIFIED, 6 BELOW_INTRADAY_VWAP, 1 LEAD_BELOW_2PCT_BREAKOUT",
+        "detail": "Examples: STX->WDC (sc=60.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=53.0, UNQUALIFIED); JPM->BAC (sc=53.0, UNQUALIFIED); JPM->C (sc=53.0, UNQUALIFIED)"
       }
     ]
   },
