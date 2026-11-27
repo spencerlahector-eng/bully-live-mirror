@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795813782.0840309,
-  "generated_at_iso": "2026-11-27T21:09:42.084031+00:00",
-  "generated_at_et": "2026-11-27 16:09:42 ET",
+  "generated_at": 1795813836.0841951,
+  "generated_at_iso": "2026-11-27T21:10:36.084195+00:00",
+  "generated_at_et": "2026-11-27 16:10:36 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795813763.6301138,
-    "observed_at_et": "2026-11-27 16:09:23 ET",
-    "reconciliation_at": 1795813763.6298056,
-    "reconciliation_at_et": "2026-11-27 16:09:23 ET",
-    "heartbeat_age_seconds": 18.9,
-    "reconciliation_age_seconds": 18.9,
+    "observed_at": 1795813825.6910946,
+    "observed_at_et": "2026-11-27 16:10:25 ET",
+    "reconciliation_at": 1795813825.6908078,
+    "reconciliation_at_et": "2026-11-27 16:10:25 ET",
+    "heartbeat_age_seconds": 10.8,
+    "reconciliation_age_seconds": 10.8,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T21:08:50.363287+00:00",
-    "timestamp_et": "2026-11-27 16:08:50 ET",
-    "observed_at": 1795813730.363287,
+    "timestamp_utc": "2026-11-27T21:09:54.319917+00:00",
+    "timestamp_et": "2026-11-27 16:09:54 ET",
+    "observed_at": 1795813794.319917,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -840,13 +840,13 @@
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "UNQUALIFIED"
         ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 32,
-      "BELOW_930_INTRADAY_OPEN": 16,
+      "UNQUALIFIED": 33,
+      "BELOW_930_INTRADAY_OPEN": 15,
       "BELOW_INTRADAY_VWAP": 6,
       "STAGED_REVIEW": 1
     },
@@ -891,7 +891,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 16:09:35 ET",
+    "updated_at_et": "2026-11-27 16:10:23 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -915,8 +915,8 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T21:07:24.821244+00:00",
-        "last_published_utc": "2026-11-27T21:05:37+00:00"
+        "last_received_utc": "2026-11-27T21:09:44.385528+00:00",
+        "last_published_utc": "2026-11-27T21:08:03+00:00"
       }
     },
     "summary": {
@@ -924,12 +924,40 @@
       "new_ingested_this_call": 5,
       "recycled_suppressed_this_call": 38,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 10,
+      "confirmed_catalysts": 9,
       "hard_vetoed": 36,
-      "recycled_suppressed_total": 233864,
+      "recycled_suppressed_total": 233985,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-e14194331f",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "AUUD",
+        "headline": "8-K - AUDDIA INC. (0001554818) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1554818/000168316826009161/0001683168-26-009161-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:08:03+00:00",
+        "received_at_utc": "2026-11-27T21:09:44.385528+00:00",
+        "fingerprint": "6b2535708fb06ccb",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 20.0305,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "9.01"
+        ]
+      },
       {
         "id": "ext-sec_edgar-15b1632147",
         "channel": "sec_edgar",
@@ -1677,35 +1705,6 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-sec_edgar-890adfe634",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "AIFC",
-        "headline": "8-K - AI Financial Corp (0000862861) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/862861/000149315226054485/0001493152-26-054485-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T20:00:56+00:00",
-        "received_at_utc": "2026-11-27T20:01:36.078127+00:00",
-        "fingerprint": "2ccdcd291ee2e38c",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.4827,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "5.02",
-          "5.03"
-        ]
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2099,44 +2098,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 16:09:42 ET",
-    "total_events": 513,
+    "updated_at_et": "2026-11-27 16:10:36 ET",
+    "total_events": 515,
     "counts_by_category": {
-      "SEC": 47,
-      "BLOCKED": 300,
+      "SEC": 48,
+      "BLOCKED": 301,
       "ADMITTED": 122,
       "TRADE": 5,
       "RATCHET": 2,
       "HEARTBEAT": 37
     },
     "entries": [
-      {
-        "id": "fr-hb-262-1795808454",
-        "ts_et": "2026-11-27 14:40:54 ET",
-        "ts_utc": "2026-11-27T19:40:54Z",
-        "category": "HEARTBEAT",
-        "symbols": [],
-        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 1 admitted \u00b7 58 blocked",
-        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
-      },
-      {
-        "id": "fr-blk-263-1795808515",
-        "ts_et": "2026-11-27 14:41:55 ET",
-        "ts_utc": "2026-11-27T19:41:55Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AVGO",
-          "CRWD",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 28 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
       {
         "id": "fr-blk-264-1795808585",
         "ts_et": "2026-11-27 14:43:05 ET",
@@ -2410,7 +2382,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-32-1795809634",
+        "id": "sec-33-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -2430,7 +2402,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-31-1795809656",
+        "id": "sec-32-1795809656",
         "ts_et": "2026-11-27 15:00:56 ET",
         "ts_utc": "2026-11-27T20:00:56Z",
         "category": "SEC",
@@ -2515,7 +2487,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-25-1795809984",
+        "id": "sec-26-1795809984",
         "ts_et": "2026-11-27 15:06:24 ET",
         "ts_utc": "2026-11-27T20:06:24Z",
         "category": "SEC",
@@ -2999,7 +2971,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-21-1795811945",
+        "id": "sec-22-1795811945",
         "ts_et": "2026-11-27 15:39:05 ET",
         "ts_utc": "2026-11-27T20:39:05Z",
         "category": "SEC",
@@ -3480,7 +3452,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-20-1795813239",
+        "id": "sec-21-1795813239",
         "ts_et": "2026-11-27 16:00:39 ET",
         "ts_utc": "2026-11-27T21:00:39Z",
         "category": "SEC",
@@ -3521,7 +3493,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-18-1795813291",
+        "id": "sec-19-1795813291",
         "ts_et": "2026-11-27 16:01:31 ET",
         "ts_utc": "2026-11-27T21:01:31Z",
         "category": "SEC",
@@ -3532,7 +3504,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,7.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1892292/000121390026124552/0001213900-26-124552-index.htm"
       },
       {
-        "id": "sec-17-1795813293",
+        "id": "sec-18-1795813293",
         "ts_et": "2026-11-27 16:01:33 ET",
         "ts_utc": "2026-11-27T21:01:33Z",
         "category": "SEC",
@@ -3597,7 +3569,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-11-1795813514",
+        "id": "sec-12-1795813514",
         "ts_et": "2026-11-27 16:05:14 ET",
         "ts_utc": "2026-11-27T21:05:14Z",
         "category": "SEC",
@@ -3617,7 +3589,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-10-1795813522",
+        "id": "sec-11-1795813522",
         "ts_et": "2026-11-27 16:05:22 ET",
         "ts_utc": "2026-11-27T21:05:22Z",
         "category": "SEC",
@@ -3628,7 +3600,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1512673/000119312526480257/0001193125-26-480257-index.htm"
       },
       {
-        "id": "sec-9-1795813526",
+        "id": "sec-10-1795813526",
         "ts_et": "2026-11-27 16:05:26 ET",
         "ts_utc": "2026-11-27T21:05:26Z",
         "category": "SEC",
@@ -3639,7 +3611,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1604191/000110465926132481/0001104659-26-132481-index.htm"
       },
       {
-        "id": "sec-7-1795813533",
+        "id": "sec-8-1795813533",
         "ts_et": "2026-11-27 16:05:33 ET",
         "ts_utc": "2026-11-27T21:05:33Z",
         "category": "SEC",
@@ -3650,7 +3622,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1157075/000168316826009159/0001683168-26-009159-index.htm"
       },
       {
-        "id": "sec-8-1795813533",
+        "id": "sec-9-1795813533",
         "ts_et": "2026-11-27 16:05:33 ET",
         "ts_utc": "2026-11-27T21:05:33Z",
         "category": "SEC",
@@ -3661,7 +3633,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1844392/000121390026124559/0001213900-26-124559-index.htm"
       },
       {
-        "id": "sec-5-1795813535",
+        "id": "sec-6-1795813535",
         "ts_et": "2026-11-27 16:05:35 ET",
         "ts_utc": "2026-11-27T21:05:35Z",
         "category": "SEC",
@@ -3672,7 +3644,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,2.03] \u00b7 https://www.sec.gov/Archives/edgar/data/1763950/000149315226054494/0001493152-26-054494-index.htm"
       },
       {
-        "id": "sec-6-1795813535",
+        "id": "sec-7-1795813535",
         "ts_et": "2026-11-27 16:05:35 ET",
         "ts_utc": "2026-11-27T21:05:35Z",
         "category": "SEC",
@@ -3683,7 +3655,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,5.02,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1616262/000121390026124560/0001213900-26-124560-index.htm"
       },
       {
-        "id": "sec-1-1795813536",
+        "id": "sec-2-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -3694,7 +3666,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/831001/000119312526480258/0001193125-26-480258-index.htm"
       },
       {
-        "id": "sec-2-1795813536",
+        "id": "sec-3-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -3705,7 +3677,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034267/000121390026124563/0001213900-26-124563-index.htm"
       },
       {
-        "id": "sec-3-1795813536",
+        "id": "sec-4-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -3716,7 +3688,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034266/000121390026124561/0001213900-26-124561-index.htm"
       },
       {
-        "id": "sec-4-1795813536",
+        "id": "sec-5-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -3727,7 +3699,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1812727/000149315226054495/0001493152-26-054495-index.htm"
       },
       {
-        "id": "sec-0-1795813537",
+        "id": "sec-1-1795813537",
         "ts_et": "2026-11-27 16:05:37 ET",
         "ts_utc": "2026-11-27T21:05:37Z",
         "category": "SEC",
@@ -3785,6 +3757,17 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
+        "id": "sec-0-1795813683",
+        "ts_et": "2026-11-27 16:08:03 ET",
+        "ts_utc": "2026-11-27T21:08:03Z",
+        "category": "SEC",
+        "symbols": [
+          "AUUD"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] AUUD (score=15.0): 8-K - AUDDIA INC. (0001554818) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1554818/000168316826009161/0001683168-26-009161-index.htm"
+      },
+      {
         "id": "fr-blk-342-1795813730",
         "ts_et": "2026-11-27 16:08:50 ET",
         "ts_utc": "2026-11-27T21:08:50Z",
@@ -3800,6 +3783,24 @@
           "WDC"
         ],
         "summary": "BLOCKED gate summary: 32 UNQUALIFIED, 16 BELOW_930_INTRADAY_OPEN, 6 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
+        "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-blk-343-1795813794",
+        "ts_et": "2026-11-27 16:09:54 ET",
+        "ts_utc": "2026-11-27T21:09:54Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "ANET",
+          "CF",
+          "CRWD",
+          "FTNT",
+          "GOOGL",
+          "LITE",
+          "PANW",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 33 UNQUALIFIED, 15 BELOW_930_INTRADAY_OPEN, 6 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       }
     ]
