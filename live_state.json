@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795788059.8423324,
-  "generated_at_iso": "2026-11-27T14:00:59.842332+00:00",
-  "generated_at_et": "2026-11-27 09:00:59 ET",
+  "generated_at": 1795788129.2991636,
+  "generated_at_iso": "2026-11-27T14:02:09.299164+00:00",
+  "generated_at_et": "2026-11-27 09:02:09 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795788054.0549774,
-    "observed_at_et": "2026-11-27 09:00:54 ET",
-    "reconciliation_at": 1795788051.3085978,
-    "reconciliation_at_et": "2026-11-27 09:00:51 ET",
-    "heartbeat_age_seconds": 6.2,
-    "reconciliation_age_seconds": 8.9,
+    "observed_at": 1795788117.7477062,
+    "observed_at_et": "2026-11-27 09:01:57 ET",
+    "reconciliation_at": 1795788114.9647796,
+    "reconciliation_at_et": "2026-11-27 09:01:54 ET",
+    "heartbeat_age_seconds": 12.0,
+    "reconciliation_age_seconds": 14.7,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28325
+      "RECONCILE": 28330
     },
     "latest_reconcile": {
-      "id": "reconcile-1795788051-b8d492",
-      "timestamp_sec": 1795788051,
-      "time_et": "2026-11-27 09:00:51 ET",
+      "id": "reconcile-1795788114-7f5e9b",
+      "timestamp_sec": 1795788114,
+      "time_et": "2026-11-27 09:01:54 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T14:00:28.084718+00:00",
-    "timestamp_et": "2026-11-27 09:00:28 ET",
-    "observed_at": 1795788028.084718,
+    "timestamp_utc": "2026-11-27T14:01:37.523273+00:00",
+    "timestamp_et": "2026-11-27 09:01:37 ET",
+    "observed_at": 1795788097.523273,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -678,37 +678,37 @@
     "admitted_count": 1,
     "admitted_candidates": [
       {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.2,
+        "lead": "KLAC",
+        "symbol": "AMAT",
+        "lead_chg_pct": 5.05,
         "down_chg_pct": 0.0,
-        "score": 86.0,
+        "score": 85.0,
         "reasons": [
-          "Lead AVGO +3.2% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
-          "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
+          "Lead KLAC +5.0% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
+          "CATALYST_CONFIRMED(TIER_1_WIRE)",
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=1.00)"
         ]
       }
     ],
     "blocked_candidates_sample": [
       {
-        "lead": "KLAC",
-        "symbol": "AMAT",
-        "lead_chg_pct": 5.05,
+        "lead": "AVGO",
+        "symbol": "AMZN",
+        "lead_chg_pct": 3.2,
         "down_chg_pct": 0.0,
-        "score": 79.0,
+        "score": 83.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
         ]
       },
       {
-        "lead": "JPM",
-        "symbol": "C",
-        "lead_chg_pct": 2.04,
+        "lead": "TSM",
+        "symbol": "ASML",
+        "lead_chg_pct": 3.89,
         "down_chg_pct": 0.0,
-        "score": 78.5,
+        "score": 78.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -748,22 +748,11 @@
         ]
       },
       {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.87,
+        "lead": "JPM",
+        "symbol": "C",
+        "lead_chg_pct": 2.04,
         "down_chg_pct": 0.0,
-        "score": 69.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "VST",
-        "symbol": "CEG",
-        "lead_chg_pct": 3.03,
-        "down_chg_pct": 0.0,
-        "score": 67.5,
+        "score": 68.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
@@ -775,6 +764,17 @@
         "lead_chg_pct": 3.06,
         "down_chg_pct": 0.0,
         "score": 64.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "VST",
+        "symbol": "CEG",
+        "lead_chg_pct": 2.81,
+        "down_chg_pct": 0.0,
+        "score": 62.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
@@ -805,7 +805,7 @@
       {
         "lead": "ARM",
         "symbol": "AVGO",
-        "lead_chg_pct": 6.19,
+        "lead_chg_pct": 6.0,
         "down_chg_pct": 0.0,
         "score": 44.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -816,7 +816,7 @@
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 7.66,
+        "lead_chg_pct": 7.6,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -836,22 +836,22 @@
         ]
       },
       {
-        "lead": "NVDA",
-        "symbol": "MRVL",
-        "lead_chg_pct": 2.38,
+        "lead": "WDC",
+        "symbol": "STX",
+        "lead_chg_pct": 6.18,
         "down_chg_pct": 0.0,
-        "score": 37.0,
+        "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
         ]
       },
       {
-        "lead": "AMAT",
-        "symbol": "KLAC",
-        "lead_chg_pct": 5.08,
+        "lead": "NVDA",
+        "symbol": "MRVL",
+        "lead_chg_pct": 2.28,
         "down_chg_pct": 0.0,
-        "score": 34.0,
+        "score": 37.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
@@ -859,8 +859,9 @@
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 55,
-      "STAGED_REVIEW": 7
+      "UNQUALIFIED": 53,
+      "STAGED_REVIEW": 8,
+      "BELOW_930_INTRADAY_OPEN": 1
     },
     "app_health": {
       "backend_50425": {
@@ -903,11 +904,11 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 09:00:17 ET",
+    "updated_at_et": "2026-11-27 09:01:57 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T14:00:17.741185+00:00",
+        "last_received_utc": "2026-11-27T14:01:32.808506+00:00",
         "last_published_utc": "2026-11-27T13:55:00+00:00"
       },
       "chatgpt": {
@@ -927,21 +928,79 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T13:44:38.017483+00:00",
-        "last_published_utc": "2026-11-27T13:43:11+00:00"
+        "last_received_utc": "2026-11-27T14:01:32.808506+00:00",
+        "last_published_utc": "2026-11-27T14:00:47+00:00"
       }
     },
     "summary": {
       "total_items": 347,
-      "new_ingested_this_call": 6,
-      "recycled_suppressed_this_call": 44,
+      "new_ingested_this_call": 2,
+      "recycled_suppressed_this_call": 40,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 14,
+      "confirmed_catalysts": 15,
       "hard_vetoed": 34,
-      "recycled_suppressed_total": 165395,
+      "recycled_suppressed_total": 165562,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-eec9be97d5",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "BGLC",
+        "headline": "8-K - BioNexus Gene Lab Corp (0001737523) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T14:00:47+00:00",
+        "received_at_utc": "2026-11-27T14:01:32.808506+00:00",
+        "fingerprint": "48c5dddf87a8765f",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 9.5201,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "8.01",
+          "9.01"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-8dc1c88591",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "NVTS",
+        "headline": "8-K - Navitas Semiconductor Corp (0001821769) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926132343/0001104659-26-132343-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T14:00:41+00:00",
+        "received_at_utc": "2026-11-27T14:01:32.808506+00:00",
+        "fingerprint": "8acdc9d06729b371",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_1_BINDING",
+        "catalyst_score": 65.0,
+        "action": "CATALYST_CONFIRMED_ROUTE_TO_L0_L1",
+        "confirmed_catalyst": true,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.2677,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "1.01",
+          "9.01"
+        ]
+      },
       {
         "id": "ext-sec_edgar-01dfc13198",
         "channel": "sec_edgar",
@@ -2038,67 +2097,6 @@
         "shadow_only": true,
         "trading_enabled": false,
         "promotion_allowed": false
-      },
-      {
-        "id": "ext-sec_edgar-a99374a9b0",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "OGEN",
-        "headline": "8-K - ORAGENICS INC (0001174940) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1174940/000149315226054295/0001493152-26-054295-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-25T22:15:32+00:00",
-        "received_at_utc": "2026-11-25T22:16:49.741613+00:00",
-        "fingerprint": "17e7b5cb66f50609",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 46.3402,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "3.03",
-          "8.01",
-          "9.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-b0e1ef1e23",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "SLNH",
-        "headline": "8-K - Soluna Holdings, Inc (0000064463) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/64463/000149315226054296/0001493152-26-054296-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-25T22:15:32+00:00",
-        "received_at_utc": "2026-11-25T22:16:49.741613+00:00",
-        "fingerprint": "bb030720ee0a666c",
-        "form_hint": "8-K",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT"
-        ],
-        "ibkr_fee_rate_pct": 2.4324,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "3.01",
-          "8.01"
-        ]
       }
     ]
   },
@@ -2113,16 +2111,16 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 09:01:00 ET",
-    "total_events": 62,
+    "updated_at_et": "2026-11-27 09:02:09 ET",
+    "total_events": 66,
     "counts_by_category": {
-      "SEC": 6,
-      "BLOCKED": 32,
-      "ADMITTED": 24
+      "SEC": 8,
+      "BLOCKED": 33,
+      "ADMITTED": 25
     },
     "entries": [
       {
-        "id": "sec-239-1795777806",
+        "id": "sec-241-1795777806",
         "ts_et": "2026-11-27 06:10:06 ET",
         "ts_utc": "2026-11-27T11:10:06Z",
         "category": "SEC",
@@ -2133,7 +2131,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1527762/000149315226054333/0001493152-26-054333-index.htm"
       },
       {
-        "id": "sec-140-1795781739",
+        "id": "sec-143-1795781739",
         "ts_et": "2026-11-27 07:15:39 ET",
         "ts_utc": "2026-11-27T12:15:39Z",
         "category": "SEC",
@@ -2144,7 +2142,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1784254/000178425426000056/0001784254-26-000056-index.htm"
       },
       {
-        "id": "sec-82-1795783207",
+        "id": "sec-85-1795783207",
         "ts_et": "2026-11-27 07:40:07 ET",
         "ts_utc": "2026-11-27T12:40:07Z",
         "category": "SEC",
@@ -2155,7 +2153,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm"
       },
       {
-        "id": "sec-72-1795784377",
+        "id": "sec-75-1795784377",
         "ts_et": "2026-11-27 07:59:37 ET",
         "ts_utc": "2026-11-27T12:59:37Z",
         "category": "SEC",
@@ -2415,7 +2413,7 @@
         "detail": "Examples: JPM->C (sc=81.5, STAGED_REVIEW); AVGO->GOOGL (sc=77.0, STAGED_REVIEW); TSM->ASML (sc=75.0, STAGED_REVIEW); JPM->GS (sc=74.5, STAGED_REVIEW); JPM->MS (sc=74.5, STAGED_REVIEW)"
       },
       {
-        "id": "sec-12-1795786415",
+        "id": "sec-15-1795786415",
         "ts_et": "2026-11-27 08:33:35 ET",
         "ts_utc": "2026-11-27T13:33:35Z",
         "category": "SEC",
@@ -2656,7 +2654,7 @@
         "detail": "Examples: VRTX->REGN (sc=45.0, BELOW_930_INTRADAY_OPEN); ARM->AVGO (sc=44.0, UNQUALIFIED); COHR->LITE (sc=40.0, UNQUALIFIED); STX->WDC (sc=40.0, UNQUALIFIED); AVGO->AMZN (sc=38.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-8-1795786991",
+        "id": "sec-11-1795786991",
         "ts_et": "2026-11-27 08:43:11 ET",
         "ts_utc": "2026-11-27T13:43:11Z",
         "category": "SEC",
@@ -3043,6 +3041,57 @@
         ],
         "summary": "BLOCKED gate summary: 55 UNQUALIFIED, 7 STAGED_REVIEW",
         "detail": "Examples: KLAC->AMAT (sc=79.0, STAGED_REVIEW); JPM->C (sc=78.5, STAGED_REVIEW); MS->GS (sc=75.5, STAGED_REVIEW); JPM->BAC (sc=74.5, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW)"
+      },
+      {
+        "id": "sec-1-1795788041",
+        "ts_et": "2026-11-27 09:00:41 ET",
+        "ts_utc": "2026-11-27T14:00:41Z",
+        "category": "SEC",
+        "symbols": [
+          "NVTS"
+        ],
+        "summary": "SEC 8-K [CONFIRMED_CATALYST] NVTS (score=65.0): 8-K - Navitas Semiconductor Corp (0001821769) (Filer)",
+        "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1821769/000110465926132343/0001104659-26-132343-index.htm"
+      },
+      {
+        "id": "sec-0-1795788047",
+        "ts_et": "2026-11-27 09:00:47 ET",
+        "ts_utc": "2026-11-27T14:00:47Z",
+        "category": "SEC",
+        "symbols": [
+          "BGLC"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] BGLC (score=15.0): 8-K - BioNexus Gene Lab Corp (0001737523) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm"
+      },
+      {
+        "id": "fr-adm-32-1795788097",
+        "ts_et": "2026-11-27 09:01:37 ET",
+        "ts_utc": "2026-11-27T14:01:37Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "AMAT"
+        ],
+        "summary": "ADMITTED 1 candidate(s): AMAT",
+        "detail": "AMAT (lead KLAC) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
+      },
+      {
+        "id": "fr-blk-32-1795788097",
+        "ts_et": "2026-11-27 09:01:37 ET",
+        "ts_utc": "2026-11-27T14:01:37Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AMZN",
+          "ASML",
+          "BAC",
+          "C",
+          "CEG",
+          "DE",
+          "GOOGL",
+          "GS"
+        ],
+        "summary": "BLOCKED gate summary: 53 UNQUALIFIED, 8 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
+        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); TSM->ASML (sc=78.0, STAGED_REVIEW); MS->GS (sc=75.5, STAGED_REVIEW); JPM->BAC (sc=74.5, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW)"
       }
     ]
   },
