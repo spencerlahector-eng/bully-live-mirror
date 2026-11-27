@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795779177.6901999,
-  "generated_at_iso": "2026-11-27T11:32:57.690200+00:00",
-  "generated_at_et": "2026-11-27 06:32:57 ET",
+  "generated_at": 1795779248.5221007,
+  "generated_at_iso": "2026-11-27T11:34:08.522101+00:00",
+  "generated_at_et": "2026-11-27 06:34:08 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795779169.7353544,
-    "observed_at_et": "2026-11-27 06:32:49 ET",
-    "reconciliation_at": 1795779166.3979778,
-    "reconciliation_at_et": "2026-11-27 06:32:46 ET",
-    "heartbeat_age_seconds": 8.4,
-    "reconciliation_age_seconds": 11.7,
+    "observed_at": 1795779246.2435436,
+    "observed_at_et": "2026-11-27 06:34:06 ET",
+    "reconciliation_at": 1795779241.3859375,
+    "reconciliation_at_et": "2026-11-27 06:34:01 ET",
+    "heartbeat_age_seconds": 2.7,
+    "reconciliation_age_seconds": 7.5,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 6.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 27742
+      "RECONCILE": 27747
     },
     "latest_reconcile": {
-      "id": "reconcile-1795779166-7d3a6e",
-      "timestamp_sec": 1795779166,
-      "time_et": "2026-11-27 06:32:46 ET",
+      "id": "reconcile-1795779241-d237ef",
+      "timestamp_sec": 1795779241,
+      "time_et": "2026-11-27 06:34:01 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T11:31:41.329775+00:00",
-    "timestamp_et": "2026-11-27 06:31:41 ET",
-    "observed_at": 1795779101.329775,
+    "timestamp_utc": "2026-11-27T11:33:00.419045+00:00",
+    "timestamp_et": "2026-11-27 06:33:00 ET",
+    "observed_at": 1795779180.419045,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,45 +675,45 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 5,
+    "admitted_count": 4,
     "admitted_candidates": [
       {
-        "lead": "ARM",
-        "symbol": "AVGO",
-        "lead_chg_pct": 6.47,
+        "lead": "AVGO",
+        "symbol": "AMZN",
+        "lead_chg_pct": 3.69,
         "down_chg_pct": 0.0,
-        "score": 95.0,
+        "score": 94.0,
         "reasons": [
-          "Lead ARM +6.5% (|chg|>=2.5%, dir=LONG, sign=+1)",
-          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.97)"
+          "Lead AVGO +3.7% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "MODERATE_LEAD_SHOCK (>= 3.0%)",
+          "CATALYST_CONFIRMED(ALPACA_NEWS,BENZINGA_RATINGS,TIER_1_WIRE)",
+          "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
         ]
       },
       {
         "lead": "NVDA",
         "symbol": "TSM",
-        "lead_chg_pct": 3.72,
+        "lead_chg_pct": 3.61,
         "down_chg_pct": 0.0,
         "score": 93.0,
         "reasons": [
-          "Lead NVDA +3.7% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "Lead NVDA +3.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
           "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=25.50)"
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.67)"
         ]
       },
       {
-        "lead": "AVGO",
-        "symbol": "GOOGL",
-        "lead_chg_pct": 3.63,
+        "lead": "ARM",
+        "symbol": "AVGO",
+        "lead_chg_pct": 6.47,
         "down_chg_pct": 0.0,
         "score": 92.0,
         "reasons": [
-          "Lead AVGO +3.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
+          "Lead ARM +6.5% (|chg|>=2.5%, dir=LONG, sign=+1)",
+          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
           "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=180.00)"
+          "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
         ]
       },
       {
@@ -727,19 +727,6 @@
           "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
           "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
           "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=1.00)"
-        ]
-      },
-      {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.63,
-        "down_chg_pct": 0.0,
-        "score": 86.0,
-        "reasons": [
-          "Lead AVGO +3.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(ALPACA_NEWS,BENZINGA_RATINGS,TIER_1_WIRE)",
-          "V6_1_CLEAN_NO_DILUTION_8K_PROCUREMENT(+4.0)"
         ]
       }
     ],
@@ -756,11 +743,11 @@
         ]
       },
       {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.2,
+        "lead": "AVGO",
+        "symbol": "GOOGL",
+        "lead_chg_pct": 3.69,
         "down_chg_pct": 0.0,
-        "score": 81.0,
+        "score": 83.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -778,22 +765,22 @@
         ]
       },
       {
-        "lead": "NEM",
-        "symbol": "AEM",
-        "lead_chg_pct": 5.21,
+        "lead": "TSM",
+        "symbol": "ASML",
+        "lead_chg_pct": 3.11,
         "down_chg_pct": 0.0,
-        "score": 76.5,
+        "score": 77.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
         ]
       },
       {
-        "lead": "MSFT",
-        "symbol": "NOW",
-        "lead_chg_pct": 2.12,
+        "lead": "NEM",
+        "symbol": "AEM",
+        "lead_chg_pct": 5.21,
         "down_chg_pct": 0.0,
-        "score": 73.0,
+        "score": 76.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -822,17 +809,6 @@
         ]
       },
       {
-        "lead": "NOW",
-        "symbol": "CRM",
-        "lead_chg_pct": 2.89,
-        "down_chg_pct": 0.0,
-        "score": 70.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
         "lead": "FCX",
         "symbol": "SCCO",
         "lead_chg_pct": 6.28,
@@ -846,7 +822,7 @@
       {
         "lead": "COHR",
         "symbol": "FN",
-        "lead_chg_pct": 8.82,
+        "lead_chg_pct": 8.31,
         "down_chg_pct": 0.0,
         "score": 68.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -877,9 +853,31 @@
         ]
       },
       {
+        "lead": "MSFT",
+        "symbol": "NOW",
+        "lead_chg_pct": 2.14,
+        "down_chg_pct": 0.0,
+        "score": 63.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "NOW",
+        "symbol": "CRM",
+        "lead_chg_pct": 2.43,
+        "down_chg_pct": 0.0,
+        "score": 60.5,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
         "lead": "MU",
         "symbol": "CAMT",
-        "lead_chg_pct": 6.2,
+        "lead_chg_pct": 6.1,
         "down_chg_pct": 0.0,
         "score": 59.5,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -897,22 +895,11 @@
         "blockers": [
           "UNQUALIFIED"
         ]
-      },
-      {
-        "lead": "CAT",
-        "symbol": "DE",
-        "lead_chg_pct": 3.83,
-        "down_chg_pct": 0.0,
-        "score": 58.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 44,
-      "STAGED_REVIEW": 11,
+      "UNQUALIFIED": 47,
+      "STAGED_REVIEW": 9,
       "BELOW_930_INTRADAY_OPEN": 1
     },
     "app_health": {
@@ -956,7 +943,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 06:32:50 ET",
+    "updated_at_et": "2026-11-27 06:34:02 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -970,8 +957,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T11:32:16.624998+00:00",
-        "last_published_utc": "2026-11-27T11:31:57+00:00"
+        "last_received_utc": "2026-11-27T11:33:14.725244+00:00",
+        "last_published_utc": "2026-11-27T11:32:24+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -986,15 +973,115 @@
     },
     "summary": {
       "total_items": 347,
-      "new_ingested_this_call": 9,
-      "recycled_suppressed_this_call": 35,
+      "new_ingested_this_call": 10,
+      "recycled_suppressed_this_call": 34,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
       "hard_vetoed": 35,
-      "recycled_suppressed_total": 148341,
+      "recycled_suppressed_total": 148464,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-benzinga-33cd0c6f03",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "WMT",
+        "headline": "Daiwa Adjusts Price Target on Walmart to $140 From $113",
+        "url": "https://www.marketscreener.com/news/daiwa-adjusts-price-target-on-walmart-to-140-from-113-ce7851d9dc8af520",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T11:32:24+00:00",
+        "received_at_utc": "2026-11-27T11:33:14.725244+00:00",
+        "fingerprint": "f46264beb97ba58d",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-5676ba3106",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "MRNA",
+        "headline": "Jefferies Adjusts Price Target on Moderna to $215 From $200",
+        "url": "https://www.marketscreener.com/news/jefferies-adjusts-price-target-on-moderna-to-215-from-200-ce7851d9dc8af025",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T11:32:15+00:00",
+        "received_at_utc": "2026-11-27T11:33:14.725244+00:00",
+        "fingerprint": "dd3ee3428a8ea445",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4081,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-28a2505a37",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "TJX",
+        "headline": "Daiwa Adjusts Price Target on The TJX Companies, Inc.",
+        "url": "https://www.marketscreener.com/news/daiwa-adjusts-price-target-on-tjx-companies-to-152-from-155-ce7851d9dc8af123",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T11:32:02+00:00",
+        "received_at_utc": "2026-11-27T11:33:13.401185+00:00",
+        "fingerprint": "7f62875222ddcf5b",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4081,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-e493f88817",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "SYK",
+        "headline": "Stryker Insider Sold Shares Worth $1,999,140",
+        "url": "https://www.marketscreener.com/news/stryker-insider-sold-shares-worth-1-999-140-according-to-a-recent-sec-filing-ce7851d9da80f224",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T11:31:58+00:00",
+        "received_at_utc": "2026-11-27T11:33:13.401185+00:00",
+        "fingerprint": "7240d168716ecd89",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4081,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-benzinga-200f56acee",
         "channel": "benzinga",
@@ -1139,106 +1226,6 @@
         "is_hard_veto": false,
         "hard_veto_flags": [],
         "ibkr_fee_rate_pct": 0.4081,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-caa13f920b",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "DIS",
-        "headline": "Disney Issues Cease-and-Desist to ByteDance Over AI Copyright Concerns",
-        "url": "https://stockanalysis.com/private/bytedance/",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T11:31:44+00:00",
-        "received_at_utc": "2026-11-27T11:32:16.624998+00:00",
-        "fingerprint": "4ce800a545e4dcf2",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.3098,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-06ff31b803",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "EQIX",
-        "headline": "Equinix Collaborates with Honeywell on AI Data Center Infrastructure",
-        "url": "https://technologymagazine.com/news/cognitive-ai-buildings-infrastructure-tech-by-honeywell",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T11:31:43+00:00",
-        "received_at_utc": "2026-11-27T11:32:15.278729+00:00",
-        "fingerprint": "9f4974f45cd3ffc5",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.3141,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-7c574a0852",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "MARKET",
-        "headline": "Lowe's Reports November Sales Performance",
-        "url": "https://newsfilter.io/articles/inflation-has-shoppers-hunting-for-value-that-bodes-well-for-black-friday-6f76218415ef561a9512842a4d06e577",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T11:31:41+00:00",
-        "received_at_utc": "2026-11-27T11:32:15.278729+00:00",
-        "fingerprint": "0acc59aeede2deff",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-dddc0c8a9f",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "BLK",
-        "headline": "BlackRock Files Major Holdings Notification for Adtran Holdings, Inc.",
-        "url": "https://www.finanzen.at/nachrichten/aktien/eqs-pvr-adtran-holdings-inc-release-according-to-article-40-section-1-of-the-wphg-[the-german-securities-trading-act]-with-the-objective-of-europe-wide-distribution-1036805081",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T11:31:39+00:00",
-        "received_at_utc": "2026-11-27T11:32:15.278729+00:00",
-        "fingerprint": "816295a6c2a67c0f",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.4135,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -2167,11 +2154,11 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 06:32:58 ET",
-    "total_events": 71,
+    "updated_at_et": "2026-11-27 06:34:08 ET",
+    "total_events": 73,
     "counts_by_category": {
-      "ADMITTED": 35,
-      "BLOCKED": 35,
+      "ADMITTED": 36,
+      "BLOCKED": 36,
       "SEC": 1
     },
     "entries": [
@@ -2721,7 +2708,7 @@
         "detail": "Examples: CRWD->PANW (sc=84.5, STAGED_REVIEW); ARM->AVGO (sc=84.0, STAGED_REVIEW); ORCL->IBM (sc=83.5, STAGED_REVIEW); AVGO->GOOGL (sc=83.0, STAGED_REVIEW); TSM->ASML (sc=78.0, STAGED_REVIEW)"
       },
       {
-        "id": "sec-32-1795777806",
+        "id": "sec-36-1795777806",
         "ts_et": "2026-11-27 06:10:06 ET",
         "ts_utc": "2026-11-27T11:10:06Z",
         "category": "SEC",
@@ -3300,6 +3287,38 @@
         ],
         "summary": "BLOCKED gate summary: 44 UNQUALIFIED, 11 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
         "detail": "Examples: ORCL->IBM (sc=83.5, STAGED_REVIEW); TSM->ASML (sc=81.0, STAGED_REVIEW); ZS->CRWD (sc=78.5, STAGED_REVIEW); NEM->AEM (sc=76.5, STAGED_REVIEW); MSFT->NOW (sc=73.0, STAGED_REVIEW)"
+      },
+      {
+        "id": "fr-adm-35-1795779180",
+        "ts_et": "2026-11-27 06:33:00 ET",
+        "ts_utc": "2026-11-27T11:33:00Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "AMZN",
+          "AVGO",
+          "STX",
+          "TSM"
+        ],
+        "summary": "ADMITTED 4 candidate(s): AMZN, TSM, AVGO, STX",
+        "detail": "AMZN (lead AVGO) score=94.0 [ADMITTED] | TSM (lead NVDA) score=93.0 [ADMITTED] | AVGO (lead ARM) score=92.0 [ADMITTED] | STX (lead WDC) score=89.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
+      },
+      {
+        "id": "fr-blk-35-1795779180",
+        "ts_et": "2026-11-27 06:33:00 ET",
+        "ts_utc": "2026-11-27T11:33:00Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "ASML",
+          "CEG",
+          "CRWD",
+          "GOOGL",
+          "IBM",
+          "KLAC",
+          "SCCO"
+        ],
+        "summary": "BLOCKED gate summary: 47 UNQUALIFIED, 9 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
+        "detail": "Examples: ORCL->IBM (sc=83.5, STAGED_REVIEW); AVGO->GOOGL (sc=83.0, STAGED_REVIEW); ZS->CRWD (sc=78.5, STAGED_REVIEW); TSM->ASML (sc=77.0, STAGED_REVIEW); NEM->AEM (sc=76.5, STAGED_REVIEW)"
       }
     ]
   },
