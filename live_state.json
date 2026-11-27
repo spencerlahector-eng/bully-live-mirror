@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795813621.8487892,
-  "generated_at_iso": "2026-11-27T21:07:01.848789+00:00",
-  "generated_at_et": "2026-11-27 16:07:01 ET",
+  "generated_at": 1795813670.741468,
+  "generated_at_iso": "2026-11-27T21:07:50.741468+00:00",
+  "generated_at_et": "2026-11-27 16:07:50 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795813619.3588321,
-    "observed_at_et": "2026-11-27 16:06:59 ET",
-    "reconciliation_at": 1795813619.3585076,
-    "reconciliation_at_et": "2026-11-27 16:06:59 ET",
-    "heartbeat_age_seconds": 2.9,
-    "reconciliation_age_seconds": 2.9,
+    "observed_at": 1795813660.5816057,
+    "observed_at_et": "2026-11-27 16:07:40 ET",
+    "reconciliation_at": 1795813660.5812113,
+    "reconciliation_at_et": "2026-11-27 16:07:40 ET",
+    "heartbeat_age_seconds": 10.6,
+    "reconciliation_age_seconds": 10.6,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T21:06:30.106014+00:00",
-    "timestamp_et": "2026-11-27 16:06:30 ET",
-    "observed_at": 1795813590.106014,
+    "timestamp_utc": "2026-11-27T21:07:39.009620+00:00",
+    "timestamp_et": "2026-11-27 16:07:39 ET",
+    "observed_at": 1795813659.00962,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,22 +675,8 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 1,
-    "admitted_candidates": [
-      {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.7,
-        "down_chg_pct": 0.0,
-        "score": 94.0,
-        "reasons": [
-          "Lead AVGO +3.7% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.64)"
-        ]
-      }
-    ],
+    "admitted_count": 0,
+    "admitted_candidates": [],
     "blocked_candidates_sample": [
       {
         "lead": "MOS",
@@ -739,7 +725,7 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.7,
+        "lead_chg_pct": 3.62,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -750,7 +736,7 @@
       {
         "lead": "PANW",
         "symbol": "CRWD",
-        "lead_chg_pct": 3.47,
+        "lead_chg_pct": 3.39,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -772,7 +758,7 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.7,
+        "lead_chg_pct": 3.62,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -781,9 +767,20 @@
         ]
       },
       {
+        "lead": "AVGO",
+        "symbol": "AMZN",
+        "lead_chg_pct": 3.62,
+        "down_chg_pct": 0.0,
+        "score": 54.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
         "lead": "TSM",
         "symbol": "AMAT",
-        "lead_chg_pct": 3.17,
+        "lead_chg_pct": 3.23,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -805,7 +802,7 @@
       {
         "lead": "ORCL",
         "symbol": "IBM",
-        "lead_chg_pct": 3.47,
+        "lead_chg_pct": 3.54,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -827,7 +824,7 @@
       {
         "lead": "TSM",
         "symbol": "ASML",
-        "lead_chg_pct": 3.17,
+        "lead_chg_pct": 3.23,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -845,23 +842,12 @@
         "blockers": [
           "UNQUALIFIED"
         ]
-      },
-      {
-        "lead": "DAL",
-        "symbol": "UAL",
-        "lead_chg_pct": 2.25,
-        "down_chg_pct": 0.0,
-        "score": 45.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 29,
-      "BELOW_930_INTRADAY_OPEN": 18,
-      "BELOW_INTRADAY_VWAP": 8,
+      "UNQUALIFIED": 31,
+      "BELOW_930_INTRADAY_OPEN": 17,
+      "BELOW_INTRADAY_VWAP": 7,
       "STAGED_REVIEW": 1
     },
     "app_health": {
@@ -905,7 +891,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 16:06:16 ET",
+    "updated_at_et": "2026-11-27 16:07:24 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -929,8 +915,8 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T21:06:16.266269+00:00",
-        "last_published_utc": "2026-11-27T21:05:33+00:00"
+        "last_received_utc": "2026-11-27T21:07:24.821244+00:00",
+        "last_published_utc": "2026-11-27T21:05:37+00:00"
       }
     },
     "summary": {
@@ -938,12 +924,215 @@
       "new_ingested_this_call": 8,
       "recycled_suppressed_this_call": 43,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 9,
-      "hard_vetoed": 39,
-      "recycled_suppressed_total": 233559,
+      "confirmed_catalysts": 10,
+      "hard_vetoed": 36,
+      "recycled_suppressed_total": 233670,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-15b1632147",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "SBMT",
+        "headline": "8-K - SILVER BOW MINING CORP. (0002067674) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2067674/000153949726003114/0001539497-26-003114-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:37+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "00b03b461c5b975d",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 10.1761,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "7.01",
+          "9.01"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-79b2c5c34c",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "C",
+        "headline": "8-K - CITIGROUP INC (0000831001) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000119312526480258/0001193125-26-480258-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:36+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "ce52283d1d208de1",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "9.01"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-92bf00a9f3",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "CEPF",
+        "headline": "8-K - Cantor Equity Partners IV, Inc. (0002034267) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2034267/000121390026124563/0001213900-26-124563-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:36+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "80aa15fb29ef9c01",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 2.6236,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "8.01"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-47210adafa",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "CEPV",
+        "headline": "8-K - Cantor Equity Partners V, Inc. (0002034266) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2034266/000121390026124561/0001213900-26-124561-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:36+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "3a4bbec2629794ee",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 14.8243,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "8.01"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-df90dbbc98",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "XGPU",
+        "headline": "8-K - Reliance Global Group, Inc. (0001812727) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1812727/000149315226054495/0001493152-26-054495-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:36+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "b5d0168fd396a8f2",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 90.539,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "8.01",
+          "9.01"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-eb2563e76b",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "LTRN",
+        "headline": "8-K - Lantern Pharma Inc. (0001763950) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1763950/000149315226054494/0001493152-26-054494-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:35+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "0af612c7736ff544",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_1_BINDING",
+        "catalyst_score": 65.0,
+        "action": "CATALYST_CONFIRMED_ROUTE_TO_L0_L1",
+        "confirmed_catalyst": true,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 1.9125,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "1.01",
+          "2.03"
+        ]
+      },
+      {
+        "id": "ext-sec_edgar-7bb5e69e2c",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "RMCF",
+        "headline": "8-K - Rocky Mountain Chocolate Factory, Inc. (0001616262) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616262/000121390026124560/0001213900-26-124560-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:05:35+00:00",
+        "received_at_utc": "2026-11-27T21:07:24.821244+00:00",
+        "fingerprint": "89df8554432deb15",
+        "form_hint": "8-K",
+        "clarity_tier": "HARD_VETO",
+        "catalyst_score": 0.0,
+        "action": "HARD_VETO_BLOCK_LONG",
+        "confirmed_catalyst": false,
+        "is_hard_veto": true,
+        "hard_veto_flags": [
+          "DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT"
+        ],
+        "ibkr_fee_rate_pct": 18.0354,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "3.01",
+          "5.02",
+          "9.01"
+        ]
+      },
       {
         "id": "ext-sec_edgar-172182d80d",
         "channel": "sec_edgar",
@@ -1517,211 +1706,6 @@
         ]
       },
       {
-        "id": "ext-sec_edgar-ea8ec3de80",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "MARKET",
-        "headline": "8-K - Opendoor Technologies Inc. (0001801169) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1801169/000114036126045877/0001140361-26-045877-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T20:00:34+00:00",
-        "received_at_utc": "2026-11-27T20:01:36.078127+00:00",
-        "fingerprint": "d1dd08e3f26941f0",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "8.01",
-          "9.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-20408f9bb9",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "VWAV",
-        "headline": "8-K - VisionWave Holdings, Inc. (0002038439) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/2038439/000173112226001493/0001731122-26-001493-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T19:33:32+00:00",
-        "received_at_utc": "2026-11-27T19:34:54.965828+00:00",
-        "fingerprint": "72283c8c600d2fa5",
-        "form_hint": "8-K",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_424B5_OFFERING"
-        ],
-        "ibkr_fee_rate_pct": 98.5098,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "1.01",
-          "8.01",
-          "9.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-ed3ef043b2",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "QMCO",
-        "headline": "8-K - QUANTUM CORP /DE/ (0000709283) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/709283/000070928326000008/0000709283-26-000008-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T19:13:37+00:00",
-        "received_at_utc": "2026-11-27T19:14:50.756762+00:00",
-        "fingerprint": "8bd399a622a004b6",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.4957,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "5.02",
-          "7.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-01a0a544f0",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "MBUU",
-        "headline": "8-K - MALIBU BOATS, INC. (0001590976) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1590976/000159097626000081/0001590976-26-000081-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T19:11:43+00:00",
-        "received_at_utc": "2026-11-27T19:12:42.470702+00:00",
-        "fingerprint": "aba135114f5e7bed",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.4135,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "8.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-f0e47bfae2",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "OBAI",
-        "headline": "S-1 - Our Bond, Inc. (0001756064) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226054474/0001493152-26-054474-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T19:00:14+00:00",
-        "received_at_utc": "2026-11-27T19:01:03.493679+00:00",
-        "fingerprint": "a81f8cb7434f5dfd",
-        "form_hint": "S-1",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_S-1_OFFERING"
-        ],
-        "ibkr_fee_rate_pct": 54.4897,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-sec_edgar-a6c11fda3d",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "FULC",
-        "headline": "8-K - Fulcrum Therapeutics, Inc. (0001680581) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1680581/000119312526479975/0001193125-26-479975-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T18:40:04+00:00",
-        "received_at_utc": "2026-11-27T18:41:13.525570+00:00",
-        "fingerprint": "2781fdde35f737ae",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 2.5649,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "7.01",
-          "8.01",
-          "9.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-e68e557049",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "ORBS",
-        "headline": "8-K - Eightco Holdings Inc. (0001892492) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1892492/000149315226054465/0001493152-26-054465-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T18:15:13+00:00",
-        "received_at_utc": "2026-11-27T18:16:03.567083+00:00",
-        "fingerprint": "895ab87395b22e67",
-        "form_hint": "8-K",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT"
-        ],
-        "ibkr_fee_rate_pct": 1.5502,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "3.01"
-        ]
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2115,140 +2099,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 16:07:02 ET",
-    "total_events": 504,
+    "updated_at_et": "2026-11-27 16:07:51 ET",
+    "total_events": 512,
     "counts_by_category": {
-      "SEC": 40,
-      "BLOCKED": 298,
+      "SEC": 47,
+      "BLOCKED": 299,
       "ADMITTED": 122,
       "TRADE": 5,
       "RATCHET": 2,
       "HEARTBEAT": 37
     },
     "entries": [
-      {
-        "id": "sec-37-1795808012",
-        "ts_et": "2026-11-27 14:33:32 ET",
-        "ts_utc": "2026-11-27T19:33:32Z",
-        "category": "SEC",
-        "symbols": [
-          "VWAV"
-        ],
-        "summary": "SEC 8-K [HARD_VETO: DILUTION_424B5_OFFERING] VWAV (score=0.0): 8-K - VisionWave Holdings, Inc. (0002038439) (Filer)",
-        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.01,8.01,9.01] \u00b7 flags=[DILUTION_424B5_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/2038439/000173112226001493/0001731122-26-001493-index.htm"
-      },
-      {
-        "id": "fr-blk-256-1795808050",
-        "ts_et": "2026-11-27 14:34:10 ET",
-        "ts_utc": "2026-11-27T19:34:10Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AVGO",
-          "KLAC",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 28 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 10 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->KLAC (sc=54.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-257-1795808118",
-        "ts_et": "2026-11-27 14:35:18 ET",
-        "ts_utc": "2026-11-27T19:35:18Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AVGO",
-          "GOOGL",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 28 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 8 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
-      {
-        "id": "fr-adm-258-1795808186",
-        "ts_et": "2026-11-27 14:36:26 ET",
-        "ts_utc": "2026-11-27T19:36:26Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=100.0 [ADMITTED] \u00b7 phase=POST_CLOSE_AUDIT"
-      },
-      {
-        "id": "fr-blk-258-1795808186",
-        "ts_et": "2026-11-27 14:36:26 ET",
-        "ts_utc": "2026-11-27T19:36:26Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AVGO",
-          "GOOGL",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 27 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 8 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
-      {
-        "id": "fr-blk-259-1795808254",
-        "ts_et": "2026-11-27 14:37:34 ET",
-        "ts_utc": "2026-11-27T19:37:34Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AVGO",
-          "CRWD",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 27 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 8 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
-      {
-        "id": "fr-blk-260-1795808314",
-        "ts_et": "2026-11-27 14:38:34 ET",
-        "ts_utc": "2026-11-27T19:38:34Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AVGO",
-          "CRWD",
-          "GOOGL",
-          "LITE",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 28 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
-      {
-        "id": "fr-adm-261-1795808384",
-        "ts_et": "2026-11-27 14:39:44 ET",
-        "ts_utc": "2026-11-27T19:39:44Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=100.0 [ADMITTED] \u00b7 phase=POST_CLOSE_AUDIT"
-      },
       {
         "id": "fr-blk-261-1795808384",
         "ts_et": "2026-11-27 14:39:44 ET",
@@ -2567,7 +2428,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-25-1795809634",
+        "id": "sec-32-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -2587,7 +2448,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-24-1795809656",
+        "id": "sec-31-1795809656",
         "ts_et": "2026-11-27 15:00:56 ET",
         "ts_utc": "2026-11-27T20:00:56Z",
         "category": "SEC",
@@ -2672,7 +2533,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-18-1795809984",
+        "id": "sec-25-1795809984",
         "ts_et": "2026-11-27 15:06:24 ET",
         "ts_utc": "2026-11-27T20:06:24Z",
         "category": "SEC",
@@ -3156,7 +3017,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-14-1795811945",
+        "id": "sec-21-1795811945",
         "ts_et": "2026-11-27 15:39:05 ET",
         "ts_utc": "2026-11-27T20:39:05Z",
         "category": "SEC",
@@ -3637,7 +3498,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-13-1795813239",
+        "id": "sec-20-1795813239",
         "ts_et": "2026-11-27 16:00:39 ET",
         "ts_utc": "2026-11-27T21:00:39Z",
         "category": "SEC",
@@ -3678,7 +3539,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-11-1795813291",
+        "id": "sec-18-1795813291",
         "ts_et": "2026-11-27 16:01:31 ET",
         "ts_utc": "2026-11-27T21:01:31Z",
         "category": "SEC",
@@ -3689,7 +3550,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,7.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1892292/000121390026124552/0001213900-26-124552-index.htm"
       },
       {
-        "id": "sec-10-1795813293",
+        "id": "sec-17-1795813293",
         "ts_et": "2026-11-27 16:01:33 ET",
         "ts_utc": "2026-11-27T21:01:33Z",
         "category": "SEC",
@@ -3754,7 +3615,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-4-1795813514",
+        "id": "sec-11-1795813514",
         "ts_et": "2026-11-27 16:05:14 ET",
         "ts_utc": "2026-11-27T21:05:14Z",
         "category": "SEC",
@@ -3774,7 +3635,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-3-1795813522",
+        "id": "sec-10-1795813522",
         "ts_et": "2026-11-27 16:05:22 ET",
         "ts_utc": "2026-11-27T21:05:22Z",
         "category": "SEC",
@@ -3785,7 +3646,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1512673/000119312526480257/0001193125-26-480257-index.htm"
       },
       {
-        "id": "sec-2-1795813526",
+        "id": "sec-9-1795813526",
         "ts_et": "2026-11-27 16:05:26 ET",
         "ts_utc": "2026-11-27T21:05:26Z",
         "category": "SEC",
@@ -3796,7 +3657,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1604191/000110465926132481/0001104659-26-132481-index.htm"
       },
       {
-        "id": "sec-0-1795813533",
+        "id": "sec-7-1795813533",
         "ts_et": "2026-11-27 16:05:33 ET",
         "ts_utc": "2026-11-27T21:05:33Z",
         "category": "SEC",
@@ -3807,7 +3668,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1157075/000168316826009159/0001683168-26-009159-index.htm"
       },
       {
-        "id": "sec-1-1795813533",
+        "id": "sec-8-1795813533",
         "ts_et": "2026-11-27 16:05:33 ET",
         "ts_utc": "2026-11-27T21:05:33Z",
         "category": "SEC",
@@ -3816,6 +3677,83 @@
         ],
         "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] MRAI (score=15.0): 8-K - Marpai, Inc. (0001844392) (Filer)",
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1844392/000121390026124559/0001213900-26-124559-index.htm"
+      },
+      {
+        "id": "sec-5-1795813535",
+        "ts_et": "2026-11-27 16:05:35 ET",
+        "ts_utc": "2026-11-27T21:05:35Z",
+        "category": "SEC",
+        "symbols": [
+          "LTRN"
+        ],
+        "summary": "SEC 8-K [CONFIRMED_CATALYST] LTRN (score=65.0): 8-K - Lantern Pharma Inc. (0001763950) (Filer)",
+        "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,2.03] \u00b7 https://www.sec.gov/Archives/edgar/data/1763950/000149315226054494/0001493152-26-054494-index.htm"
+      },
+      {
+        "id": "sec-6-1795813535",
+        "ts_et": "2026-11-27 16:05:35 ET",
+        "ts_utc": "2026-11-27T21:05:35Z",
+        "category": "SEC",
+        "symbols": [
+          "RMCF"
+        ],
+        "summary": "SEC 8-K [HARD_VETO: DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] RMCF (score=0.0): 8-K - Rocky Mountain Chocolate Factory, Inc. (0001616262) (Filer)",
+        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,5.02,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1616262/000121390026124560/0001213900-26-124560-index.htm"
+      },
+      {
+        "id": "sec-1-1795813536",
+        "ts_et": "2026-11-27 16:05:36 ET",
+        "ts_utc": "2026-11-27T21:05:36Z",
+        "category": "SEC",
+        "symbols": [
+          "C"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] C (score=15.0): 8-K - CITIGROUP INC (0000831001) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/831001/000119312526480258/0001193125-26-480258-index.htm"
+      },
+      {
+        "id": "sec-2-1795813536",
+        "ts_et": "2026-11-27 16:05:36 ET",
+        "ts_utc": "2026-11-27T21:05:36Z",
+        "category": "SEC",
+        "symbols": [
+          "CEPF"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] CEPF (score=15.0): 8-K - Cantor Equity Partners IV, Inc. (0002034267) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034267/000121390026124563/0001213900-26-124563-index.htm"
+      },
+      {
+        "id": "sec-3-1795813536",
+        "ts_et": "2026-11-27 16:05:36 ET",
+        "ts_utc": "2026-11-27T21:05:36Z",
+        "category": "SEC",
+        "symbols": [
+          "CEPV"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] CEPV (score=15.0): 8-K - Cantor Equity Partners V, Inc. (0002034266) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034266/000121390026124561/0001213900-26-124561-index.htm"
+      },
+      {
+        "id": "sec-4-1795813536",
+        "ts_et": "2026-11-27 16:05:36 ET",
+        "ts_utc": "2026-11-27T21:05:36Z",
+        "category": "SEC",
+        "symbols": [
+          "XGPU"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] XGPU (score=15.0): 8-K - Reliance Global Group, Inc. (0001812727) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1812727/000149315226054495/0001493152-26-054495-index.htm"
+      },
+      {
+        "id": "sec-0-1795813537",
+        "ts_et": "2026-11-27 16:05:37 ET",
+        "ts_utc": "2026-11-27T21:05:37Z",
+        "category": "SEC",
+        "symbols": [
+          "SBMT"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] SBMT (score=15.0): 8-K - SILVER BOW MINING CORP. (0002067674) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2067674/000153949726003114/0001539497-26-003114-index.htm"
       },
       {
         "id": "fr-adm-340-1795813590",
@@ -3844,6 +3782,24 @@
           "WDC"
         ],
         "summary": "BLOCKED gate summary: 29 UNQUALIFIED, 18 BELOW_930_INTRADAY_OPEN, 8 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
+        "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-blk-341-1795813659",
+        "ts_et": "2026-11-27 16:07:39 ET",
+        "ts_utc": "2026-11-27T21:07:39Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "ANET",
+          "CF",
+          "CRWD",
+          "FTNT",
+          "GOOGL",
+          "LITE",
+          "PANW",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 31 UNQUALIFIED, 17 BELOW_930_INTRADAY_OPEN, 7 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       }
     ]
