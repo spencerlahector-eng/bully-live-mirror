@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795816018.9930208,
-  "generated_at_iso": "2026-11-27T21:46:58.993021+00:00",
-  "generated_at_et": "2026-11-27 16:46:58 ET",
+  "generated_at": 1795816090.1897745,
+  "generated_at_iso": "2026-11-27T21:48:10.189775+00:00",
+  "generated_at_et": "2026-11-27 16:48:10 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795816001.3686717,
-    "observed_at_et": "2026-11-27 16:46:41 ET",
-    "reconciliation_at": 1795816001.3683774,
-    "reconciliation_at_et": "2026-11-27 16:46:41 ET",
-    "heartbeat_age_seconds": 18.0,
-    "reconciliation_age_seconds": 18.0,
+    "observed_at": 1795816083.8878295,
+    "observed_at_et": "2026-11-27 16:48:03 ET",
+    "reconciliation_at": 1795816083.887397,
+    "reconciliation_at_et": "2026-11-27 16:48:03 ET",
+    "heartbeat_age_seconds": 6.7,
+    "reconciliation_age_seconds": 6.7,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET",
@@ -665,9 +665,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T21:46:27.242390+00:00",
-    "timestamp_et": "2026-11-27 16:46:27 ET",
-    "observed_at": 1795815987.24239,
+    "timestamp_utc": "2026-11-27T21:47:37.934540+00:00",
+    "timestamp_et": "2026-11-27 16:47:37 ET",
+    "observed_at": 1795816057.93454,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -766,7 +766,7 @@
       {
         "lead": "CRWD",
         "symbol": "PANW",
-        "lead_chg_pct": 3.92,
+        "lead_chg_pct": 3.77,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -788,7 +788,7 @@
       {
         "lead": "PANW",
         "symbol": "CRWD",
-        "lead_chg_pct": 3.26,
+        "lead_chg_pct": 3.3,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -799,7 +799,7 @@
       {
         "lead": "PANW",
         "symbol": "FTNT",
-        "lead_chg_pct": 3.26,
+        "lead_chg_pct": 3.3,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -876,8 +876,8 @@
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 28,
-      "BELOW_930_INTRADAY_OPEN": 18,
+      "UNQUALIFIED": 30,
+      "BELOW_930_INTRADAY_OPEN": 19,
       "BELOW_INTRADAY_VWAP": 7,
       "STAGED_REVIEW": 1
     },
@@ -922,7 +922,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 16:46:45 ET",
+    "updated_at_et": "2026-11-27 16:47:35 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -957,8 +957,8 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 9,
       "hard_vetoed": 35,
-      "recycled_suppressed_total": 239678,
-      "rejected_pit_total": 234
+      "recycled_suppressed_total": 239859,
+      "rejected_pit_total": 246
     },
     "items": [
       {
@@ -2149,13 +2149,13 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 16:47:00 ET",
-    "total_events": 95,
+    "updated_at_et": "2026-11-27 16:48:12 ET",
+    "total_events": 96,
     "counts_by_category": {
       "SEC": 69,
       "TRADE": 5,
       "ADMITTED": 5,
-      "BLOCKED": 14,
+      "BLOCKED": 15,
       "SHOCKWAVE": 1,
       "HEARTBEAT": 1
     },
@@ -3313,6 +3313,24 @@
         ],
         "summary": "BLOCKED gate summary: 28 UNQUALIFIED, 18 BELOW_930_INTRADAY_OPEN, 7 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
         "detail": "Examples: JPM->DHI (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-blk-15-1795816057",
+        "ts_et": "2026-11-27 16:47:37 ET",
+        "ts_utc": "2026-11-27T21:47:37Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "ANET",
+          "CRWD",
+          "DHI",
+          "LITE",
+          "PANW",
+          "STX",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 30 UNQUALIFIED, 19 BELOW_930_INTRADAY_OPEN, 7 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
+        "detail": "Examples: JPM->DHI (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       }
     ]
   },
@@ -3357,8 +3375,8 @@
       "date": "2026-11-27",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:46:59.670353+00:00",
-      "observed_at_et": "2026-11-27 16:46:59 ET",
+      "observed_at": "2026-11-27T21:48:10.860322+00:00",
+      "observed_at_et": "2026-11-27 16:48:10 ET",
       "fill_count": 2,
       "realized_gross": "10.00",
       "realized_net": null,
@@ -3419,8 +3437,8 @@
       "date": "2026-11-25",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:46:59.948828+00:00",
-      "observed_at_et": "2026-11-27 16:46:59 ET",
+      "observed_at": "2026-11-27T21:48:11.137483+00:00",
+      "observed_at_et": "2026-11-27 16:48:11 ET",
       "fill_count": 58,
       "realized_gross": "28.59",
       "realized_net": null,
@@ -4475,8 +4493,8 @@
       "date": "2026-11-24",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:47:00.162119+00:00",
-      "observed_at_et": "2026-11-27 16:47:00 ET",
+      "observed_at": "2026-11-27T21:48:11.345638+00:00",
+      "observed_at_et": "2026-11-27 16:48:11 ET",
       "fill_count": 19,
       "realized_gross": "3.74",
       "realized_net": null,
@@ -4820,8 +4838,8 @@
       "date": "2026-11-23",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:47:00.378300+00:00",
-      "observed_at_et": "2026-11-27 16:47:00 ET",
+      "observed_at": "2026-11-27T21:48:11.555458+00:00",
+      "observed_at_et": "2026-11-27 16:48:11 ET",
       "fill_count": 9,
       "realized_gross": "-166.94",
       "realized_net": null,
@@ -5025,8 +5043,8 @@
       "date": "2026-11-20",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:47:00.658978+00:00",
-      "observed_at_et": "2026-11-27 16:47:00 ET",
+      "observed_at": "2026-11-27T21:48:11.830678+00:00",
+      "observed_at_et": "2026-11-27 16:48:11 ET",
       "fill_count": 54,
       "realized_gross": "-10448.34",
       "realized_net": null,
@@ -6100,8 +6118,8 @@
       "date": "2026-11-19",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:47:00.937374+00:00",
-      "observed_at_et": "2026-11-27 16:47:00 ET",
+      "observed_at": "2026-11-27T21:48:12.096065+00:00",
+      "observed_at_et": "2026-11-27 16:48:12 ET",
       "fill_count": 35,
       "realized_gross": null,
       "realized_net": null,
