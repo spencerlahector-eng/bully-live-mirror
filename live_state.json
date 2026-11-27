@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795810329.5752163,
-  "generated_at_iso": "2026-11-27T20:12:09.575216+00:00",
-  "generated_at_et": "2026-11-27 15:12:09 ET",
+  "generated_at": 1795810378.6137865,
+  "generated_at_iso": "2026-11-27T20:12:58.613786+00:00",
+  "generated_at_et": "2026-11-27 15:12:58 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,8 +41,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795810329.9911802,
-    "observed_at_et": "2026-11-27 15:12:09 ET",
+    "observed_at": 1795810379.0276396,
+    "observed_at_et": "2026-11-27 15:12:59 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -904,7 +904,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 15:11:57 ET",
+    "updated_at_et": "2026-11-27 15:12:49 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -939,7 +939,7 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 12,
       "hard_vetoed": 36,
-      "recycled_suppressed_total": 227090,
+      "recycled_suppressed_total": 227209,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2109,7 +2109,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 15:12:10 ET",
+    "updated_at_et": "2026-11-27 15:12:59 ET",
     "total_events": 427,
     "counts_by_category": {
       "SEC": 31,
