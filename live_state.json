@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795812546.0796926,
-  "generated_at_iso": "2026-11-27T20:49:06.079693+00:00",
-  "generated_at_et": "2026-11-27 15:49:06 ET",
+  "generated_at": 1795812596.471899,
+  "generated_at_iso": "2026-11-27T20:49:56.471899+00:00",
+  "generated_at_et": "2026-11-27 15:49:56 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -37,16 +37,16 @@
   "runtime": {
     "execution_owner": "render",
     "status": "available",
-    "state": "RENDER_PRIMARY_EXECUTION",
-    "enabled": false,
+    "state": "RECONCILED",
+    "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
-    "policy_sha256": null,
-    "observed_at": 1795812546.4927402,
-    "observed_at_et": "2026-11-27 15:49:06 ET",
-    "reconciliation_at": null,
-    "reconciliation_at_et": null,
-    "heartbeat_age_seconds": null,
-    "reconciliation_age_seconds": null,
+    "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
+    "observed_at": 1795812587.94931,
+    "observed_at_et": "2026-11-27 15:49:47 ET",
+    "reconciliation_at": 1795812587.9489665,
+    "reconciliation_at_et": "2026-11-27 15:49:47 ET",
+    "heartbeat_age_seconds": 8.9,
+    "reconciliation_age_seconds": 8.9,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -919,7 +919,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 15:48:25 ET",
+    "updated_at_et": "2026-11-27 15:49:28 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -954,7 +954,7 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 11,
       "hard_vetoed": 37,
-      "recycled_suppressed_total": 231476,
+      "recycled_suppressed_total": 231596,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2124,7 +2124,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 15:49:06 ET",
+    "updated_at_et": "2026-11-27 15:49:56 ET",
     "total_events": 474,
     "counts_by_category": {
       "SEC": 32,
