@@ -69,6 +69,10 @@
       display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;
     }
     .status-strip.aged { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.4); color: #fde68a; }
+    .status-strip.stale-crit {
+      background: rgba(244,63,94,0.2); border: 1.5px solid rgba(244,63,94,0.85); color: #ffe4e6;
+      font-weight: 700; animation: pulse 1.6s infinite;
+    }
     .nav-tabs {
       display: flex; gap: 5px; overflow-x: auto; -webkit-overflow-scrolling: touch;
       background: var(--card); padding: 5px; border-radius: 10px; border: 1px solid var(--border);
@@ -173,6 +177,7 @@
         <div class="brand-title">BULLY <span>MIRROR</span></div>
         <span class="pill pill-ok" id="conn-pill"><span class="pulse-dot"></span><span id="conn-text">CONNECTING</span></span>
         <span class="pill pill-cyan">READ-ONLY · PAPER</span>
+        <span class="pill pill-warn" id="token-expiry-pill" hidden></span>
       </div>
       <div style="display:flex;gap:6px;align-items:center;">
         <button type="button" class="btn" id="btn-refresh">↻ Refresh</button>
@@ -525,12 +530,36 @@
       const hbAge = currentSnap.runtime?.heartbeat_age_seconds;
       const reconAge = currentSnap.runtime?.reconciliation_age_seconds;
       const isFresh = !failed && snapAgeSec !== null && snapAgeSec <= 60;
+      const sessWin = String(currentSnap.runtime?.session_window || '');
+      const isRthStale = snapAgeSec !== null && snapAgeSec > 300 && (sessWin === 'REGULAR_SESSION_OPEN' || sessWin === 'REGULAR_RTH');
+
+      // Surface non-secret GITHUB_TOKEN rotation countdown pill when <= 7 days remaining
+      const tokPill = $('token-expiry-pill');
+      const tokStatus = String(currentSnap.runtime?.github_token_status || 'OK');
+      const tokDays = currentSnap.runtime?.github_token_days_remaining;
+      if (tokPill) {
+        if (tokStatus === 'WARN_7D' || tokStatus === 'CRIT_3D' || tokStatus === 'EXPIRED') {
+          tokPill.hidden = false;
+          tokPill.className = tokStatus === 'WARN_7D' ? 'pill pill-warn' : 'pill pill-err';
+          tokPill.textContent = tokStatus === 'EXPIRED'
+            ? '🔑 GH TOKEN EXPIRED'
+            : `🔑 GH TOKEN ${tokDays}d LEFT`;
+        } else {
+          tokPill.hidden = true;
+        }
+      }
 
       if (isFresh) {
         pill.className = 'pill pill-ok';
         txt.textContent = activeSourceLabel + ' · LIVE';
         strip.className = 'status-strip';
         line.textContent = `Synced ${snapAgeSec}s ago · Engine ${currentSnap.runtime?.state || 'RECONCILED'} · Broker reconcile ${reconAge != null ? reconAge + 's' : 'fresh'} · Trading disabled`;
+      } else if (isRthStale) {
+        const staleMins = Math.floor(snapAgeSec / 60);
+        pill.className = 'pill pill-err';
+        txt.textContent = `🚨 CLOUD STALE (${staleMins}m)`;
+        strip.className = 'status-strip stale-crit';
+        line.textContent = `⚠️ DEAD-MAN'S SWITCH: Render Cloud heartbeat stalled >5 min during RTH (${staleMins}m old · last ${currentSnap.generated_at_et || 'unknown'}) — check Render / Mac failover!`;
       } else {
         pill.className = 'pill pill-warn';
         txt.textContent = activeSourceLabel + (snapAgeSec != null ? ` (${snapAgeSec}s old)` : '');
