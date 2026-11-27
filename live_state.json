@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795820531.559842,
-  "generated_at_iso": "2026-11-27T23:02:11.559842+00:00",
-  "generated_at_et": "2026-11-27 18:02:11 ET",
+  "generated_at": 1795820604.9422565,
+  "generated_at_iso": "2026-11-27T23:03:24.942256+00:00",
+  "generated_at_et": "2026-11-27 18:03:24 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795820524.966292,
-    "observed_at_et": "2026-11-27 18:02:04 ET",
-    "reconciliation_at": 1795820524.9659605,
-    "reconciliation_at_et": "2026-11-27 18:02:04 ET",
-    "heartbeat_age_seconds": 7.0,
-    "reconciliation_age_seconds": 7.0,
+    "observed_at": 1795820587.0251408,
+    "observed_at_et": "2026-11-27 18:03:07 ET",
+    "reconciliation_at": 1795820587.0247872,
+    "reconciliation_at_et": "2026-11-27 18:03:07 ET",
+    "heartbeat_age_seconds": 18.3,
+    "reconciliation_age_seconds": 18.3,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET",
@@ -665,9 +665,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T23:01:00.805009+00:00",
-    "timestamp_et": "2026-11-27 18:01:00 ET",
-    "observed_at": 1795820460.805009,
+    "timestamp_utc": "2026-11-27T23:02:15.795490+00:00",
+    "timestamp_et": "2026-11-27 18:02:15 ET",
+    "observed_at": 1795820535.79549,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -894,7 +894,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 18:01:50 ET",
+    "updated_at_et": "2026-11-27 18:03:14 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -908,8 +908,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T22:33:14.814536+00:00",
-        "last_published_utc": "2026-11-27T22:32:37+00:00"
+        "last_received_utc": "2026-11-27T23:03:14.846782+00:00",
+        "last_published_utc": "2026-11-27T23:02:52+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -924,178 +924,26 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 28,
-      "recycled_suppressed_this_call": 43,
+      "new_ingested_this_call": 3,
+      "recycled_suppressed_this_call": 0,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 10,
-      "hard_vetoed": 36,
-      "recycled_suppressed_total": 252970,
-      "rejected_pit_total": 954
+      "hard_vetoed": 37,
+      "recycled_suppressed_total": 253145,
+      "rejected_pit_total": 966
     },
     "items": [
       {
-        "id": "ext-benzinga-5686db0684",
+        "id": "ext-benzinga-9f537c7540",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "SNM",
-        "headline": "Reports Indicate Iraqi Government Intent to Assume Control of Oil Fields in Kurdistan Region",
-        "url": "https://www.avanza.se/nyheter.html?a=%2Fnyheter%2Franteoron-okar-fler-overvager-att-binda-bolanet-2026-11-26",
+        "symbol": "KBR",
+        "headline": "KBR, Inc. Announces New Credit Facilities and Debt Restructuring",
+        "url": "https://www.moomoo.com/stock/KBR-US?chain_id=AN-8eKumNBRgKk.1lf7c00&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A63%2C%22f%22%3A%22www.moomoo.com%2Fcommunity%2Fdiscussion%2Freward-share-your-trade-plan-today-2196242449%22%7D",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:37+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "2f8a2bc533c1b83f",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-f72cefb774",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "TACO",
-        "headline": "Berto Acquisition Corp. Files Form S-4 Registration Statement",
-        "url": "https://www.streetinsider.com/SEC+Filings?before_id=27396486",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:36+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "12080fbd373388ef",
-        "form_hint": "S-1",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_S-1_OFFERING"
-        ],
-        "ibkr_fee_rate_pct": 1.22,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-4a54f930b3",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ZVRA",
-        "headline": "Zevra Therapeutics Reports Q4 Earnings Beat",
-        "url": "https://www.moomoo.com/stock/ZVRA-US?chain_id=Name1K9-3FXPhg.1lf7c00&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A59%2C%22f%22%3A%22www.moomoo.com%2Foptions%2FASND261120C300000-US%2Fcommunity%22%7D",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:36+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "3d149eb88488c022",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2782,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-e9c28e7bd1",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "INSP",
-        "headline": "Inspire Medical Systems Files SEC Documents Regarding European Patient Access and Nyxoah Patent Litigation",
-        "url": "https://www.moomoo.com/stock/INSP-US?chain_id=Name1K9-3FXPhg.1ldikg0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A59%2C%22f%22%3A%22www.moomoo.com%2Foptions%2FINSP261120C22500-US%22%7D",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:35+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "a8f12f74195c33bf",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.3161,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-b764f27ee4",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "PSIX",
-        "headline": "Power Solutions International, Inc. Appoints Robert Losier as Interim CFO",
-        "url": "https://www.moomoo.com/stock/PSIX-US?chain_id=Name1K9-3FXPhg.1lfpqk0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A59%2C%22f%22%3A%22www.moomoo.com%2Foptions%2FSPXW261116P7710000-US%2Fcommunity%22%7D",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:35+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "f69d89a88dc47b78",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2796,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-6b2794736a",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "PCB",
-        "headline": "PCB Bancorp Director Reports Insider Stock Sale",
-        "url": "https://www.streetinsider.com/SEC+Filings?before_id=27403630",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:18+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "2a71b9766510cfd8",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.9728,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-66fe50a091",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "GTN",
-        "headline": "Gray Media Subsidiary Files Comments Supporting Channel Substitution for KOSA-TV",
-        "url": "https://newsfilter.io/articles/comment-by-gray-television-licensee-llc-in-26-302-2a8e85b9332b5400827204d0e057eeb8",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:02+00:00",
-        "received_at_utc": "2026-11-27T22:33:14.814536+00:00",
-        "fingerprint": "49e74d74b22b44fd",
+        "published_at_utc": "2026-11-27T23:02:52+00:00",
+        "received_at_utc": "2026-11-27T23:03:14.846782+00:00",
+        "fingerprint": "9ba3e1c3b83c64db",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1111,16 +959,168 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-5c5d35ade9",
+        "id": "ext-benzinga-98ebee20a4",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "GUD",
-        "headline": "Knight Therapeutics Inc. Reaches New 52-Week High",
-        "url": "https://www.baystreet.ca/breakoutstocks/4263/FirstService-Knight-Kinaxis-at-52-Week-Highs-on-News",
+        "symbol": "RIVN",
+        "headline": "Rivian Automotive Issues Recall for Certain Vehicles Due to Tire Inflation and Replacement Issues",
+        "url": "https://www.moomoo.com/stock/RIVN-US?chain_id=Name1K9-3FXPhg.1lgjh90&global_content=%7B%22promote_id%22%3A%22%22%2C%22sub_promote_id%22%3A64%2C%22subpromote_id%22%3A%22%22%2C%22f%22%3A%22www.moomoo.com%2Fcommunity%2Fprofile%2Fstock-review-103692347%2Fpost%2Fall%22%7D",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:32:00+00:00",
-        "received_at_utc": "2026-11-27T22:33:13.403639+00:00",
-        "fingerprint": "a48c6d8ae2b24b96",
+        "published_at_utc": "2026-11-27T23:02:28+00:00",
+        "received_at_utc": "2026-11-27T23:03:14.846782+00:00",
+        "fingerprint": "220d569fc96219f3",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.279,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-2e26d2c0e0",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "BAX",
+        "headline": "Baxter International Inc. Trades Ex-Dividend",
+        "url": "https://www.avanza.se/nyheter.html?a=%2Fnyheter%2Fsaljtryck-vantar-i-skf-vertevo-baddar-for-koplage-2026-11-27",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:02:20+00:00",
+        "received_at_utc": "2026-11-27T23:03:14.846782+00:00",
+        "fingerprint": "fe9636b5d07436e5",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-c2e5907b97",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "CG",
+        "headline": "Mundoro Capital Closes Private Placement with Centerra Gold",
+        "url": "https://www.newsfilecorp.com/release/326261/Mundoro-Closes-Equity-Investment-by-Centerra-Gold",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:02:11+00:00",
+        "received_at_utc": "2026-11-27T23:03:13.400209+00:00",
+        "fingerprint": "7b00693e24542d86",
+        "form_hint": "OTHER",
+        "clarity_tier": "HARD_VETO",
+        "catalyst_score": 0.0,
+        "action": "HARD_VETO_BLOCK_LONG",
+        "confirmed_catalyst": false,
+        "is_hard_veto": true,
+        "hard_veto_flags": [
+          "DILUTION_EQUITY_OR_CONVERT_OFFERING"
+        ],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-d0fb893190",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "STGW",
+        "headline": "Stagwell Expands APAC Presence with Singapore Hub Launch and Executive Appointment",
+        "url": "https://theprpost.com/date/27-11-2026",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:01:59+00:00",
+        "received_at_utc": "2026-11-27T23:02:15.820485+00:00",
+        "fingerprint": "31646eb772c5d474",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.2782,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-902468a2ca",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "CTSH",
+        "headline": "HSBC Adjusts Price Target on Cognizant Technology Solutions",
+        "url": "https://www.marketscreener.com/news/hsbc-adjusts-price-target-on-cognizant-technology-solutions-to-80-from-75-ce7851d9de8bf620",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:01:56+00:00",
+        "received_at_utc": "2026-11-27T23:02:15.820485+00:00",
+        "fingerprint": "7ddffde694fd8dd3",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-3d84ada859",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "NWL",
+        "headline": "Contigo Promotes AutoSeal Travel Mug for Holiday Season",
+        "url": "https://newsfilter.io/articles/the-holiday-gift-theyll-actually-use-contigo-makes-practical-gifting-feel-0f733e8ba84f5ac8b66edf2d3881cc15",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:01:52+00:00",
+        "received_at_utc": "2026-11-27T23:02:15.820485+00:00",
+        "fingerprint": "e1e418cbc6a112d7",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-d67642a353",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "ATH",
+        "headline": "Athabasca Oil Corporation Shareholders Approve Arrangement with Cenovus Energy",
+        "url": "https://www.globenewswire.com/news-release/2026/11/27/3411482/0/en/athabasca-oil-corporation-announces-shareholder-approval-of-the-proposed-arrangement-with-cenovus.html",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:01:50+00:00",
+        "received_at_utc": "2026-11-27T23:02:15.820485+00:00",
+        "fingerprint": "e6a387e7eba36623",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1136,41 +1136,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-dcbc3b9816",
+        "id": "ext-benzinga-fe5dbe31f5",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "GDRX",
-        "headline": "Jefferies Adjusts GoodRx Price Target to $3.00",
-        "url": "https://www.moomoo.com/ja/news/post/1006014866/jefferies-maintains-goodrx-gdrxus-with-hold-rating-raises-target-price",
+        "symbol": "IOVA",
+        "headline": "State Street Corp Reduces Holdings in Iovance Biotherapeutics, Inc.",
+        "url": "https://stocktwits.com/symbol/IOVA/news",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:31:59+00:00",
-        "received_at_utc": "2026-11-27T22:32:15.354994+00:00",
-        "fingerprint": "f4bffd5b2b6c1711",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.4081,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-a90efa285f",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "RPD",
-        "headline": "NAFFCO Group Selects Rapid7 to Strengthen Cyber Resilience",
-        "url": "https://synovatechnologies.com/security-insights/",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T22:31:58+00:00",
-        "received_at_utc": "2026-11-27T22:32:15.354994+00:00",
-        "fingerprint": "449ad3f96f3a4364",
+        "published_at_utc": "2026-11-27T23:01:48+00:00",
+        "received_at_utc": "2026-11-27T23:02:15.820485+00:00",
+        "fingerprint": "c6e6d991333f75e6",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1179,6 +1154,31 @@
         "is_hard_veto": false,
         "hard_veto_flags": [],
         "ibkr_fee_rate_pct": 0.2782,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-6db8e9880d",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "CBRS",
+        "headline": "Cerebras Systems Director Lior Susan Files Form 144 to Sell Shares",
+        "url": "https://www.moomoo.com/news/flash/1006031581/form-144-cerebras-systems-cbrsus-director-proposes-to-sell-11",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T23:01:45+00:00",
+        "received_at_utc": "2026-11-27T23:02:14.384074+00:00",
+        "fingerprint": "0a2837a583a7b189",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.2778,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -2125,52 +2125,19 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 18:02:13 ET",
-    "total_events": 166,
+    "updated_at_et": "2026-11-27 18:03:26 ET",
+    "total_events": 168,
     "counts_by_category": {
       "SEC": 78,
       "TRADE": 5,
       "ADMITTED": 8,
-      "BLOCKED": 23,
+      "BLOCKED": 24,
       "SHOCKWAVE": 1,
-      "HEARTBEAT": 51
+      "HEARTBEAT": 52
     },
     "entries": [
       {
-        "id": "sec-81-1795813535",
-        "ts_et": "2026-11-27 16:05:35 ET",
-        "ts_utc": "2026-11-27T21:05:35Z",
-        "category": "SEC",
-        "symbols": [
-          "LTRN"
-        ],
-        "summary": "SEC 8-K [CONFIRMED_CATALYST] LTRN (score=65.0): 8-K - Lantern Pharma Inc. (0001763950) (Filer)",
-        "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,2.03] \u00b7 https://www.sec.gov/Archives/edgar/data/1763950/000149315226054494/0001493152-26-054494-index.htm"
-      },
-      {
-        "id": "sec-82-1795813535",
-        "ts_et": "2026-11-27 16:05:35 ET",
-        "ts_utc": "2026-11-27T21:05:35Z",
-        "category": "SEC",
-        "symbols": [
-          "RMCF"
-        ],
-        "summary": "SEC 8-K [HARD_VETO: DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] RMCF (score=0.0): 8-K - Rocky Mountain Chocolate Factory, Inc. (0001616262) (Filer)",
-        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,5.02,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1616262/000121390026124560/0001213900-26-124560-index.htm"
-      },
-      {
-        "id": "sec-77-1795813536",
-        "ts_et": "2026-11-27 16:05:36 ET",
-        "ts_utc": "2026-11-27T21:05:36Z",
-        "category": "SEC",
-        "symbols": [
-          "C"
-        ],
-        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] C (score=15.0): 8-K - CITIGROUP INC (0000831001) (Filer)",
-        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/831001/000119312526480258/0001193125-26-480258-index.htm"
-      },
-      {
-        "id": "sec-78-1795813536",
+        "id": "sec-100-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2181,7 +2148,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034267/000121390026124563/0001213900-26-124563-index.htm"
       },
       {
-        "id": "sec-79-1795813536",
+        "id": "sec-101-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2192,7 +2159,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034266/000121390026124561/0001213900-26-124561-index.htm"
       },
       {
-        "id": "sec-80-1795813536",
+        "id": "sec-102-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2203,7 +2170,18 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1812727/000149315226054495/0001493152-26-054495-index.htm"
       },
       {
-        "id": "sec-76-1795813537",
+        "id": "sec-99-1795813536",
+        "ts_et": "2026-11-27 16:05:36 ET",
+        "ts_utc": "2026-11-27T21:05:36Z",
+        "category": "SEC",
+        "symbols": [
+          "C"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] C (score=15.0): 8-K - CITIGROUP INC (0000831001) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/831001/000119312526480258/0001193125-26-480258-index.htm"
+      },
+      {
+        "id": "sec-98-1795813537",
         "ts_et": "2026-11-27 16:05:37 ET",
         "ts_utc": "2026-11-27T21:05:37Z",
         "category": "SEC",
@@ -2214,7 +2192,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2067674/000153949726003114/0001539497-26-003114-index.htm"
       },
       {
-        "id": "sec-72-1795813683",
+        "id": "sec-94-1795813683",
         "ts_et": "2026-11-27 16:08:03 ET",
         "ts_utc": "2026-11-27T21:08:03Z",
         "category": "SEC",
@@ -2225,7 +2203,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1554818/000168316826009161/0001683168-26-009161-index.htm"
       },
       {
-        "id": "sec-71-1795813841",
+        "id": "sec-93-1795813841",
         "ts_et": "2026-11-27 16:10:41 ET",
         "ts_utc": "2026-11-27T21:10:41Z",
         "category": "SEC",
@@ -2236,7 +2214,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.08,8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2048948/000121390026124570/0001213900-26-124570-index.htm"
       },
       {
-        "id": "sec-70-1795813853",
+        "id": "sec-92-1795813853",
         "ts_et": "2026-11-27 16:10:53 ET",
         "ts_utc": "2026-11-27T21:10:53Z",
         "category": "SEC",
@@ -2247,7 +2225,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1094032/000121390026124571/0001213900-26-124571-index.htm"
       },
       {
-        "id": "sec-69-1795814109",
+        "id": "sec-91-1795814109",
         "ts_et": "2026-11-27 16:15:09 ET",
         "ts_utc": "2026-11-27T21:15:09Z",
         "category": "SEC",
@@ -2258,7 +2236,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1786471/000149315226054497/0001493152-26-054497-index.htm"
       },
       {
-        "id": "sec-68-1795814112",
+        "id": "sec-90-1795814112",
         "ts_et": "2026-11-27 16:15:12 ET",
         "ts_utc": "2026-11-27T21:15:12Z",
         "category": "SEC",
@@ -2269,7 +2247,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1721484/000121390026124573/0001213900-26-124573-index.htm"
       },
       {
-        "id": "sec-67-1795814113",
+        "id": "sec-89-1795814113",
         "ts_et": "2026-11-27 16:15:13 ET",
         "ts_utc": "2026-11-27T21:15:13Z",
         "category": "SEC",
@@ -2280,7 +2258,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,7.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1838987/000121390026124574/0001213900-26-124574-index.htm"
       },
       {
-        "id": "sec-66-1795814115",
+        "id": "sec-88-1795814115",
         "ts_et": "2026-11-27 16:15:15 ET",
         "ts_utc": "2026-11-27T21:15:15Z",
         "category": "SEC",
@@ -2291,7 +2269,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.01,3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1500881/000119312526480288/0001193125-26-480288-index.htm"
       },
       {
-        "id": "sec-65-1795814125",
+        "id": "sec-87-1795814125",
         "ts_et": "2026-11-27 16:15:25 ET",
         "ts_utc": "2026-11-27T21:15:25Z",
         "category": "SEC",
@@ -2302,7 +2280,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/2064658/000110465926132487/0001104659-26-132487-index.htm"
       },
       {
-        "id": "sec-64-1795814129",
+        "id": "sec-86-1795814129",
         "ts_et": "2026-11-27 16:15:29 ET",
         "ts_utc": "2026-11-27T21:15:29Z",
         "category": "SEC",
@@ -2313,7 +2291,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1009891/000121390026124575/0001213900-26-124575-index.htm"
       },
       {
-        "id": "sec-63-1795814134",
+        "id": "sec-85-1795814134",
         "ts_et": "2026-11-27 16:15:34 ET",
         "ts_utc": "2026-11-27T21:15:34Z",
         "category": "SEC",
@@ -2324,7 +2302,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/924822/000110465926132489/0001104659-26-132489-index.htm"
       },
       {
-        "id": "sec-62-1795814136",
+        "id": "sec-84-1795814136",
         "ts_et": "2026-11-27 16:15:36 ET",
         "ts_utc": "2026-11-27T21:15:36Z",
         "category": "SEC",
@@ -2335,7 +2313,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[2.03] \u00b7 https://www.sec.gov/Archives/edgar/data/1834032/000121390026124576/0001213900-26-124576-index.htm"
       },
       {
-        "id": "sec-61-1795814159",
+        "id": "sec-83-1795814159",
         "ts_et": "2026-11-27 16:15:59 ET",
         "ts_utc": "2026-11-27T21:15:59Z",
         "category": "SEC",
@@ -2346,7 +2324,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1527702/000166357726000368/0001663577-26-000368-index.htm"
       },
       {
-        "id": "sec-59-1795814363",
+        "id": "sec-81-1795814363",
         "ts_et": "2026-11-27 16:19:23 ET",
         "ts_utc": "2026-11-27T21:19:23Z",
         "category": "SEC",
@@ -2404,7 +2382,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-53-1795815012",
+        "id": "sec-75-1795815012",
         "ts_et": "2026-11-27 16:30:12 ET",
         "ts_utc": "2026-11-27T21:30:12Z",
         "category": "SEC",
@@ -2415,7 +2393,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1847345/000149315226054501/0001493152-26-054501-index.htm"
       },
       {
-        "id": "sec-52-1795815014",
+        "id": "sec-74-1795815014",
         "ts_et": "2026-11-27 16:30:14 ET",
         "ts_utc": "2026-11-27T21:30:14Z",
         "category": "SEC",
@@ -2426,7 +2404,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1876716/000121390026124588/0001213900-26-124588-index.htm"
       },
       {
-        "id": "sec-51-1795815020",
+        "id": "sec-73-1795815020",
         "ts_et": "2026-11-27 16:30:20 ET",
         "ts_utc": "2026-11-27T21:30:20Z",
         "category": "SEC",
@@ -2455,7 +2433,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "cat-46-1795815094",
+        "id": "cat-68-1795815094",
         "ts_et": "2026-11-27 16:31:34 ET",
         "ts_utc": "2026-11-27T21:31:34Z",
         "category": "SHOCKWAVE",
@@ -2493,7 +2471,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-42-1795815273",
+        "id": "sec-64-1795815273",
         "ts_et": "2026-11-27 16:34:33 ET",
         "ts_utc": "2026-11-27T21:34:33Z",
         "category": "SEC",
@@ -2576,7 +2554,7 @@
         "detail": "Examples: JPM->DHI (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-37-1795815529",
+        "id": "sec-59-1795815529",
         "ts_et": "2026-11-27 16:38:49 ET",
         "ts_utc": "2026-11-27T21:38:49Z",
         "category": "SEC",
@@ -2587,7 +2565,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.07,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/703604/000119312526480334/0001193125-26-480334-index.htm"
       },
       {
-        "id": "sec-36-1795815553",
+        "id": "sec-58-1795815553",
         "ts_et": "2026-11-27 16:39:13 ET",
         "ts_utc": "2026-11-27T21:39:13Z",
         "category": "SEC",
@@ -2598,7 +2576,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1716166/000149315226054507/0001493152-26-054507-index.htm"
       },
       {
-        "id": "sec-35-1795815558",
+        "id": "sec-57-1795815558",
         "ts_et": "2026-11-27 16:39:18 ET",
         "ts_utc": "2026-11-27T21:39:18Z",
         "category": "SEC",
@@ -2734,7 +2712,7 @@
         "detail": "Examples: JPM->DHI (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-34-1795815912",
+        "id": "sec-56-1795815912",
         "ts_et": "2026-11-27 16:45:12 ET",
         "ts_utc": "2026-11-27T21:45:12Z",
         "category": "SEC",
@@ -2835,7 +2813,7 @@
         "detail": "Examples: JPM->DHI (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-33-1795816231",
+        "id": "sec-55-1795816231",
         "ts_et": "2026-11-27 16:50:31 ET",
         "ts_utc": "2026-11-27T21:50:31Z",
         "category": "SEC",
@@ -2947,7 +2925,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-32-1795816780",
+        "id": "sec-54-1795816780",
         "ts_et": "2026-11-27 16:59:40 ET",
         "ts_utc": "2026-11-27T21:59:40Z",
         "category": "SEC",
@@ -2958,7 +2936,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_S-1_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/1795851/000166357726000370/0001663577-26-000370-index.htm"
       },
       {
-        "id": "sec-31-1795816831",
+        "id": "sec-53-1795816831",
         "ts_et": "2026-11-27 17:00:31 ET",
         "ts_utc": "2026-11-27T22:00:31Z",
         "category": "SEC",
@@ -3041,7 +3019,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-27-1795817297",
+        "id": "sec-49-1795817297",
         "ts_et": "2026-11-27 17:08:17 ET",
         "ts_utc": "2026-11-27T22:08:17Z",
         "category": "SEC",
@@ -3061,7 +3039,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-26-1795817427",
+        "id": "sec-48-1795817427",
         "ts_et": "2026-11-27 17:10:27 ET",
         "ts_utc": "2026-11-27T22:10:27Z",
         "category": "SEC",
@@ -3117,7 +3095,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-25-1795817720",
+        "id": "sec-47-1795817720",
         "ts_et": "2026-11-27 17:15:20 ET",
         "ts_utc": "2026-11-27T22:15:20Z",
         "category": "SEC",
@@ -3128,7 +3106,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/813762/000110465926132525/0001104659-26-132525-index.htm"
       },
       {
-        "id": "sec-24-1795817748",
+        "id": "sec-46-1795817748",
         "ts_et": "2026-11-27 17:15:48 ET",
         "ts_utc": "2026-11-27T22:15:48Z",
         "category": "SEC",
@@ -3220,7 +3198,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-23-1795818407",
+        "id": "sec-45-1795818407",
         "ts_et": "2026-11-27 17:26:47 ET",
         "ts_utc": "2026-11-27T22:26:47Z",
         "category": "SEC",
@@ -3231,7 +3209,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.02] \u00b7 flags=[DILUTION_ITEM_302_UNREGISTERED] \u00b7 https://www.sec.gov/Archives/edgar/data/1023994/000121390026124611/0001213900-26-124611-index.htm"
       },
       {
-        "id": "sec-22-1795818429",
+        "id": "sec-44-1795818429",
         "ts_et": "2026-11-27 17:27:09 ET",
         "ts_utc": "2026-11-27T22:27:09Z",
         "category": "SEC",
@@ -3287,7 +3265,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "cat-1-1795818756",
+        "id": "cat-23-1795818756",
         "ts_et": "2026-11-27 17:32:36 ET",
         "ts_utc": "2026-11-27T22:32:36Z",
         "category": "BLOCKED",
@@ -3512,6 +3490,26 @@
         "symbols": [],
         "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 58 blocked",
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
+      },
+      {
+        "id": "cat-3-1795820531",
+        "ts_et": "2026-11-27 18:02:11 ET",
+        "ts_utc": "2026-11-27T23:02:11Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "CG"
+        ],
+        "summary": "HARD_VETO [BENZINGA] CG: Mundoro Capital Closes Private Placement with Centerra Gold",
+        "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
+      },
+      {
+        "id": "fr-hb-74-1795820535",
+        "ts_et": "2026-11-27 18:02:15 ET",
+        "ts_utc": "2026-11-27T23:02:15Z",
+        "category": "HEARTBEAT",
+        "symbols": [],
+        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 58 blocked",
+        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       }
     ]
   },
@@ -3556,8 +3554,8 @@
       "date": "2026-11-27",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T23:02:12.250452+00:00",
-      "observed_at_et": "2026-11-27 18:02:12 ET",
+      "observed_at": "2026-11-27T23:03:25.613219+00:00",
+      "observed_at_et": "2026-11-27 18:03:25 ET",
       "fill_count": 2,
       "realized_gross": "10.00",
       "realized_net": null,
@@ -3618,8 +3616,8 @@
       "date": "2026-11-25",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T23:02:12.527551+00:00",
-      "observed_at_et": "2026-11-27 18:02:12 ET",
+      "observed_at": "2026-11-27T23:03:25.888845+00:00",
+      "observed_at_et": "2026-11-27 18:03:25 ET",
       "fill_count": 58,
       "realized_gross": "28.59",
       "realized_net": null,
@@ -4674,8 +4672,8 @@
       "date": "2026-11-24",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T23:02:12.741161+00:00",
-      "observed_at_et": "2026-11-27 18:02:12 ET",
+      "observed_at": "2026-11-27T23:03:26.105731+00:00",
+      "observed_at_et": "2026-11-27 18:03:26 ET",
       "fill_count": 19,
       "realized_gross": "3.74",
       "realized_net": null,
@@ -5019,8 +5017,8 @@
       "date": "2026-11-23",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T23:02:12.954505+00:00",
-      "observed_at_et": "2026-11-27 18:02:12 ET",
+      "observed_at": "2026-11-27T23:03:26.318834+00:00",
+      "observed_at_et": "2026-11-27 18:03:26 ET",
       "fill_count": 9,
       "realized_gross": "-166.94",
       "realized_net": null,
@@ -5224,8 +5222,8 @@
       "date": "2026-11-20",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T23:02:13.226119+00:00",
-      "observed_at_et": "2026-11-27 18:02:13 ET",
+      "observed_at": "2026-11-27T23:03:26.600298+00:00",
+      "observed_at_et": "2026-11-27 18:03:26 ET",
       "fill_count": 54,
       "realized_gross": "-10448.34",
       "realized_net": null,
@@ -6299,8 +6297,8 @@
       "date": "2026-11-19",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T23:02:13.490904+00:00",
-      "observed_at_et": "2026-11-27 18:02:13 ET",
+      "observed_at": "2026-11-27T23:03:26.862739+00:00",
+      "observed_at_et": "2026-11-27 18:03:26 ET",
       "fill_count": 35,
       "realized_gross": null,
       "realized_net": null,
