@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795813302.028899,
-  "generated_at_iso": "2026-11-27T21:01:42.028899+00:00",
-  "generated_at_et": "2026-11-27 16:01:42 ET",
+  "generated_at": 1795813355.3751483,
+  "generated_at_iso": "2026-11-27T21:02:35.375148+00:00",
+  "generated_at_et": "2026-11-27 16:02:35 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795813289.3833904,
-    "observed_at_et": "2026-11-27 16:01:29 ET",
-    "reconciliation_at": 1795813289.3830712,
-    "reconciliation_at_et": "2026-11-27 16:01:29 ET",
-    "heartbeat_age_seconds": 13.1,
-    "reconciliation_age_seconds": 13.1,
+    "observed_at": 1795813351.2366927,
+    "observed_at_et": "2026-11-27 16:02:31 ET",
+    "reconciliation_at": 1795813351.2363505,
+    "reconciliation_at_et": "2026-11-27 16:02:31 ET",
+    "heartbeat_age_seconds": 4.5,
+    "reconciliation_age_seconds": 4.5,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T21:01:00.266634+00:00",
-    "timestamp_et": "2026-11-27 16:01:00 ET",
-    "observed_at": 1795813260.266634,
+    "timestamp_utc": "2026-11-27T21:02:03.620441+00:00",
+    "timestamp_et": "2026-11-27 16:02:03 ET",
+    "observed_at": 1795813323.620441,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,35 +675,8 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 2,
-    "admitted_candidates": [
-      {
-        "lead": "ARM",
-        "symbol": "AVGO",
-        "lead_chg_pct": 5.69,
-        "down_chg_pct": 0.0,
-        "score": 100.0,
-        "reasons": [
-          "Lead ARM +5.7% (|chg|>=2.5%, dir=LONG, sign=+1)",
-          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.82)"
-        ]
-      },
-      {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.72,
-        "down_chg_pct": 0.0,
-        "score": 94.0,
-        "reasons": [
-          "Lead AVGO +3.7% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.64)"
-        ]
-      }
-    ],
+    "admitted_count": 0,
+    "admitted_candidates": [],
     "blocked_candidates_sample": [
       {
         "lead": "MOS",
@@ -719,7 +692,7 @@
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 14.89,
+        "lead_chg_pct": 14.7,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -752,7 +725,7 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.72,
+        "lead_chg_pct": 3.6,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -785,7 +758,7 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.72,
+        "lead_chg_pct": 3.6,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -794,9 +767,20 @@
         ]
       },
       {
+        "lead": "AVGO",
+        "symbol": "AMZN",
+        "lead_chg_pct": 3.6,
+        "down_chg_pct": 0.0,
+        "score": 54.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
         "lead": "TSM",
         "symbol": "AMAT",
-        "lead_chg_pct": 3.21,
+        "lead_chg_pct": 3.22,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -829,7 +813,7 @@
       {
         "lead": "NEM",
         "symbol": "AEM",
-        "lead_chg_pct": 5.35,
+        "lead_chg_pct": 5.89,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -840,7 +824,7 @@
       {
         "lead": "TSM",
         "symbol": "ASML",
-        "lead_chg_pct": 3.21,
+        "lead_chg_pct": 3.22,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -858,23 +842,12 @@
         "blockers": [
           "UNQUALIFIED"
         ]
-      },
-      {
-        "lead": "DAL",
-        "symbol": "UAL",
-        "lead_chg_pct": 2.25,
-        "down_chg_pct": 0.0,
-        "score": 45.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 27,
-      "BELOW_930_INTRADAY_OPEN": 12,
-      "BELOW_INTRADAY_VWAP": 6,
+      "UNQUALIFIED": 30,
+      "BELOW_930_INTRADAY_OPEN": 17,
+      "BELOW_INTRADAY_VWAP": 8,
       "STAGED_REVIEW": 1
     },
     "app_health": {
@@ -918,7 +891,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 16:01:20 ET",
+    "updated_at_et": "2026-11-27 16:02:14 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -932,8 +905,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T20:32:13.401511+00:00",
-        "last_published_utc": "2026-11-27T20:31:30+00:00"
+        "last_received_utc": "2026-11-27T21:02:14.732944+00:00",
+        "last_published_utc": "2026-11-27T21:01:43+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -942,21 +915,202 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T20:40:05.330909+00:00",
-        "last_published_utc": "2026-11-27T20:39:05+00:00"
+        "last_received_utc": "2026-11-27T21:01:44.602116+00:00",
+        "last_published_utc": "2026-11-27T21:00:39+00:00"
       }
     },
     "summary": {
       "total_items": 348,
       "new_ingested_this_call": 5,
-      "recycled_suppressed_this_call": 38,
+      "recycled_suppressed_this_call": 0,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 11,
       "hard_vetoed": 37,
-      "recycled_suppressed_total": 232929,
+      "recycled_suppressed_total": 233048,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-benzinga-e6acddab27",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "EMBJ",
+        "headline": "Embraer Engineer Accepted to Present Aviation Safety Research at AIAA Forum",
+        "url": "https://dino.ig.com.br/2026-11-27/ester-quintino-leva-pesquisa-em-seguranca-aerea-a-aiaa.html",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:01:43+00:00",
+        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
+        "fingerprint": "885c8b663edfdd73",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.5489,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-2d8d0fab11",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "EMBJ",
+        "headline": "Embraer Opposes Proposed US Tariff on Brazilian Aircraft",
+        "url": "https://www.manilatimes.net/2026/11/28/business/foreign-business/embraer-warns-trump-tariffs-to-affect-us-airfares/2479249",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:01:43+00:00",
+        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
+        "fingerprint": "956fa5c0bd3ae393",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.5489,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-b3180693e2",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "LTM",
+        "headline": "LATAM Airlines Completes First E195-E2 Flight",
+        "url": "https://www.newsnow.com/us/World/Latin+America",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:01:42+00:00",
+        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
+        "fingerprint": "53a353b7519fca52",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 1.3556,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-c996a60873",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "GLE",
+        "headline": "Societe Generale Reduces Holding in Mitie Group",
+        "url": "https://www.investegate.co.uk/announcement/rns/mitie-group--mto/holding-s-in-company/9898338",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:01:41+00:00",
+        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
+        "fingerprint": "dea9ae370bdb02c2",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 26.0469,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-9f153fd4af",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "ABEV",
+        "headline": "Ambev Partners with ABRAPE for the 2026 Sustainability Award (PRESE)",
+        "url": "https://brasilagoraonline.com.br/noticias/2026/11/pedro-leopoldo-rodeio-show-experience-vence-o-prese-2026-e-leva-projeto-social-de-minas-ao-sxsw-2027/",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:01:37+00:00",
+        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
+        "fingerprint": "96724d63f15718f3",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 2.1726,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-2d5e7c4e59",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "G",
+        "headline": "Generali and World Tennis Sign Expanded Multi-Year Partnership",
+        "url": "https://www.prnewswire.com/news-releases/world-tennis-and-generali-seal-new-expanded-partnership-to-power-global-participation-302951873.html",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:01:30+00:00",
+        "received_at_utc": "2026-11-27T21:02:13.403920+00:00",
+        "fingerprint": "b2c60d6406f364c8",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.3965,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-sec_edgar-01c7aac30a",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "TRNR",
+        "headline": "8-K - Interactive Strength, Inc. (0001785056) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1785056/000119312526480235/0001193125-26-480235-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T21:00:39+00:00",
+        "received_at_utc": "2026-11-27T21:01:44.602116+00:00",
+        "fingerprint": "b5b9d77634b7c80e",
+        "form_hint": "8-K",
+        "clarity_tier": "HARD_VETO",
+        "catalyst_score": 0.0,
+        "action": "HARD_VETO_BLOCK_LONG",
+        "confirmed_catalyst": false,
+        "is_hard_veto": true,
+        "hard_veto_flags": [
+          "DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT"
+        ],
+        "ibkr_fee_rate_pct": 28.695,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "3.01",
+          "5.02"
+        ]
+      },
       {
         "id": "ext-sec_edgar-fb7d01d027",
         "channel": "sec_edgar",
@@ -1112,56 +1266,6 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-304241a205",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "MARKET",
-        "headline": "Gemmy Industries Launches Grinchmas D\u00e9cor at Lowe's",
-        "url": "https://newsfilter.io/articles/spread-heart-growing-holiday-cheer-with-whimsical-grinch-decorations-efb2b477e3795361a7bbec595084b30d",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T20:01:38+00:00",
-        "received_at_utc": "2026-11-27T20:02:14.711490+00:00",
-        "fingerprint": "bddeaadb2f9e7082",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-54fcf4954c",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "COST",
-        "headline": "Amskor Corp. Files Lawsuit Against Costco Wholesale Canada",
-        "url": "https://newsfilter.io/articles/costcos-return-policy-pushed-a-toronto-rug-supplier-to-the-brink-lawsuit-alleges-edd0f989d1fd573c8aaa5af21c8162cb",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T20:01:30+00:00",
-        "received_at_utc": "2026-11-27T20:02:13.402533+00:00",
-        "fingerprint": "af1cce7c404abb42",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
         "id": "ext-sec_edgar-890adfe634",
         "channel": "sec_edgar",
         "source": "SEC_EDGAR_LIVE_ATOM",
@@ -1307,106 +1411,6 @@
         "items_detected": [
           "8.01"
         ]
-      },
-      {
-        "id": "ext-benzinga-320b715a61",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "KMB",
-        "headline": "Kimberly-Clark Insider Sells Shares Worth Over $5 Million",
-        "url": "https://www.marketscreener.com/news/kimberly-clark-insider-sold-shares-worth-5-240-352-according-to-a-recent-sec-filing-ce7851d9de81f123",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T19:03:07+00:00",
-        "received_at_utc": "2026-11-27T19:04:13.402020+00:00",
-        "fingerprint": "0c05f947fceadfe4",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2782,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-9f255c4d6d",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "PAYC",
-        "headline": "Paycom Software Insider Sold Shares Worth $721,382",
-        "url": "https://www.marketscreener.com/news/paycom-software-insider-sold-shares-worth-721-382-according-to-a-recent-sec-filing-ce7851d9de89f420",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T19:02:53+00:00",
-        "received_at_utc": "2026-11-27T19:03:16.730648+00:00",
-        "fingerprint": "932c7382e2a91357",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-d654bd78c0",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HIMS",
-        "headline": "Truist Securities Adjusts Hims & Hers Health Price Target to $18 From $32",
-        "url": "https://www.marketscreener.com/news/truist-securities-adjusts-hims-hers-health-price-target-to-18-from-32-maintains-hold-rating-ce7851d9d189f721",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T19:02:47+00:00",
-        "received_at_utc": "2026-11-27T19:03:16.730648+00:00",
-        "fingerprint": "cedcbd4e4b3cbcd6",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2902,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-9deb107945",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "EXLS",
-        "headline": "ExlService Holdings Insider Discloses Stock Sale",
-        "url": "https://www.marketscreener.com/news/exlservice-holdings-insider-sold-shares-worth-597-457-according-to-a-recent-sec-filing-ce7851d9d188f423",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T19:02:45+00:00",
-        "received_at_utc": "2026-11-27T19:03:16.730648+00:00",
-        "fingerprint": "9e16f5537ef13e02",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.3223,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
       },
       {
         "id": "ext-sec_edgar-f0e47bfae2",
@@ -1699,34 +1703,6 @@
           "1.01",
           "7.01",
           "9.01"
-        ]
-      },
-      {
-        "id": "ext-sec_edgar-0cece56fe3",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "MEDS",
-        "headline": "8-K - DataMeds AI, Inc. (0002030763) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/2030763/000149315226054450/0001493152-26-054450-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T16:59:27+00:00",
-        "received_at_utc": "2026-11-27T17:00:53.488331+00:00",
-        "fingerprint": "64ae2806272b70f4",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "8.01"
         ]
       },
       {
@@ -2123,44 +2099,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 16:01:42 ET",
-    "total_events": 490,
+    "updated_at_et": "2026-11-27 16:02:35 ET",
+    "total_events": 492,
     "counts_by_category": {
-      "SEC": 32,
-      "BLOCKED": 294,
+      "SEC": 33,
+      "BLOCKED": 295,
       "ADMITTED": 121,
       "TRADE": 5,
       "RATCHET": 2,
       "HEARTBEAT": 36
     },
     "entries": [
-      {
-        "id": "fr-blk-245-1795807313",
-        "ts_et": "2026-11-27 14:21:53 ET",
-        "ts_utc": "2026-11-27T19:21:53Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "AMZN",
-          "AVGO",
-          "GOOGL",
-          "LITE",
-          "LRCX",
-          "PANW"
-        ],
-        "summary": "BLOCKED gate summary: 26 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: ARM->AVGO (sc=64.0, UNQUALIFIED); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-hb-246-1795807377",
-        "ts_et": "2026-11-27 14:22:57 ET",
-        "ts_utc": "2026-11-27T19:22:57Z",
-        "category": "HEARTBEAT",
-        "symbols": [],
-        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 57 blocked",
-        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
-      },
       {
         "id": "fr-hb-247-1795807448",
         "ts_et": "2026-11-27 14:24:08 ET",
@@ -2330,7 +2279,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-23-1795808012",
+        "id": "sec-30-1795808012",
         "ts_et": "2026-11-27 14:33:32 ET",
         "ts_utc": "2026-11-27T19:33:32Z",
         "category": "SEC",
@@ -2770,7 +2719,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-11-1795809634",
+        "id": "sec-18-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -2790,7 +2739,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-10-1795809656",
+        "id": "sec-17-1795809656",
         "ts_et": "2026-11-27 15:00:56 ET",
         "ts_utc": "2026-11-27T20:00:56Z",
         "category": "SEC",
@@ -2875,7 +2824,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-4-1795809984",
+        "id": "sec-11-1795809984",
         "ts_et": "2026-11-27 15:06:24 ET",
         "ts_utc": "2026-11-27T20:06:24Z",
         "category": "SEC",
@@ -3359,7 +3308,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-0-1795811945",
+        "id": "sec-7-1795811945",
         "ts_et": "2026-11-27 15:39:05 ET",
         "ts_utc": "2026-11-27T20:39:05Z",
         "category": "SEC",
@@ -3840,6 +3789,17 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
+        "id": "sec-6-1795813239",
+        "ts_et": "2026-11-27 16:00:39 ET",
+        "ts_utc": "2026-11-27T21:00:39Z",
+        "category": "SEC",
+        "symbols": [
+          "TRNR"
+        ],
+        "summary": "SEC 8-K [HARD_VETO: DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] TRNR (score=0.0): 8-K - Interactive Strength, Inc. (0001785056) (Filer)",
+        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,5.02] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1785056/000119312526480235/0001193125-26-480235-index.htm"
+      },
+      {
         "id": "fr-adm-335-1795813260",
         "ts_et": "2026-11-27 16:01:00 ET",
         "ts_utc": "2026-11-27T21:01:00Z",
@@ -3867,6 +3827,24 @@
           "WDC"
         ],
         "summary": "BLOCKED gate summary: 27 UNQUALIFIED, 12 BELOW_930_INTRADAY_OPEN, 6 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
+        "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-blk-336-1795813323",
+        "ts_et": "2026-11-27 16:02:03 ET",
+        "ts_utc": "2026-11-27T21:02:03Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "ANET",
+          "CF",
+          "CRWD",
+          "FTNT",
+          "GOOGL",
+          "LITE",
+          "PANW",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 30 UNQUALIFIED, 17 BELOW_930_INTRADAY_OPEN, 8 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       }
     ]
