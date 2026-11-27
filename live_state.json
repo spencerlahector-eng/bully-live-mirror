@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795812491.5063858,
-  "generated_at_iso": "2026-11-27T20:48:11.506386+00:00",
-  "generated_at_et": "2026-11-27 15:48:11 ET",
+  "generated_at": 1795812546.0796926,
+  "generated_at_iso": "2026-11-27T20:49:06.079693+00:00",
+  "generated_at_et": "2026-11-27 15:49:06 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -37,16 +37,16 @@
   "runtime": {
     "execution_owner": "render",
     "status": "available",
-    "state": "RECONCILED",
-    "enabled": true,
+    "state": "RENDER_PRIMARY_EXECUTION",
+    "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
-    "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795812484.456876,
-    "observed_at_et": "2026-11-27 15:48:04 ET",
-    "reconciliation_at": 1795812484.4565861,
-    "reconciliation_at_et": "2026-11-27 15:48:04 ET",
-    "heartbeat_age_seconds": 7.5,
-    "reconciliation_age_seconds": 7.5,
+    "policy_sha256": null,
+    "observed_at": 1795812546.4927402,
+    "observed_at_et": "2026-11-27 15:49:06 ET",
+    "reconciliation_at": null,
+    "reconciliation_at_et": null,
+    "heartbeat_age_seconds": null,
+    "reconciliation_age_seconds": null,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T20:47:49.762588+00:00",
-    "timestamp_et": "2026-11-27 15:47:49 ET",
-    "observed_at": 1795812469.762588,
+    "timestamp_utc": "2026-11-27T20:48:54.123095+00:00",
+    "timestamp_et": "2026-11-27 15:48:54 ET",
+    "observed_at": 1795812534.123095,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,7 +675,7 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 3,
+    "admitted_count": 2,
     "admitted_candidates": [
       {
         "lead": "ARM",
@@ -687,7 +687,7 @@
           "Lead ARM +5.7% (|chg|>=2.5%, dir=LONG, sign=+1)",
           "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
           "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.83)"
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.79)"
         ]
       },
       {
@@ -701,19 +701,6 @@
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)",
           "WAVE1_MIDCAP_FINRA_SR40_SQUEEZE_LIFT(+4.0,sr=49%)"
-        ]
-      },
-      {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.75,
-        "down_chg_pct": 0.0,
-        "score": 91.0,
-        "reasons": [
-          "Lead AVGO +3.8% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.64)"
         ]
       }
     ],
@@ -741,6 +728,17 @@
         ]
       },
       {
+        "lead": "STX",
+        "symbol": "WDC",
+        "lead_chg_pct": 6.67,
+        "down_chg_pct": 0.0,
+        "score": 60.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
         "lead": "WDC",
         "symbol": "STX",
         "lead_chg_pct": 6.99,
@@ -754,7 +752,7 @@
       {
         "lead": "NEM",
         "symbol": "AEM",
-        "lead_chg_pct": 5.07,
+        "lead_chg_pct": 5.89,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -776,7 +774,7 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.75,
+        "lead_chg_pct": 3.64,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -809,12 +807,23 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.75,
+        "lead_chg_pct": 3.64,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
+        "lead": "AVGO",
+        "symbol": "AMZN",
+        "lead_chg_pct": 3.64,
+        "down_chg_pct": 0.0,
+        "score": 54.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
         ]
       },
       {
@@ -826,17 +835,6 @@
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "BELOW_930_INTRADAY_OPEN"
-        ]
-      },
-      {
-        "lead": "STX",
-        "symbol": "WDC",
-        "lead_chg_pct": 6.67,
-        "down_chg_pct": 0.0,
-        "score": 50.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
         ]
       },
       {
@@ -872,21 +870,10 @@
         "blockers": [
           "UNQUALIFIED"
         ]
-      },
-      {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.21,
-        "down_chg_pct": 0.0,
-        "score": 45.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
-        ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 23,
+      "UNQUALIFIED": 24,
       "BELOW_930_INTRADAY_OPEN": 17,
       "BELOW_INTRADAY_VWAP": 10,
       "STAGED_REVIEW": 1
@@ -932,7 +919,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 15:47:31 ET",
+    "updated_at_et": "2026-11-27 15:48:25 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -962,12 +949,12 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 5,
-      "recycled_suppressed_this_call": 38,
+      "new_ingested_this_call": 8,
+      "recycled_suppressed_this_call": 43,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 11,
       "hard_vetoed": 37,
-      "recycled_suppressed_total": 231356,
+      "recycled_suppressed_total": 231476,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2137,44 +2124,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 15:48:11 ET",
-    "total_events": 472,
+    "updated_at_et": "2026-11-27 15:49:06 ET",
+    "total_events": 474,
     "counts_by_category": {
       "SEC": 32,
-      "BLOCKED": 284,
-      "ADMITTED": 113,
+      "BLOCKED": 285,
+      "ADMITTED": 114,
       "TRADE": 5,
       "RATCHET": 2,
       "HEARTBEAT": 36
     },
     "entries": [
-      {
-        "id": "fr-hb-229-1795806281",
-        "ts_et": "2026-11-27 14:04:41 ET",
-        "ts_utc": "2026-11-27T19:04:41Z",
-        "category": "HEARTBEAT",
-        "symbols": [],
-        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 55 blocked",
-        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
-      },
-      {
-        "id": "fr-blk-230-1795806348",
-        "ts_et": "2026-11-27 14:05:48 ET",
-        "ts_utc": "2026-11-27T19:05:48Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "CRWD",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "STX",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 23 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 10 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
       {
         "id": "fr-hb-231-1795806408",
         "ts_et": "2026-11-27 14:06:48 ET",
@@ -3885,6 +3845,36 @@
         ],
         "summary": "BLOCKED gate summary: 23 UNQUALIFIED, 17 BELOW_930_INTRADAY_OPEN, 10 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
         "detail": "Examples: JPM->DHI (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-adm-324-1795812534",
+        "ts_et": "2026-11-27 15:48:54 ET",
+        "ts_utc": "2026-11-27T20:48:54Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "AVGO",
+          "CF"
+        ],
+        "summary": "ADMITTED 2 candidate(s): AVGO, CF",
+        "detail": "AVGO (lead ARM) score=100.0 [ADMITTED] | CF (lead MOS) score=91.0 [ADMITTED] \u00b7 phase=POST_CLOSE_AUDIT"
+      },
+      {
+        "id": "fr-blk-324-1795812534",
+        "ts_et": "2026-11-27 15:48:54 ET",
+        "ts_utc": "2026-11-27T20:48:54Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "ANET",
+          "CRWD",
+          "DHI",
+          "LITE",
+          "PANW",
+          "STX",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 24 UNQUALIFIED, 17 BELOW_930_INTRADAY_OPEN, 10 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
+        "detail": "Examples: JPM->DHI (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       }
     ]
   },
