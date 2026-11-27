@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795795346.13719,
-  "generated_at_iso": "2026-11-27T16:02:26.137190+00:00",
-  "generated_at_et": "2026-11-27 11:02:26 ET",
+  "generated_at": 1795795410.0983799,
+  "generated_at_iso": "2026-11-27T16:03:30.098380+00:00",
+  "generated_at_et": "2026-11-27 11:03:30 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -21,15 +21,15 @@
     "currency": "USD",
     "cash": 76551.73,
     "buying_power": 306206.92,
-    "equity": 76843.73,
+    "equity": 76844.73,
     "last_equity": 76822.76,
     "baseline_equity": 97541.35,
-    "daily_change_usd": 20.97,
+    "daily_change_usd": 21.97,
     "daily_change_pct": 0.03,
-    "vs_baseline_usd": -20697.62,
+    "vs_baseline_usd": -20696.62,
     "vs_baseline_pct": -21.22,
-    "deployed_capital": 292.0,
-    "open_unrealized_pnl": 21.0,
+    "deployed_capital": 293.0,
+    "open_unrealized_pnl": 22.0,
     "open_positions_count": 1,
     "cumulative_realized_gross": "0.00",
     "total_confirmed_fills": 0
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795795344.479175,
-    "observed_at_et": "2026-11-27 11:02:24 ET",
-    "reconciliation_at": 1795795336.7675116,
-    "reconciliation_at_et": "2026-11-27 11:02:16 ET",
-    "heartbeat_age_seconds": 2.1,
-    "reconciliation_age_seconds": 9.8,
+    "observed_at": 1795795409.9389184,
+    "observed_at_et": "2026-11-27 11:03:29 ET",
+    "reconciliation_at": 1795795408.3006992,
+    "reconciliation_at_et": "2026-11-27 11:03:28 ET",
+    "heartbeat_age_seconds": 0.6,
+    "reconciliation_age_seconds": 2.2,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,15 +56,15 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 29327
+      "RECONCILE": 29335
     },
     "latest_reconcile": {
-      "id": "reconcile-1795795345-ec46c1",
-      "timestamp_sec": 1795795345,
-      "time_et": "2026-11-27 11:02:25 ET",
+      "id": "reconcile-1795795408-befbb3",
+      "timestamp_sec": 1795795408,
+      "time_et": "2026-11-27 11:03:28 ET",
       "free_cash": 76551.73,
-      "position_value": 292.0,
-      "total_equity": 76843.73,
+      "position_value": 293.0,
+      "total_equity": 76844.73,
       "rationale": "Automated market surveillance ledger reconciliation"
     },
     "lifecycle_log": [
@@ -939,7 +939,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 11:02:14 ET",
+    "updated_at_et": "2026-11-27 11:03:22 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -953,8 +953,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T16:02:14.761639+00:00",
-        "last_published_utc": "2026-11-27T16:01:59+00:00"
+        "last_received_utc": "2026-11-27T16:03:14.759938+00:00",
+        "last_published_utc": "2026-11-27T16:02:50+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -969,15 +969,90 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 8,
-      "recycled_suppressed_this_call": 0,
+      "new_ingested_this_call": 0,
+      "recycled_suppressed_this_call": 43,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 15,
       "hard_vetoed": 42,
-      "recycled_suppressed_total": 188653,
+      "recycled_suppressed_total": 188825,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-benzinga-9509887d32",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "REGN",
+        "headline": "Regeneron Pharmaceuticals Receives UK Regulatory Approval for Linvoseltamab",
+        "url": "https://www.marketscreener.com/news/regeneron-pharmaceuticals-receives-uk-regulator-s-approval-for-linvoseltamab-in-multiple-myeloma-ce7851d9de88f525",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:02:50+00:00",
+        "received_at_utc": "2026-11-27T16:03:14.759938+00:00",
+        "fingerprint": "e40f3793ba06d286",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.2782,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-8c4e7a08e0",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "SBSW",
+        "headline": "Sibanye-Stillwater Receives Notification of JPMorgan Chase & Co. Beneficial Interest",
+        "url": "https://irw-press.com/de/mitteilung-ueber-den-erwerb-einer-wirtschaftlichen-beteiligung-an-wertpapieren-durch-jpmorgan-chase-co-2/",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:02:13+00:00",
+        "received_at_utc": "2026-11-27T16:03:14.759938+00:00",
+        "fingerprint": "c22f0c185c1e8a0a",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4174,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-45189db8e0",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "PANW",
+        "headline": "Palo Alto Networks Collaborates with Google Cloud and Fujitsu on AI-Driven Security",
+        "url": "https://technologymagazine.com/news/behind-fujitsu-and-google-clouds-high-security-ai-alliance",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:02:09+00:00",
+        "received_at_utc": "2026-11-27T16:03:13.403145+00:00",
+        "fingerprint": "ea99944015092d3a",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4263,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-benzinga-c2a19f7f8d",
         "channel": "benzinga",
@@ -1147,81 +1222,6 @@
         "is_hard_veto": false,
         "hard_veto_flags": [],
         "ibkr_fee_rate_pct": 0.4081,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-5179c6fcad",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "UPM",
-        "headline": "UPM Reports European Commission Skepticism Regarding Proposed Graphic Paper Joint Venture with Sappi",
-        "url": "https://www.prnewswire.com/news-releases/inside-information-european-commissions-directorate-general-for-competition-indicates-upms-proposed-graphic-paper-joint-venture-with-sappi-unlikely-to-proceed-despite-remedies-302951793.html",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:01:22+00:00",
-        "received_at_utc": "2026-11-27T16:02:14.761639+00:00",
-        "fingerprint": "6338b4792c220aa8",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-9c77e243e3",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "JPM",
-        "headline": "JPMorgan Chase Discloses Change in Voting Rights in Ashtead Technology",
-        "url": "https://www.investegate.co.uk/announcement/rns/ashtead-technology-holdings--at./holding-s-in-company/9897534",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:01:17+00:00",
-        "received_at_utc": "2026-11-27T16:02:13.400387+00:00",
-        "fingerprint": "e376f7dacbc3f6bb",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-ae42bdf212",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "UCG",
-        "headline": "European Investment Bank Backs UniCredit with EUR100 Million Wind Energy Guarantees",
-        "url": "https://www.marketscreener.com/news/european-investment-bank-backs-unicredit-with-eur100-million-wind-energy-guarantees-ce7851d9df80f42d",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T15:32:04+00:00",
-        "received_at_utc": "2026-11-27T15:33:14.795382+00:00",
-        "fingerprint": "c3dbed926b72c099",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -2148,7 +2148,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 11:02:26 ET",
+    "updated_at_et": "2026-11-27 11:03:30 ET",
     "total_events": 125,
     "counts_by_category": {
       "SEC": 12,
@@ -2193,7 +2193,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm"
       },
       {
-        "id": "cat-232-1795788248",
+        "id": "cat-235-1795788248",
         "ts_et": "2026-11-27 09:04:08 ET",
         "ts_utc": "2026-11-27T14:04:08Z",
         "category": "BLOCKED",
@@ -2204,7 +2204,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-229-1795788249",
+        "id": "cat-232-1795788249",
         "ts_et": "2026-11-27 09:04:09 ET",
         "ts_utc": "2026-11-27T14:04:09Z",
         "category": "BLOCKED",
@@ -2215,7 +2215,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-218-1795788254",
+        "id": "cat-221-1795788254",
         "ts_et": "2026-11-27 09:04:14 ET",
         "ts_utc": "2026-11-27T14:04:14Z",
         "category": "BLOCKED",
@@ -2226,7 +2226,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-210-1795788256",
+        "id": "cat-213-1795788256",
         "ts_et": "2026-11-27 09:04:16 ET",
         "ts_utc": "2026-11-27T14:04:16Z",
         "category": "BLOCKED",
@@ -2237,7 +2237,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-209-1795788258",
+        "id": "cat-212-1795788258",
         "ts_et": "2026-11-27 09:04:18 ET",
         "ts_utc": "2026-11-27T14:04:18Z",
         "category": "BLOCKED",
@@ -2248,7 +2248,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-204-1795788261",
+        "id": "cat-207-1795788261",
         "ts_et": "2026-11-27 09:04:21 ET",
         "ts_utc": "2026-11-27T14:04:21Z",
         "category": "BLOCKED",
@@ -2259,7 +2259,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-202-1795788262",
+        "id": "cat-205-1795788262",
         "ts_et": "2026-11-27 09:04:22 ET",
         "ts_utc": "2026-11-27T14:04:22Z",
         "category": "BLOCKED",
@@ -2270,7 +2270,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-187-1795788267",
+        "id": "cat-190-1795788267",
         "ts_et": "2026-11-27 09:04:27 ET",
         "ts_utc": "2026-11-27T14:04:27Z",
         "category": "BLOCKED",
@@ -2281,7 +2281,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-184-1795788270",
+        "id": "cat-187-1795788270",
         "ts_et": "2026-11-27 09:04:30 ET",
         "ts_utc": "2026-11-27T14:04:30Z",
         "category": "BLOCKED",
@@ -2292,7 +2292,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-177-1795788282",
+        "id": "cat-180-1795788282",
         "ts_et": "2026-11-27 09:04:42 ET",
         "ts_utc": "2026-11-27T14:04:42Z",
         "category": "BLOCKED",
@@ -2922,7 +2922,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->COHR (sc=53.0, UNQUALIFIED); NVDA->AVGO (sc=53.0, UNQUALIFIED); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-55-1795792090",
+        "id": "sec-58-1795792090",
         "ts_et": "2026-11-27 10:08:10 ET",
         "ts_utc": "2026-11-27T15:08:10Z",
         "category": "SEC",
@@ -3106,7 +3106,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=49.0, UNQUALIFIED); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-45-1795792737",
+        "id": "sec-48-1795792737",
         "ts_et": "2026-11-27 10:18:57 ET",
         "ts_utc": "2026-11-27T15:18:57Z",
         "category": "SEC",
@@ -3135,7 +3135,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NEM->AEM (sc=45.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-44-1795792840",
+        "id": "sec-47-1795792840",
         "ts_et": "2026-11-27 10:20:40 ET",
         "ts_utc": "2026-11-27T15:20:40Z",
         "category": "SEC",
@@ -3323,7 +3323,7 @@
         "detail": "Examples: MOS->CF (sc=84.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); COHR->FN (sc=50.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-37-1795793457",
+        "id": "sec-40-1795793457",
         "ts_et": "2026-11-27 10:30:57 ET",
         "ts_utc": "2026-11-27T15:30:57Z",
         "category": "SEC",
@@ -4058,13 +4058,13 @@
       "asset_class": "us_option",
       "qty": 1.0,
       "avg_entry_price": 2.71,
-      "current_price": 2.92,
-      "market_value": 292.0,
-      "unrealized_pl": 21.0,
-      "unrealized_plpc": 0.07749,
-      "unrealized_plpc_pct": 7.75,
+      "current_price": 2.93,
+      "market_value": 293.0,
+      "unrealized_pl": 22.0,
+      "unrealized_plpc": 0.08118,
+      "unrealized_plpc_pct": 8.12,
       "ratchet_tier": "Tier 2 \u00b7 Fibonacci Floor (61.8% lock)",
-      "stop_floor": 2.84,
+      "stop_floor": 2.85,
       "eod_exit_decision": "BANK_100PCT_INTRADAY_PROFIT",
       "eod_sell_qty": 1,
       "eod_retain_qty": 0,
