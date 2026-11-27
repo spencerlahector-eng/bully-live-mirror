@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795815182.7410479,
-  "generated_at_iso": "2026-11-27T21:33:02.741048+00:00",
-  "generated_at_et": "2026-11-27 16:33:02 ET",
+  "generated_at": 1795815254.8822143,
+  "generated_at_iso": "2026-11-27T21:34:14.882214+00:00",
+  "generated_at_et": "2026-11-27 16:34:14 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795815174.1205907,
-    "observed_at_et": "2026-11-27 16:32:54 ET",
-    "reconciliation_at": 1795815174.1201289,
-    "reconciliation_at_et": "2026-11-27 16:32:54 ET",
-    "heartbeat_age_seconds": 9.0,
-    "reconciliation_age_seconds": 9.0,
+    "observed_at": 1795815235.9991276,
+    "observed_at_et": "2026-11-27 16:33:55 ET",
+    "reconciliation_at": 1795815235.99882,
+    "reconciliation_at_et": "2026-11-27 16:33:55 ET",
+    "heartbeat_age_seconds": 19.3,
+    "reconciliation_age_seconds": 19.3,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET",
@@ -665,9 +665,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T21:32:30.972001+00:00",
-    "timestamp_et": "2026-11-27 16:32:30 ET",
-    "observed_at": 1795815150.972001,
+    "timestamp_utc": "2026-11-27T21:33:43.108787+00:00",
+    "timestamp_et": "2026-11-27 16:33:43 ET",
+    "observed_at": 1795815223.108787,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -683,7 +683,7 @@
       {
         "lead": "ARM",
         "symbol": "AVGO",
-        "lead_chg_pct": 5.79,
+        "lead_chg_pct": 5.82,
         "down_chg_pct": 0.0,
         "score": 100.0,
         "reasons": [
@@ -696,20 +696,9 @@
     ],
     "blocked_candidates_sample": [
       {
-        "lead": "MOS",
-        "symbol": "CF",
-        "lead_chg_pct": 3.39,
-        "down_chg_pct": 0.0,
-        "score": 73.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 14.69,
+        "lead_chg_pct": 14.68,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -753,7 +742,7 @@
       {
         "lead": "COHR",
         "symbol": "FN",
-        "lead_chg_pct": 14.69,
+        "lead_chg_pct": 14.68,
         "down_chg_pct": 0.0,
         "score": 55.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -828,9 +817,20 @@
         ]
       },
       {
+        "lead": "TSM",
+        "symbol": "AMAT",
+        "lead_chg_pct": 3.14,
+        "down_chg_pct": 0.0,
+        "score": 50.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
         "lead": "ORCL",
         "symbol": "IBM",
-        "lead_chg_pct": 3.46,
+        "lead_chg_pct": 3.44,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -841,7 +841,7 @@
       {
         "lead": "TSM",
         "symbol": "ASML",
-        "lead_chg_pct": 3.2,
+        "lead_chg_pct": 3.14,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -850,22 +850,22 @@
         ]
       },
       {
-        "lead": "DAL",
-        "symbol": "AAL",
-        "lead_chg_pct": 2.25,
+        "lead": "JPM",
+        "symbol": "MS",
+        "lead_chg_pct": 2.51,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       }
     ],
     "blocker_counts": {
       "UNQUALIFIED": 35,
       "BELOW_930_INTRADAY_OPEN": 15,
-      "BELOW_INTRADAY_VWAP": 7,
-      "STAGED_REVIEW": 1
+      "BELOW_INTRADAY_VWAP": 7
     },
     "app_health": {
       "backend_50425": {
@@ -908,7 +908,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 16:32:42 ET",
+    "updated_at_et": "2026-11-27 16:33:37 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -922,8 +922,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T21:32:18.580375+00:00",
-        "last_published_utc": "2026-11-27T21:31:46+00:00"
+        "last_received_utc": "2026-11-27T21:33:14.867299+00:00",
+        "last_published_utc": "2026-11-27T21:32:28+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -938,15 +938,65 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 27,
-      "recycled_suppressed_this_call": 44,
-      "rejected_pit_this_call": 0,
+      "new_ingested_this_call": 18,
+      "recycled_suppressed_this_call": 41,
+      "rejected_pit_this_call": 12,
       "confirmed_catalysts": 10,
       "hard_vetoed": 34,
-      "recycled_suppressed_total": 237159,
-      "rejected_pit_total": 102
+      "recycled_suppressed_total": 237338,
+      "rejected_pit_total": 114
     },
     "items": [
+      {
+        "id": "ext-benzinga-a3bf2199c8",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "TFC",
+        "headline": "Truist Securities Analyst Coverage Updates",
+        "url": "https://www.marketscreener.com/news/truist-adjusts-price-target-on-regency-centers-to-81-from-84-maintains-buy-rating-ce7851d9df8ffe2d",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:32:28+00:00",
+        "received_at_utc": "2026-11-27T21:33:14.867299+00:00",
+        "fingerprint": "b17a5ed6b03dc5be",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4298,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-200b9275e4",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "APH",
+        "headline": "Amphenol Officer Files Intent to Sell Shares",
+        "url": "https://www.moomoo.com/stock/APH-US?chain_id=Name1K9-3FXPhg.1lgjh90&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A57%2C%22f%22%3A%22www.moomoo.com%2Fstock%2FFFIV-US%22%7D",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T21:32:19+00:00",
+        "received_at_utc": "2026-11-27T21:33:13.402187+00:00",
+        "fingerprint": "6817647367faa24b",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.25,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-benzinga-6f7f9f7713",
         "channel": "benzinga",
@@ -1680,56 +1730,6 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-b3180693e2",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "LTM",
-        "headline": "LATAM Airlines Completes First E195-E2 Flight",
-        "url": "https://www.newsnow.com/us/World/Latin+America",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T21:01:42+00:00",
-        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
-        "fingerprint": "53a353b7519fca52",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 1.3556,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-c996a60873",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "GLE",
-        "headline": "Societe Generale Reduces Holding in Mitie Group",
-        "url": "https://www.investegate.co.uk/announcement/rns/mitie-group--mto/holding-s-in-company/9898338",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T21:01:41+00:00",
-        "received_at_utc": "2026-11-27T21:02:14.732944+00:00",
-        "fingerprint": "dea9ae370bdb02c2",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 26.0469,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2123,13 +2123,13 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 16:33:04 ET",
-    "total_events": 75,
+    "updated_at_et": "2026-11-27 16:34:16 ET",
+    "total_events": 76,
     "counts_by_category": {
       "SEC": 64,
       "TRADE": 5,
       "ADMITTED": 1,
-      "BLOCKED": 3,
+      "BLOCKED": 4,
       "SHOCKWAVE": 1,
       "HEARTBEAT": 1
     },
@@ -2352,7 +2352,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2030763/000149315226054450/0001493152-26-054450-index.htm"
       },
       {
-        "id": "sec-269-1795799390",
+        "id": "sec-271-1795799390",
         "ts_et": "2026-11-27 12:09:50 ET",
         "ts_utc": "2026-11-27T17:09:50Z",
         "category": "SEC",
@@ -2376,7 +2376,7 @@
         "detail": "lane=HORIZON_OPT \u00b7 lead=AVGO \u00b7 spread=3.90% \u00b7 rules=[Lead AVGO +3.4% (|chg|>=2.0%, dir=LONG, sign=+1), MODERATE_LEAD_SHOCK (>= 3.0%), CATALYST_CONFIRMED(TIER_1_WIRE), V7_POSITIVE_QUOTE_IMBALANCE(+3.0)]"
       },
       {
-        "id": "sec-221-1795800912",
+        "id": "sec-223-1795800912",
         "ts_et": "2026-11-27 12:35:12 ET",
         "ts_utc": "2026-11-27T17:35:12Z",
         "category": "SEC",
@@ -2387,7 +2387,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1585608/000119312526479783/0001193125-26-479783-index.htm"
       },
       {
-        "id": "sec-206-1795802260",
+        "id": "sec-208-1795802260",
         "ts_et": "2026-11-27 12:57:40 ET",
         "ts_utc": "2026-11-27T17:57:40Z",
         "category": "SEC",
@@ -2398,7 +2398,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_424B5_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/2038439/000173112226001491/0001731122-26-001491-index.htm"
       },
       {
-        "id": "sec-188-1795802712",
+        "id": "sec-190-1795802712",
         "ts_et": "2026-11-27 13:05:12 ET",
         "ts_utc": "2026-11-27T18:05:12Z",
         "category": "SEC",
@@ -2409,7 +2409,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1785279/000119312526479830/0001193125-26-479830-index.htm"
       },
       {
-        "id": "sec-185-1795802863",
+        "id": "sec-187-1795802863",
         "ts_et": "2026-11-27 13:07:43 ET",
         "ts_utc": "2026-11-27T18:07:43Z",
         "category": "SEC",
@@ -2420,7 +2420,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[2.01,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1561032/000156103226000077/0001561032-26-000077-index.htm"
       },
       {
-        "id": "sec-184-1795802967",
+        "id": "sec-186-1795802967",
         "ts_et": "2026-11-27 13:09:27 ET",
         "ts_utc": "2026-11-27T18:09:27Z",
         "category": "SEC",
@@ -2431,7 +2431,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/815097/000081509726000117/0000815097-26-000117-index.htm"
       },
       {
-        "id": "sec-181-1795803030",
+        "id": "sec-183-1795803030",
         "ts_et": "2026-11-27 13:10:30 ET",
         "ts_utc": "2026-11-27T18:10:30Z",
         "category": "SEC",
@@ -2442,7 +2442,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1213037/000149315226054461/0001493152-26-054461-index.htm"
       },
       {
-        "id": "sec-176-1795803313",
+        "id": "sec-178-1795803313",
         "ts_et": "2026-11-27 13:15:13 ET",
         "ts_utc": "2026-11-27T18:15:13Z",
         "category": "SEC",
@@ -2453,7 +2453,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1892492/000149315226054465/0001493152-26-054465-index.htm"
       },
       {
-        "id": "sec-151-1795804804",
+        "id": "sec-153-1795804804",
         "ts_et": "2026-11-27 13:40:04 ET",
         "ts_utc": "2026-11-27T18:40:04Z",
         "category": "SEC",
@@ -2464,7 +2464,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1680581/000119312526479975/0001193125-26-479975-index.htm"
       },
       {
-        "id": "sec-137-1795806014",
+        "id": "sec-139-1795806014",
         "ts_et": "2026-11-27 14:00:14 ET",
         "ts_utc": "2026-11-27T19:00:14Z",
         "category": "SEC",
@@ -2475,7 +2475,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_S-1_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/1756064/000149315226054474/0001493152-26-054474-index.htm"
       },
       {
-        "id": "sec-95-1795806703",
+        "id": "sec-97-1795806703",
         "ts_et": "2026-11-27 14:11:43 ET",
         "ts_utc": "2026-11-27T19:11:43Z",
         "category": "SEC",
@@ -2486,7 +2486,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1590976/000159097626000081/0001590976-26-000081-index.htm"
       },
       {
-        "id": "sec-94-1795806817",
+        "id": "sec-96-1795806817",
         "ts_et": "2026-11-27 14:13:37 ET",
         "ts_utc": "2026-11-27T19:13:37Z",
         "category": "SEC",
@@ -2497,7 +2497,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,7.01] \u00b7 https://www.sec.gov/Archives/edgar/data/709283/000070928326000008/0000709283-26-000008-index.htm"
       },
       {
-        "id": "sec-76-1795808012",
+        "id": "sec-78-1795808012",
         "ts_et": "2026-11-27 14:33:32 ET",
         "ts_utc": "2026-11-27T19:33:32Z",
         "category": "SEC",
@@ -2508,7 +2508,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.01,8.01,9.01] \u00b7 flags=[DILUTION_424B5_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/2038439/000173112226001493/0001731122-26-001493-index.htm"
       },
       {
-        "id": "sec-62-1795809634",
+        "id": "sec-64-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -2519,7 +2519,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1801169/000114036126045877/0001140361-26-045877-index.htm"
       },
       {
-        "id": "sec-63-1795809634",
+        "id": "sec-65-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -2530,7 +2530,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1801169/000114036126045877/0001140361-26-045877-index.htm"
       },
       {
-        "id": "sec-61-1795809656",
+        "id": "sec-63-1795809656",
         "ts_et": "2026-11-27 15:00:56 ET",
         "ts_utc": "2026-11-27T20:00:56Z",
         "category": "SEC",
@@ -2541,7 +2541,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,5.03] \u00b7 https://www.sec.gov/Archives/edgar/data/862861/000149315226054485/0001493152-26-054485-index.htm"
       },
       {
-        "id": "sec-55-1795809984",
+        "id": "sec-57-1795809984",
         "ts_et": "2026-11-27 15:06:24 ET",
         "ts_utc": "2026-11-27T20:06:24Z",
         "category": "SEC",
@@ -2552,7 +2552,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_S-1_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/2093101/000119312526480175/0001193125-26-480175-index.htm"
       },
       {
-        "id": "sec-51-1795811945",
+        "id": "sec-53-1795811945",
         "ts_et": "2026-11-27 15:39:05 ET",
         "ts_utc": "2026-11-27T20:39:05Z",
         "category": "SEC",
@@ -2563,7 +2563,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_424B5_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/1801169/000114036126045884/0001140361-26-045884-index.htm"
       },
       {
-        "id": "sec-50-1795813239",
+        "id": "sec-52-1795813239",
         "ts_et": "2026-11-27 16:00:39 ET",
         "ts_utc": "2026-11-27T21:00:39Z",
         "category": "SEC",
@@ -2574,7 +2574,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,5.02] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1785056/000119312526480235/0001193125-26-480235-index.htm"
       },
       {
-        "id": "sec-48-1795813291",
+        "id": "sec-50-1795813291",
         "ts_et": "2026-11-27 16:01:31 ET",
         "ts_utc": "2026-11-27T21:01:31Z",
         "category": "SEC",
@@ -2585,7 +2585,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,7.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1892292/000121390026124552/0001213900-26-124552-index.htm"
       },
       {
-        "id": "sec-47-1795813293",
+        "id": "sec-49-1795813293",
         "ts_et": "2026-11-27 16:01:33 ET",
         "ts_utc": "2026-11-27T21:01:33Z",
         "category": "SEC",
@@ -2596,7 +2596,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.01,2.03,3.02,9.01] \u00b7 flags=[DILUTION_ITEM_302_UNREGISTERED] \u00b7 https://www.sec.gov/Archives/edgar/data/1517681/000149315226054492/0001493152-26-054492-index.htm"
       },
       {
-        "id": "sec-41-1795813514",
+        "id": "sec-43-1795813514",
         "ts_et": "2026-11-27 16:05:14 ET",
         "ts_utc": "2026-11-27T21:05:14Z",
         "category": "SEC",
@@ -2607,7 +2607,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1988494/000119312526480254/0001193125-26-480254-index.htm"
       },
       {
-        "id": "sec-40-1795813522",
+        "id": "sec-42-1795813522",
         "ts_et": "2026-11-27 16:05:22 ET",
         "ts_utc": "2026-11-27T21:05:22Z",
         "category": "SEC",
@@ -2618,7 +2618,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1512673/000119312526480257/0001193125-26-480257-index.htm"
       },
       {
-        "id": "sec-39-1795813526",
+        "id": "sec-41-1795813526",
         "ts_et": "2026-11-27 16:05:26 ET",
         "ts_utc": "2026-11-27T21:05:26Z",
         "category": "SEC",
@@ -2629,7 +2629,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1604191/000110465926132481/0001104659-26-132481-index.htm"
       },
       {
-        "id": "sec-37-1795813533",
+        "id": "sec-39-1795813533",
         "ts_et": "2026-11-27 16:05:33 ET",
         "ts_utc": "2026-11-27T21:05:33Z",
         "category": "SEC",
@@ -2640,7 +2640,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1157075/000168316826009159/0001683168-26-009159-index.htm"
       },
       {
-        "id": "sec-38-1795813533",
+        "id": "sec-40-1795813533",
         "ts_et": "2026-11-27 16:05:33 ET",
         "ts_utc": "2026-11-27T21:05:33Z",
         "category": "SEC",
@@ -2651,7 +2651,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1844392/000121390026124559/0001213900-26-124559-index.htm"
       },
       {
-        "id": "sec-35-1795813535",
+        "id": "sec-37-1795813535",
         "ts_et": "2026-11-27 16:05:35 ET",
         "ts_utc": "2026-11-27T21:05:35Z",
         "category": "SEC",
@@ -2662,7 +2662,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,2.03] \u00b7 https://www.sec.gov/Archives/edgar/data/1763950/000149315226054494/0001493152-26-054494-index.htm"
       },
       {
-        "id": "sec-36-1795813535",
+        "id": "sec-38-1795813535",
         "ts_et": "2026-11-27 16:05:35 ET",
         "ts_utc": "2026-11-27T21:05:35Z",
         "category": "SEC",
@@ -2673,7 +2673,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,5.02,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1616262/000121390026124560/0001213900-26-124560-index.htm"
       },
       {
-        "id": "sec-31-1795813536",
+        "id": "sec-33-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2684,7 +2684,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/831001/000119312526480258/0001193125-26-480258-index.htm"
       },
       {
-        "id": "sec-32-1795813536",
+        "id": "sec-34-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2695,7 +2695,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034267/000121390026124563/0001213900-26-124563-index.htm"
       },
       {
-        "id": "sec-33-1795813536",
+        "id": "sec-35-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2706,7 +2706,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2034266/000121390026124561/0001213900-26-124561-index.htm"
       },
       {
-        "id": "sec-34-1795813536",
+        "id": "sec-36-1795813536",
         "ts_et": "2026-11-27 16:05:36 ET",
         "ts_utc": "2026-11-27T21:05:36Z",
         "category": "SEC",
@@ -2717,7 +2717,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1812727/000149315226054495/0001493152-26-054495-index.htm"
       },
       {
-        "id": "sec-30-1795813537",
+        "id": "sec-32-1795813537",
         "ts_et": "2026-11-27 16:05:37 ET",
         "ts_utc": "2026-11-27T21:05:37Z",
         "category": "SEC",
@@ -2728,7 +2728,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2067674/000153949726003114/0001539497-26-003114-index.htm"
       },
       {
-        "id": "sec-26-1795813683",
+        "id": "sec-28-1795813683",
         "ts_et": "2026-11-27 16:08:03 ET",
         "ts_utc": "2026-11-27T21:08:03Z",
         "category": "SEC",
@@ -2739,7 +2739,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1554818/000168316826009161/0001683168-26-009161-index.htm"
       },
       {
-        "id": "sec-25-1795813841",
+        "id": "sec-27-1795813841",
         "ts_et": "2026-11-27 16:10:41 ET",
         "ts_utc": "2026-11-27T21:10:41Z",
         "category": "SEC",
@@ -2750,7 +2750,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.08,8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2048948/000121390026124570/0001213900-26-124570-index.htm"
       },
       {
-        "id": "sec-24-1795813853",
+        "id": "sec-26-1795813853",
         "ts_et": "2026-11-27 16:10:53 ET",
         "ts_utc": "2026-11-27T21:10:53Z",
         "category": "SEC",
@@ -2761,7 +2761,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1094032/000121390026124571/0001213900-26-124571-index.htm"
       },
       {
-        "id": "sec-23-1795814109",
+        "id": "sec-25-1795814109",
         "ts_et": "2026-11-27 16:15:09 ET",
         "ts_utc": "2026-11-27T21:15:09Z",
         "category": "SEC",
@@ -2772,7 +2772,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1786471/000149315226054497/0001493152-26-054497-index.htm"
       },
       {
-        "id": "sec-22-1795814112",
+        "id": "sec-24-1795814112",
         "ts_et": "2026-11-27 16:15:12 ET",
         "ts_utc": "2026-11-27T21:15:12Z",
         "category": "SEC",
@@ -2783,7 +2783,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1721484/000121390026124573/0001213900-26-124573-index.htm"
       },
       {
-        "id": "sec-21-1795814113",
+        "id": "sec-23-1795814113",
         "ts_et": "2026-11-27 16:15:13 ET",
         "ts_utc": "2026-11-27T21:15:13Z",
         "category": "SEC",
@@ -2794,7 +2794,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,7.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1838987/000121390026124574/0001213900-26-124574-index.htm"
       },
       {
-        "id": "sec-20-1795814115",
+        "id": "sec-22-1795814115",
         "ts_et": "2026-11-27 16:15:15 ET",
         "ts_utc": "2026-11-27T21:15:15Z",
         "category": "SEC",
@@ -2805,7 +2805,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.01,3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1500881/000119312526480288/0001193125-26-480288-index.htm"
       },
       {
-        "id": "sec-19-1795814125",
+        "id": "sec-21-1795814125",
         "ts_et": "2026-11-27 16:15:25 ET",
         "ts_utc": "2026-11-27T21:15:25Z",
         "category": "SEC",
@@ -2816,7 +2816,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/2064658/000110465926132487/0001104659-26-132487-index.htm"
       },
       {
-        "id": "sec-18-1795814129",
+        "id": "sec-20-1795814129",
         "ts_et": "2026-11-27 16:15:29 ET",
         "ts_utc": "2026-11-27T21:15:29Z",
         "category": "SEC",
@@ -2827,7 +2827,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1009891/000121390026124575/0001213900-26-124575-index.htm"
       },
       {
-        "id": "sec-17-1795814134",
+        "id": "sec-19-1795814134",
         "ts_et": "2026-11-27 16:15:34 ET",
         "ts_utc": "2026-11-27T21:15:34Z",
         "category": "SEC",
@@ -2838,7 +2838,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/924822/000110465926132489/0001104659-26-132489-index.htm"
       },
       {
-        "id": "sec-16-1795814136",
+        "id": "sec-18-1795814136",
         "ts_et": "2026-11-27 16:15:36 ET",
         "ts_utc": "2026-11-27T21:15:36Z",
         "category": "SEC",
@@ -2849,7 +2849,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[2.03] \u00b7 https://www.sec.gov/Archives/edgar/data/1834032/000121390026124576/0001213900-26-124576-index.htm"
       },
       {
-        "id": "sec-15-1795814159",
+        "id": "sec-17-1795814159",
         "ts_et": "2026-11-27 16:15:59 ET",
         "ts_utc": "2026-11-27T21:15:59Z",
         "category": "SEC",
@@ -2860,7 +2860,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[3.01,9.01] \u00b7 flags=[DISTRESS_BANKRUPTCY_DELIST_OR_RESTATEMENT] \u00b7 https://www.sec.gov/Archives/edgar/data/1527702/000166357726000368/0001663577-26-000368-index.htm"
       },
       {
-        "id": "sec-13-1795814363",
+        "id": "sec-15-1795814363",
         "ts_et": "2026-11-27 16:19:23 ET",
         "ts_utc": "2026-11-27T21:19:23Z",
         "category": "SEC",
@@ -2918,7 +2918,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-8-1795815012",
+        "id": "sec-10-1795815012",
         "ts_et": "2026-11-27 16:30:12 ET",
         "ts_utc": "2026-11-27T21:30:12Z",
         "category": "SEC",
@@ -2929,7 +2929,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1847345/000149315226054501/0001493152-26-054501-index.htm"
       },
       {
-        "id": "sec-7-1795815014",
+        "id": "sec-9-1795815014",
         "ts_et": "2026-11-27 16:30:14 ET",
         "ts_utc": "2026-11-27T21:30:14Z",
         "category": "SEC",
@@ -2940,7 +2940,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1876716/000121390026124588/0001213900-26-124588-index.htm"
       },
       {
-        "id": "sec-6-1795815020",
+        "id": "sec-8-1795815020",
         "ts_et": "2026-11-27 16:30:20 ET",
         "ts_utc": "2026-11-27T21:30:20Z",
         "category": "SEC",
@@ -2969,7 +2969,7 @@
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "cat-1-1795815094",
+        "id": "cat-3-1795815094",
         "ts_et": "2026-11-27 16:31:34 ET",
         "ts_utc": "2026-11-27T21:31:34Z",
         "category": "SHOCKWAVE",
@@ -2987,6 +2987,24 @@
         "symbols": [],
         "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 1 admitted \u00b7 58 blocked",
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
+      },
+      {
+        "id": "fr-blk-4-1795815223",
+        "ts_et": "2026-11-27 16:33:43 ET",
+        "ts_utc": "2026-11-27T21:33:43Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "ANET",
+          "CRWD",
+          "FN",
+          "LITE",
+          "PANW",
+          "STX",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 35 UNQUALIFIED, 15 BELOW_930_INTRADAY_OPEN, 7 BELOW_INTRADAY_VWAP",
+        "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=55.0, UNQUALIFIED)"
       }
     ]
   },
@@ -3031,8 +3049,8 @@
       "date": "2026-11-27",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:33:03.434581+00:00",
-      "observed_at_et": "2026-11-27 16:33:03 ET",
+      "observed_at": "2026-11-27T21:34:15.584571+00:00",
+      "observed_at_et": "2026-11-27 16:34:15 ET",
       "fill_count": 2,
       "realized_gross": "10.00",
       "realized_net": null,
@@ -3093,8 +3111,8 @@
       "date": "2026-11-25",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:33:03.709276+00:00",
-      "observed_at_et": "2026-11-27 16:33:03 ET",
+      "observed_at": "2026-11-27T21:34:15.867090+00:00",
+      "observed_at_et": "2026-11-27 16:34:15 ET",
       "fill_count": 58,
       "realized_gross": "28.59",
       "realized_net": null,
@@ -4149,8 +4167,8 @@
       "date": "2026-11-24",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:33:03.926454+00:00",
-      "observed_at_et": "2026-11-27 16:33:03 ET",
+      "observed_at": "2026-11-27T21:34:16.077823+00:00",
+      "observed_at_et": "2026-11-27 16:34:16 ET",
       "fill_count": 19,
       "realized_gross": "3.74",
       "realized_net": null,
@@ -4494,8 +4512,8 @@
       "date": "2026-11-23",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:33:04.143690+00:00",
-      "observed_at_et": "2026-11-27 16:33:04 ET",
+      "observed_at": "2026-11-27T21:34:16.290514+00:00",
+      "observed_at_et": "2026-11-27 16:34:16 ET",
       "fill_count": 9,
       "realized_gross": "-166.94",
       "realized_net": null,
@@ -4699,8 +4717,8 @@
       "date": "2026-11-20",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:33:04.425307+00:00",
-      "observed_at_et": "2026-11-27 16:33:04 ET",
+      "observed_at": "2026-11-27T21:34:16.568627+00:00",
+      "observed_at_et": "2026-11-27 16:34:16 ET",
       "fill_count": 54,
       "realized_gross": "-10448.34",
       "realized_net": null,
@@ -5774,8 +5792,8 @@
       "date": "2026-11-19",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-27T21:33:04.691666+00:00",
-      "observed_at_et": "2026-11-27 16:33:04 ET",
+      "observed_at": "2026-11-27T21:34:16.838561+00:00",
+      "observed_at_et": "2026-11-27 16:34:16 ET",
       "fill_count": 35,
       "realized_gross": null,
       "realized_net": null,
