@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795811962.4894664,
-  "generated_at_iso": "2026-11-27T20:39:22.489466+00:00",
-  "generated_at_et": "2026-11-27 15:39:22 ET",
+  "generated_at": 1795812022.7421272,
+  "generated_at_iso": "2026-11-27T20:40:22.742127+00:00",
+  "generated_at_et": "2026-11-27 15:40:22 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,8 +41,8 @@
     "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": null,
-    "observed_at": 1795811962.9064484,
-    "observed_at_et": "2026-11-27 15:39:22 ET",
+    "observed_at": 1795812023.14814,
+    "observed_at_et": "2026-11-27 15:40:23 ET",
     "reconciliation_at": null,
     "reconciliation_at_et": null,
     "heartbeat_age_seconds": null,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T20:39:10.704041+00:00",
-    "timestamp_et": "2026-11-27 15:39:10 ET",
-    "observed_at": 1795811950.704041,
+    "timestamp_utc": "2026-11-27T20:40:10.765086+00:00",
+    "timestamp_et": "2026-11-27 15:40:10 ET",
+    "observed_at": 1795812010.765086,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -693,11 +693,11 @@
       {
         "lead": "MOS",
         "symbol": "CF",
-        "lead_chg_pct": 3.39,
+        "lead_chg_pct": 3.24,
         "down_chg_pct": 0.0,
         "score": 91.0,
         "reasons": [
-          "Lead MOS +3.4% (|chg|>=2.5%, dir=LONG, sign=+1)",
+          "Lead MOS +3.2% (|chg|>=2.5%, dir=LONG, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
           "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)",
           "WAVE1_MIDCAP_FINRA_SR40_SQUEEZE_LIFT(+4.0,sr=49%)"
@@ -708,7 +708,7 @@
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 14.73,
+        "lead_chg_pct": 14.8,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -730,7 +730,7 @@
       {
         "lead": "NEM",
         "symbol": "AEM",
-        "lead_chg_pct": 5.48,
+        "lead_chg_pct": 5.27,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -752,7 +752,7 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.54,
+        "lead_chg_pct": 3.53,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -785,7 +785,7 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.54,
+        "lead_chg_pct": 3.53,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -796,7 +796,7 @@
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.54,
+        "lead_chg_pct": 3.53,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -807,7 +807,7 @@
       {
         "lead": "TSM",
         "symbol": "AMAT",
-        "lead_chg_pct": 3.22,
+        "lead_chg_pct": 3.21,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -918,7 +918,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 15:39:03 ET",
+    "updated_at_et": "2026-11-27 15:40:05 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -942,8 +942,8 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T20:07:14.163251+00:00",
-        "last_published_utc": "2026-11-27T20:06:24+00:00"
+        "last_received_utc": "2026-11-27T20:40:05.330909+00:00",
+        "last_published_utc": "2026-11-27T20:39:05+00:00"
       }
     },
     "summary": {
@@ -951,12 +951,39 @@
       "new_ingested_this_call": 8,
       "recycled_suppressed_this_call": 43,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 12,
-      "hard_vetoed": 36,
-      "recycled_suppressed_total": 230326,
+      "confirmed_catalysts": 11,
+      "hard_vetoed": 37,
+      "recycled_suppressed_total": 230445,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-fb7d01d027",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "MARKET",
+        "headline": "424B5 - Opendoor Technologies Inc. (0001801169) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1801169/000114036126045884/0001140361-26-045884-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T20:39:05+00:00",
+        "received_at_utc": "2026-11-27T20:40:05.330909+00:00",
+        "fingerprint": "56b8343a7c976a3f",
+        "form_hint": "424B5",
+        "clarity_tier": "HARD_VETO",
+        "catalyst_score": 0.0,
+        "action": "HARD_VETO_BLOCK_LONG",
+        "confirmed_catalyst": false,
+        "is_hard_veto": true,
+        "hard_veto_flags": [
+          "DILUTION_424B5_OFFERING"
+        ],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-benzinga-d7a3c325bf",
         "channel": "benzinga",
@@ -1703,33 +1730,6 @@
         ]
       },
       {
-        "id": "ext-sec_edgar-91e7b19241",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "ELVG",
-        "headline": "S-1 - Elvictor Group, Inc. (0001741489) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1741489/000121390026124391/0001213900-26-124391-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T16:16:35+00:00",
-        "received_at_utc": "2026-11-27T16:18:49.569744+00:00",
-        "fingerprint": "b7d87f6737af6cbc",
-        "form_hint": "S-1",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_S-1_OFFERING"
-        ],
-        "ibkr_fee_rate_pct": 13.3239,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2123,53 +2123,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 15:39:22 ET",
-    "total_events": 457,
+    "updated_at_et": "2026-11-27 15:40:23 ET",
+    "total_events": 459,
     "counts_by_category": {
-      "SEC": 31,
+      "SEC": 32,
       "BLOCKED": 278,
       "ADMITTED": 107,
       "TRADE": 5,
       "RATCHET": 2,
-      "HEARTBEAT": 34
+      "HEARTBEAT": 35
     },
     "entries": [
-      {
-        "id": "fr-blk-215-1795805345",
-        "ts_et": "2026-11-27 13:49:05 ET",
-        "ts_utc": "2026-11-27T18:49:05Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMZN",
-          "CRWD",
-          "GOOGL",
-          "LITE",
-          "PANW",
-          "STX",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 18 UNQUALIFIED, 16 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-216-1795805414",
-        "ts_et": "2026-11-27 13:50:14 ET",
-        "ts_utc": "2026-11-27T18:50:14Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AEM",
-          "AMAT",
-          "CRWD",
-          "LITE",
-          "LRCX",
-          "PANW",
-          "STX",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 18 UNQUALIFIED, 16 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
       {
         "id": "fr-blk-217-1795805480",
         "ts_et": "2026-11-27 13:51:20 ET",
@@ -2315,7 +2279,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-82-1795806014",
+        "id": "sec-83-1795806014",
         "ts_et": "2026-11-27 14:00:14 ET",
         "ts_utc": "2026-11-27T19:00:14Z",
         "category": "SEC",
@@ -2506,7 +2470,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-40-1795806703",
+        "id": "sec-41-1795806703",
         "ts_et": "2026-11-27 14:11:43 ET",
         "ts_utc": "2026-11-27T19:11:43Z",
         "category": "SEC",
@@ -2553,7 +2517,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-39-1795806817",
+        "id": "sec-40-1795806817",
         "ts_et": "2026-11-27 14:13:37 ET",
         "ts_utc": "2026-11-27T19:13:37Z",
         "category": "SEC",
@@ -2876,7 +2840,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-22-1795808012",
+        "id": "sec-23-1795808012",
         "ts_et": "2026-11-27 14:33:32 ET",
         "ts_utc": "2026-11-27T19:33:32Z",
         "category": "SEC",
@@ -3316,7 +3280,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-10-1795809634",
+        "id": "sec-11-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -3336,7 +3300,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-9-1795809656",
+        "id": "sec-10-1795809656",
         "ts_et": "2026-11-27 15:00:56 ET",
         "ts_utc": "2026-11-27T20:00:56Z",
         "category": "SEC",
@@ -3421,7 +3385,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-3-1795809984",
+        "id": "sec-4-1795809984",
         "ts_et": "2026-11-27 15:06:24 ET",
         "ts_utc": "2026-11-27T20:06:24Z",
         "category": "SEC",
@@ -3905,6 +3869,17 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
       },
       {
+        "id": "sec-0-1795811945",
+        "ts_et": "2026-11-27 15:39:05 ET",
+        "ts_utc": "2026-11-27T20:39:05Z",
+        "category": "SEC",
+        "symbols": [
+          "MARKET"
+        ],
+        "summary": "SEC 424B5 [HARD_VETO: DILUTION_424B5_OFFERING] MARKET (score=0.0): 424B5 - Opendoor Technologies Inc. (0001801169) (Filer)",
+        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_424B5_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/1801169/000114036126045884/0001140361-26-045884-index.htm"
+      },
+      {
         "id": "fr-blk-315-1795811950",
         "ts_et": "2026-11-27 15:39:10 ET",
         "ts_utc": "2026-11-27T20:39:10Z",
@@ -3921,6 +3896,15 @@
         ],
         "summary": "BLOCKED gate summary: 24 UNQUALIFIED, 20 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED); AVGO->ANET (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-hb-316-1795812010",
+        "ts_et": "2026-11-27 15:40:10 ET",
+        "ts_utc": "2026-11-27T20:40:10Z",
+        "category": "HEARTBEAT",
+        "symbols": [],
+        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 2 admitted \u00b7 53 blocked",
+        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       }
     ]
   },
