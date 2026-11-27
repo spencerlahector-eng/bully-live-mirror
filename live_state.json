@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795797151.2565207,
-  "generated_at_iso": "2026-11-27T16:32:31.256521+00:00",
-  "generated_at_et": "2026-11-27 11:32:31 ET",
+  "generated_at": 1795797250.832865,
+  "generated_at_iso": "2026-11-27T16:34:10.832865+00:00",
+  "generated_at_et": "2026-11-27 11:34:10 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795797150.2722445,
-    "observed_at_et": "2026-11-27 11:32:30 ET",
-    "reconciliation_at": 1795797149.0183656,
-    "reconciliation_at_et": "2026-11-27 11:32:29 ET",
-    "heartbeat_age_seconds": 1.4,
-    "reconciliation_age_seconds": 2.6,
+    "observed_at": 1795797247.885062,
+    "observed_at_et": "2026-11-27 11:34:07 ET",
+    "reconciliation_at": 1795797246.6304626,
+    "reconciliation_at_et": "2026-11-27 11:34:06 ET",
+    "heartbeat_age_seconds": 3.4,
+    "reconciliation_age_seconds": 4.6,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 55,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 29598
+      "RECONCILE": 29615
     },
     "latest_reconcile": {
-      "id": "reconcile-1795797149-36f908",
-      "timestamp_sec": 1795797149,
-      "time_et": "2026-11-27 11:32:29 ET",
+      "id": "reconcile-1795797246-401d5a",
+      "timestamp_sec": 1795797246,
+      "time_et": "2026-11-27 11:34:06 ET",
       "free_cash": 76832.71,
       "position_value": 0.0,
       "total_equity": 76832.71,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T16:31:55.578273+00:00",
-    "timestamp_et": "2026-11-27 11:31:55 ET",
-    "observed_at": 1795797115.578273,
+    "timestamp_utc": "2026-11-27T16:33:03.660705+00:00",
+    "timestamp_et": "2026-11-27 11:33:03 ET",
+    "observed_at": 1795797183.660705,
     "gate_phase": "RTH_ACTIVE_ENTRY_AND_RATCHET",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,49 +675,65 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 1,
+    "admitted_count": 3,
     "admitted_candidates": [
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.35,
+        "lead_chg_pct": 3.48,
         "down_chg_pct": 0.0,
-        "score": 87.0,
+        "score": 95.0,
         "reasons": [
-          "Lead AVGO +3.4% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "Lead AVGO +3.5% (|chg|>=2.0%, dir=LONG, sign=+1)",
           "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_HEAVY_ASK_WALL_PENALTY(-6.0)"
+          "SW_STALE_MULTIDAY_CATALYST_IGNORED(age=2.0h,rule=OVERNIGHT_PAST_1130ET)",
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.55)"
         ]
-      }
-    ],
-    "blocked_candidates_sample": [
+      },
       {
         "lead": "ORCL",
         "symbol": "IBM",
-        "lead_chg_pct": 2.66,
+        "lead_chg_pct": 2.93,
         "down_chg_pct": 0.0,
-        "score": 83.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
+        "score": 89.5,
+        "reasons": [
+          "Lead ORCL +2.9% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "CATALYST_CONFIRMED(TIER_1_WIRE)",
+          "WAVE1_MIDCAP_FINRA_SR40_SQUEEZE_LIFT(+4.0,sr=46%)",
+          "WAVE1_MIDDAY_PROPAGATION_DAMPEN(-4.0)"
         ]
       },
       {
         "lead": "DAL",
         "symbol": "UAL",
-        "lead_chg_pct": 2.42,
+        "lead_chg_pct": 2.4,
         "down_chg_pct": 0.0,
-        "score": 73.0,
+        "score": 85.0,
+        "reasons": [
+          "Lead DAL +2.4% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "SW_STALE_MULTIDAY_CATALYST_IGNORED(age=4.7h,rule=OVERNIGHT_PAST_1130ET)",
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.55)",
+          "WAVE1_MIDDAY_PROPAGATION_DAMPEN(-4.0)"
+        ]
+      }
+    ],
+    "blocked_candidates_sample": [
+      {
+        "lead": "TJX",
+        "symbol": "ROST",
+        "lead_chg_pct": -2.38,
+        "down_chg_pct": 0.0,
+        "score": 70.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "STAGED_REVIEW"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 11.99,
+        "lead_chg_pct": 12.15,
         "down_chg_pct": 0.0,
         "score": 55.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -728,18 +744,18 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": 5.19,
+        "lead_chg_pct": 5.45,
         "down_chg_pct": 0.0,
         "score": 55.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "UNQUALIFIED"
         ]
       },
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.35,
+        "lead_chg_pct": 3.48,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -749,19 +765,8 @@
       },
       {
         "lead": "ZS",
-        "symbol": "CRWD",
-        "lead_chg_pct": 2.38,
-        "down_chg_pct": 0.0,
-        "score": 53.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ZS",
         "symbol": "PANW",
-        "lead_chg_pct": 2.38,
+        "lead_chg_pct": 2.29,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -772,7 +777,7 @@
       {
         "lead": "JPM",
         "symbol": "BAC",
-        "lead_chg_pct": 2.26,
+        "lead_chg_pct": 2.29,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -784,7 +789,7 @@
       {
         "lead": "JPM",
         "symbol": "C",
-        "lead_chg_pct": 2.26,
+        "lead_chg_pct": 2.29,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -795,7 +800,7 @@
       {
         "lead": "MU",
         "symbol": "ONTO",
-        "lead_chg_pct": 6.36,
+        "lead_chg_pct": 6.5,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -806,7 +811,7 @@
       {
         "lead": "COHR",
         "symbol": "FN",
-        "lead_chg_pct": 11.99,
+        "lead_chg_pct": 12.15,
         "down_chg_pct": 0.0,
         "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -817,18 +822,51 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.35,
+        "lead_chg_pct": 3.48,
         "down_chg_pct": 0.0,
-        "score": 49.0,
+        "score": 50.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
         ]
       },
       {
+        "lead": "TSM",
+        "symbol": "KLAC",
+        "lead_chg_pct": 2.6,
+        "down_chg_pct": 0.0,
+        "score": 49.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "AMAT",
+        "lead_chg_pct": 2.6,
+        "down_chg_pct": 0.0,
+        "score": 49.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "LRCX",
+        "lead_chg_pct": 2.6,
+        "down_chg_pct": 0.0,
+        "score": 49.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
         "lead": "JPM",
         "symbol": "GS",
-        "lead_chg_pct": 2.26,
+        "lead_chg_pct": 2.29,
         "down_chg_pct": 0.0,
         "score": 48.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -839,31 +877,19 @@
       {
         "lead": "JPM",
         "symbol": "MS",
-        "lead_chg_pct": 2.26,
+        "lead_chg_pct": 2.29,
         "down_chg_pct": 0.0,
         "score": 48.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "BELOW_930_INTRADAY_OPEN"
         ]
-      },
-      {
-        "lead": "ZS",
-        "symbol": "FTNT",
-        "lead_chg_pct": 2.38,
-        "down_chg_pct": 0.0,
-        "score": 48.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
       }
     ],
     "blocker_counts": {
-      "BELOW_930_INTRADAY_OPEN": 18,
-      "UNQUALIFIED": 12,
-      "BELOW_INTRADAY_VWAP": 7,
-      "STAGED_REVIEW": 2
+      "BELOW_930_INTRADAY_OPEN": 24,
+      "UNQUALIFIED": 13,
+      "BELOW_INTRADAY_VWAP": 10
     },
     "app_health": {
       "backend_50425": {
@@ -906,7 +932,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 11:32:22 ET",
+    "updated_at_et": "2026-11-27 11:34:08 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -920,8 +946,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T16:32:16.576330+00:00",
-        "last_published_utc": "2026-11-27T16:31:56+00:00"
+        "last_received_utc": "2026-11-27T16:33:14.757321+00:00",
+        "last_published_utc": "2026-11-27T16:32:38+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -940,22 +966,22 @@
       "recycled_suppressed_this_call": 42,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
-      "hard_vetoed": 36,
-      "recycled_suppressed_total": 194895,
+      "hard_vetoed": 35,
+      "recycled_suppressed_total": 195147,
       "rejected_pit_total": 6
     },
     "items": [
       {
-        "id": "ext-benzinga-f6fd71fb64",
+        "id": "ext-benzinga-735094f216",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "LYG",
-        "headline": "Lloyds Banking Group Resumes Online Services Following Outage",
-        "url": "https://www.marketscreener.com/news/lloyds-banking-group-resumes-online-services-following-outage-ce7851d9de89f526",
+        "symbol": "CFEB",
+        "headline": "Berenberg Maintains Neutral Rating on Compagnie d'Entreprises CFE",
+        "url": "https://de.marketscreener.com/boerse-nachrichten/compagnie-d-entreprises-cfe-sa-berenberg-research-empfehlung-weiterhin-neutral-ce7851d9df81f724",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:56+00:00",
-        "received_at_utc": "2026-11-27T16:32:16.576330+00:00",
-        "fingerprint": "2549d009daf77542",
+        "published_at_utc": "2026-11-27T16:32:38+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "adb99fb6083c51e6",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -963,7 +989,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
+        "ibkr_fee_rate_pct": null,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -971,16 +997,141 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-a3b672f4b1",
+        "id": "ext-benzinga-9ad0069527",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "LIAB",
-        "headline": "SB1 Markets Lowers Price Target for Lindab",
+        "symbol": "MORG",
+        "headline": "Sparebanken M\u00f8re General Meeting Held on November 26, 2026",
+        "url": "https://live.euronext.com/en/markets/oslo/equities/company-news",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:32:34+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "a16d3d95379335f5",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-9e941d3b9b",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "BCS",
+        "headline": "HSBC, Barclays, and Standard Chartered Retain Status as UK-based Global Systemically Important Banks",
+        "url": "https://www.marketscreener.com/news/hsbc-barclays-stanchart-remain-as-uk-based-global-systemically-important-banks-ce7851d9df81f225",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:32:25+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "b29eb50f5eb895ca",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.3301,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-1f734f2c19",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "VLTSA",
+        "headline": "Entech Awarded Contract for 135 MWh Battery Storage Project with Voltalia",
+        "url": "https://de.marketscreener.com/boerse-nachrichten/entech-erhaelt-auftrag-fuer-135-mwh-batteriespeicherprojekt-in-franzoesisch-guayana-ce7851d9db81f720",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:32:21+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "b1711fd602e5aeb1",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-ad4b25fc5c",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "PSNY",
+        "headline": "Deutsche Bank Cuts Price Target on Polestar Automotive Holding UK to $5 From $10",
+        "url": "https://www.marketscreener.com/news/deutsche-bank-cuts-price-target-on-polestar-automotive-holding-uk-to-5-from-10-keeps-hold-rating-ce7851d9df88f42d",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:32:09+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "1efa6c17d6adf33e",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 470.5722,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-0eeafac17a",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "WIZZ",
+        "headline": "German Court Confirms Wizz Air Baggage Policy",
+        "url": "https://www.finanzen.at/nachrichten/aktien/wdh-olg-urteil-kleine-tasche-reicht-als-handgepack-1036805848",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T16:32:09+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "2ad380dca4daa4c5",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-777d3819a9",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "RATO.B",
+        "headline": "Pareto Securities Adjusts Ratos Target Price",
         "url": "https://www.avanza.se/nyheter-bevaka-app.html?a=%2Ftelegram%2Favanza%2F13_fc5312d9-5f93-4973-8840-adf986bfa1e4",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:54+00:00",
-        "received_at_utc": "2026-11-27T16:32:16.576330+00:00",
-        "fingerprint": "6ab0be4f23407a9f",
+        "published_at_utc": "2026-11-27T16:32:08+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "d6fbb97012a2fad6",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -996,16 +1147,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-3bbb4d0ac2",
+        "id": "ext-benzinga-92aae1f7d9",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ETG",
-        "headline": "Director's Dealings: vLB GmbH & Co. KG Acquires Shares in EnviTec Biogas AG",
-        "url": "https://www.tradegatebsx.com/finanz-nachrichten-detail.php?id=20261127002450",
+        "symbol": "DB",
+        "headline": "Deutsche Bank Lowers Price Target on Polestar Automotive Holding UK",
+        "url": "https://www.marketscreener.com/news/deutsche-bank-cuts-price-target-on-polestar-automotive-holding-uk-to-5-from-10-keeps-hold-rating-ce7851d9df88f42d",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:53+00:00",
-        "received_at_utc": "2026-11-27T16:32:16.576330+00:00",
-        "fingerprint": "7d7a9774ab99242e",
+        "published_at_utc": "2026-11-27T16:32:03+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "0c4ed6687bc4f1a7",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1013,7 +1164,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2782,
+        "ibkr_fee_rate_pct": 0.3577,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1021,41 +1172,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-c926b077fe",
+        "id": "ext-benzinga-c6b3b9c0a8",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "OR",
-        "headline": "L'Or\u00e9al Paris Launches 'Le Grand Magasin' Activation at Fondaco dei Tedeschi",
-        "url": "https://www.milanofinanza.it/fashion/quick-chat-con-vincenzo-dascanio-e-alessandra-grillo-202611111246567539",
+        "symbol": "CRNA",
+        "headline": "Circio Reports Major Milestones for circVec Gene Therapy Programs",
+        "url": "https://live.euronext.com/en/markets/oslo/equities/company-news",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:49+00:00",
-        "received_at_utc": "2026-11-27T16:32:16.576330+00:00",
-        "fingerprint": "91707055c17d73d5",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-ef00ac83aa",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HBH",
-        "headline": "Supervisory Board Succession at HORNBACH Holding AG & Co. KGaA",
-        "url": "https://www.finanzen.at/nachrichten/aktien/generationenwechsel-im-aufsichtsrat-von-baumarktkonzern-hornbach-geplant-1036805461",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:48+00:00",
-        "received_at_utc": "2026-11-27T16:32:16.576330+00:00",
-        "fingerprint": "e723d6ab29553f23",
+        "published_at_utc": "2026-11-27T16:32:02+00:00",
+        "received_at_utc": "2026-11-27T16:33:14.757321+00:00",
+        "fingerprint": "1750a45ed582c71a",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1071,16 +1197,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-cad017632a",
+        "id": "ext-benzinga-ff875b5a32",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HBH",
-        "headline": "DZ Bank Adjusts Fair Value for Hornbach Holding",
-        "url": "https://www.finanzen.ch/analyse/hornbach-halten-1123513",
+        "symbol": "SAN",
+        "headline": "Santander UK Group Announces Redemption of 2028 Notes",
+        "url": "https://www.marketscreener.com/news/santander-uk-group-to-redeem-2028-notes-ce7851d9de8df120",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:48+00:00",
-        "received_at_utc": "2026-11-27T16:32:15.219137+00:00",
-        "fingerprint": "0207c64f2e650067",
+        "published_at_utc": "2026-11-27T16:32:02+00:00",
+        "received_at_utc": "2026-11-27T16:33:13.400358+00:00",
+        "fingerprint": "1497d6f9818ece2c",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1088,107 +1214,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-027da1c157",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "DOV",
-        "headline": "doValue Seeks New Head for Italy Operations",
-        "url": "https://www.milanofinanza.it/news/dovalue-cerca-un-nuovo-responsabile-per-l-italia-ecco-i-nomi-in-campo-202611271005349614",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:48+00:00",
-        "received_at_utc": "2026-11-27T16:32:14.689084+00:00",
-        "fingerprint": "46248b1163c3a982",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-e2de375d79",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HYQ",
-        "headline": "BaFin Publishes Findings on Hypoport SE's 2023 Consolidated Financial Statements",
-        "url": "https://www.finanzen.at/nachrichten/aktien/eqs-news-bafin-publishes-findings-on-hypoport-ses-2023-consolidated-financial-statements-no-impact-on-operational-business-performance-1036804715",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:47+00:00",
-        "received_at_utc": "2026-11-27T16:32:14.689084+00:00",
-        "fingerprint": "792250921a1daa18",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-b3fe6b8d7e",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "WAF",
-        "headline": "Siltronic AG Publishes Voting Rights Announcement",
-        "url": "https://www.finanzen.ch/nachrichten/aktien/eqs-pvr-siltronic-ag-veroeffentlichung-gemass-%C2%A7-40-abs-1-wphg-mit-dem-ziel-der-europaweiten-verbreitung-1036805315",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:47+00:00",
-        "received_at_utc": "2026-11-27T16:32:14.689084+00:00",
-        "fingerprint": "55a65e4d598ce76b",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-906994e11d",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "DEZ",
-        "headline": "The Goldman Sachs Group, Inc. Reports Change in Voting Rights in DEUTZ AG",
-        "url": "https://www.finanzen.ch/nachrichten/aktien/eqs-pvr-deutz-ag-release-according-to-article-40-section-1-of-the-wphg-[the-german-securities-trading-act]-with-the-objective-of-europe-wide-distribution-1036805124",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T16:31:46+00:00",
-        "received_at_utc": "2026-11-27T16:32:14.689084+00:00",
-        "fingerprint": "22455f3a7711cfdd",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
+        "ibkr_fee_rate_pct": 0.6362,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -2112,52 +2138,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 11:32:31 ET",
-    "total_events": 165,
+    "updated_at_et": "2026-11-27 11:34:11 ET",
+    "total_events": 166,
     "counts_by_category": {
       "SEC": 14,
       "BLOCKED": 103,
-      "ADMITTED": 41,
+      "ADMITTED": 42,
       "TRADE": 4,
       "RATCHET": 2,
       "HEARTBEAT": 1
     },
     "entries": [
-      {
-        "id": "fr-blk-31-1795791884",
-        "ts_et": "2026-11-27 10:04:44 ET",
-        "ts_utc": "2026-11-27T15:04:44Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ANET",
-          "AVGO",
-          "CF",
-          "COHR",
-          "GOOGL",
-          "LITE",
-          "PSX"
-        ],
-        "summary": "BLOCKED gate summary: 6 BELOW_930_INTRADAY_OPEN, 6 BELOW_INTRADAY_VWAP, 2 UNQUALIFIED",
-        "detail": "Examples: NVDA->COHR (sc=53.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->AVGO (sc=53.0, UNQUALIFIED); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->LITE (sc=48.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
-      },
-      {
-        "id": "fr-blk-32-1795791945",
-        "ts_et": "2026-11-27 10:05:45 ET",
-        "ts_utc": "2026-11-27T15:05:45Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ANET",
-          "AVGO",
-          "COHR",
-          "GOOGL",
-          "LITE",
-          "PSX"
-        ],
-        "summary": "BLOCKED gate summary: 7 BELOW_930_INTRADAY_OPEN, 7 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: NVDA->COHR (sc=53.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->AVGO (sc=53.0, BELOW_INTRADAY_VWAP); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->LITE (sc=48.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
-      },
       {
         "id": "fr-blk-33-1795792037",
         "ts_et": "2026-11-27 10:07:17 ET",
@@ -2177,7 +2168,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->COHR (sc=53.0, UNQUALIFIED); NVDA->AVGO (sc=53.0, UNQUALIFIED); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-99-1795792090",
+        "id": "sec-109-1795792090",
         "ts_et": "2026-11-27 10:08:10 ET",
         "ts_utc": "2026-11-27T15:08:10Z",
         "category": "SEC",
@@ -2361,7 +2352,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=49.0, UNQUALIFIED); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-89-1795792737",
+        "id": "sec-99-1795792737",
         "ts_et": "2026-11-27 10:18:57 ET",
         "ts_utc": "2026-11-27T15:18:57Z",
         "category": "SEC",
@@ -2390,7 +2381,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NEM->AEM (sc=45.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-88-1795792840",
+        "id": "sec-98-1795792840",
         "ts_et": "2026-11-27 10:20:40 ET",
         "ts_utc": "2026-11-27T15:20:40Z",
         "category": "SEC",
@@ -2578,7 +2569,7 @@
         "detail": "Examples: MOS->CF (sc=84.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); COHR->FN (sc=50.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-81-1795793457",
+        "id": "sec-91-1795793457",
         "ts_et": "2026-11-27 10:30:57 ET",
         "ts_utc": "2026-11-27T15:30:57Z",
         "category": "SEC",
@@ -3427,7 +3418,7 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED); JPM->C (sc=57.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-30-1795795776",
+        "id": "sec-40-1795795776",
         "ts_et": "2026-11-27 11:09:36 ET",
         "ts_utc": "2026-11-27T16:09:36Z",
         "category": "SEC",
@@ -3596,7 +3587,7 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-29-1795796195",
+        "id": "sec-39-1795796195",
         "ts_et": "2026-11-27 11:16:35 ET",
         "ts_utc": "2026-11-27T16:16:35Z",
         "category": "SEC",
@@ -3970,6 +3961,37 @@
         ],
         "summary": "BLOCKED gate summary: 18 BELOW_930_INTRADAY_OPEN, 12 UNQUALIFIED, 7 BELOW_INTRADAY_VWAP, 2 STAGED_REVIEW",
         "detail": "Examples: ORCL->IBM (sc=83.5, STAGED_REVIEW); DAL->UAL (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=55.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=54.0, BELOW_930_INTRADAY_OPEN)"
+      },
+      {
+        "id": "fr-adm-100-1795797183",
+        "ts_et": "2026-11-27 11:33:03 ET",
+        "ts_utc": "2026-11-27T16:33:03Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "AMZN",
+          "IBM",
+          "UAL"
+        ],
+        "summary": "ADMITTED 3 candidate(s): AMZN, IBM, UAL",
+        "detail": "AMZN (lead AVGO) score=95.0 [ADMITTED] | IBM (lead ORCL) score=89.5 [ADMITTED] | UAL (lead DAL) score=85.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
+      },
+      {
+        "id": "fr-blk-100-1795797183",
+        "ts_et": "2026-11-27 11:33:03 ET",
+        "ts_utc": "2026-11-27T16:33:03Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "BAC",
+          "C",
+          "GOOGL",
+          "LITE",
+          "ONTO",
+          "PANW",
+          "ROST",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 24 BELOW_930_INTRADAY_OPEN, 13 UNQUALIFIED, 10 BELOW_INTRADAY_VWAP",
+        "detail": "Examples: TJX->ROST (sc=70.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=55.0, UNQUALIFIED); AVGO->GOOGL (sc=54.0, BELOW_930_INTRADAY_OPEN); ZS->PANW (sc=53.0, UNQUALIFIED)"
       }
     ]
   },
