@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795795815.6002724,
-  "generated_at_iso": "2026-11-27T16:10:15.600272+00:00",
-  "generated_at_et": "2026-11-27 11:10:15 ET",
+  "generated_at": 1795795864.14877,
+  "generated_at_iso": "2026-11-27T16:11:04.148770+00:00",
+  "generated_at_et": "2026-11-27 11:11:04 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -21,15 +21,15 @@
     "currency": "USD",
     "cash": 76551.73,
     "buying_power": 306206.92,
-    "equity": 76837.73,
+    "equity": 76839.73,
     "last_equity": 76822.76,
     "baseline_equity": 97541.35,
-    "daily_change_usd": 14.97,
+    "daily_change_usd": 16.97,
     "daily_change_pct": 0.02,
-    "vs_baseline_usd": -20703.62,
-    "vs_baseline_pct": -21.23,
-    "deployed_capital": 286.0,
-    "open_unrealized_pnl": 15.0,
+    "vs_baseline_usd": -20701.62,
+    "vs_baseline_pct": -21.22,
+    "deployed_capital": 288.0,
+    "open_unrealized_pnl": 17.0,
     "open_positions_count": 1,
     "cumulative_realized_gross": "0.00",
     "total_confirmed_fills": 0
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795795812.2244673,
-    "observed_at_et": "2026-11-27 11:10:12 ET",
-    "reconciliation_at": 1795795810.551307,
-    "reconciliation_at_et": "2026-11-27 11:10:10 ET",
-    "heartbeat_age_seconds": 3.8,
-    "reconciliation_age_seconds": 5.5,
+    "observed_at": 1795795862.0285263,
+    "observed_at_et": "2026-11-27 11:11:02 ET",
+    "reconciliation_at": 1795795860.0733697,
+    "reconciliation_at_et": "2026-11-27 11:11:00 ET",
+    "heartbeat_age_seconds": 2.5,
+    "reconciliation_age_seconds": 4.5,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,15 +56,15 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 29391
+      "RECONCILE": 29398
     },
     "latest_reconcile": {
-      "id": "reconcile-1795795810-11c30e",
-      "timestamp_sec": 1795795810,
-      "time_et": "2026-11-27 11:10:10 ET",
+      "id": "reconcile-1795795860-294001",
+      "timestamp_sec": 1795795860,
+      "time_et": "2026-11-27 11:11:00 ET",
       "free_cash": 76551.73,
-      "position_value": 286.0,
-      "total_equity": 76837.73,
+      "position_value": 288.0,
+      "total_equity": 76839.73,
       "rationale": "Automated market surveillance ledger reconciliation"
     },
     "lifecycle_log": [
@@ -950,7 +950,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 11:09:48 ET",
+    "updated_at_et": "2026-11-27 11:10:48 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -974,21 +974,50 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T15:32:50.285554+00:00",
-        "last_published_utc": "2026-11-27T15:30:57+00:00"
+        "last_received_utc": "2026-11-27T16:10:48.652438+00:00",
+        "last_published_utc": "2026-11-27T16:09:36+00:00"
       }
     },
     "summary": {
       "total_items": 348,
       "new_ingested_this_call": 2,
-      "recycled_suppressed_this_call": 47,
+      "recycled_suppressed_this_call": 48,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 15,
+      "confirmed_catalysts": 14,
       "hard_vetoed": 42,
-      "recycled_suppressed_total": 190232,
+      "recycled_suppressed_total": 190446,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-c75d518e69",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "PMI",
+        "headline": "8-K - Picard Medical, Inc. (0002030617) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2030617/000143774926038355/0001437749-26-038355-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T16:09:36+00:00",
+        "received_at_utc": "2026-11-27T16:10:48.652438+00:00",
+        "fingerprint": "50b51df95c8fa9a1",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 100.6806,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "4.01",
+          "9.01"
+        ]
+      },
       {
         "id": "ext-benzinga-9509887d32",
         "channel": "benzinga",
@@ -2118,33 +2147,6 @@
           "8.01",
           "9.01"
         ]
-      },
-      {
-        "id": "ext-sec_edgar-fe8cd6091a",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "BTCY",
-        "headline": "S-1 - BIOTRICITY INC. (0001630113) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1630113/000149315226054303/0001493152-26-054303-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-25T22:22:07+00:00",
-        "received_at_utc": "2026-11-25T22:22:32.104470+00:00",
-        "fingerprint": "bd835991845c1817",
-        "form_hint": "S-1",
-        "clarity_tier": "HARD_VETO",
-        "catalyst_score": 0.0,
-        "action": "HARD_VETO_BLOCK_LONG",
-        "confirmed_catalyst": false,
-        "is_hard_veto": true,
-        "hard_veto_flags": [
-          "DILUTION_S-1_OFFERING"
-        ],
-        "ibkr_fee_rate_pct": 4.1696,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
       }
     ]
   },
@@ -2159,10 +2161,10 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 11:10:16 ET",
-    "total_events": 137,
+    "updated_at_et": "2026-11-27 11:11:04 ET",
+    "total_events": 138,
     "counts_by_category": {
-      "SEC": 12,
+      "SEC": 13,
       "BLOCKED": 92,
       "ADMITTED": 26,
       "TRADE": 4,
@@ -2170,17 +2172,6 @@
       "HEARTBEAT": 1
     },
     "entries": [
-      {
-        "id": "cat-188-1795788282",
-        "ts_et": "2026-11-27 09:04:42 ET",
-        "ts_utc": "2026-11-27T14:04:42Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "OGEN"
-        ],
-        "summary": "HARD_VETO [BENZINGA] OGEN: Oragenics, Inc. Announces 1-for-6.5 Reverse Stock Split",
-        "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
-      },
       {
         "id": "fr-blk-0-1795789527",
         "ts_et": "2026-11-27 09:25:27 ET",
@@ -2801,7 +2792,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NVDA->COHR (sc=53.0, UNQUALIFIED); NVDA->AVGO (sc=53.0, UNQUALIFIED); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-66-1795792090",
+        "id": "sec-67-1795792090",
         "ts_et": "2026-11-27 10:08:10 ET",
         "ts_utc": "2026-11-27T15:08:10Z",
         "category": "SEC",
@@ -2985,7 +2976,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=49.0, UNQUALIFIED); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-56-1795792737",
+        "id": "sec-57-1795792737",
         "ts_et": "2026-11-27 10:18:57 ET",
         "ts_utc": "2026-11-27T15:18:57Z",
         "category": "SEC",
@@ -3014,7 +3005,7 @@
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NEM->AEM (sc=45.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-55-1795792840",
+        "id": "sec-56-1795792840",
         "ts_et": "2026-11-27 10:20:40 ET",
         "ts_utc": "2026-11-27T15:20:40Z",
         "category": "SEC",
@@ -3202,7 +3193,7 @@
         "detail": "Examples: MOS->CF (sc=84.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); COHR->FN (sc=50.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-48-1795793457",
+        "id": "sec-49-1795793457",
         "ts_et": "2026-11-27 10:30:57 ET",
         "ts_utc": "2026-11-27T15:30:57Z",
         "category": "SEC",
@@ -4051,6 +4042,17 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED); JPM->C (sc=57.0, UNQUALIFIED)"
       },
       {
+        "id": "sec-0-1795795776",
+        "ts_et": "2026-11-27 11:09:36 ET",
+        "ts_utc": "2026-11-27T16:09:36Z",
+        "category": "SEC",
+        "symbols": [
+          "PMI"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] PMI (score=15.0): 8-K - Picard Medical, Inc. (0002030617) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[4.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2030617/000143774926038355/0001437749-26-038355-index.htm"
+      },
+      {
         "id": "fr-adm-82-1795795803",
         "ts_et": "2026-11-27 11:10:03 ET",
         "ts_utc": "2026-11-27T16:10:03Z",
@@ -4125,13 +4127,13 @@
       "asset_class": "us_option",
       "qty": 1.0,
       "avg_entry_price": 2.71,
-      "current_price": 2.86,
-      "market_value": 286.0,
-      "unrealized_pl": 15.0,
-      "unrealized_plpc": 0.05535,
-      "unrealized_plpc_pct": 5.54,
-      "ratchet_tier": "Tier 1 \u00b7 Breakeven Lock (+0.2% floor)",
-      "stop_floor": 2.75,
+      "current_price": 2.88,
+      "market_value": 288.0,
+      "unrealized_pl": 17.0,
+      "unrealized_plpc": 0.06273,
+      "unrealized_plpc_pct": 6.27,
+      "ratchet_tier": "Tier 2 \u00b7 Fibonacci Floor (61.8% lock)",
+      "stop_floor": 2.82,
       "eod_exit_decision": "BANK_100PCT_INTRADAY_PROFIT",
       "eod_sell_qty": 1,
       "eod_retain_qty": 0,
