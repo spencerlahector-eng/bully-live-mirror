@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795806040.797712,
-  "generated_at_iso": "2026-11-27T19:00:40.797712+00:00",
-  "generated_at_et": "2026-11-27 14:00:40 ET",
+  "generated_at": 1795806094.494348,
+  "generated_at_iso": "2026-11-27T19:01:34.494348+00:00",
+  "generated_at_et": "2026-11-27 14:01:34 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795806024.5614517,
-    "observed_at_et": "2026-11-27 14:00:24 ET",
-    "reconciliation_at": 1795806024.5610375,
-    "reconciliation_at_et": "2026-11-27 14:00:24 ET",
-    "heartbeat_age_seconds": 16.6,
-    "reconciliation_age_seconds": 16.6,
+    "observed_at": 1795806086.422319,
+    "observed_at_et": "2026-11-27 14:01:26 ET",
+    "reconciliation_at": 1795806086.4220517,
+    "reconciliation_at_et": "2026-11-27 14:01:26 ET",
+    "heartbeat_age_seconds": 8.5,
+    "reconciliation_age_seconds": 8.5,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T19:00:19.054578+00:00",
-    "timestamp_et": "2026-11-27 14:00:19 ET",
-    "observed_at": 1795806019.054578,
+    "timestamp_utc": "2026-11-27T19:01:22.728669+00:00",
+    "timestamp_et": "2026-11-27 14:01:22 ET",
+    "observed_at": 1795806082.728669,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -692,7 +692,7 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": 7.55,
+        "lead_chg_pct": 7.45,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -703,7 +703,7 @@
       {
         "lead": "WDC",
         "symbol": "STX",
-        "lead_chg_pct": 6.57,
+        "lead_chg_pct": 6.56,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -720,18 +720,6 @@
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "COHR",
-        "symbol": "FN",
-        "lead_chg_pct": 14.18,
-        "down_chg_pct": 0.0,
-        "score": 59.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "BELOW_930_INTRADAY_OPEN",
-          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
@@ -843,12 +831,23 @@
         "blockers": [
           "BELOW_930_INTRADAY_OPEN"
         ]
+      },
+      {
+        "lead": "DAL",
+        "symbol": "UAL",
+        "lead_chg_pct": 2.35,
+        "down_chg_pct": 0.0,
+        "score": 45.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
       }
     ],
     "blocker_counts": {
       "UNQUALIFIED": 23,
       "BELOW_930_INTRADAY_OPEN": 22,
-      "BELOW_INTRADAY_VWAP": 9
+      "BELOW_INTRADAY_VWAP": 10
     },
     "app_health": {
       "backend_50425": {
@@ -891,7 +890,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 13:59:58 ET",
+    "updated_at_et": "2026-11-27 14:01:03 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -915,8 +914,8 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T18:41:13.525570+00:00",
-        "last_published_utc": "2026-11-27T18:40:04+00:00"
+        "last_received_utc": "2026-11-27T19:01:03.493679+00:00",
+        "last_published_utc": "2026-11-27T19:00:14+00:00"
       }
     },
     "summary": {
@@ -925,11 +924,38 @@
       "recycled_suppressed_this_call": 42,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 13,
-      "hard_vetoed": 36,
-      "recycled_suppressed_total": 218631,
+      "hard_vetoed": 37,
+      "recycled_suppressed_total": 218748,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-f0e47bfae2",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "OBAI",
+        "headline": "S-1 - Our Bond, Inc. (0001756064) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226054474/0001493152-26-054474-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T19:00:14+00:00",
+        "received_at_utc": "2026-11-27T19:01:03.493679+00:00",
+        "fingerprint": "a81f8cb7434f5dfd",
+        "form_hint": "S-1",
+        "clarity_tier": "HARD_VETO",
+        "catalyst_score": 0.0,
+        "action": "HARD_VETO_BLOCK_LONG",
+        "confirmed_catalyst": false,
+        "is_hard_veto": true,
+        "hard_veto_flags": [
+          "DILUTION_S-1_OFFERING"
+        ],
+        "ibkr_fee_rate_pct": 54.4897,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-sec_edgar-a6c11fda3d",
         "channel": "sec_edgar",
@@ -1674,35 +1700,6 @@
         ]
       },
       {
-        "id": "ext-sec_edgar-8dc1c88591",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "NVTS",
-        "headline": "8-K - Navitas Semiconductor Corp (0001821769) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926132343/0001104659-26-132343-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T14:00:41+00:00",
-        "received_at_utc": "2026-11-27T14:01:32.808506+00:00",
-        "fingerprint": "8acdc9d06729b371",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_1_BINDING",
-        "catalyst_score": 65.0,
-        "action": "CATALYST_CONFIRMED_ROUTE_TO_L0_L1",
-        "confirmed_catalyst": true,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2677,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "1.01",
-          "9.01"
-        ]
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2096,46 +2093,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 14:00:41 ET",
-    "total_events": 349,
+    "updated_at_et": "2026-11-27 14:01:35 ET",
+    "total_events": 351,
     "counts_by_category": {
-      "SEC": 24,
-      "BLOCKED": 217,
+      "SEC": 25,
+      "BLOCKED": 218,
       "ADMITTED": 93,
       "TRADE": 5,
       "RATCHET": 2,
       "HEARTBEAT": 8
     },
     "entries": [
-      {
-        "id": "fr-blk-135-1795799834",
-        "ts_et": "2026-11-27 12:17:14 ET",
-        "ts_utc": "2026-11-27T17:17:14Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "BAC",
-          "FN",
-          "LITE",
-          "MS",
-          "ONTO",
-          "PANW",
-          "UAL",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 23 BELOW_930_INTRADAY_OPEN, 18 UNQUALIFIED, 5 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
-        "detail": "Examples: DAL->UAL (sc=70.0, STAGED_REVIEW); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=58.0, UNQUALIFIED); MU->ONTO (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
-      {
-        "id": "fr-adm-136-1795799906",
-        "ts_et": "2026-11-27 12:18:26 ET",
-        "ts_utc": "2026-11-27T17:18:26Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "CF"
-        ],
-        "summary": "ADMITTED 1 candidate(s): CF",
-        "detail": "CF (lead MOS) score=95.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
-      },
       {
         "id": "fr-blk-136-1795799906",
         "ts_et": "2026-11-27 12:18:26 ET",
@@ -2466,7 +2434,7 @@
         "detail": "CF (lead MOS) score=86.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
       },
       {
-        "id": "sec-76-1795800912",
+        "id": "sec-77-1795800912",
         "ts_et": "2026-11-27 12:35:12 ET",
         "ts_utc": "2026-11-27T17:35:12Z",
         "category": "SEC",
@@ -2865,7 +2833,7 @@
         "detail": "Examples: MOS->CF (sc=91.0, 1545_ET_LATE_ENTRY_CUTOFF); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=58.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-61-1795802260",
+        "id": "sec-62-1795802260",
         "ts_et": "2026-11-27 12:57:40 ET",
         "ts_utc": "2026-11-27T17:57:40Z",
         "category": "SEC",
@@ -3024,7 +2992,7 @@
         "detail": "Examples: MOS->CF (sc=72.0, STAGED_REVIEW); COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); KLAC->AMAT (sc=60.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-43-1795802712",
+        "id": "sec-44-1795802712",
         "ts_et": "2026-11-27 13:05:12 ET",
         "ts_utc": "2026-11-27T18:05:12Z",
         "category": "SEC",
@@ -3082,7 +3050,7 @@
         "detail": "Examples: MOS->CF (sc=72.0, STAGED_REVIEW); COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-40-1795802863",
+        "id": "sec-41-1795802863",
         "ts_et": "2026-11-27 13:07:43 ET",
         "ts_utc": "2026-11-27T18:07:43Z",
         "category": "SEC",
@@ -3129,7 +3097,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-39-1795802967",
+        "id": "sec-40-1795802967",
         "ts_et": "2026-11-27 13:09:27 ET",
         "ts_utc": "2026-11-27T18:09:27Z",
         "category": "SEC",
@@ -3170,7 +3138,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-36-1795803030",
+        "id": "sec-37-1795803030",
         "ts_et": "2026-11-27 13:10:30 ET",
         "ts_utc": "2026-11-27T18:10:30Z",
         "category": "SEC",
@@ -3276,7 +3244,7 @@
         "detail": "Examples: ARM->AVGO (sc=64.0, BELOW_INTRADAY_VWAP); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-31-1795803313",
+        "id": "sec-32-1795803313",
         "ts_et": "2026-11-27 13:15:13 ET",
         "ts_utc": "2026-11-27T18:15:13Z",
         "category": "SEC",
@@ -3640,7 +3608,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-6-1795804804",
+        "id": "sec-7-1795804804",
         "ts_et": "2026-11-27 13:40:04 ET",
         "ts_utc": "2026-11-27T18:40:04Z",
         "category": "SEC",
@@ -3975,6 +3943,17 @@
         "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
+        "id": "sec-0-1795806014",
+        "ts_et": "2026-11-27 14:00:14 ET",
+        "ts_utc": "2026-11-27T19:00:14Z",
+        "category": "SEC",
+        "symbols": [
+          "OBAI"
+        ],
+        "summary": "SEC S-1 [HARD_VETO: DILUTION_S-1_OFFERING] OBAI (score=0.0): S-1 - Our Bond, Inc. (0001756064) (Filer)",
+        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_S-1_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/1756064/000149315226054474/0001493152-26-054474-index.htm"
+      },
+      {
         "id": "fr-blk-225-1795806019",
         "ts_et": "2026-11-27 14:00:19 ET",
         "ts_utc": "2026-11-27T19:00:19Z",
@@ -3991,6 +3970,24 @@
         ],
         "summary": "BLOCKED gate summary: 23 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP",
         "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
+      },
+      {
+        "id": "fr-blk-226-1795806082",
+        "ts_et": "2026-11-27 14:01:22 ET",
+        "ts_utc": "2026-11-27T19:01:22Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "AMZN",
+          "CRWD",
+          "GOOGL",
+          "LITE",
+          "PANW",
+          "STX",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 23 UNQUALIFIED, 22 BELOW_930_INTRADAY_OPEN, 10 BELOW_INTRADAY_VWAP",
+        "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       }
     ]
   },
