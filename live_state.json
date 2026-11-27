@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795806717.3112779,
-  "generated_at_iso": "2026-11-27T19:11:57.311278+00:00",
-  "generated_at_et": "2026-11-27 14:11:57 ET",
+  "generated_at": 1795806785.7021453,
+  "generated_at_iso": "2026-11-27T19:13:05.702145+00:00",
+  "generated_at_et": "2026-11-27 14:13:05 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795806705.8252337,
-    "observed_at_et": "2026-11-27 14:11:45 ET",
-    "reconciliation_at": 1795806705.824967,
-    "reconciliation_at_et": "2026-11-27 14:11:45 ET",
-    "heartbeat_age_seconds": 11.9,
-    "reconciliation_age_seconds": 11.9,
+    "observed_at": 1795806767.8082519,
+    "observed_at_et": "2026-11-27 14:12:47 ET",
+    "reconciliation_at": 1795806767.8078651,
+    "reconciliation_at_et": "2026-11-27 14:12:47 ET",
+    "heartbeat_age_seconds": 18.3,
+    "reconciliation_age_seconds": 18.3,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T19:11:09.660889+00:00",
-    "timestamp_et": "2026-11-27 14:11:09 ET",
-    "observed_at": 1795806669.660889,
+    "timestamp_utc": "2026-11-27T19:12:10.359472+00:00",
+    "timestamp_et": "2026-11-27 14:12:10 ET",
+    "observed_at": 1795806730.359472,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -692,18 +692,7 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": 7.56,
-        "down_chg_pct": 0.0,
-        "score": 60.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 6.57,
+        "lead_chg_pct": 6.81,
         "down_chg_pct": 0.0,
         "score": 60.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -725,7 +714,7 @@
       {
         "lead": "TSM",
         "symbol": "AMAT",
-        "lead_chg_pct": 3.03,
+        "lead_chg_pct": 3.06,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -736,7 +725,7 @@
       {
         "lead": "CRWD",
         "symbol": "PANW",
-        "lead_chg_pct": 3.49,
+        "lead_chg_pct": 3.63,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -747,7 +736,7 @@
       {
         "lead": "TSM",
         "symbol": "LRCX",
-        "lead_chg_pct": 3.03,
+        "lead_chg_pct": 3.06,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -791,7 +780,7 @@
       {
         "lead": "ORCL",
         "symbol": "IBM",
-        "lead_chg_pct": 3.0,
+        "lead_chg_pct": 3.06,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -811,9 +800,20 @@
         ]
       },
       {
+        "lead": "WDC",
+        "symbol": "STX",
+        "lead_chg_pct": 6.61,
+        "down_chg_pct": 0.0,
+        "score": 50.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
         "lead": "TSM",
         "symbol": "ASML",
-        "lead_chg_pct": 3.03,
+        "lead_chg_pct": 3.06,
         "down_chg_pct": 0.0,
         "score": 49.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -890,7 +890,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 14:11:41 ET",
+    "updated_at_et": "2026-11-27 14:12:42 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -914,21 +914,49 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T19:01:03.493679+00:00",
-        "last_published_utc": "2026-11-27T19:00:14+00:00"
+        "last_received_utc": "2026-11-27T19:12:42.470702+00:00",
+        "last_published_utc": "2026-11-27T19:11:43+00:00"
       }
     },
     "summary": {
       "total_items": 348,
       "new_ingested_this_call": 7,
-      "recycled_suppressed_this_call": 44,
+      "recycled_suppressed_this_call": 40,
       "rejected_pit_this_call": 0,
-      "confirmed_catalysts": 13,
+      "confirmed_catalysts": 12,
       "hard_vetoed": 37,
-      "recycled_suppressed_total": 220019,
+      "recycled_suppressed_total": 220136,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-01a0a544f0",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "MBUU",
+        "headline": "8-K - MALIBU BOATS, INC. (0001590976) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590976/000159097626000081/0001590976-26-000081-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T19:11:43+00:00",
+        "received_at_utc": "2026-11-27T19:12:42.470702+00:00",
+        "fingerprint": "aba135114f5e7bed",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4135,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "8.01"
+        ]
+      },
       {
         "id": "ext-benzinga-320b715a61",
         "channel": "benzinga",
@@ -1671,35 +1699,6 @@
         ]
       },
       {
-        "id": "ext-sec_edgar-eec9be97d5",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "BGLC",
-        "headline": "8-K - BioNexus Gene Lab Corp (0001737523) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T14:00:47+00:00",
-        "received_at_utc": "2026-11-27T14:01:32.808506+00:00",
-        "fingerprint": "48c5dddf87a8765f",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 9.5201,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "8.01",
-          "9.01"
-        ]
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2093,46 +2092,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 14:11:57 ET",
-    "total_events": 360,
+    "updated_at_et": "2026-11-27 14:13:06 ET",
+    "total_events": 362,
     "counts_by_category": {
-      "SEC": 25,
-      "BLOCKED": 225,
+      "SEC": 26,
+      "BLOCKED": 226,
       "ADMITTED": 93,
       "TRADE": 5,
       "RATCHET": 2,
       "HEARTBEAT": 10
     },
     "entries": [
-      {
-        "id": "fr-adm-143-1795800442",
-        "ts_et": "2026-11-27 12:27:22 ET",
-        "ts_utc": "2026-11-27T17:27:22Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "CF"
-        ],
-        "summary": "ADMITTED 1 candidate(s): CF",
-        "detail": "CF (lead MOS) score=92.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
-      },
-      {
-        "id": "fr-blk-143-1795800442",
-        "ts_et": "2026-11-27 12:27:22 ET",
-        "ts_utc": "2026-11-27T17:27:22Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "BAC",
-          "C",
-          "FN",
-          "LITE",
-          "MS",
-          "ONTO",
-          "PANW",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 22 UNQUALIFIED, 18 BELOW_930_INTRADAY_OPEN, 2 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=58.0, UNQUALIFIED); MU->ONTO (sc=54.0, BELOW_930_INTRADAY_OPEN); COHR->FN (sc=54.0, BELOW_930_INTRADAY_OPEN)"
-      },
       {
         "id": "fr-adm-144-1795800504",
         "ts_et": "2026-11-27 12:28:24 ET",
@@ -2290,7 +2260,7 @@
         "detail": "CF (lead MOS) score=86.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
       },
       {
-        "id": "sec-118-1795800912",
+        "id": "sec-119-1795800912",
         "ts_et": "2026-11-27 12:35:12 ET",
         "ts_utc": "2026-11-27T17:35:12Z",
         "category": "SEC",
@@ -2689,7 +2659,7 @@
         "detail": "Examples: MOS->CF (sc=91.0, 1545_ET_LATE_ENTRY_CUTOFF); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=58.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-103-1795802260",
+        "id": "sec-104-1795802260",
         "ts_et": "2026-11-27 12:57:40 ET",
         "ts_utc": "2026-11-27T17:57:40Z",
         "category": "SEC",
@@ -2848,7 +2818,7 @@
         "detail": "Examples: MOS->CF (sc=72.0, STAGED_REVIEW); COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); KLAC->AMAT (sc=60.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-85-1795802712",
+        "id": "sec-86-1795802712",
         "ts_et": "2026-11-27 13:05:12 ET",
         "ts_utc": "2026-11-27T18:05:12Z",
         "category": "SEC",
@@ -2906,7 +2876,7 @@
         "detail": "Examples: MOS->CF (sc=72.0, STAGED_REVIEW); COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-82-1795802863",
+        "id": "sec-83-1795802863",
         "ts_et": "2026-11-27 13:07:43 ET",
         "ts_utc": "2026-11-27T18:07:43Z",
         "category": "SEC",
@@ -2953,7 +2923,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-81-1795802967",
+        "id": "sec-82-1795802967",
         "ts_et": "2026-11-27 13:09:27 ET",
         "ts_utc": "2026-11-27T18:09:27Z",
         "category": "SEC",
@@ -2994,7 +2964,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-78-1795803030",
+        "id": "sec-79-1795803030",
         "ts_et": "2026-11-27 13:10:30 ET",
         "ts_utc": "2026-11-27T18:10:30Z",
         "category": "SEC",
@@ -3100,7 +3070,7 @@
         "detail": "Examples: ARM->AVGO (sc=64.0, BELOW_INTRADAY_VWAP); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-73-1795803313",
+        "id": "sec-74-1795803313",
         "ts_et": "2026-11-27 13:15:13 ET",
         "ts_utc": "2026-11-27T18:15:13Z",
         "category": "SEC",
@@ -3464,7 +3434,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-48-1795804804",
+        "id": "sec-49-1795804804",
         "ts_et": "2026-11-27 13:40:04 ET",
         "ts_utc": "2026-11-27T18:40:04Z",
         "category": "SEC",
@@ -3799,7 +3769,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-37-1795806014",
+        "id": "sec-38-1795806014",
         "ts_et": "2026-11-27 14:00:14 ET",
         "ts_utc": "2026-11-27T19:00:14Z",
         "category": "SEC",
@@ -3988,6 +3958,35 @@
         ],
         "summary": "BLOCKED gate summary: 24 UNQUALIFIED, 21 BELOW_930_INTRADAY_OPEN, 12 BELOW_INTRADAY_VWAP",
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
+      },
+      {
+        "id": "sec-0-1795806703",
+        "ts_et": "2026-11-27 14:11:43 ET",
+        "ts_utc": "2026-11-27T19:11:43Z",
+        "category": "SEC",
+        "symbols": [
+          "MBUU"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] MBUU (score=15.0): 8-K - MALIBU BOATS, INC. (0001590976) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1590976/000159097626000081/0001590976-26-000081-index.htm"
+      },
+      {
+        "id": "fr-blk-236-1795806730",
+        "ts_et": "2026-11-27 14:12:10 ET",
+        "ts_utc": "2026-11-27T19:12:10Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "AMAT",
+          "CRWD",
+          "GOOGL",
+          "LITE",
+          "LRCX",
+          "PANW",
+          "WDC"
+        ],
+        "summary": "BLOCKED gate summary: 24 UNQUALIFIED, 21 BELOW_930_INTRADAY_OPEN, 12 BELOW_INTRADAY_VWAP",
+        "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       }
     ]
   },
