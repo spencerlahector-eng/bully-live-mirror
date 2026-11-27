@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795791530.0620098,
-  "generated_at_iso": "2026-11-27T14:58:50.062010+00:00",
-  "generated_at_et": "2026-11-27 09:58:50 ET",
+  "generated_at": 1795791583.918299,
+  "generated_at_iso": "2026-11-27T14:59:43.918299+00:00",
+  "generated_at_et": "2026-11-27 09:59:43 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795791529.3280888,
-    "observed_at_et": "2026-11-27 09:58:49 ET",
-    "reconciliation_at": 1795791523.8463805,
-    "reconciliation_at_et": "2026-11-27 09:58:43 ET",
-    "heartbeat_age_seconds": 1.1,
-    "reconciliation_age_seconds": 6.6,
+    "observed_at": 1795791583.1677144,
+    "observed_at_et": "2026-11-27 09:59:43 ET",
+    "reconciliation_at": 1795791579.85213,
+    "reconciliation_at_et": "2026-11-27 09:59:39 ET",
+    "heartbeat_age_seconds": 1.2,
+    "reconciliation_age_seconds": 4.5,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28758
+      "RECONCILE": 28767
     },
     "latest_reconcile": {
-      "id": "reconcile-1795791530-4cead5",
-      "timestamp_sec": 1795791530,
-      "time_et": "2026-11-27 09:58:50 ET",
+      "id": "reconcile-1795791579-757218",
+      "timestamp_sec": 1795791579,
+      "time_et": "2026-11-27 09:59:39 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T14:58:28.324539+00:00",
-    "timestamp_et": "2026-11-27 09:58:28 ET",
-    "observed_at": 1795791508.324539,
+    "timestamp_utc": "2026-11-27T14:59:32.214756+00:00",
+    "timestamp_et": "2026-11-27 09:59:32 ET",
+    "observed_at": 1795791572.214756,
     "gate_phase": "RTH_ACTIVE_ENTRY_AND_RATCHET",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,24 +675,39 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 0,
-    "admitted_candidates": [],
+    "admitted_count": 1,
+    "admitted_candidates": [
+      {
+        "lead": "TJX",
+        "symbol": "ROST",
+        "lead_chg_pct": -2.0,
+        "down_chg_pct": 0.0,
+        "score": 96.5,
+        "reasons": [
+          "Lead TJX -2.0% (|chg|>=2.0%, dir=SHORT, sign=+1)",
+          "CATALYST_CONFIRMED(ALPACA_NEWS,BENZINGA_RATINGS)",
+          "WAVE1_OPENING_30M_PROPAGATION_PRIORITY(+5.0)",
+          "RC_GLASSERMAN_2023_SPY_STRESS_OPENING_BOOST(+3.0,rv20=26.1%)"
+        ]
+      }
+    ],
     "blocked_candidates_sample": [
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 8.93,
+        "lead_chg_pct": 7.7,
         "down_chg_pct": 0.0,
         "score": 59.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 2.47,
+        "lead_chg_pct": 2.06,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -702,20 +717,9 @@
         ]
       },
       {
-        "lead": "STX",
-        "symbol": "WDC",
-        "lead_chg_pct": 3.67,
-        "down_chg_pct": 0.0,
-        "score": 49.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
-        ]
-      },
-      {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 2.47,
+        "lead_chg_pct": 2.06,
         "down_chg_pct": 0.0,
         "score": 49.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -727,7 +731,7 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 2.47,
+        "lead_chg_pct": 2.06,
         "down_chg_pct": 0.0,
         "score": 44.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -737,20 +741,9 @@
         ]
       },
       {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 4.31,
-        "down_chg_pct": 0.0,
-        "score": 44.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
-        ]
-      },
-      {
         "lead": "MPC",
         "symbol": "PSX",
-        "lead_chg_pct": 4.12,
+        "lead_chg_pct": 4.03,
         "down_chg_pct": 0.0,
         "score": 44.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -761,7 +754,7 @@
       {
         "lead": "VLO",
         "symbol": "MPC",
-        "lead_chg_pct": 2.17,
+        "lead_chg_pct": 2.11,
         "down_chg_pct": 0.0,
         "score": 39.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -772,18 +765,19 @@
       {
         "lead": "COHR",
         "symbol": "FN",
-        "lead_chg_pct": 8.93,
+        "lead_chg_pct": 7.7,
         "down_chg_pct": 0.0,
         "score": 30.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       }
     ],
     "blocker_counts": {
-      "BELOW_930_INTRADAY_OPEN": 7,
-      "BELOW_INTRADAY_VWAP": 3,
+      "BELOW_930_INTRADAY_OPEN": 5,
+      "BELOW_INTRADAY_VWAP": 5,
       "UNQUALIFIED": 2
     },
     "app_health": {
@@ -827,11 +821,11 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 09:58:48 ET",
+    "updated_at_et": "2026-11-27 09:59:40 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T14:58:04.712960+00:00",
+        "last_received_utc": "2026-11-27T14:59:23.352842+00:00",
         "last_published_utc": "2026-11-27T14:57:27+00:00"
       },
       "chatgpt": {
@@ -857,12 +851,12 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 1,
-      "recycled_suppressed_this_call": 39,
+      "new_ingested_this_call": 3,
+      "recycled_suppressed_this_call": 38,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 15,
       "hard_vetoed": 44,
-      "recycled_suppressed_total": 174946,
+      "recycled_suppressed_total": 175102,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2034,12 +2028,12 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 09:58:50 ET",
-    "total_events": 46,
+    "updated_at_et": "2026-11-27 09:59:44 ET",
+    "total_events": 48,
     "counts_by_category": {
       "SEC": 8,
-      "BLOCKED": 37,
-      "ADMITTED": 1
+      "BLOCKED": 38,
+      "ADMITTED": 2
     },
     "entries": [
       {
@@ -2054,7 +2048,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1527762/000149315226054333/0001493152-26-054333-index.htm"
       },
       {
-        "id": "sec-243-1795781739",
+        "id": "sec-255-1795781739",
         "ts_et": "2026-11-27 07:15:39 ET",
         "ts_utc": "2026-11-27T12:15:39Z",
         "category": "SEC",
@@ -2065,7 +2059,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1784254/000178425426000056/0001784254-26-000056-index.htm"
       },
       {
-        "id": "sec-216-1795783207",
+        "id": "sec-228-1795783207",
         "ts_et": "2026-11-27 07:40:07 ET",
         "ts_utc": "2026-11-27T12:40:07Z",
         "category": "SEC",
@@ -2076,7 +2070,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm"
       },
       {
-        "id": "sec-206-1795784377",
+        "id": "sec-218-1795784377",
         "ts_et": "2026-11-27 07:59:37 ET",
         "ts_utc": "2026-11-27T12:59:37Z",
         "category": "SEC",
@@ -2087,7 +2081,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2115119/000119312526479217/0001193125-26-479217-index.htm"
       },
       {
-        "id": "sec-186-1795786415",
+        "id": "sec-198-1795786415",
         "ts_et": "2026-11-27 08:33:35 ET",
         "ts_utc": "2026-11-27T13:33:35Z",
         "category": "SEC",
@@ -2098,7 +2092,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.02,8.01,9.01] \u00b7 flags=[ITEM_102_AGREEMENT_TERMINATED] \u00b7 https://www.sec.gov/Archives/edgar/data/2041610/000110465926132332/0001104659-26-132332-index.htm"
       },
       {
-        "id": "sec-180-1795786991",
+        "id": "sec-192-1795786991",
         "ts_et": "2026-11-27 08:43:11 ET",
         "ts_utc": "2026-11-27T13:43:11Z",
         "category": "SEC",
@@ -2109,7 +2103,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,3.03,5.03,7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1040130/000104013026000079/0001040130-26-000079-index.htm"
       },
       {
-        "id": "sec-162-1795788041",
+        "id": "sec-174-1795788041",
         "ts_et": "2026-11-27 09:00:41 ET",
         "ts_utc": "2026-11-27T14:00:41Z",
         "category": "SEC",
@@ -2120,7 +2114,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1821769/000110465926132343/0001104659-26-132343-index.htm"
       },
       {
-        "id": "sec-161-1795788047",
+        "id": "sec-173-1795788047",
         "ts_et": "2026-11-27 09:00:47 ET",
         "ts_utc": "2026-11-27T14:00:47Z",
         "category": "SEC",
@@ -2131,7 +2125,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm"
       },
       {
-        "id": "cat-139-1795788248",
+        "id": "cat-151-1795788248",
         "ts_et": "2026-11-27 09:04:08 ET",
         "ts_utc": "2026-11-27T14:04:08Z",
         "category": "BLOCKED",
@@ -2142,7 +2136,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-136-1795788249",
+        "id": "cat-148-1795788249",
         "ts_et": "2026-11-27 09:04:09 ET",
         "ts_utc": "2026-11-27T14:04:09Z",
         "category": "BLOCKED",
@@ -2153,7 +2147,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-125-1795788254",
+        "id": "cat-137-1795788254",
         "ts_et": "2026-11-27 09:04:14 ET",
         "ts_utc": "2026-11-27T14:04:14Z",
         "category": "BLOCKED",
@@ -2164,7 +2158,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-117-1795788256",
+        "id": "cat-129-1795788256",
         "ts_et": "2026-11-27 09:04:16 ET",
         "ts_utc": "2026-11-27T14:04:16Z",
         "category": "BLOCKED",
@@ -2175,7 +2169,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-116-1795788258",
+        "id": "cat-128-1795788258",
         "ts_et": "2026-11-27 09:04:18 ET",
         "ts_utc": "2026-11-27T14:04:18Z",
         "category": "BLOCKED",
@@ -2186,7 +2180,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-111-1795788261",
+        "id": "cat-123-1795788261",
         "ts_et": "2026-11-27 09:04:21 ET",
         "ts_utc": "2026-11-27T14:04:21Z",
         "category": "BLOCKED",
@@ -2197,7 +2191,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-109-1795788262",
+        "id": "cat-121-1795788262",
         "ts_et": "2026-11-27 09:04:22 ET",
         "ts_utc": "2026-11-27T14:04:22Z",
         "category": "BLOCKED",
@@ -2208,7 +2202,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-94-1795788267",
+        "id": "cat-106-1795788267",
         "ts_et": "2026-11-27 09:04:27 ET",
         "ts_utc": "2026-11-27T14:04:27Z",
         "category": "BLOCKED",
@@ -2219,7 +2213,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-91-1795788270",
+        "id": "cat-103-1795788270",
         "ts_et": "2026-11-27 09:04:30 ET",
         "ts_utc": "2026-11-27T14:04:30Z",
         "category": "BLOCKED",
@@ -2230,7 +2224,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-84-1795788282",
+        "id": "cat-96-1795788282",
         "ts_et": "2026-11-27 09:04:42 ET",
         "ts_utc": "2026-11-27T14:04:42Z",
         "category": "BLOCKED",
@@ -2726,6 +2720,34 @@
         ],
         "summary": "BLOCKED gate summary: 7 BELOW_930_INTRADAY_OPEN, 3 BELOW_INTRADAY_VWAP, 2 UNQUALIFIED",
         "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->ANET (sc=44.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
+      },
+      {
+        "id": "fr-adm-27-1795791572",
+        "ts_et": "2026-11-27 09:59:32 ET",
+        "ts_utc": "2026-11-27T14:59:32Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "ROST"
+        ],
+        "summary": "ADMITTED 1 candidate(s): ROST",
+        "detail": "ROST (lead TJX) score=96.5 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
+      },
+      {
+        "id": "fr-blk-27-1795791572",
+        "ts_et": "2026-11-27 09:59:32 ET",
+        "ts_utc": "2026-11-27T14:59:32Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AMZN",
+          "ANET",
+          "FN",
+          "GOOGL",
+          "LITE",
+          "MPC",
+          "PSX"
+        ],
+        "summary": "BLOCKED gate summary: 5 BELOW_930_INTRADAY_OPEN, 5 BELOW_INTRADAY_VWAP, 2 UNQUALIFIED",
+        "detail": "Examples: COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->GOOGL (sc=49.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); AVGO->ANET (sc=44.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); MPC->PSX (sc=44.0, UNQUALIFIED)"
       }
     ]
   },
