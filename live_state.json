@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795785164.6603103,
-  "generated_at_iso": "2026-11-27T13:12:44.660310+00:00",
-  "generated_at_et": "2026-11-27 08:12:44 ET",
+  "generated_at": 1795785234.5032663,
+  "generated_at_iso": "2026-11-27T13:13:54.503266+00:00",
+  "generated_at_et": "2026-11-27 08:13:54 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795785154.7047918,
-    "observed_at_et": "2026-11-27 08:12:34 ET",
-    "reconciliation_at": 1795785151.6617773,
-    "reconciliation_at_et": "2026-11-27 08:12:31 ET",
-    "heartbeat_age_seconds": 10.4,
-    "reconciliation_age_seconds": 13.4,
+    "observed_at": 1795785230.190365,
+    "observed_at_et": "2026-11-27 08:13:50 ET",
+    "reconciliation_at": 1795785226.6905923,
+    "reconciliation_at_et": "2026-11-27 08:13:46 ET",
+    "heartbeat_age_seconds": 4.7,
+    "reconciliation_age_seconds": 8.2,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28133
+      "RECONCILE": 28138
     },
     "latest_reconcile": {
-      "id": "reconcile-1795785151-09e2d3",
-      "timestamp_sec": 1795785151,
-      "time_et": "2026-11-27 08:12:31 ET",
+      "id": "reconcile-1795785226-713cfb",
+      "timestamp_sec": 1795785226,
+      "time_et": "2026-11-27 08:13:46 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T13:12:12.899406+00:00",
-    "timestamp_et": "2026-11-27 08:12:12 ET",
-    "observed_at": 1795785132.899406,
+    "timestamp_utc": "2026-11-27T13:13:22.749337+00:00",
+    "timestamp_et": "2026-11-27 08:13:22 ET",
+    "observed_at": 1795785202.749337,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -703,7 +703,7 @@
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.55,
+        "lead_chg_pct": 3.6,
         "down_chg_pct": 0.0,
         "score": 83.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -714,9 +714,9 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.55,
+        "lead_chg_pct": 3.6,
         "down_chg_pct": 0.0,
-        "score": 79.0,
+        "score": 82.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -758,7 +758,7 @@
       {
         "lead": "TSM",
         "symbol": "ASML",
-        "lead_chg_pct": 3.55,
+        "lead_chg_pct": 3.6,
         "down_chg_pct": 0.0,
         "score": 69.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -824,7 +824,7 @@
       {
         "lead": "ARM",
         "symbol": "AVGO",
-        "lead_chg_pct": 6.49,
+        "lead_chg_pct": 6.59,
         "down_chg_pct": 0.0,
         "score": 44.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -835,7 +835,7 @@
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 8.18,
+        "lead_chg_pct": 8.32,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -845,7 +845,7 @@
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 55,
+      "UNQUALIFIED": 54,
       "STAGED_REVIEW": 9,
       "BELOW_930_INTRADAY_OPEN": 1
     },
@@ -890,7 +890,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 08:12:08 ET",
+    "updated_at_et": "2026-11-27 08:13:46 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -920,12 +920,12 @@
     },
     "summary": {
       "total_items": 347,
-      "new_ingested_this_call": 6,
-      "recycled_suppressed_this_call": 44,
+      "new_ingested_this_call": 4,
+      "recycled_suppressed_this_call": 37,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 13,
       "hard_vetoed": 34,
-      "recycled_suppressed_total": 159891,
+      "recycled_suppressed_total": 160052,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2098,11 +2098,11 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 08:12:45 ET",
-    "total_events": 15,
+    "updated_at_et": "2026-11-27 08:13:54 ET",
+    "total_events": 16,
     "counts_by_category": {
       "SEC": 4,
-      "BLOCKED": 8,
+      "BLOCKED": 9,
       "ADMITTED": 3
     },
     "entries": [
@@ -2327,6 +2327,24 @@
         ],
         "summary": "BLOCKED gate summary: 55 UNQUALIFIED, 9 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
         "detail": "Examples: JPM->BAC (sc=83.5, STAGED_REVIEW); JPM->C (sc=83.5, STAGED_REVIEW); AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW)"
+      },
+      {
+        "id": "fr-blk-8-1795785202",
+        "ts_et": "2026-11-27 08:13:22 ET",
+        "ts_utc": "2026-11-27T13:13:22Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AMZN",
+          "ASML",
+          "BAC",
+          "C",
+          "EME",
+          "GOOGL",
+          "GS",
+          "URI"
+        ],
+        "summary": "BLOCKED gate summary: 54 UNQUALIFIED, 9 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
+        "detail": "Examples: JPM->BAC (sc=83.5, STAGED_REVIEW); JPM->C (sc=83.5, STAGED_REVIEW); AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW)"
       }
     ]
   },
