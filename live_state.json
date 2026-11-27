@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795784512.3100915,
-  "generated_at_iso": "2026-11-27T13:01:52.310091+00:00",
-  "generated_at_et": "2026-11-27 08:01:52 ET",
+  "generated_at": 1795784598.103128,
+  "generated_at_iso": "2026-11-27T13:03:18.103128+00:00",
+  "generated_at_et": "2026-11-27 08:03:18 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -37,16 +37,16 @@
   "runtime": {
     "execution_owner": "render",
     "status": "available",
-    "state": "RECONCILED",
-    "enabled": true,
+    "state": "RENDER_PRIMARY_EXECUTION",
+    "enabled": false,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
-    "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795784512.1979628,
-    "observed_at_et": "2026-11-27 08:01:52 ET",
-    "reconciliation_at": 1795784510.8701289,
-    "reconciliation_at_et": "2026-11-27 08:01:50 ET",
-    "heartbeat_age_seconds": 0.5,
-    "reconciliation_age_seconds": 1.8,
+    "policy_sha256": null,
+    "observed_at": 1795784599.0873723,
+    "observed_at_et": "2026-11-27 08:03:19 ET",
+    "reconciliation_at": null,
+    "reconciliation_at_et": null,
+    "heartbeat_age_seconds": null,
+    "reconciliation_age_seconds": null,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28091
+      "RECONCILE": 28094
     },
     "latest_reconcile": {
-      "id": "reconcile-1795784510-8039be",
-      "timestamp_sec": 1795784510,
-      "time_et": "2026-11-27 08:01:50 ET",
+      "id": "reconcile-1795784555-6ca30f",
+      "timestamp_sec": 1795784555,
+      "time_et": "2026-11-27 08:02:35 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -659,234 +659,7 @@
     "live_candidates": [],
     "admitted_count": 0
   },
-  "flight_recorder": {
-    "schema": "bully.flight-recorder.v1",
-    "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T13:01:20.392257+00:00",
-    "timestamp_et": "2026-11-27 08:01:20 ET",
-    "observed_at": 1795784480.392257,
-    "gate_phase": "PRE_MARKET_SURVEILLANCE",
-    "late_entry_cutoff_active": false,
-    "policy_id": "bs7-educated-exit-v3",
-    "account": {
-      "status": "ACTIVE",
-      "equity": 76822.76,
-      "cash": 76822.76,
-      "last_equity": 76822.76
-    },
-    "position_projections": [],
-    "admitted_count": 2,
-    "admitted_candidates": [
-      {
-        "lead": "KLAC",
-        "symbol": "AMAT",
-        "lead_chg_pct": 5.45,
-        "down_chg_pct": 0.0,
-        "score": 94.0,
-        "reasons": [
-          "Lead KLAC +5.5% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
-          "SW_STALE_MULTIDAY_CATALYST_IGNORED(age=40.7h,rule=PRIOR_RTH_SESSION_TRADED)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=2.25)"
-        ]
-      },
-      {
-        "lead": "AVGO",
-        "symbol": "AMZN",
-        "lead_chg_pct": 3.61,
-        "down_chg_pct": 0.0,
-        "score": 89.0,
-        "reasons": [
-          "Lead AVGO +3.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=1.11)"
-        ]
-      }
-    ],
-    "blocked_candidates_sample": [
-      {
-        "lead": "MS",
-        "symbol": "GS",
-        "lead_chg_pct": 2.62,
-        "down_chg_pct": 0.0,
-        "score": 84.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "AVGO",
-        "symbol": "GOOGL",
-        "lead_chg_pct": 3.61,
-        "down_chg_pct": 0.0,
-        "score": 79.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "CAT",
-        "symbol": "URI",
-        "lead_chg_pct": 3.18,
-        "down_chg_pct": 0.0,
-        "score": 75.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.2,
-        "down_chg_pct": 0.0,
-        "score": 70.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "FIX",
-        "symbol": "EME",
-        "lead_chg_pct": 5.49,
-        "down_chg_pct": 0.0,
-        "score": 70.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "MPC",
-        "symbol": "PSX",
-        "lead_chg_pct": 3.97,
-        "down_chg_pct": 0.0,
-        "score": 68.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "VST",
-        "symbol": "CEG",
-        "lead_chg_pct": 3.02,
-        "down_chg_pct": 0.0,
-        "score": 62.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ETN",
-        "symbol": "PWR",
-        "lead_chg_pct": 3.52,
-        "down_chg_pct": 0.0,
-        "score": 58.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "VRTX",
-        "symbol": "REGN",
-        "lead_chg_pct": -7.82,
-        "down_chg_pct": 0.0,
-        "score": 45.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
-        ]
-      },
-      {
-        "lead": "ARM",
-        "symbol": "AVGO",
-        "lead_chg_pct": 6.43,
-        "down_chg_pct": 0.0,
-        "score": 44.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "NEM",
-        "symbol": "AEM",
-        "lead_chg_pct": 5.09,
-        "down_chg_pct": 0.0,
-        "score": 44.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "COHR",
-        "symbol": "LITE",
-        "lead_chg_pct": 8.36,
-        "down_chg_pct": 0.0,
-        "score": 40.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "STX",
-        "symbol": "WDC",
-        "lead_chg_pct": 6.6,
-        "down_chg_pct": 0.0,
-        "score": 40.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 6.54,
-        "down_chg_pct": 0.0,
-        "score": 40.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "NVDA",
-        "symbol": "MRVL",
-        "lead_chg_pct": 3.3,
-        "down_chg_pct": 0.0,
-        "score": 34.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      }
-    ],
-    "blocker_counts": {
-      "UNQUALIFIED": 49,
-      "STAGED_REVIEW": 7,
-      "BELOW_930_INTRADAY_OPEN": 1
-    },
-    "app_health": {
-      "backend_50425": {
-        "ok": false,
-        "error": "<urlopen error [Errno 111] Connection refused>"
-      },
-      "gateway_50426": {
-        "ok": false,
-        "error": "<urlopen error [Errno 111] Connection refused>"
-      }
-    }
-  },
+  "flight_recorder": null,
   "mobile_overrides": {
     "schema": "bully.mobile-overrides.v1",
     "trading_enabled": false,
@@ -917,7 +690,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 08:01:06 ET",
+    "updated_at_et": "2026-11-27 08:02:25 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -931,8 +704,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T12:34:14.735916+00:00",
-        "last_published_utc": "2026-11-27T12:33:30+00:00"
+        "last_received_utc": "2026-11-27T13:02:16.019868+00:00",
+        "last_published_utc": "2026-11-27T13:01:55+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -952,10 +725,260 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 13,
       "hard_vetoed": 34,
-      "recycled_suppressed_total": 158600,
+      "recycled_suppressed_total": 158765,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-benzinga-6cb3c31f43",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "HBM",
+        "headline": "Hornbach Launches 'Hornbach macht Schule' Initiative",
+        "url": "https://www.finanznachrichten.de/nachrichten-aktien/hornbach-holding-ag-co-kgaa.htm",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:55+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "8edb05f24528d361",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.413,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-cec39ac50c",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "EXENS",
+        "headline": "Exosens Secures Contract to Supply Image Intensifier Tubes for German Armed Forces",
+        "url": "https://www.abcbourse.com/marches/exosens-grimpe-apres-une-commande-de-l-armee-allemande_706776",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:53+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "3c60913b43d00228",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-558cacf81b",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "UNDP",
+        "headline": "Samsung Electronics to Contribute $3.53 Million to United Nations Development Program",
+        "url": "https://www.marketscreener.com/news/samsung-electronics-to-contribute-3-53-million-to-united-nations-development-program-ce7851d9dc8bff24",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:52+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "775c21e2187a819d",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-7040355304",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "TKO",
+        "headline": "Tikehau Capital: Disclosure of Shares Repurchases (20 Nov 2026 \u2013 26 Nov 2026)",
+        "url": "https://newsfilter.io/articles/tikehau-capital-disclosure-of-shares-repurchases-from-20-november-2026-to-26-0a39a5fc04025266b9a45ae760b3daeb",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:51+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "949943954b0db42f",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.4135,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-1e22a39568",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "BOSS",
+        "headline": "JP Morgan Chase & Co. Maintains Neutral Rating on Hugo Boss",
+        "url": "https://www.finanzen.ch/analysen",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:51+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "bdc9bcb4f6e013a0",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-ead8feb867",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "G24",
+        "headline": "Scout24 SE Publishes Voting Rights Notification",
+        "url": "https://www.finanzen.ch/nachrichten/aktien/eqs-pvr-scout24-se-veroeffentlichung-ueber-erwerb-oder-verausserung-eigener-aktien-nach-%C2%A7-40-abs-1-satz-2-wphg-1036805297",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:51+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "4acd551fa09b59c3",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-dec05d3a85",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "CRM",
+        "headline": "Erste Group Downgrades Salesforce to Hold",
+        "url": "https://www.moomoo.com/hans/news/post/1006000527/erste-group-downgrades-salesforce-crmus-to-hold-rating",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:51+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "265700b122854970",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.2617,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-f6aa2da3dc",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "RMS",
+        "headline": "J.P. Morgan updates Herm\u00e8s rating and target price",
+        "url": "https://www.milanofinanza.it/newsmarketdriver/market-driver-lusso-ecco-le-scelte-di-jpm-per-il-2027-202611271148035029",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:49+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "5cc7edec67024b56",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-ca6d865e2c",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "ABBN",
+        "headline": "ABB Completes Major Modernization Project for Dyno Nobel in Queensland",
+        "url": "https://www.newswiretoday.com/news/187316/Dyno-Nobel-Sets-New-Benchmark-for-Safety-and-Resilience-with-ABBs-Modernization-Program/",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:47+00:00",
+        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
+        "fingerprint": "a27a677a84397b41",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": null,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-b869e086d6",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "NEXI",
+        "headline": "Nexi Greece showcases payment solutions at XENIA 2026",
+        "url": "https://www.euro2day.gr/news/enterprises/122/list.html",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:01:46+00:00",
+        "received_at_utc": "2026-11-27T13:02:14.646195+00:00",
+        "fingerprint": "2c8a3219967df4a8",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 75.156,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-sec_edgar-d159009fc7",
         "channel": "sec_edgar",
@@ -1014,256 +1037,6 @@
           "7.01",
           "9.01"
         ]
-      },
-      {
-        "id": "ext-benzinga-f03af49c67",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ERO",
-        "headline": "Ero Copper Suspends Tucum\u00e3 Mine Operations Following Environmental Notice",
-        "url": "https://www.marketscreener.com/news/ero-copper-suspends-northern-brazil-mine-operations-pays-fine-after-flooding-ce7851d9dc8ef022",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:33:30+00:00",
-        "received_at_utc": "2026-11-27T12:34:14.735916+00:00",
-        "fingerprint": "6cc990d123b3af35",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-eabf925a79",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ADPT",
-        "headline": "Adaptive Biotechnologies Insider Sells Shares Worth Approximately $19.9 Million",
-        "url": "https://www.moomoo.com/hans/news/post/1005984486",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:33:19+00:00",
-        "received_at_utc": "2026-11-27T12:34:14.735916+00:00",
-        "fingerprint": "d882019ff3d9f366",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2782,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-743b023821",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "CF",
-        "headline": "Bernstein Adjusts Price Target on CF Industries",
-        "url": "https://www.marketscreener.com/news/bernstein-adjusts-price-target-on-cf-industries-to-163-from-162-ce7851d9dc8ff427",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:33:04+00:00",
-        "received_at_utc": "2026-11-27T12:34:13.399947+00:00",
-        "fingerprint": "c238dc95dee29047",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-d485cc0b41",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "MDT",
-        "headline": "Truist Adjusts Price Target on Medtronic to $101",
-        "url": "https://de.marketscreener.com/boerse-nachrichten/medtronic-plc-truist-securities-gibt-neutrale-einschaetzung-ce7851d9dc80f721",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:57+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "2b12650858f01d43",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-3e54a3d7d6",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "MRVL",
-        "headline": "HSBC Adjusts Price Target on Marvell Technology to $200 From $450",
-        "url": "https://www.marketscreener.com/news/hsbc-adjusts-price-target-on-marvell-technology-to-200-from-450-ce7851d9dc8ff425",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:54+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "e550483d6c59a66f",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.4181,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-c8864ebc9d",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "LTC",
-        "headline": "Huntington Adjusts Price Target on LTC Properties to $50",
-        "url": "https://www.marketscreener.com/news/huntington-adjusts-price-target-on-ltc-properties-to-50-from-49-50-maintains-outperform-rating-ce7851d9dd8ef022",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:48+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "967dd374bc21cb5c",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2661,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-18eb1f8a3c",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HBAN",
-        "headline": "Huntington Adjusts Price Target on Chiron Real Estate",
-        "url": "https://www.marketscreener.com/news/huntington-adjusts-price-target-on-chiron-real-estate-to-31-from-34-maintains-market-perform-rati-ce7851d9dd80f121",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:48+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "46ddde32224b8c9a",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2999,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-987b2964c5",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HBAN",
-        "headline": "Huntington Adjusts Price Target on LTC Properties",
-        "url": "https://www.marketscreener.com/news/huntington-adjusts-price-target-on-ltc-properties-to-50-from-49-50-maintains-outperform-rating-ce7851d9dd8ef022",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:48+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "b29d1e46f9217b78",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2999,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-04276245e7",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "HBAN",
-        "headline": "Huntington Adjusts Price Target on Sabra Health Care REIT",
-        "url": "https://www.marketscreener.com/news/huntington-adjusts-price-target-on-sabra-health-care-reit-to-23-50-from-23-maintains-outperform-r-ce7851d9dd80f221",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:48+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "fb201fc0ccebb4e0",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.2999,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-b25d595387",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "LIF",
-        "headline": "Life360 Insider Executes Significant Stock Sale",
-        "url": "https://de.marketscreener.com/boerse-nachrichten/life360-insider-verkaufte-laut-juengster-sec-meldung-aktien-im-wert-von-7-266-009-usd-ce7851d9da80f427",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T12:32:47+00:00",
-        "received_at_utc": "2026-11-27T12:33:15.128181+00:00",
-        "fingerprint": "d64c97db4b7be98c",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.6634,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
       },
       {
         "id": "ext-sec_edgar-67c0593376",
@@ -2125,16 +1898,14 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 08:01:52 ET",
-    "total_events": 62,
+    "updated_at_et": "2026-11-27 08:03:19 ET",
+    "total_events": 4,
     "counts_by_category": {
-      "SEC": 4,
-      "BLOCKED": 35,
-      "ADMITTED": 23
+      "SEC": 4
     },
     "entries": [
       {
-        "id": "sec-161-1795777806",
+        "id": "sec-202-1795777806",
         "ts_et": "2026-11-27 06:10:06 ET",
         "ts_utc": "2026-11-27T11:10:06Z",
         "category": "SEC",
@@ -2145,7 +1916,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1527762/000149315226054333/0001493152-26-054333-index.htm"
       },
       {
-        "id": "sec-62-1795781739",
+        "id": "sec-103-1795781739",
         "ts_et": "2026-11-27 07:15:39 ET",
         "ts_utc": "2026-11-27T12:15:39Z",
         "category": "SEC",
@@ -2156,498 +1927,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1784254/000178425426000056/0001784254-26-000056-index.htm"
       },
       {
-        "id": "fr-blk-0-1795781869",
-        "ts_et": "2026-11-27 07:17:49 ET",
-        "ts_utc": "2026-11-27T12:17:49Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMAT",
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX"
-        ],
-        "summary": "BLOCKED gate summary: 49 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); KLAC->AMAT (sc=71.0, STAGED_REVIEW); TSM->ASML (sc=68.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-1-1795781944",
-        "ts_et": "2026-11-27 07:19:04 ET",
-        "ts_utc": "2026-11-27T12:19:04Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-1-1795781944",
-        "ts_et": "2026-11-27 07:19:04 ET",
-        "ts_utc": "2026-11-27T12:19:04Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 48 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=82.0, STAGED_REVIEW); TSM->ASML (sc=76.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); CAT->URI (sc=68.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-2-1795782013",
-        "ts_et": "2026-11-27 07:20:13 ET",
-        "ts_utc": "2026-11-27T12:20:13Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 3 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=77.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW); TSM->ASML (sc=68.0, UNQUALIFIED); CAT->URI (sc=68.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-3-1795782085",
-        "ts_et": "2026-11-27 07:21:25 ET",
-        "ts_utc": "2026-11-27T12:21:25Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN",
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMZN, GOOGL",
-        "detail": "AMZN (lead AVGO) score=89.0 [ADMITTED] | GOOGL (lead AVGO) score=88.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-3-1795782085",
-        "ts_et": "2026-11-27 07:21:25 ET",
-        "ts_utc": "2026-11-27T12:21:25Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "AVGO",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 4 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: MS->GS (sc=70.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); CAT->URI (sc=68.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED); VST->CEG (sc=52.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-4-1795782165",
-        "ts_et": "2026-11-27 07:22:45 ET",
-        "ts_utc": "2026-11-27T12:22:45Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AEM",
-          "AMZN"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AEM, AMZN",
-        "detail": "AEM (lead NEM) score=90.5 [ADMITTED] | AMZN (lead AVGO) score=89.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-4-1795782165",
-        "ts_et": "2026-11-27 07:22:45 ET",
-        "ts_utc": "2026-11-27T12:22:45Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 50 UNQUALIFIED, 3 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: CAT->URI (sc=78.0, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW); TSM->ASML (sc=65.0, UNQUALIFIED); MS->GS (sc=63.5, UNQUALIFIED); PWR->EME (sc=60.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-5-1795782239",
-        "ts_et": "2026-11-27 07:23:59 ET",
-        "ts_utc": "2026-11-27T12:23:59Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-5-1795782239",
-        "ts_et": "2026-11-27 07:23:59 ET",
-        "ts_utc": "2026-11-27T12:23:59Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 50 UNQUALIFIED, 4 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=79.0, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); MS->GS (sc=68.5, UNQUALIFIED); CAT->URI (sc=68.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-6-1795782309",
-        "ts_et": "2026-11-27 07:25:09 ET",
-        "ts_utc": "2026-11-27T12:25:09Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN",
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMZN, GOOGL",
-        "detail": "AMZN (lead AVGO) score=89.0 [ADMITTED] | GOOGL (lead AVGO) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-6-1795782309",
-        "ts_et": "2026-11-27 07:25:09 ET",
-        "ts_utc": "2026-11-27T12:25:09Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "AVGO",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 1 BELOW_930_INTRADAY_OPEN, 1 STAGED_REVIEW",
-        "detail": "Examples: MS->GS (sc=68.5, UNQUALIFIED); TSM->ASML (sc=65.0, UNQUALIFIED); CAT->URI (sc=58.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED); VST->CEG (sc=52.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-7-1795782379",
-        "ts_et": "2026-11-27 07:26:19 ET",
-        "ts_utc": "2026-11-27T12:26:19Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=92.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-7-1795782379",
-        "ts_et": "2026-11-27 07:26:19 ET",
-        "ts_utc": "2026-11-27T12:26:19Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "NOW",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 2 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=79.0, STAGED_REVIEW); MSFT->NOW (sc=73.0, STAGED_REVIEW); MS->GS (sc=68.5, UNQUALIFIED); TSM->ASML (sc=65.0, UNQUALIFIED); CAT->URI (sc=58.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-8-1795782466",
-        "ts_et": "2026-11-27 07:27:46 ET",
-        "ts_utc": "2026-11-27T12:27:46Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 3 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=82.0, STAGED_REVIEW); AVGO->AMZN (sc=77.0, STAGED_REVIEW); MS->GS (sc=68.5, UNQUALIFIED); CAT->URI (sc=65.0, UNQUALIFIED); TSM->ASML (sc=64.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-9-1795782536",
-        "ts_et": "2026-11-27 07:28:56 ET",
-        "ts_utc": "2026-11-27T12:28:56Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMAT",
-          "AMZN"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMAT, AMZN",
-        "detail": "AMAT (lead KLAC) score=91.0 [ADMITTED] | AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-9-1795782536",
-        "ts_et": "2026-11-27 07:28:56 ET",
-        "ts_utc": "2026-11-27T12:28:56Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 50 UNQUALIFIED, 3 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=73.0, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); MS->GS (sc=68.5, UNQUALIFIED); TSM->ASML (sc=64.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-10-1795782604",
-        "ts_et": "2026-11-27 07:30:04 ET",
-        "ts_utc": "2026-11-27T12:30:04Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 54 UNQUALIFIED, 4 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); TSM->ASML (sc=64.0, UNQUALIFIED); MS->GS (sc=63.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-11-1795782682",
-        "ts_et": "2026-11-27 07:31:22 ET",
-        "ts_utc": "2026-11-27T12:31:22Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); TSM->ASML (sc=64.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-12-1795782751",
-        "ts_et": "2026-11-27 07:32:31 ET",
-        "ts_utc": "2026-11-27T12:32:31Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-12-1795782751",
-        "ts_et": "2026-11-27 07:32:31 ET",
-        "ts_utc": "2026-11-27T12:32:31Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=82.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-13-1795782828",
-        "ts_et": "2026-11-27 07:33:48 ET",
-        "ts_utc": "2026-11-27T12:33:48Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN",
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 2 candidate(s): GOOGL, AMZN",
-        "detail": "GOOGL (lead AVGO) score=88.0 [ADMITTED] | AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-13-1795782828",
-        "ts_et": "2026-11-27 07:33:48 ET",
-        "ts_utc": "2026-11-27T12:33:48Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "AVGO",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 54 UNQUALIFIED, 2 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=68.0, UNQUALIFIED); CAT->URI (sc=65.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED); PWR->EME (sc=53.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-14-1795782904",
-        "ts_et": "2026-11-27 07:35:04 ET",
-        "ts_utc": "2026-11-27T12:35:04Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 1 candidate(s): GOOGL",
-        "detail": "GOOGL (lead AVGO) score=88.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-14-1795782904",
-        "ts_et": "2026-11-27 07:35:04 ET",
-        "ts_utc": "2026-11-27T12:35:04Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=77.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=73.0, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-15-1795782975",
-        "ts_et": "2026-11-27 07:36:15 ET",
-        "ts_utc": "2026-11-27T12:36:15Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=89.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-15-1795782975",
-        "ts_et": "2026-11-27 07:36:15 ET",
-        "ts_utc": "2026-11-27T12:36:15Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=79.0, STAGED_REVIEW); TSM->ASML (sc=78.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-16-1795783049",
-        "ts_et": "2026-11-27 07:37:29 ET",
-        "ts_utc": "2026-11-27T12:37:29Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMAT",
-          "AMZN",
-          "ASML",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); KLAC->AMAT (sc=75.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW)"
-      },
-      {
-        "id": "fr-adm-17-1795783123",
-        "ts_et": "2026-11-27 07:38:43 ET",
-        "ts_utc": "2026-11-27T12:38:43Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-17-1795783123",
-        "ts_et": "2026-11-27 07:38:43 ET",
-        "ts_utc": "2026-11-27T12:38:43Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=82.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); CAT->URI (sc=65.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-18-1795783202",
-        "ts_et": "2026-11-27 07:40:02 ET",
-        "ts_utc": "2026-11-27T12:40:02Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN",
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMZN, GOOGL",
-        "detail": "AMZN (lead AVGO) score=92.0 [ADMITTED] | GOOGL (lead AVGO) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-18-1795783202",
-        "ts_et": "2026-11-27 07:40:02 ET",
-        "ts_utc": "2026-11-27T12:40:02Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "AVGO",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 4 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); CAT->URI (sc=65.0, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED); PWR->EME (sc=53.0, UNQUALIFIED)"
-      },
-      {
-        "id": "sec-5-1795783207",
+        "id": "sec-46-1795783207",
         "ts_et": "2026-11-27 07:40:07 ET",
         "ts_utc": "2026-11-27T12:40:07Z",
         "category": "SEC",
@@ -2658,367 +1938,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm"
       },
       {
-        "id": "fr-adm-19-1795783277",
-        "ts_et": "2026-11-27 07:41:17 ET",
-        "ts_utc": "2026-11-27T12:41:17Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN",
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMZN, GOOGL",
-        "detail": "AMZN (lead AVGO) score=89.0 [ADMITTED] | GOOGL (lead AVGO) score=88.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-19-1795783277",
-        "ts_et": "2026-11-27 07:41:17 ET",
-        "ts_utc": "2026-11-27T12:41:17Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "AVGO",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); MPC->PSX (sc=57.5, UNQUALIFIED); PWR->EME (sc=53.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-20-1795783347",
-        "ts_et": "2026-11-27 07:42:27 ET",
-        "ts_utc": "2026-11-27T12:42:27Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-20-1795783347",
-        "ts_et": "2026-11-27 07:42:27 ET",
-        "ts_utc": "2026-11-27T12:42:27Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: TSM->ASML (sc=81.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=63.5, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-21-1795783426",
-        "ts_et": "2026-11-27 07:43:46 ET",
-        "ts_utc": "2026-11-27T12:43:46Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 54 UNQUALIFIED, 4 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=82.0, STAGED_REVIEW); TSM->ASML (sc=81.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=63.5, UNQUALIFIED); MPC->PSX (sc=57.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-22-1795783507",
-        "ts_et": "2026-11-27 07:45:07 ET",
-        "ts_utc": "2026-11-27T12:45:07Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN",
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 2 candidate(s): GOOGL, AMZN",
-        "detail": "GOOGL (lead AVGO) score=88.0 [ADMITTED] | AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-22-1795783507",
-        "ts_et": "2026-11-27 07:45:07 ET",
-        "ts_utc": "2026-11-27T12:45:07Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "AVGO",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); MPC->PSX (sc=57.5, UNQUALIFIED); VST->CEG (sc=52.5, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-23-1795783578",
-        "ts_et": "2026-11-27 07:46:18 ET",
-        "ts_utc": "2026-11-27T12:46:18Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 50 UNQUALIFIED, 7 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW)"
-      },
-      {
-        "id": "fr-blk-24-1795783657",
-        "ts_et": "2026-11-27 07:47:37 ET",
-        "ts_utc": "2026-11-27T12:47:37Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 7 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=80.0, STAGED_REVIEW); AVGO->AMZN (sc=78.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW)"
-      },
-      {
-        "id": "fr-adm-25-1795783733",
-        "ts_et": "2026-11-27 07:48:53 ET",
-        "ts_utc": "2026-11-27T12:48:53Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=87.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-25-1795783733",
-        "ts_et": "2026-11-27 07:48:53 ET",
-        "ts_utc": "2026-11-27T12:48:53Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "REGN",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 4 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: TSM->ASML (sc=81.0, STAGED_REVIEW); AVGO->GOOGL (sc=80.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); CAT->URI (sc=65.0, UNQUALIFIED); FIX->EME (sc=60.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-26-1795783806",
-        "ts_et": "2026-11-27 07:50:06 ET",
-        "ts_utc": "2026-11-27T12:50:06Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); TSM->ASML (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); CAT->URI (sc=65.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-27-1795783878",
-        "ts_et": "2026-11-27 07:51:18 ET",
-        "ts_utc": "2026-11-27T12:51:18Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 1 candidate(s): GOOGL",
-        "detail": "GOOGL (lead AVGO) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-27-1795783878",
-        "ts_et": "2026-11-27 07:51:18 ET",
-        "ts_utc": "2026-11-27T12:51:18Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: TSM->ASML (sc=84.0, STAGED_REVIEW); AVGO->AMZN (sc=77.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); CAT->URI (sc=65.0, UNQUALIFIED); FIX->EME (sc=60.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-28-1795783963",
-        "ts_et": "2026-11-27 07:52:43 ET",
-        "ts_utc": "2026-11-27T12:52:43Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); CAT->URI (sc=65.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-blk-29-1795784033",
-        "ts_et": "2026-11-27 07:53:53 ET",
-        "ts_utc": "2026-11-27T12:53:53Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 53 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); MS->GS (sc=70.5, STAGED_REVIEW); CAT->URI (sc=70.0, STAGED_REVIEW); TSM->ASML (sc=65.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-30-1795784104",
-        "ts_et": "2026-11-27 07:55:04 ET",
-        "ts_utc": "2026-11-27T12:55:04Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=89.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-30-1795784104",
-        "ts_et": "2026-11-27 07:55:04 ET",
-        "ts_utc": "2026-11-27T12:55:04Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->GOOGL (sc=82.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); FIX->EME (sc=60.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-31-1795784180",
-        "ts_et": "2026-11-27 07:56:20 ET",
-        "ts_utc": "2026-11-27T12:56:20Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "GOOGL"
-        ],
-        "summary": "ADMITTED 1 candidate(s): GOOGL",
-        "detail": "GOOGL (lead AVGO) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-31-1795784180",
-        "ts_et": "2026-11-27 07:56:20 ET",
-        "ts_utc": "2026-11-27T12:56:20Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "CEG",
-          "EME",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 51 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=73.5, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); FIX->EME (sc=60.0, UNQUALIFIED)"
-      },
-      {
-        "id": "fr-adm-32-1795784250",
-        "ts_et": "2026-11-27 07:57:30 ET",
-        "ts_utc": "2026-11-27T12:57:30Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMZN"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AMZN",
-        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-32-1795784250",
-        "ts_et": "2026-11-27 07:57:30 ET",
-        "ts_utc": "2026-11-27T12:57:30Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 50 UNQUALIFIED, 7 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: MS->GS (sc=84.5, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); TSM->ASML (sc=73.0, STAGED_REVIEW); FIX->EME (sc=70.0, STAGED_REVIEW)"
-      },
-      {
-        "id": "fr-blk-33-1795784328",
-        "ts_et": "2026-11-27 07:58:48 ET",
-        "ts_utc": "2026-11-27T12:58:48Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "AMZN",
-          "ASML",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: MS->GS (sc=84.5, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); AVGO->AMZN (sc=77.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); FIX->EME (sc=70.0, STAGED_REVIEW)"
-      },
-      {
-        "id": "sec-0-1795784377",
+        "id": "sec-41-1795784377",
         "ts_et": "2026-11-27 07:59:37 ET",
         "ts_utc": "2026-11-27T12:59:37Z",
         "category": "SEC",
@@ -3027,48 +1947,6 @@
         ],
         "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] CLBK (score=15.0): 8-K - Columbia Financial, Inc./MD/ (0002115119) (Filer)",
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2115119/000119312526479217/0001193125-26-479217-index.htm"
-      },
-      {
-        "id": "fr-adm-34-1795784401",
-        "ts_et": "2026-11-27 08:00:01 ET",
-        "ts_utc": "2026-11-27T13:00:01Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMAT",
-          "AMZN"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMAT, AMZN",
-        "detail": "AMAT (lead KLAC) score=94.0 [ADMITTED] | AMZN (lead AVGO) score=86.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
-      },
-      {
-        "id": "fr-blk-34-1795784401",
-        "ts_et": "2026-11-27 08:00:01 ET",
-        "ts_utc": "2026-11-27T13:00:01Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "ASML",
-          "CEG",
-          "EME",
-          "GOOGL",
-          "GS",
-          "PSX",
-          "PWR",
-          "URI"
-        ],
-        "summary": "BLOCKED gate summary: 49 UNQUALIFIED, 7 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
-        "detail": "Examples: MS->GS (sc=84.5, STAGED_REVIEW); AVGO->GOOGL (sc=82.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); TSM->ASML (sc=70.0, STAGED_REVIEW); FIX->EME (sc=70.0, STAGED_REVIEW)"
-      },
-      {
-        "id": "fr-adm-35-1795784480",
-        "ts_et": "2026-11-27 08:01:20 ET",
-        "ts_utc": "2026-11-27T13:01:20Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AMAT",
-          "AMZN"
-        ],
-        "summary": "ADMITTED 2 candidate(s): AMAT, AMZN",
-        "detail": "AMAT (lead KLAC) score=94.0 [ADMITTED] | AMZN (lead AVGO) score=89.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
       }
     ]
   },
