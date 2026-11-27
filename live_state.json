@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795797961.7599976,
-  "generated_at_iso": "2026-11-27T16:46:01.759998+00:00",
-  "generated_at_et": "2026-11-27 11:46:01 ET",
+  "generated_at": 1795798017.7568738,
+  "generated_at_iso": "2026-11-27T16:46:57.756874+00:00",
+  "generated_at_et": "2026-11-27 11:46:57 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -37,16 +37,16 @@
   "runtime": {
     "execution_owner": "render",
     "status": "available",
-    "state": "RENDER_PRIMARY_EXECUTION",
-    "enabled": false,
+    "state": "RECONCILED",
+    "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
-    "policy_sha256": null,
-    "observed_at": 1795797962.2831652,
-    "observed_at_et": "2026-11-27 11:46:02 ET",
-    "reconciliation_at": null,
-    "reconciliation_at_et": null,
-    "heartbeat_age_seconds": null,
-    "reconciliation_age_seconds": null,
+    "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
+    "observed_at": 1795798017.683394,
+    "observed_at_et": "2026-11-27 11:46:57 ET",
+    "reconciliation_at": 1795798012.7359169,
+    "reconciliation_at_et": "2026-11-27 11:46:52 ET",
+    "heartbeat_age_seconds": 0.5,
+    "reconciliation_age_seconds": 5.4,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 55,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 29745
+      "RECONCILE": 29755
     },
     "latest_reconcile": {
-      "id": "reconcile-1795797945-3e6134",
-      "timestamp_sec": 1795797945,
-      "time_et": "2026-11-27 11:45:45 ET",
+      "id": "reconcile-1795798012-306aee",
+      "timestamp_sec": 1795798012,
+      "time_et": "2026-11-27 11:46:52 ET",
       "free_cash": 76832.71,
       "position_value": 0.0,
       "total_equity": 76832.71,
@@ -903,12 +903,12 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 11:45:59 ET",
+    "updated_at_et": "2026-11-27 11:46:54 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T16:44:19.076098+00:00",
-        "last_published_utc": "2026-11-27T16:38:22+00:00"
+        "last_received_utc": "2026-11-27T16:46:39.917284+00:00",
+        "last_published_utc": "2026-11-27T16:42:20+00:00"
       },
       "chatgpt": {
         "count": 18,
@@ -934,11 +934,11 @@
     "summary": {
       "total_items": 348,
       "new_ingested_this_call": 2,
-      "recycled_suppressed_this_call": 40,
+      "recycled_suppressed_this_call": 39,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
       "hard_vetoed": 35,
-      "recycled_suppressed_total": 197702,
+      "recycled_suppressed_total": 197943,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2109,7 +2109,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 11:46:02 ET",
+    "updated_at_et": "2026-11-27 11:46:58 ET",
     "total_events": 183,
     "counts_by_category": {
       "SEC": 14,
@@ -2262,7 +2262,7 @@
         "detail": "Examples: MOS->CF (sc=84.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=53.0, UNQUALIFIED); COHR->FN (sc=50.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=49.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-106-1795793457",
+        "id": "sec-108-1795793457",
         "ts_et": "2026-11-27 10:30:57 ET",
         "ts_utc": "2026-11-27T15:30:57Z",
         "category": "SEC",
@@ -3111,7 +3111,7 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED); JPM->C (sc=57.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-55-1795795776",
+        "id": "sec-57-1795795776",
         "ts_et": "2026-11-27 11:09:36 ET",
         "ts_utc": "2026-11-27T16:09:36Z",
         "category": "SEC",
@@ -3280,7 +3280,7 @@
         "detail": "Examples: TJX->ROST (sc=84.5, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); DAL->UAL (sc=83.0, STAGED_REVIEW); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=59.0, BELOW_930_INTRADAY_OPEN); AVGO->AMZN (sc=58.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-52-1795796195",
+        "id": "sec-54-1795796195",
         "ts_et": "2026-11-27 11:16:35 ET",
         "ts_utc": "2026-11-27T16:16:35Z",
         "category": "SEC",
