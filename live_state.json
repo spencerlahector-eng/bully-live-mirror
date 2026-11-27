@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795803026.787894,
-  "generated_at_iso": "2026-11-27T18:10:26.787894+00:00",
-  "generated_at_et": "2026-11-27 13:10:26 ET",
+  "generated_at": 1795803073.9656334,
+  "generated_at_iso": "2026-11-27T18:11:13.965633+00:00",
+  "generated_at_et": "2026-11-27 13:11:13 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -37,16 +37,16 @@
   "runtime": {
     "execution_owner": "render",
     "status": "available",
-    "state": "RENDER_PRIMARY_EXECUTION",
-    "enabled": false,
+    "state": "RECONCILED",
+    "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
-    "policy_sha256": null,
-    "observed_at": 1795803027.2059066,
-    "observed_at_et": "2026-11-27 13:10:27 ET",
-    "reconciliation_at": null,
-    "reconciliation_at_et": null,
-    "heartbeat_age_seconds": null,
-    "reconciliation_age_seconds": null,
+    "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
+    "observed_at": 1795803074.225614,
+    "observed_at_et": "2026-11-27 13:11:14 ET",
+    "reconciliation_at": 1795803074.2251916,
+    "reconciliation_at_et": "2026-11-27 13:11:14 ET",
+    "heartbeat_age_seconds": 0.1,
+    "reconciliation_age_seconds": 0.1,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -918,7 +918,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 13:10:19 ET",
+    "updated_at_et": "2026-11-27 13:10:49 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -942,21 +942,50 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T18:08:48.070688+00:00",
-        "last_published_utc": "2026-11-27T18:07:43+00:00"
+        "last_received_utc": "2026-11-27T18:10:49.711110+00:00",
+        "last_published_utc": "2026-11-27T18:09:27+00:00"
       }
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 6,
-      "recycled_suppressed_this_call": 36,
+      "new_ingested_this_call": 8,
+      "recycled_suppressed_this_call": 42,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 13,
-      "hard_vetoed": 35,
-      "recycled_suppressed_total": 212774,
+      "hard_vetoed": 34,
+      "recycled_suppressed_total": 212853,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-516a3cfe7a",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "CCL",
+        "headline": "8-K - Carnival Corp Ltd. (0000815097) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000117/0000815097-26-000117-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T18:09:27+00:00",
+        "received_at_utc": "2026-11-27T18:10:49.711110+00:00",
+        "fingerprint": "d1f044006b6463a6",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.3229,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "5.02",
+          "9.01"
+        ]
+      },
       {
         "id": "ext-sec_edgar-bf2f3e1af6",
         "channel": "sec_edgar",
@@ -1730,35 +1759,6 @@
         ]
       },
       {
-        "id": "ext-sec_edgar-dc8f2e8c35",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "WW",
-        "headline": "8-K - WW INTERNATIONAL, INC. (0000105319) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T12:40:07+00:00",
-        "received_at_utc": "2026-11-27T12:41:07.226642+00:00",
-        "fingerprint": "ea3e0ae0c71a7498",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.5278,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "7.01",
-          "9.01"
-        ]
-      },
-      {
         "id": "ext-chatgpt-741fe17db3",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2127,10 +2127,10 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 13:10:27 ET",
-    "total_events": 297,
+    "updated_at_et": "2026-11-27 13:11:14 ET",
+    "total_events": 298,
     "counts_by_category": {
-      "SEC": 20,
+      "SEC": 21,
       "BLOCKED": 178,
       "ADMITTED": 90,
       "TRADE": 5,
@@ -2138,24 +2138,6 @@
       "HEARTBEAT": 2
     },
     "entries": [
-      {
-        "id": "fr-blk-109-1795797863",
-        "ts_et": "2026-11-27 11:44:23 ET",
-        "ts_utc": "2026-11-27T16:44:23Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "BAC",
-          "C",
-          "FN",
-          "LITE",
-          "ONTO",
-          "PANW",
-          "STX",
-          "WDC"
-        ],
-        "summary": "BLOCKED gate summary: 20 BELOW_930_INTRADAY_OPEN, 20 UNQUALIFIED, 6 BELOW_INTRADAY_VWAP",
-        "detail": "Examples: STX->WDC (sc=60.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=55.0, UNQUALIFIED); ZS->PANW (sc=53.0, UNQUALIFIED); JPM->BAC (sc=53.0, BELOW_930_INTRADAY_OPEN)"
-      },
       {
         "id": "fr-adm-110-1795797950",
         "ts_et": "2026-11-27 11:45:50 ET",
@@ -2446,7 +2428,7 @@
         "detail": "Examples: STX->WDC (sc=60.0, UNQUALIFIED); ZS->PANW (sc=58.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); WDC->STX (sc=55.0, UNQUALIFIED); JPM->BAC (sc=53.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-142-1795798767",
+        "id": "sec-143-1795798767",
         "ts_et": "2026-11-27 11:59:27 ET",
         "ts_utc": "2026-11-27T16:59:27Z",
         "category": "SEC",
@@ -2666,7 +2648,7 @@
         "detail": "Examples: DAL->UAL (sc=76.0, STAGED_REVIEW); STX->WDC (sc=60.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=53.0, UNQUALIFIED); JPM->MS (sc=53.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "cat-93-1795799288",
+        "id": "cat-94-1795799288",
         "ts_et": "2026-11-27 12:08:08 ET",
         "ts_utc": "2026-11-27T17:08:08Z",
         "category": "BLOCKED",
@@ -2708,7 +2690,7 @@
         "detail": "Examples: DAL->UAL (sc=76.0, STAGED_REVIEW); STX->WDC (sc=60.0, UNQUALIFIED); COHR->LITE (sc=55.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=53.0, UNQUALIFIED); JPM->MS (sc=53.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-89-1795799390",
+        "id": "sec-90-1795799390",
         "ts_et": "2026-11-27 12:09:50 ET",
         "ts_utc": "2026-11-27T17:09:50Z",
         "category": "SEC",
@@ -3269,7 +3251,7 @@
         "detail": "CF (lead MOS) score=86.0 [ADMITTED] \u00b7 phase=RTH_ACTIVE_ENTRY_AND_RATCHET"
       },
       {
-        "id": "sec-30-1795800912",
+        "id": "sec-31-1795800912",
         "ts_et": "2026-11-27 12:35:12 ET",
         "ts_utc": "2026-11-27T17:35:12Z",
         "category": "SEC",
@@ -3668,7 +3650,7 @@
         "detail": "Examples: MOS->CF (sc=91.0, 1545_ET_LATE_ENTRY_CUTOFF); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); CRWD->PANW (sc=58.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-15-1795802260",
+        "id": "sec-16-1795802260",
         "ts_et": "2026-11-27 12:57:40 ET",
         "ts_utc": "2026-11-27T17:57:40Z",
         "category": "SEC",
@@ -3827,7 +3809,7 @@
         "detail": "Examples: MOS->CF (sc=72.0, STAGED_REVIEW); COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); KLAC->AMAT (sc=60.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-3-1795802712",
+        "id": "sec-4-1795802712",
         "ts_et": "2026-11-27 13:05:12 ET",
         "ts_utc": "2026-11-27T18:05:12Z",
         "category": "SEC",
@@ -3885,7 +3867,7 @@
         "detail": "Examples: MOS->CF (sc=72.0, STAGED_REVIEW); COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-0-1795802863",
+        "id": "sec-1-1795802863",
         "ts_et": "2026-11-27 13:07:43 ET",
         "ts_utc": "2026-11-27T18:07:43Z",
         "category": "SEC",
@@ -3930,6 +3912,17 @@
         ],
         "summary": "BLOCKED gate summary: 26 UNQUALIFIED, 18 BELOW_930_INTRADAY_OPEN, 6 BELOW_INTRADAY_VWAP",
         "detail": "Examples: COHR->LITE (sc=64.0, UNQUALIFIED); ARM->AVGO (sc=60.0, UNQUALIFIED); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
+      },
+      {
+        "id": "sec-0-1795802967",
+        "ts_et": "2026-11-27 13:09:27 ET",
+        "ts_utc": "2026-11-27T18:09:27Z",
+        "category": "SEC",
+        "symbols": [
+          "CCL"
+        ],
+        "summary": "SEC 8-K [TIER_3_UNPARSED_SEC_STUB] CCL (score=15.0): 8-K - Carnival Corp Ltd. (0000815097) (Filer)",
+        "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/815097/000081509726000117/0000815097-26-000117-index.htm"
       },
       {
         "id": "fr-adm-180-1795803015",
