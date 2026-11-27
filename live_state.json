@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795796994.8630428,
-  "generated_at_iso": "2026-11-27T16:29:54.863043+00:00",
-  "generated_at_et": "2026-11-27 11:29:54 ET",
+  "generated_at": 1795797048.1081588,
+  "generated_at_iso": "2026-11-27T16:30:48.108159+00:00",
+  "generated_at_et": "2026-11-27 11:30:48 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795796994.179259,
-    "observed_at_et": "2026-11-27 11:29:54 ET",
-    "reconciliation_at": 1795796992.923321,
-    "reconciliation_at_et": "2026-11-27 11:29:52 ET",
-    "heartbeat_age_seconds": 1.1,
-    "reconciliation_age_seconds": 2.3,
+    "observed_at": 1795797043.9212513,
+    "observed_at_et": "2026-11-27 11:30:43 ET",
+    "reconciliation_at": 1795797042.67495,
+    "reconciliation_at_et": "2026-11-27 11:30:42 ET",
+    "heartbeat_age_seconds": 4.6,
+    "reconciliation_age_seconds": 5.8,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 55,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 29573
+      "RECONCILE": 29581
     },
     "latest_reconcile": {
-      "id": "reconcile-1795796992-0703be",
-      "timestamp_sec": 1795796992,
-      "time_et": "2026-11-27 11:29:52 ET",
+      "id": "reconcile-1795797042-b72578",
+      "timestamp_sec": 1795797042,
+      "time_et": "2026-11-27 11:30:42 ET",
       "free_cash": 76832.71,
       "position_value": 0.0,
       "total_equity": 76832.71,
@@ -934,7 +934,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 11:29:43 ET",
+    "updated_at_et": "2026-11-27 11:30:08 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -964,12 +964,12 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 0,
-      "recycled_suppressed_this_call": 42,
+      "new_ingested_this_call": 2,
+      "recycled_suppressed_this_call": 48,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
       "hard_vetoed": 42,
-      "recycled_suppressed_total": 194339,
+      "recycled_suppressed_total": 194505,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2140,7 +2140,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 11:29:55 ET",
+    "updated_at_et": "2026-11-27 11:30:48 ET",
     "total_events": 167,
     "counts_by_category": {
       "SEC": 14,
