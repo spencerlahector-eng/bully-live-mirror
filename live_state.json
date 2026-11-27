@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795790371.2669907,
-  "generated_at_iso": "2026-11-27T14:39:31.266991+00:00",
-  "generated_at_et": "2026-11-27 09:39:31 ET",
+  "generated_at": 1795790425.323497,
+  "generated_at_iso": "2026-11-27T14:40:25.323497+00:00",
+  "generated_at_et": "2026-11-27 09:40:25 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795790369.8184536,
-    "observed_at_et": "2026-11-27 09:39:29 ET",
-    "reconciliation_at": 1795790367.0683112,
-    "reconciliation_at_et": "2026-11-27 09:39:27 ET",
-    "heartbeat_age_seconds": 1.9,
-    "reconciliation_age_seconds": 4.6,
+    "observed_at": 1795790424.4204834,
+    "observed_at_et": "2026-11-27 09:40:24 ET",
+    "reconciliation_at": 1795790421.7960804,
+    "reconciliation_at_et": "2026-11-27 09:40:21 ET",
+    "heartbeat_age_seconds": 1.4,
+    "reconciliation_age_seconds": 4.1,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28548
+      "RECONCILE": 28559
     },
     "latest_reconcile": {
-      "id": "reconcile-1795790367-1cf1e2",
-      "timestamp_sec": 1795790367,
-      "time_et": "2026-11-27 09:39:27 ET",
+      "id": "reconcile-1795790421-c91a21",
+      "timestamp_sec": 1795790421,
+      "time_et": "2026-11-27 09:40:21 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T14:38:21.808730+00:00",
-    "timestamp_et": "2026-11-27 09:38:21 ET",
-    "observed_at": 1795790301.80873,
+    "timestamp_utc": "2026-11-27T14:39:33.535640+00:00",
+    "timestamp_et": "2026-11-27 09:39:33 ET",
+    "observed_at": 1795790373.53564,
     "gate_phase": "0930_0945_OPENING_STABILIZATION_SHIELD",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -681,7 +681,7 @@
       {
         "lead": "PANW",
         "symbol": "CRWD",
-        "lead_chg_pct": -3.28,
+        "lead_chg_pct": -3.63,
         "down_chg_pct": 0.0,
         "score": 100.0,
         "stage": "EXECUTION_GATE_BLOCKED",
@@ -690,43 +690,20 @@
         ]
       },
       {
-        "lead": "MPC",
-        "symbol": "PSX",
-        "lead_chg_pct": 4.54,
-        "down_chg_pct": 0.0,
-        "score": 93.5,
-        "stage": "EXECUTION_GATE_BLOCKED",
-        "blockers": [
-          "0930_0945_OPENING_SHIELD"
-        ]
-      },
-      {
         "lead": "PANW",
         "symbol": "ZS",
-        "lead_chg_pct": -3.28,
+        "lead_chg_pct": -3.63,
         "down_chg_pct": 0.0,
-        "score": 90.5,
+        "score": 95.5,
         "stage": "EXECUTION_GATE_BLOCKED",
         "blockers": [
           "0930_0945_OPENING_SHIELD"
-        ]
-      },
-      {
-        "lead": "COHR",
-        "symbol": "LITE",
-        "lead_chg_pct": 7.81,
-        "down_chg_pct": 0.0,
-        "score": 59.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "BELOW_930_INTRADAY_OPEN",
-          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
         "lead": "VRTX",
         "symbol": "REGN",
-        "lead_chg_pct": -10.59,
+        "lead_chg_pct": -10.41,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -737,7 +714,7 @@
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 2.21,
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
         "score": 53.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -748,7 +725,7 @@
       {
         "lead": "JPM",
         "symbol": "BAC",
-        "lead_chg_pct": 2.14,
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
         "score": 52.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -759,7 +736,7 @@
       {
         "lead": "JPM",
         "symbol": "C",
-        "lead_chg_pct": 2.14,
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
         "score": 52.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -768,20 +745,9 @@
         ]
       },
       {
-        "lead": "UNG",
-        "symbol": "EQT",
-        "lead_chg_pct": -5.05,
-        "down_chg_pct": 0.0,
-        "score": 50.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 2.21,
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
         "score": 49.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -793,7 +759,7 @@
       {
         "lead": "JPM",
         "symbol": "GS",
-        "lead_chg_pct": 2.14,
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
         "score": 47.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -805,31 +771,44 @@
       {
         "lead": "JPM",
         "symbol": "MS",
-        "lead_chg_pct": 2.14,
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
         "score": 47.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
-        "lead": "NOW",
-        "symbol": "CRM",
-        "lead_chg_pct": 2.05,
+        "lead": "PANW",
+        "symbol": "FTNT",
+        "lead_chg_pct": -3.63,
         "down_chg_pct": 0.0,
-        "score": 47.0,
+        "score": 44.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "UNG",
+        "symbol": "EQT",
+        "lead_chg_pct": -4.98,
+        "down_chg_pct": 0.0,
+        "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
         ]
       },
       {
-        "lead": "PANW",
-        "symbol": "FTNT",
-        "lead_chg_pct": -3.28,
+        "lead": "AVGO",
+        "symbol": "ANET",
+        "lead_chg_pct": 2.0,
         "down_chg_pct": 0.0,
-        "score": 44.0,
+        "score": 39.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "BELOW_930_INTRADAY_OPEN",
@@ -837,23 +816,44 @@
         ]
       },
       {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 4.54,
+        "lead": "VLO",
+        "symbol": "MPC",
+        "lead_chg_pct": 2.38,
         "down_chg_pct": 0.0,
-        "score": 44.0,
+        "score": 39.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "BELOW_930_INTRADAY_OPEN",
-          "BELOW_INTRADAY_VWAP"
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "JPM",
+        "symbol": "DHI",
+        "lead_chg_pct": 2.0,
+        "down_chg_pct": 0.0,
+        "score": 37.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "MPC",
+        "symbol": "PSX",
+        "lead_chg_pct": 4.49,
+        "down_chg_pct": 0.0,
+        "score": 34.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
         ]
       }
     ],
     "blocker_counts": {
-      "BELOW_930_INTRADAY_OPEN": 11,
-      "BELOW_INTRADAY_VWAP": 9,
-      "UNQUALIFIED": 7,
-      "0930_0945_OPENING_SHIELD": 3
+      "UNQUALIFIED": 8,
+      "BELOW_930_INTRADAY_OPEN": 6,
+      "BELOW_INTRADAY_VWAP": 5,
+      "0930_0945_OPENING_SHIELD": 2
     },
     "app_health": {
       "backend_50425": {
@@ -896,7 +896,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 09:39:16 ET",
+    "updated_at_et": "2026-11-27 09:40:11 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -926,12 +926,12 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 4,
-      "recycled_suppressed_this_call": 44,
+      "new_ingested_this_call": 1,
+      "recycled_suppressed_this_call": 39,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 15,
       "hard_vetoed": 44,
-      "recycled_suppressed_total": 170830,
+      "recycled_suppressed_total": 170984,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2103,11 +2103,11 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 09:39:31 ET",
-    "total_events": 29,
+    "updated_at_et": "2026-11-27 09:40:25 ET",
+    "total_events": 30,
     "counts_by_category": {
       "SEC": 8,
-      "BLOCKED": 21
+      "BLOCKED": 22
     },
     "entries": [
       {
@@ -2122,7 +2122,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1527762/000149315226054333/0001493152-26-054333-index.htm"
       },
       {
-        "id": "sec-232-1795781739",
+        "id": "sec-234-1795781739",
         "ts_et": "2026-11-27 07:15:39 ET",
         "ts_utc": "2026-11-27T12:15:39Z",
         "category": "SEC",
@@ -2133,7 +2133,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1784254/000178425426000056/0001784254-26-000056-index.htm"
       },
       {
-        "id": "sec-205-1795783207",
+        "id": "sec-207-1795783207",
         "ts_et": "2026-11-27 07:40:07 ET",
         "ts_utc": "2026-11-27T12:40:07Z",
         "category": "SEC",
@@ -2144,7 +2144,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm"
       },
       {
-        "id": "sec-195-1795784377",
+        "id": "sec-197-1795784377",
         "ts_et": "2026-11-27 07:59:37 ET",
         "ts_utc": "2026-11-27T12:59:37Z",
         "category": "SEC",
@@ -2155,7 +2155,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02,8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/2115119/000119312526479217/0001193125-26-479217-index.htm"
       },
       {
-        "id": "sec-175-1795786415",
+        "id": "sec-177-1795786415",
         "ts_et": "2026-11-27 08:33:35 ET",
         "ts_utc": "2026-11-27T13:33:35Z",
         "category": "SEC",
@@ -2166,7 +2166,7 @@
         "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 items=[1.02,8.01,9.01] \u00b7 flags=[ITEM_102_AGREEMENT_TERMINATED] \u00b7 https://www.sec.gov/Archives/edgar/data/2041610/000110465926132332/0001104659-26-132332-index.htm"
       },
       {
-        "id": "sec-169-1795786991",
+        "id": "sec-171-1795786991",
         "ts_et": "2026-11-27 08:43:11 ET",
         "ts_utc": "2026-11-27T13:43:11Z",
         "category": "SEC",
@@ -2177,7 +2177,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,3.03,5.03,7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1040130/000104013026000079/0001040130-26-000079-index.htm"
       },
       {
-        "id": "sec-151-1795788041",
+        "id": "sec-153-1795788041",
         "ts_et": "2026-11-27 09:00:41 ET",
         "ts_utc": "2026-11-27T14:00:41Z",
         "category": "SEC",
@@ -2188,7 +2188,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1821769/000110465926132343/0001104659-26-132343-index.htm"
       },
       {
-        "id": "sec-150-1795788047",
+        "id": "sec-152-1795788047",
         "ts_et": "2026-11-27 09:00:47 ET",
         "ts_utc": "2026-11-27T14:00:47Z",
         "category": "SEC",
@@ -2199,7 +2199,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm"
       },
       {
-        "id": "cat-128-1795788248",
+        "id": "cat-130-1795788248",
         "ts_et": "2026-11-27 09:04:08 ET",
         "ts_utc": "2026-11-27T14:04:08Z",
         "category": "BLOCKED",
@@ -2210,7 +2210,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-125-1795788249",
+        "id": "cat-127-1795788249",
         "ts_et": "2026-11-27 09:04:09 ET",
         "ts_utc": "2026-11-27T14:04:09Z",
         "category": "BLOCKED",
@@ -2221,7 +2221,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-114-1795788254",
+        "id": "cat-116-1795788254",
         "ts_et": "2026-11-27 09:04:14 ET",
         "ts_utc": "2026-11-27T14:04:14Z",
         "category": "BLOCKED",
@@ -2232,7 +2232,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-106-1795788256",
+        "id": "cat-108-1795788256",
         "ts_et": "2026-11-27 09:04:16 ET",
         "ts_utc": "2026-11-27T14:04:16Z",
         "category": "BLOCKED",
@@ -2243,7 +2243,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-105-1795788258",
+        "id": "cat-107-1795788258",
         "ts_et": "2026-11-27 09:04:18 ET",
         "ts_utc": "2026-11-27T14:04:18Z",
         "category": "BLOCKED",
@@ -2254,7 +2254,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-100-1795788261",
+        "id": "cat-102-1795788261",
         "ts_et": "2026-11-27 09:04:21 ET",
         "ts_utc": "2026-11-27T14:04:21Z",
         "category": "BLOCKED",
@@ -2265,7 +2265,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-98-1795788262",
+        "id": "cat-100-1795788262",
         "ts_et": "2026-11-27 09:04:22 ET",
         "ts_utc": "2026-11-27T14:04:22Z",
         "category": "BLOCKED",
@@ -2276,7 +2276,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-83-1795788267",
+        "id": "cat-85-1795788267",
         "ts_et": "2026-11-27 09:04:27 ET",
         "ts_utc": "2026-11-27T14:04:27Z",
         "category": "BLOCKED",
@@ -2287,7 +2287,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-80-1795788270",
+        "id": "cat-82-1795788270",
         "ts_et": "2026-11-27 09:04:30 ET",
         "ts_utc": "2026-11-27T14:04:30Z",
         "category": "BLOCKED",
@@ -2298,7 +2298,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-73-1795788282",
+        "id": "cat-75-1795788282",
         "ts_et": "2026-11-27 09:04:42 ET",
         "ts_utc": "2026-11-27T14:04:42Z",
         "category": "BLOCKED",
@@ -2505,6 +2505,24 @@
         ],
         "summary": "BLOCKED gate summary: 11 BELOW_930_INTRADAY_OPEN, 9 BELOW_INTRADAY_VWAP, 7 UNQUALIFIED, 3 0930_0945_OPENING_SHIELD",
         "detail": "Examples: PANW->CRWD (sc=100.0, 0930_0945_OPENING_SHIELD); MPC->PSX (sc=93.5, 0930_0945_OPENING_SHIELD); PANW->ZS (sc=90.5, 0930_0945_OPENING_SHIELD); COHR->LITE (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); VRTX->REGN (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-blk-11-1795790373",
+        "ts_et": "2026-11-27 09:39:33 ET",
+        "ts_utc": "2026-11-27T14:39:33Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AMZN",
+          "BAC",
+          "C",
+          "CRWD",
+          "GOOGL",
+          "GS",
+          "REGN",
+          "ZS"
+        ],
+        "summary": "BLOCKED gate summary: 8 UNQUALIFIED, 6 BELOW_930_INTRADAY_OPEN, 5 BELOW_INTRADAY_VWAP, 2 0930_0945_OPENING_SHIELD",
+        "detail": "Examples: PANW->CRWD (sc=100.0, 0930_0945_OPENING_SHIELD); PANW->ZS (sc=95.5, 0930_0945_OPENING_SHIELD); VRTX->REGN (sc=54.0, UNQUALIFIED); AVGO->AMZN (sc=53.0, BELOW_930_INTRADAY_OPEN); JPM->BAC (sc=52.0, UNQUALIFIED)"
       }
     ]
   },
