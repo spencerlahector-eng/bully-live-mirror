@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795784646.3373592,
-  "generated_at_iso": "2026-11-27T13:04:06.337359+00:00",
-  "generated_at_et": "2026-11-27 08:04:06 ET",
+  "generated_at": 1795784717.2387102,
+  "generated_at_iso": "2026-11-27T13:05:17.238710+00:00",
+  "generated_at_et": "2026-11-27 08:05:17 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795784644.736919,
-    "observed_at_et": "2026-11-27 08:04:04 ET",
-    "reconciliation_at": 1795784641.6283534,
-    "reconciliation_at_et": "2026-11-27 08:04:01 ET",
-    "heartbeat_age_seconds": 2.0,
-    "reconciliation_age_seconds": 5.1,
+    "observed_at": 1795784704.7329643,
+    "observed_at_et": "2026-11-27 08:05:04 ET",
+    "reconciliation_at": 1795784701.624112,
+    "reconciliation_at_et": "2026-11-27 08:05:01 ET",
+    "heartbeat_age_seconds": 12.9,
+    "reconciliation_age_seconds": 16.0,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28099
+      "RECONCILE": 28104
     },
     "latest_reconcile": {
-      "id": "reconcile-1795784641-67341c",
-      "timestamp_sec": 1795784641,
-      "time_et": "2026-11-27 08:04:01 ET",
+      "id": "reconcile-1795784716-adcdfe",
+      "timestamp_sec": 1795784716,
+      "time_et": "2026-11-27 08:05:16 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T13:03:34.467687+00:00",
-    "timestamp_et": "2026-11-27 08:03:34 ET",
-    "observed_at": 1795784614.467687,
+    "timestamp_utc": "2026-11-27T13:04:45.459667+00:00",
+    "timestamp_et": "2026-11-27 08:04:45 ET",
+    "observed_at": 1795784685.459667,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -681,7 +681,7 @@
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.56,
+        "lead_chg_pct": 3.65,
         "down_chg_pct": 0.0,
         "score": 83.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -692,7 +692,7 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.56,
+        "lead_chg_pct": 3.65,
         "down_chg_pct": 0.0,
         "score": 79.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -701,9 +701,9 @@
         ]
       },
       {
-        "lead": "CAT",
-        "symbol": "URI",
-        "lead_chg_pct": 3.18,
+        "lead": "TSM",
+        "symbol": "ASML",
+        "lead_chg_pct": 3.24,
         "down_chg_pct": 0.0,
         "score": 75.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -712,11 +712,11 @@
         ]
       },
       {
-        "lead": "MSFT",
-        "symbol": "NOW",
-        "lead_chg_pct": 2.01,
+        "lead": "CAT",
+        "symbol": "URI",
+        "lead_chg_pct": 3.03,
         "down_chg_pct": 0.0,
-        "score": 72.0,
+        "score": 75.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -725,20 +725,9 @@
       {
         "lead": "MS",
         "symbol": "GS",
-        "lead_chg_pct": 2.8,
+        "lead_chg_pct": 2.58,
         "down_chg_pct": 0.0,
         "score": 70.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.17,
-        "down_chg_pct": 0.0,
-        "score": 70.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -758,7 +747,7 @@
       {
         "lead": "VST",
         "symbol": "CEG",
-        "lead_chg_pct": 3.02,
+        "lead_chg_pct": 3.03,
         "down_chg_pct": 0.0,
         "score": 62.5,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -789,20 +778,9 @@
         ]
       },
       {
-        "lead": "GS",
-        "symbol": "MS",
-        "lead_chg_pct": 2.58,
-        "down_chg_pct": 0.0,
-        "score": 53.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
         "lead": "VRTX",
         "symbol": "REGN",
-        "lead_chg_pct": -7.82,
+        "lead_chg_pct": -7.92,
         "down_chg_pct": 0.0,
         "score": 45.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -813,7 +791,7 @@
       {
         "lead": "ARM",
         "symbol": "AVGO",
-        "lead_chg_pct": 6.43,
+        "lead_chg_pct": 6.48,
         "down_chg_pct": 0.0,
         "score": 44.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -824,7 +802,7 @@
       {
         "lead": "COHR",
         "symbol": "LITE",
-        "lead_chg_pct": 8.21,
+        "lead_chg_pct": 8.33,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -835,7 +813,29 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": 6.69,
+        "lead_chg_pct": 6.45,
+        "down_chg_pct": 0.0,
+        "score": 40.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "WDC",
+        "symbol": "STX",
+        "lead_chg_pct": 6.5,
+        "down_chg_pct": 0.0,
+        "score": 40.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "KLAC",
+        "symbol": "AMAT",
+        "lead_chg_pct": 5.43,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -846,7 +846,7 @@
     ],
     "blocker_counts": {
       "UNQUALIFIED": 52,
-      "STAGED_REVIEW": 8,
+      "STAGED_REVIEW": 7,
       "BELOW_930_INTRADAY_OPEN": 1
     },
     "app_health": {
@@ -890,7 +890,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 08:03:33 ET",
+    "updated_at_et": "2026-11-27 08:05:03 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -904,8 +904,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T13:02:16.019868+00:00",
-        "last_published_utc": "2026-11-27T13:01:55+00:00"
+        "last_received_utc": "2026-11-27T13:04:15.462209+00:00",
+        "last_published_utc": "2026-11-27T13:03:06+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -925,10 +925,60 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 13,
       "hard_vetoed": 34,
-      "recycled_suppressed_total": 158891,
+      "recycled_suppressed_total": 159056,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-benzinga-60d5fd24c3",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "DB",
+        "headline": "Deutsche Bank Analysts Assess New ECB Board Appointments",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70243705-deutsche-bank-ezb-spitze-etwas-taubenhafter-aber-fit-015.htm",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:03:06+00:00",
+        "received_at_utc": "2026-11-27T13:04:15.462209+00:00",
+        "fingerprint": "115152b4101bacca",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.3145,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
+      {
+        "id": "ext-benzinga-6b70cb4b97",
+        "channel": "benzinga",
+        "source": "ALPACA_BENZINGA_WS",
+        "symbol": "DB",
+        "headline": "Deutsche Bank Adjusts Price Target for Burlington Stores",
+        "url": "https://www.marketscreener.com/news/deutsche-bank-lowers-price-target-on-burlington-stores-to-288-from-319-keeps-hold-rating-ce7851d9df88f523",
+        "publisher": "Benzinga",
+        "published_at_utc": "2026-11-27T13:03:06+00:00",
+        "received_at_utc": "2026-11-27T13:04:13.400840+00:00",
+        "fingerprint": "210e00a8cc11dc1a",
+        "form_hint": "OTHER",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 15.0,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.3145,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-benzinga-6cb3c31f43",
         "channel": "benzinga",
@@ -1123,56 +1173,6 @@
         "is_hard_veto": false,
         "hard_veto_flags": [],
         "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-ca6d865e2c",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ABBN",
-        "headline": "ABB Completes Major Modernization Project for Dyno Nobel in Queensland",
-        "url": "https://www.newswiretoday.com/news/187316/Dyno-Nobel-Sets-New-Benchmark-for-Safety-and-Resilience-with-ABBs-Modernization-Program/",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T13:01:47+00:00",
-        "received_at_utc": "2026-11-27T13:02:16.019868+00:00",
-        "fingerprint": "a27a677a84397b41",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false
-      },
-      {
-        "id": "ext-benzinga-b869e086d6",
-        "channel": "benzinga",
-        "source": "ALPACA_BENZINGA_WS",
-        "symbol": "NEXI",
-        "headline": "Nexi Greece showcases payment solutions at XENIA 2026",
-        "url": "https://www.euro2day.gr/news/enterprises/122/list.html",
-        "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T13:01:46+00:00",
-        "received_at_utc": "2026-11-27T13:02:14.646195+00:00",
-        "fingerprint": "2c8a3219967df4a8",
-        "form_hint": "OTHER",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 75.156,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -2098,15 +2098,15 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 08:04:06 ET",
-    "total_events": 5,
+    "updated_at_et": "2026-11-27 08:05:17 ET",
+    "total_events": 6,
     "counts_by_category": {
       "SEC": 4,
-      "BLOCKED": 1
+      "BLOCKED": 2
     },
     "entries": [
       {
-        "id": "sec-202-1795777806",
+        "id": "sec-204-1795777806",
         "ts_et": "2026-11-27 06:10:06 ET",
         "ts_utc": "2026-11-27T11:10:06Z",
         "category": "SEC",
@@ -2117,7 +2117,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1527762/000149315226054333/0001493152-26-054333-index.htm"
       },
       {
-        "id": "sec-103-1795781739",
+        "id": "sec-105-1795781739",
         "ts_et": "2026-11-27 07:15:39 ET",
         "ts_utc": "2026-11-27T12:15:39Z",
         "category": "SEC",
@@ -2128,7 +2128,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1784254/000178425426000056/0001784254-26-000056-index.htm"
       },
       {
-        "id": "sec-46-1795783207",
+        "id": "sec-48-1795783207",
         "ts_et": "2026-11-27 07:40:07 ET",
         "ts_utc": "2026-11-27T12:40:07Z",
         "category": "SEC",
@@ -2139,7 +2139,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm"
       },
       {
-        "id": "sec-41-1795784377",
+        "id": "sec-43-1795784377",
         "ts_et": "2026-11-27 07:59:37 ET",
         "ts_utc": "2026-11-27T12:59:37Z",
         "category": "SEC",
@@ -2166,6 +2166,24 @@
         ],
         "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 8 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
         "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MSFT->NOW (sc=72.0, STAGED_REVIEW); MS->GS (sc=70.5, STAGED_REVIEW)"
+      },
+      {
+        "id": "fr-blk-1-1795784685",
+        "ts_et": "2026-11-27 08:04:45 ET",
+        "ts_utc": "2026-11-27T13:04:45Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AMZN",
+          "ASML",
+          "CEG",
+          "EME",
+          "GOOGL",
+          "GS",
+          "PSX",
+          "URI"
+        ],
+        "summary": "BLOCKED gate summary: 52 UNQUALIFIED, 7 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
+        "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); TSM->ASML (sc=75.0, STAGED_REVIEW); CAT->URI (sc=75.0, STAGED_REVIEW); MS->GS (sc=70.5, STAGED_REVIEW)"
       }
     ]
   },
