@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795777379.742924,
-  "generated_at_iso": "2026-11-27T11:02:59.742924+00:00",
-  "generated_at_et": "2026-11-27 06:02:59 ET",
+  "generated_at": 1795777425.6937113,
+  "generated_at_iso": "2026-11-27T11:03:45.693711+00:00",
+  "generated_at_et": "2026-11-27 06:03:45 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795777369.8722994,
-    "observed_at_et": "2026-11-27 06:02:49 ET",
-    "reconciliation_at": 1795777366.3510652,
-    "reconciliation_at_et": "2026-11-27 06:02:46 ET",
-    "heartbeat_age_seconds": 10.3,
-    "reconciliation_age_seconds": 13.8,
+    "observed_at": 1795777414.6792262,
+    "observed_at_et": "2026-11-27 06:03:34 ET",
+    "reconciliation_at": 1795777411.3500185,
+    "reconciliation_at_et": "2026-11-27 06:03:31 ET",
+    "heartbeat_age_seconds": 11.4,
+    "reconciliation_age_seconds": 14.8,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 6.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 27622
+      "RECONCILE": 27625
     },
     "latest_reconcile": {
-      "id": "reconcile-1795777366-9a8437",
-      "timestamp_sec": 1795777366,
-      "time_et": "2026-11-27 06:02:46 ET",
+      "id": "reconcile-1795777411-650da1",
+      "timestamp_sec": 1795777411,
+      "time_et": "2026-11-27 06:03:31 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -943,12 +943,12 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 06:02:49 ET",
+    "updated_at_et": "2026-11-27 06:03:02 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T10:58:21.897154+00:00",
-        "last_published_utc": "2026-11-27T10:54:14+00:00"
+        "last_received_utc": "2026-11-27T11:03:02.741416+00:00",
+        "last_published_utc": "2026-11-27T11:02:27+00:00"
       },
       "chatgpt": {
         "count": 17,
@@ -967,18 +967,18 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T11:01:51.643053+00:00",
-        "last_published_utc": "2026-11-25T22:49:20+00:00"
+        "last_received_utc": "2026-11-27T11:03:02.741416+00:00",
+        "last_published_utc": "2026-11-26T01:54:45+00:00"
       }
     },
     "summary": {
       "total_items": 347,
-      "new_ingested_this_call": 0,
-      "recycled_suppressed_this_call": 41,
+      "new_ingested_this_call": 1,
+      "recycled_suppressed_this_call": 48,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
-      "hard_vetoed": 37,
-      "recycled_suppressed_total": 144732,
+      "hard_vetoed": 36,
+      "recycled_suppressed_total": 144827,
       "rejected_pit_total": 6
     },
     "items": [
@@ -1506,6 +1506,35 @@
         "shadow_only": true,
         "trading_enabled": false,
         "promotion_allowed": false
+      },
+      {
+        "id": "ext-sec_edgar-6137580287",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "APLD",
+        "headline": "8-K - Applied Digital Corp. (0001144879) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000069/0001144879-26-000069-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-26T01:54:45+00:00",
+        "received_at_utc": "2026-11-27T11:03:02.741416+00:00",
+        "fingerprint": "2386b98fb9d130b6",
+        "form_hint": "8-K",
+        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
+        "catalyst_score": 5.25,
+        "action": "LOW_CLARITY_CASH_WAIT",
+        "confirmed_catalyst": false,
+        "is_hard_veto": false,
+        "hard_veto_flags": [],
+        "ibkr_fee_rate_pct": 0.423,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false,
+        "items_detected": [
+          "7.01",
+          "9.01"
+        ]
       },
       {
         "id": "ext-chatgpt-ae50759ecd",
@@ -2111,35 +2140,6 @@
           "5.07",
           "9.01"
         ]
-      },
-      {
-        "id": "ext-sec_edgar-990df469ae",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "CATY",
-        "headline": "8-K - CATHAY GENERAL BANCORP (0000861842) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/861842/000143774926038312/0001437749-26-038312-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-25T22:05:29+00:00",
-        "received_at_utc": "2026-11-25T22:07:08.406389+00:00",
-        "fingerprint": "77e531151a3ab0ca",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 0.25,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "8.01",
-          "9.01"
-        ]
       }
     ]
   },
@@ -2154,7 +2154,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 06:03:00 ET",
+    "updated_at_et": "2026-11-27 06:03:46 ET",
     "total_events": 22,
     "counts_by_category": {
       "ADMITTED": 11,
