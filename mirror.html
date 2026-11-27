@@ -255,21 +255,29 @@
       <div class="stat-sub mono" id="mirror-ds-foot">Session: — · Read-only (0% execution)</div>
     </section>
 
-    <!-- 1c. LIVE ALERTS & SHADOW SHOCKWAVE WATCH (SEC, CHATGPT, BENZINGA, SHADOW RAIL) -->
+    <!-- 1c. LIVE ALERTS & SHADOW SHOCKWAVE WATCH (SEC, AGY/RESEARCH, BENZINGA, SHADOW RAIL) -->
     <section class="card" data-section="alerts" data-trading-enabled="false">
       <div class="card-head">
-        <span class="card-title">⚡ Alerts &amp; Shadow Shockwave Watch</span>
+        <span class="card-title">⚡ AGY / Research Alerts &amp; Shadow Shockwave</span>
         <span class="pill pill-purple mono" id="alerts-count-pill">SHADOW · 0% EXEC</span>
       </div>
       <div class="ds-pills" id="mirror-alert-pills">
         <button type="button" class="ds-pill active" data-al-ch="ALL">ALL</button>
         <button type="button" class="ds-pill" data-al-ch="shockwave_watch">SHOCKWAVE</button>
         <button type="button" class="ds-pill" data-al-ch="sec_edgar">SEC</button>
-        <button type="button" class="ds-pill" data-al-ch="chatgpt">CHATGPT</button>
+        <button type="button" class="ds-pill" data-al-ch="chatgpt">AGY / RESEARCH</button>
         <button type="button" class="ds-pill" data-al-ch="benzinga">BENZINGA</button>
       </div>
-      <div class="stat-sub mono" id="mirror-alert-counts">SEC: 0 · ChatGPT: 0 · Shockwave: 0 · Benzinga: 0</div>
+      <div class="stat-sub mono" id="mirror-alert-counts">SEC: 0 · AGY / Research: 0 · Shockwave: 0 · Benzinga: 0</div>
       <div class="list" id="mirror-alerts-list"></div>
+      <div class="item" id="mirror-research-digest" style="margin-top:8px;border-color:rgba(14,165,233,0.35);">
+        <div class="row-between">
+          <span class="sym" style="font-size:13px;">📚 24/7 Research Digest</span>
+          <span class="pill pill-cyan mono" id="rd-coverage-pill">READ-ONLY</span>
+        </div>
+        <div class="stat-sub mono" id="rd-summary">Loading scholarly registry digest…</div>
+        <div class="list" id="rd-papers-list" style="gap:4px;"></div>
+      </div>
     </section>
 
     <!-- 2. LIVE AUTO DECISIONS & SCORED CANDIDATES -->
@@ -796,6 +804,33 @@
       }
       renderDecisionStream(data.decision_stream);
       renderAlertsAndShockwave(data.notifications_feed);
+      renderResearchDigest(data.research_digest);
+    }
+
+    function renderResearchDigest(rd) {
+      const box = $('mirror-research-digest');
+      const pill = $('rd-coverage-pill');
+      const sum = $('rd-summary');
+      const plist = $('rd-papers-list');
+      if (!box || !sum || !plist) return;
+      if (!rd || typeof rd !== 'object') {
+        sum.textContent = '24/7 Research Digest unavailable on this snapshot.';
+        plist.replaceChildren();
+        return;
+      }
+      if (pill) {
+        pill.textContent = `${rd.tested_total ?? 0}/${rd.total_accepted_cards ?? 0} TESTED · COVID=${rd.covid_leak_count ?? 0}`;
+      }
+      sum.textContent = `Accepted: ${rd.total_accepted_cards ?? 0} · Coverage: ${Number(rd.coverage_pct ?? 0).toFixed(1)}% (${Number(rd.testable_coverage_pct ?? 0).toFixed(1)}% testable) · Ready: ${rd.untested_ready ?? 0} · Gaps: ${rd.untested_data_gap ?? 0}`;
+      plist.replaceChildren();
+      const papers = Array.isArray(rd.newest_papers) ? rd.newest_papers : [];
+      papers.slice(0, 3).forEach(p => {
+        const el = document.createElement('div');
+        el.className = 'stat-sub';
+        el.style.color = '#cbd5e1';
+        el.innerHTML = `<span class="mono" style="color:var(--cyan);">${escHtml(p.card_id || 'RC')}</span> · ${escHtml(p.title || '')} <span style="color:var(--muted);">(${escHtml(p.venue || 'Peer-Reviewed')}${p.year ? ', ' + escHtml(String(p.year)) : ''})</span>`;
+        plist.append(el);
+      });
     }
 
     function renderDecisionStream(ds) {
@@ -847,7 +882,7 @@
       if (!list) return;
       const ch = nf?.channels || {};
       if (counts) {
-        counts.textContent = `SEC: ${ch.sec_edgar?.count ?? 0} · ChatGPT: ${ch.chatgpt?.count ?? 0} · Shockwave: ${ch.shockwave_watch?.count ?? 0} · Benzinga: ${ch.benzinga?.count ?? 0}`;
+        counts.textContent = `SEC: ${ch.sec_edgar?.count ?? 0} · AGY / Research: ${ch.chatgpt?.count ?? 0} · Shockwave: ${ch.shockwave_watch?.count ?? 0} · Benzinga: ${ch.benzinga?.count ?? 0}`;
       }
       const items = Array.isArray(nf?.items) ? nf.items : [];
       const filtered = items.filter(it => alertChannelFilter === 'ALL' || String(it.channel || '').toLowerCase() === alertChannelFilter);
@@ -865,7 +900,7 @@
         const isVeto = Boolean(it.is_hard_veto);
         const card = document.createElement('div');
         card.className = 'item' + (isSw ? ' sw-shadow-card' : '') + (isVeto ? ' veto-card' : '');
-        const chTag = channel === 'sec_edgar' ? 'SEC' : channel === 'shockwave_watch' ? 'SHADOW SHOCKWAVE' : channel.toUpperCase();
+        const chTag = channel === 'sec_edgar' ? 'SEC' : channel === 'shockwave_watch' ? 'SHADOW SHOCKWAVE' : (channel === 'chatgpt' ? (String(it.source || '').toUpperCase().startsWith('AGY') ? 'AGY' : 'AGY / RESEARCH') : channel.toUpperCase());
         const badgeCls = isVeto ? 'pill-err' : (isSw ? 'pill-purple' : (it.action === 'CATALYST_CONFIRMED_ROUTE_TO_L0_L1' ? 'pill-ok' : 'pill-cyan'));
         const statusTxt = isVeto
           ? ('HARD_VETO' + ((it.hard_veto_flags || []).length ? ': ' + it.hard_veto_flags[0] : ''))
