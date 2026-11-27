@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795805492.490664,
-  "generated_at_iso": "2026-11-27T18:51:32.490664+00:00",
-  "generated_at_et": "2026-11-27 13:51:32 ET",
+  "generated_at": 1795805541.0616655,
+  "generated_at_iso": "2026-11-27T18:52:21.061666+00:00",
+  "generated_at_et": "2026-11-27 13:52:21 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795805488.0447614,
-    "observed_at_et": "2026-11-27 13:51:28 ET",
-    "reconciliation_at": 1795805488.0444832,
-    "reconciliation_at_et": "2026-11-27 13:51:28 ET",
-    "heartbeat_age_seconds": 4.9,
-    "reconciliation_age_seconds": 4.9,
+    "observed_at": 1795805529.286152,
+    "observed_at_et": "2026-11-27 13:52:09 ET",
+    "reconciliation_at": 1795805529.2858617,
+    "reconciliation_at_et": "2026-11-27 13:52:09 ET",
+    "heartbeat_age_seconds": 12.2,
+    "reconciliation_age_seconds": 12.2,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -890,7 +890,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 13:50:59 ET",
+    "updated_at_et": "2026-11-27 13:52:05 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -925,7 +925,7 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 13,
       "hard_vetoed": 36,
-      "recycled_suppressed_total": 217586,
+      "recycled_suppressed_total": 217706,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2095,7 +2095,7 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 13:51:32 ET",
+    "updated_at_et": "2026-11-27 13:52:21 ET",
     "total_events": 341,
     "counts_by_category": {
       "SEC": 24,
