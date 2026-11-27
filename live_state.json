@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795778953.1246758,
-  "generated_at_iso": "2026-11-27T11:29:13.124676+00:00",
-  "generated_at_et": "2026-11-27 06:29:13 ET",
+  "generated_at": 1795779024.9245431,
+  "generated_at_iso": "2026-11-27T11:30:24.924543+00:00",
+  "generated_at_et": "2026-11-27 06:30:24 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795778944.3499076,
-    "observed_at_et": "2026-11-27 06:29:04 ET",
-    "reconciliation_at": 1795778941.3769338,
-    "reconciliation_at_et": "2026-11-27 06:29:01 ET",
-    "heartbeat_age_seconds": 9.2,
-    "reconciliation_age_seconds": 12.2,
+    "observed_at": 1795779019.6722608,
+    "observed_at_et": "2026-11-27 06:30:19 ET",
+    "reconciliation_at": 1795779016.3727484,
+    "reconciliation_at_et": "2026-11-27 06:30:16 ET",
+    "heartbeat_age_seconds": 5.7,
+    "reconciliation_age_seconds": 9.0,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 6.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 27727
+      "RECONCILE": 27732
     },
     "latest_reconcile": {
-      "id": "reconcile-1795778941-c983c3",
-      "timestamp_sec": 1795778941,
-      "time_et": "2026-11-27 06:29:01 ET",
+      "id": "reconcile-1795779016-cf479d",
+      "timestamp_sec": 1795779016,
+      "time_et": "2026-11-27 06:30:16 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T11:28:03.596863+00:00",
-    "timestamp_et": "2026-11-27 06:28:03 ET",
-    "observed_at": 1795778883.596863,
+    "timestamp_utc": "2026-11-27T11:29:15.269982+00:00",
+    "timestamp_et": "2026-11-27 06:29:15 ET",
+    "observed_at": 1795778955.269982,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,25 +675,12 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 5,
+    "admitted_count": 3,
     "admitted_candidates": [
-      {
-        "lead": "KLAC",
-        "symbol": "AMAT",
-        "lead_chg_pct": 5.13,
-        "down_chg_pct": 0.0,
-        "score": 98.0,
-        "reasons": [
-          "Lead KLAC +5.1% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=1.00)"
-        ]
-      },
       {
         "lead": "ARM",
         "symbol": "AVGO",
-        "lead_chg_pct": 6.54,
+        "lead_chg_pct": 6.51,
         "down_chg_pct": 0.0,
         "score": 92.0,
         "reasons": [
@@ -704,27 +691,14 @@
         ]
       },
       {
-        "lead": "AVGO",
-        "symbol": "GOOGL",
-        "lead_chg_pct": 3.58,
-        "down_chg_pct": 0.0,
-        "score": 92.0,
-        "reasons": [
-          "Lead AVGO +3.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
-          "CATALYST_CONFIRMED(TIER_1_WIRE)",
-          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=0.84)"
-        ]
-      },
-      {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.11,
+        "lead": "WDC",
+        "symbol": "STX",
+        "lead_chg_pct": 6.56,
         "down_chg_pct": 0.0,
         "score": 89.0,
         "reasons": [
-          "Lead TSM +3.1% (|chg|>=2.0%, dir=LONG, sign=+1)",
-          "MODERATE_LEAD_SHOCK (>= 3.0%)",
+          "Lead WDC +6.6% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "HIGH_CONVICTION_LEAD_SHOCK (>= 5.0%)",
           "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
           "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=1.00)"
         ]
@@ -732,7 +706,7 @@
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.58,
+        "lead_chg_pct": 3.57,
         "down_chg_pct": 0.0,
         "score": 85.0,
         "reasons": [
@@ -758,20 +732,9 @@
       {
         "lead": "NVDA",
         "symbol": "TSM",
-        "lead_chg_pct": 3.75,
+        "lead_chg_pct": 3.74,
         "down_chg_pct": 0.0,
         "score": 82.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "CRWD",
-        "symbol": "PANW",
-        "lead_chg_pct": 2.84,
-        "down_chg_pct": 0.0,
-        "score": 79.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -789,6 +752,39 @@
         ]
       },
       {
+        "lead": "TSM",
+        "symbol": "ASML",
+        "lead_chg_pct": 3.11,
+        "down_chg_pct": 0.0,
+        "score": 78.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "STAGED_REVIEW"
+        ]
+      },
+      {
+        "lead": "AVGO",
+        "symbol": "GOOGL",
+        "lead_chg_pct": 3.57,
+        "down_chg_pct": 0.0,
+        "score": 77.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "STAGED_REVIEW"
+        ]
+      },
+      {
+        "lead": "NEM",
+        "symbol": "AEM",
+        "lead_chg_pct": 5.21,
+        "down_chg_pct": 0.0,
+        "score": 76.5,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "STAGED_REVIEW"
+        ]
+      },
+      {
         "lead": "VST",
         "symbol": "CEG",
         "lead_chg_pct": 3.48,
@@ -800,22 +796,22 @@
         ]
       },
       {
-        "lead": "AMAT",
-        "symbol": "KLAC",
-        "lead_chg_pct": 5.66,
+        "lead": "CRWD",
+        "symbol": "PANW",
+        "lead_chg_pct": 2.84,
         "down_chg_pct": 0.0,
-        "score": 74.5,
+        "score": 72.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
         ]
       },
       {
-        "lead": "VRT",
-        "symbol": "MOD",
-        "lead_chg_pct": 5.56,
+        "lead": "AMAT",
+        "symbol": "KLAC",
+        "lead_chg_pct": 5.6,
         "down_chg_pct": 0.0,
-        "score": 74.0,
+        "score": 71.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -835,9 +831,20 @@
       {
         "lead": "COHR",
         "symbol": "FN",
-        "lead_chg_pct": 8.54,
+        "lead_chg_pct": 8.82,
         "down_chg_pct": 0.0,
         "score": 68.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "CRWD",
+        "symbol": "FTNT",
+        "lead_chg_pct": 2.84,
+        "down_chg_pct": 0.0,
+        "score": 67.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
@@ -855,31 +862,9 @@
         ]
       },
       {
-        "lead": "NEM",
-        "symbol": "AEM",
-        "lead_chg_pct": 4.99,
-        "down_chg_pct": 0.0,
-        "score": 66.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "CRWD",
-        "symbol": "FTNT",
-        "lead_chg_pct": 2.84,
-        "down_chg_pct": 0.0,
-        "score": 64.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
         "lead": "MSFT",
         "symbol": "NOW",
-        "lead_chg_pct": 2.17,
+        "lead_chg_pct": 2.23,
         "down_chg_pct": 0.0,
         "score": 63.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -890,20 +875,9 @@
       {
         "lead": "NOW",
         "symbol": "CRM",
-        "lead_chg_pct": 2.54,
+        "lead_chg_pct": 2.89,
         "down_chg_pct": 0.0,
         "score": 60.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "MU",
-        "symbol": "CAMT",
-        "lead_chg_pct": 6.32,
-        "down_chg_pct": 0.0,
-        "score": 59.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
@@ -911,8 +885,8 @@
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 44,
-      "STAGED_REVIEW": 10,
+      "UNQUALIFIED": 45,
+      "STAGED_REVIEW": 12,
       "BELOW_930_INTRADAY_OPEN": 1
     },
     "app_health": {
@@ -956,11 +930,11 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 06:28:35 ET",
+    "updated_at_et": "2026-11-27 06:30:01 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T11:28:35.669987+00:00",
+        "last_received_utc": "2026-11-27T11:29:19.518843+00:00",
         "last_published_utc": "2026-11-27T11:19:29+00:00"
       },
       "chatgpt": {
@@ -986,12 +960,12 @@
     },
     "summary": {
       "total_items": 347,
-      "new_ingested_this_call": 14,
-      "recycled_suppressed_this_call": 38,
+      "new_ingested_this_call": 10,
+      "recycled_suppressed_this_call": 34,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 14,
       "hard_vetoed": 35,
-      "recycled_suppressed_total": 147898,
+      "recycled_suppressed_total": 148055,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2167,11 +2141,11 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 06:29:13 ET",
-    "total_events": 65,
+    "updated_at_et": "2026-11-27 06:30:25 ET",
+    "total_events": 67,
     "counts_by_category": {
-      "ADMITTED": 32,
-      "BLOCKED": 32,
+      "ADMITTED": 33,
+      "BLOCKED": 33,
       "SEC": 1
     },
     "entries": [
@@ -2721,7 +2695,7 @@
         "detail": "Examples: CRWD->PANW (sc=84.5, STAGED_REVIEW); ARM->AVGO (sc=84.0, STAGED_REVIEW); ORCL->IBM (sc=83.5, STAGED_REVIEW); AVGO->GOOGL (sc=83.0, STAGED_REVIEW); TSM->ASML (sc=78.0, STAGED_REVIEW)"
       },
       {
-        "id": "sec-7-1795777806",
+        "id": "sec-8-1795777806",
         "ts_et": "2026-11-27 06:10:06 ET",
         "ts_utc": "2026-11-27T11:10:06Z",
         "category": "SEC",
@@ -3203,6 +3177,37 @@
         ],
         "summary": "BLOCKED gate summary: 44 UNQUALIFIED, 10 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
         "detail": "Examples: ORCL->IBM (sc=83.5, STAGED_REVIEW); NVDA->TSM (sc=82.0, STAGED_REVIEW); CRWD->PANW (sc=79.5, STAGED_REVIEW); ZS->CRWD (sc=78.5, STAGED_REVIEW); VST->CEG (sc=74.5, STAGED_REVIEW)"
+      },
+      {
+        "id": "fr-adm-32-1795778955",
+        "ts_et": "2026-11-27 06:29:15 ET",
+        "ts_utc": "2026-11-27T11:29:15Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "AMZN",
+          "AVGO",
+          "STX"
+        ],
+        "summary": "ADMITTED 3 candidate(s): AVGO, STX, AMZN",
+        "detail": "AVGO (lead ARM) score=92.0 [ADMITTED] | STX (lead WDC) score=89.0 [ADMITTED] | AMZN (lead AVGO) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
+      },
+      {
+        "id": "fr-blk-32-1795778955",
+        "ts_et": "2026-11-27 06:29:15 ET",
+        "ts_utc": "2026-11-27T11:29:15Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "ASML",
+          "CEG",
+          "CRWD",
+          "GOOGL",
+          "IBM",
+          "PANW",
+          "TSM"
+        ],
+        "summary": "BLOCKED gate summary: 45 UNQUALIFIED, 12 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
+        "detail": "Examples: ORCL->IBM (sc=83.5, STAGED_REVIEW); NVDA->TSM (sc=82.0, STAGED_REVIEW); ZS->CRWD (sc=78.5, STAGED_REVIEW); TSM->ASML (sc=78.0, STAGED_REVIEW); AVGO->GOOGL (sc=77.0, STAGED_REVIEW)"
       }
     ]
   },
