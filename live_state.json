@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795814457.6768553,
-  "generated_at_iso": "2026-11-27T21:20:57.676855+00:00",
-  "generated_at_et": "2026-11-27 16:20:57 ET",
+  "generated_at": 1795814529.999889,
+  "generated_at_iso": "2026-11-27T21:22:09.999889+00:00",
+  "generated_at_et": "2026-11-27 16:22:09 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795814444.5302827,
-    "observed_at_et": "2026-11-27 16:20:44 ET",
-    "reconciliation_at": 1795814444.5299606,
-    "reconciliation_at_et": "2026-11-27 16:20:44 ET",
-    "heartbeat_age_seconds": 13.6,
-    "reconciliation_age_seconds": 13.6,
+    "observed_at": 1795814527.0010574,
+    "observed_at_et": "2026-11-27 16:22:07 ET",
+    "reconciliation_at": 1795814527.000737,
+    "reconciliation_at_et": "2026-11-27 16:22:07 ET",
+    "heartbeat_age_seconds": 3.4,
+    "reconciliation_age_seconds": 3.4,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T21:20:25.957721+00:00",
-    "timestamp_et": "2026-11-27 16:20:25 ET",
-    "observed_at": 1795814425.957721,
+    "timestamp_utc": "2026-11-27T21:21:38.264483+00:00",
+    "timestamp_et": "2026-11-27 16:21:38 ET",
+    "observed_at": 1795814498.264483,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -747,7 +747,7 @@
       {
         "lead": "AVGO",
         "symbol": "ANET",
-        "lead_chg_pct": 3.71,
+        "lead_chg_pct": 3.63,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -791,7 +791,7 @@
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.71,
+        "lead_chg_pct": 3.63,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -802,7 +802,7 @@
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.71,
+        "lead_chg_pct": 3.63,
         "down_chg_pct": 0.0,
         "score": 54.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -891,7 +891,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 16:20:22 ET",
+    "updated_at_et": "2026-11-27 16:21:48 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -921,12 +921,12 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 8,
-      "recycled_suppressed_this_call": 43,
+      "new_ingested_this_call": 4,
+      "recycled_suppressed_this_call": 39,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 8,
       "hard_vetoed": 34,
-      "recycled_suppressed_total": 235214,
+      "recycled_suppressed_total": 235382,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2100,28 +2100,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 16:20:58 ET",
-    "total_events": 536,
+    "updated_at_et": "2026-11-27 16:22:10 ET",
+    "total_events": 537,
     "counts_by_category": {
       "SEC": 60,
       "BLOCKED": 303,
       "ADMITTED": 123,
       "TRADE": 5,
       "RATCHET": 2,
-      "HEARTBEAT": 43
+      "HEARTBEAT": 44
     },
     "entries": [
-      {
-        "id": "fr-adm-282-1795809782",
-        "ts_et": "2026-11-27 15:03:02 ET",
-        "ts_utc": "2026-11-27T20:03:02Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "AVGO"
-        ],
-        "summary": "ADMITTED 1 candidate(s): AVGO",
-        "detail": "AVGO (lead ARM) score=100.0 [ADMITTED] \u00b7 phase=POST_CLOSE_AUDIT"
-      },
       {
         "id": "fr-blk-282-1795809782",
         "ts_et": "2026-11-27 15:03:02 ET",
@@ -3725,6 +3714,15 @@
         ],
         "summary": "BLOCKED gate summary: 33 UNQUALIFIED, 15 BELOW_930_INTRADAY_OPEN, 6 BELOW_INTRADAY_VWAP, 1 STAGED_REVIEW",
         "detail": "Examples: MOS->CF (sc=73.0, STAGED_REVIEW); COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); COHR->FN (sc=55.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-hb-353-1795814498",
+        "ts_et": "2026-11-27 16:21:38 ET",
+        "ts_utc": "2026-11-27T21:21:38Z",
+        "category": "HEARTBEAT",
+        "symbols": [],
+        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 55 blocked",
+        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       }
     ]
   },
