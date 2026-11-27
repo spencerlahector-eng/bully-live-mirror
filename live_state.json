@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795788718.8634403,
-  "generated_at_iso": "2026-11-27T14:11:58.863440+00:00",
-  "generated_at_et": "2026-11-27 09:11:58 ET",
+  "generated_at": 1795788789.1239984,
+  "generated_at_iso": "2026-11-27T14:13:09.123998+00:00",
+  "generated_at_et": "2026-11-27 09:13:09 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795788717.6882906,
-    "observed_at_et": "2026-11-27 09:11:57 ET",
-    "reconciliation_at": 1795788715.0244522,
-    "reconciliation_at_et": "2026-11-27 09:11:55 ET",
-    "heartbeat_age_seconds": 1.6,
-    "reconciliation_age_seconds": 4.2,
+    "observed_at": 1795788777.7449512,
+    "observed_at_et": "2026-11-27 09:12:57 ET",
+    "reconciliation_at": 1795788775.027472,
+    "reconciliation_at_et": "2026-11-27 09:12:55 ET",
+    "heartbeat_age_seconds": 11.8,
+    "reconciliation_age_seconds": 14.5,
     "session_window": "PRE_MARKET_SURVEILLANCE",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28370
+      "RECONCILE": 28374
     },
     "latest_reconcile": {
-      "id": "reconcile-1795788715-bd8505",
-      "timestamp_sec": 1795788715,
-      "time_et": "2026-11-27 09:11:55 ET",
+      "id": "reconcile-1795788775-804a2c",
+      "timestamp_sec": 1795788775,
+      "time_et": "2026-11-27 09:12:55 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T14:11:27.074756+00:00",
-    "timestamp_et": "2026-11-27 09:11:27 ET",
-    "observed_at": 1795788687.074756,
+    "timestamp_utc": "2026-11-27T14:12:37.377251+00:00",
+    "timestamp_et": "2026-11-27 09:12:37 ET",
+    "observed_at": 1795788757.377251,
     "gate_phase": "PRE_MARKET_SURVEILLANCE",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -675,37 +675,53 @@
       "last_equity": 76822.76
     },
     "position_projections": [],
-    "admitted_count": 0,
-    "admitted_candidates": [],
-    "blocked_candidates_sample": [
+    "admitted_count": 2,
+    "admitted_candidates": [
       {
         "lead": "AVGO",
         "symbol": "AMZN",
-        "lead_chg_pct": 3.17,
+        "lead_chg_pct": 3.24,
         "down_chg_pct": 0.0,
-        "score": 83.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "STAGED_REVIEW"
+        "score": 86.0,
+        "reasons": [
+          "Lead AVGO +3.2% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "MODERATE_LEAD_SHOCK (>= 3.0%)",
+          "CATALYST_CONFIRMED(ALPACA_NEWS,TIER_1_WIRE)",
+          "V7_HIGH_CATCHUP_CONVEXITY_GAP(+5.0)"
         ]
       },
       {
         "lead": "AVGO",
         "symbol": "GOOGL",
-        "lead_chg_pct": 3.17,
+        "lead_chg_pct": 3.24,
         "down_chg_pct": 0.0,
-        "score": 79.0,
+        "score": 85.0,
+        "reasons": [
+          "Lead AVGO +3.2% (|chg|>=2.0%, dir=LONG, sign=+1)",
+          "MODERATE_LEAD_SHOCK (>= 3.0%)",
+          "SW_STALE_MULTIDAY_CATALYST_IGNORED(age=18.4h,rule=OVERNIGHT_GT_18H)",
+          "V7_GARMAN_KLASS_HIGH_EFFICIENCY_RUNNER(+6.0,gk=2.00)"
+        ]
+      }
+    ],
+    "blocked_candidates_sample": [
+      {
+        "lead": "TSM",
+        "symbol": "ASML",
+        "lead_chg_pct": 3.67,
+        "down_chg_pct": 0.0,
+        "score": 84.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
         ]
       },
       {
-        "lead": "TSM",
-        "symbol": "ASML",
-        "lead_chg_pct": 3.66,
+        "lead": "VST",
+        "symbol": "CEG",
+        "lead_chg_pct": 2.74,
         "down_chg_pct": 0.0,
-        "score": 75.0,
+        "score": 73.5,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
@@ -720,17 +736,6 @@
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "STAGED_REVIEW"
-        ]
-      },
-      {
-        "lead": "VST",
-        "symbol": "CEG",
-        "lead_chg_pct": 2.74,
-        "down_chg_pct": 0.0,
-        "score": 62.5,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
         ]
       },
       {
@@ -769,7 +774,7 @@
       {
         "lead": "ARM",
         "symbol": "AVGO",
-        "lead_chg_pct": 5.7,
+        "lead_chg_pct": 5.88,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -802,7 +807,7 @@
       {
         "lead": "STX",
         "symbol": "WDC",
-        "lead_chg_pct": 6.29,
+        "lead_chg_pct": 6.32,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
@@ -842,11 +847,33 @@
         "blockers": [
           "UNQUALIFIED"
         ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "AMAT",
+        "lead_chg_pct": 3.67,
+        "down_chg_pct": 0.0,
+        "score": 34.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "ORCL",
+        "symbol": "IBM",
+        "lead_chg_pct": 3.58,
+        "down_chg_pct": 0.0,
+        "score": 34.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 49,
-      "STAGED_REVIEW": 6,
+      "UNQUALIFIED": 48,
+      "STAGED_REVIEW": 5,
       "BELOW_930_INTRADAY_OPEN": 1
     },
     "app_health": {
@@ -890,12 +917,12 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 09:11:21 ET",
+    "updated_at_et": "2026-11-27 09:12:58 ET",
     "channels": {
       "yahoo": {
         "count": 130,
-        "last_received_utc": "2026-11-27T14:06:11.482533+00:00",
-        "last_published_utc": "2026-11-27T14:02:55+00:00"
+        "last_received_utc": "2026-11-27T14:12:58.621599+00:00",
+        "last_published_utc": "2026-11-27T14:06:53+00:00"
       },
       "chatgpt": {
         "count": 17,
@@ -920,12 +947,12 @@
     },
     "summary": {
       "total_items": 347,
-      "new_ingested_this_call": 4,
-      "recycled_suppressed_this_call": 45,
+      "new_ingested_this_call": 2,
+      "recycled_suppressed_this_call": 39,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 15,
       "hard_vetoed": 53,
-      "recycled_suppressed_total": 166708,
+      "recycled_suppressed_total": 166871,
       "rejected_pit_total": 6
     },
     "items": [
@@ -2097,12 +2124,12 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 09:11:59 ET",
-    "total_events": 98,
+    "updated_at_et": "2026-11-27 09:13:09 ET",
+    "total_events": 100,
     "counts_by_category": {
       "SEC": 8,
-      "BLOCKED": 59,
-      "ADMITTED": 30,
+      "BLOCKED": 60,
+      "ADMITTED": 31,
       "HEARTBEAT": 1
     },
     "entries": [
@@ -2118,7 +2145,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1527762/000149315226054333/0001493152-26-054333-index.htm"
       },
       {
-        "id": "sec-198-1795781739",
+        "id": "sec-201-1795781739",
         "ts_et": "2026-11-27 07:15:39 ET",
         "ts_utc": "2026-11-27T12:15:39Z",
         "category": "SEC",
@@ -2129,7 +2156,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[5.02] \u00b7 https://www.sec.gov/Archives/edgar/data/1784254/000178425426000056/0001784254-26-000056-index.htm"
       },
       {
-        "id": "sec-171-1795783207",
+        "id": "sec-174-1795783207",
         "ts_et": "2026-11-27 07:40:07 ET",
         "ts_utc": "2026-11-27T12:40:07Z",
         "category": "SEC",
@@ -2140,7 +2167,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[7.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/105319/000119312526479191/0001193125-26-479191-index.htm"
       },
       {
-        "id": "sec-161-1795784377",
+        "id": "sec-164-1795784377",
         "ts_et": "2026-11-27 07:59:37 ET",
         "ts_utc": "2026-11-27T12:59:37Z",
         "category": "SEC",
@@ -2400,7 +2427,7 @@
         "detail": "Examples: JPM->C (sc=81.5, STAGED_REVIEW); AVGO->GOOGL (sc=77.0, STAGED_REVIEW); TSM->ASML (sc=75.0, STAGED_REVIEW); JPM->GS (sc=74.5, STAGED_REVIEW); JPM->MS (sc=74.5, STAGED_REVIEW)"
       },
       {
-        "id": "sec-144-1795786415",
+        "id": "sec-147-1795786415",
         "ts_et": "2026-11-27 08:33:35 ET",
         "ts_utc": "2026-11-27T13:33:35Z",
         "category": "SEC",
@@ -2641,7 +2668,7 @@
         "detail": "Examples: VRTX->REGN (sc=45.0, BELOW_930_INTRADAY_OPEN); ARM->AVGO (sc=44.0, UNQUALIFIED); COHR->LITE (sc=40.0, UNQUALIFIED); STX->WDC (sc=40.0, UNQUALIFIED); AVGO->AMZN (sc=38.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-140-1795786991",
+        "id": "sec-143-1795786991",
         "ts_et": "2026-11-27 08:43:11 ET",
         "ts_utc": "2026-11-27T13:43:11Z",
         "category": "SEC",
@@ -3030,7 +3057,7 @@
         "detail": "Examples: KLAC->AMAT (sc=79.0, STAGED_REVIEW); JPM->C (sc=78.5, STAGED_REVIEW); MS->GS (sc=75.5, STAGED_REVIEW); JPM->BAC (sc=74.5, STAGED_REVIEW); AVGO->GOOGL (sc=73.0, STAGED_REVIEW)"
       },
       {
-        "id": "sec-123-1795788041",
+        "id": "sec-126-1795788041",
         "ts_et": "2026-11-27 09:00:41 ET",
         "ts_utc": "2026-11-27T14:00:41Z",
         "category": "SEC",
@@ -3041,7 +3068,7 @@
         "detail": "action=CATALYST_CONFIRMED_ROUTE_TO_L0_L1 \u00b7 tier=TIER_1_BINDING \u00b7 items=[1.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1821769/000110465926132343/0001104659-26-132343-index.htm"
       },
       {
-        "id": "sec-122-1795788047",
+        "id": "sec-125-1795788047",
         "ts_et": "2026-11-27 09:00:47 ET",
         "ts_utc": "2026-11-27T14:00:47Z",
         "category": "SEC",
@@ -3110,7 +3137,7 @@
         "detail": "Examples: JPM->C (sc=81.5, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); MS->GS (sc=75.5, STAGED_REVIEW); TSM->ASML (sc=74.0, STAGED_REVIEW); JPM->BAC (sc=68.5, UNQUALIFIED)"
       },
       {
-        "id": "cat-114-1795788227",
+        "id": "cat-117-1795788227",
         "ts_et": "2026-11-27 09:03:47 ET",
         "ts_utc": "2026-11-27T14:03:47Z",
         "category": "BLOCKED",
@@ -3121,7 +3148,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-115-1795788227",
+        "id": "cat-118-1795788227",
         "ts_et": "2026-11-27 09:03:47 ET",
         "ts_utc": "2026-11-27T14:03:47Z",
         "category": "BLOCKED",
@@ -3132,7 +3159,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-105-1795788230",
+        "id": "cat-108-1795788230",
         "ts_et": "2026-11-27 09:03:50 ET",
         "ts_utc": "2026-11-27T14:03:50Z",
         "category": "BLOCKED",
@@ -3143,7 +3170,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-102-1795788232",
+        "id": "cat-105-1795788232",
         "ts_et": "2026-11-27 09:03:52 ET",
         "ts_utc": "2026-11-27T14:03:52Z",
         "category": "BLOCKED",
@@ -3154,7 +3181,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-96-1795788234",
+        "id": "cat-99-1795788234",
         "ts_et": "2026-11-27 09:03:54 ET",
         "ts_utc": "2026-11-27T14:03:54Z",
         "category": "BLOCKED",
@@ -3165,7 +3192,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-92-1795788235",
+        "id": "cat-95-1795788235",
         "ts_et": "2026-11-27 09:03:55 ET",
         "ts_utc": "2026-11-27T14:03:55Z",
         "category": "BLOCKED",
@@ -3176,7 +3203,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-88-1795788236",
+        "id": "cat-91-1795788236",
         "ts_et": "2026-11-27 09:03:56 ET",
         "ts_utc": "2026-11-27T14:03:56Z",
         "category": "BLOCKED",
@@ -3187,7 +3214,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-89-1795788236",
+        "id": "cat-92-1795788236",
         "ts_et": "2026-11-27 09:03:56 ET",
         "ts_utc": "2026-11-27T14:03:56Z",
         "category": "BLOCKED",
@@ -3198,7 +3225,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-87-1795788237",
+        "id": "cat-90-1795788237",
         "ts_et": "2026-11-27 09:03:57 ET",
         "ts_utc": "2026-11-27T14:03:57Z",
         "category": "BLOCKED",
@@ -3238,7 +3265,7 @@
         "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); JPM->C (sc=81.5, STAGED_REVIEW); TSM->ASML (sc=75.0, STAGED_REVIEW); JPM->GS (sc=74.5, STAGED_REVIEW); JPM->BAC (sc=74.5, STAGED_REVIEW)"
       },
       {
-        "id": "cat-66-1795788248",
+        "id": "cat-69-1795788248",
         "ts_et": "2026-11-27 09:04:08 ET",
         "ts_utc": "2026-11-27T14:04:08Z",
         "category": "BLOCKED",
@@ -3249,7 +3276,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-63-1795788249",
+        "id": "cat-66-1795788249",
         "ts_et": "2026-11-27 09:04:09 ET",
         "ts_utc": "2026-11-27T14:04:09Z",
         "category": "BLOCKED",
@@ -3260,7 +3287,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-52-1795788254",
+        "id": "cat-55-1795788254",
         "ts_et": "2026-11-27 09:04:14 ET",
         "ts_utc": "2026-11-27T14:04:14Z",
         "category": "BLOCKED",
@@ -3271,7 +3298,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-44-1795788256",
+        "id": "cat-47-1795788256",
         "ts_et": "2026-11-27 09:04:16 ET",
         "ts_utc": "2026-11-27T14:04:16Z",
         "category": "BLOCKED",
@@ -3282,7 +3309,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-43-1795788258",
+        "id": "cat-46-1795788258",
         "ts_et": "2026-11-27 09:04:18 ET",
         "ts_utc": "2026-11-27T14:04:18Z",
         "category": "BLOCKED",
@@ -3293,7 +3320,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-38-1795788261",
+        "id": "cat-41-1795788261",
         "ts_et": "2026-11-27 09:04:21 ET",
         "ts_utc": "2026-11-27T14:04:21Z",
         "category": "BLOCKED",
@@ -3304,7 +3331,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-36-1795788262",
+        "id": "cat-39-1795788262",
         "ts_et": "2026-11-27 09:04:22 ET",
         "ts_utc": "2026-11-27T14:04:22Z",
         "category": "BLOCKED",
@@ -3315,7 +3342,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-21-1795788267",
+        "id": "cat-24-1795788267",
         "ts_et": "2026-11-27 09:04:27 ET",
         "ts_utc": "2026-11-27T14:04:27Z",
         "category": "BLOCKED",
@@ -3326,7 +3353,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-18-1795788270",
+        "id": "cat-21-1795788270",
         "ts_et": "2026-11-27 09:04:30 ET",
         "ts_utc": "2026-11-27T14:04:30Z",
         "category": "BLOCKED",
@@ -3337,7 +3364,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-11-1795788282",
+        "id": "cat-14-1795788282",
         "ts_et": "2026-11-27 09:04:42 ET",
         "ts_utc": "2026-11-27T14:04:42Z",
         "category": "BLOCKED",
@@ -3479,6 +3506,36 @@
         ],
         "summary": "BLOCKED gate summary: 49 UNQUALIFIED, 6 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
         "detail": "Examples: AVGO->AMZN (sc=83.0, STAGED_REVIEW); AVGO->GOOGL (sc=79.0, STAGED_REVIEW); TSM->ASML (sc=75.0, STAGED_REVIEW); MS->GS (sc=70.5, STAGED_REVIEW); VST->CEG (sc=62.5, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-adm-41-1795788757",
+        "ts_et": "2026-11-27 09:12:37 ET",
+        "ts_utc": "2026-11-27T14:12:37Z",
+        "category": "ADMITTED",
+        "symbols": [
+          "AMZN",
+          "GOOGL"
+        ],
+        "summary": "ADMITTED 2 candidate(s): AMZN, GOOGL",
+        "detail": "AMZN (lead AVGO) score=86.0 [ADMITTED] | GOOGL (lead AVGO) score=85.0 [ADMITTED] \u00b7 phase=PRE_MARKET_SURVEILLANCE"
+      },
+      {
+        "id": "fr-blk-41-1795788757",
+        "ts_et": "2026-11-27 09:12:37 ET",
+        "ts_utc": "2026-11-27T14:12:37Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "ASML",
+          "AVGO",
+          "CEG",
+          "DE",
+          "EME",
+          "GS",
+          "LITE",
+          "URI"
+        ],
+        "summary": "BLOCKED gate summary: 48 UNQUALIFIED, 5 STAGED_REVIEW, 1 BELOW_930_INTRADAY_OPEN",
+        "detail": "Examples: TSM->ASML (sc=84.0, STAGED_REVIEW); VST->CEG (sc=73.5, STAGED_REVIEW); MS->GS (sc=70.5, STAGED_REVIEW); CAT->DE (sc=59.0, UNQUALIFIED); CAT->URI (sc=55.0, UNQUALIFIED)"
       }
     ]
   },
