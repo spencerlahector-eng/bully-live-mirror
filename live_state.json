@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795789891.1169438,
-  "generated_at_iso": "2026-11-27T14:31:31.116944+00:00",
-  "generated_at_et": "2026-11-27 09:31:31 ET",
+  "generated_at": 1795789939.8379219,
+  "generated_at_iso": "2026-11-27T14:32:19.837922+00:00",
+  "generated_at_et": "2026-11-27 09:32:19 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,11 +41,11 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795789890.1244974,
-    "observed_at_et": "2026-11-27 09:31:30 ET",
-    "reconciliation_at": 1795789887.1596968,
-    "reconciliation_at_et": "2026-11-27 09:31:27 ET",
-    "heartbeat_age_seconds": 1.4,
+    "observed_at": 1795789938.801004,
+    "observed_at_et": "2026-11-27 09:32:18 ET",
+    "reconciliation_at": 1795789935.8632805,
+    "reconciliation_at_et": "2026-11-27 09:32:15 ET",
+    "heartbeat_age_seconds": 1.5,
     "reconciliation_age_seconds": 4.4,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
@@ -56,12 +56,12 @@
       "CASH_PROTECT": 49,
       "EXIT": 54,
       "ORDER_SUBMITTED": 19,
-      "RECONCILE": 28451
+      "RECONCILE": 28461
     },
     "latest_reconcile": {
-      "id": "reconcile-1795789887-69c141",
-      "timestamp_sec": 1795789887,
-      "time_et": "2026-11-27 09:31:27 ET",
+      "id": "reconcile-1795789935-b7b725",
+      "timestamp_sec": 1795789935,
+      "time_et": "2026-11-27 09:32:15 ET",
       "free_cash": 76822.76,
       "position_value": 0.0,
       "total_equity": 76822.76,
@@ -662,9 +662,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-27T14:30:22.250596+00:00",
-    "timestamp_et": "2026-11-27 09:30:22 ET",
-    "observed_at": 1795789822.250596,
+    "timestamp_utc": "2026-11-27T14:31:38.147156+00:00",
+    "timestamp_et": "2026-11-27 09:31:38 ET",
+    "observed_at": 1795789898.147156,
     "gate_phase": "0930_0945_OPENING_STABILIZATION_SHIELD",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -679,36 +679,119 @@
     "admitted_candidates": [],
     "blocked_candidates_sample": [
       {
-        "lead": "COHR",
-        "symbol": "LITE",
-        "lead_chg_pct": 7.36,
+        "lead": "VRTX",
+        "symbol": "REGN",
+        "lead_chg_pct": -7.95,
+        "down_chg_pct": 0.0,
+        "score": 100.0,
+        "stage": "EXECUTION_GATE_BLOCKED",
+        "blockers": [
+          "0930_0945_OPENING_SHIELD"
+        ]
+      },
+      {
+        "lead": "CAT",
+        "symbol": "URI",
+        "lead_chg_pct": 2.87,
+        "down_chg_pct": 0.0,
+        "score": 70.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "STAGED_REVIEW"
+        ]
+      },
+      {
+        "lead": "NOW",
+        "symbol": "CRM",
+        "lead_chg_pct": 2.46,
+        "down_chg_pct": 0.0,
+        "score": 47.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "UNQUALIFIED"
+        ]
+      },
+      {
+        "lead": "WDC",
+        "symbol": "STX",
+        "lead_chg_pct": 4.51,
+        "down_chg_pct": 0.0,
+        "score": 44.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "NEM",
+        "symbol": "AEM",
+        "lead_chg_pct": 4.13,
         "down_chg_pct": 0.0,
         "score": 40.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
-        "lead": "MS",
-        "symbol": "GS",
-        "lead_chg_pct": 2.36,
+        "lead": "TSM",
+        "symbol": "KLAC",
+        "lead_chg_pct": 2.91,
+        "down_chg_pct": 0.0,
+        "score": 39.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "AMAT",
+        "lead_chg_pct": 2.91,
+        "down_chg_pct": 0.0,
+        "score": 39.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "LRCX",
+        "lead_chg_pct": 2.91,
+        "down_chg_pct": 0.0,
+        "score": 39.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "MPC",
+        "symbol": "PSX",
+        "lead_chg_pct": 3.08,
+        "down_chg_pct": 0.0,
+        "score": 34.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN"
+        ]
+      },
+      {
+        "lead": "TSM",
+        "symbol": "ASML",
+        "lead_chg_pct": 2.91,
         "down_chg_pct": 0.0,
         "score": 33.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "VRTX",
-        "symbol": "REGN",
-        "lead_chg_pct": -8.48,
-        "down_chg_pct": 0.0,
-        "score": 30.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
@@ -723,129 +806,59 @@
         ]
       },
       {
-        "lead": "WDC",
-        "symbol": "STX",
-        "lead_chg_pct": 4.51,
-        "down_chg_pct": 0.0,
-        "score": 30.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "PANW",
-        "symbol": "CRWD",
-        "lead_chg_pct": -2.72,
-        "down_chg_pct": 0.0,
-        "score": 29.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "PANW",
-        "symbol": "ZS",
-        "lead_chg_pct": -2.72,
-        "down_chg_pct": 0.0,
-        "score": 29.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ORCL",
-        "symbol": "IBM",
-        "lead_chg_pct": 2.82,
-        "down_chg_pct": 0.0,
-        "score": 29.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ETN",
-        "symbol": "NVT",
-        "lead_chg_pct": 2.58,
-        "down_chg_pct": 0.0,
-        "score": 23.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "ETN",
-        "symbol": "PWR",
-        "lead_chg_pct": 2.58,
-        "down_chg_pct": 0.0,
-        "score": 23.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "COHR",
-        "symbol": "FN",
-        "lead_chg_pct": 7.36,
-        "down_chg_pct": 0.0,
-        "score": 20.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
-        "lead": "NEM",
-        "symbol": "AEM",
-        "lead_chg_pct": 4.03,
-        "down_chg_pct": 0.0,
-        "score": 20.0,
-        "stage": "SIGNAL_GATE_BLOCKED",
-        "blockers": [
-          "UNQUALIFIED"
-        ]
-      },
-      {
         "lead": "CAT",
         "symbol": "DE",
-        "lead_chg_pct": 2.94,
+        "lead_chg_pct": 2.87,
         "down_chg_pct": 0.0,
-        "score": 19.0,
+        "score": 29.0,
+        "stage": "SIGNAL_GATE_BLOCKED",
+        "blockers": [
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
+        ]
+      },
+      {
+        "lead": "VLO",
+        "symbol": "MPC",
+        "lead_chg_pct": 2.26,
+        "down_chg_pct": 0.0,
+        "score": 29.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
           "UNQUALIFIED"
         ]
       },
       {
-        "lead": "PANW",
-        "symbol": "FTNT",
-        "lead_chg_pct": -2.72,
+        "lead": "FCX",
+        "symbol": "SCCO",
+        "lead_chg_pct": 3.73,
         "down_chg_pct": 0.0,
-        "score": 15.0,
+        "score": 24.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       },
       {
-        "lead": "CAT",
-        "symbol": "URI",
-        "lead_chg_pct": 2.94,
+        "lead": "TSM",
+        "symbol": "CAMT",
+        "lead_chg_pct": 2.91,
         "down_chg_pct": 0.0,
-        "score": 15.0,
+        "score": 9.0,
         "stage": "SIGNAL_GATE_BLOCKED",
         "blockers": [
-          "UNQUALIFIED"
+          "BELOW_930_INTRADAY_OPEN",
+          "BELOW_INTRADAY_VWAP"
         ]
       }
     ],
     "blocker_counts": {
-      "UNQUALIFIED": 22
+      "BELOW_930_INTRADAY_OPEN": 13,
+      "BELOW_INTRADAY_VWAP": 12,
+      "UNQUALIFIED": 3,
+      "0930_0945_OPENING_SHIELD": 1,
+      "STAGED_REVIEW": 1
     },
     "app_health": {
       "backend_50425": {
@@ -888,7 +901,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 09:31:25 ET",
+    "updated_at_et": "2026-11-27 09:32:16 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -902,8 +915,8 @@
       },
       "benzinga": {
         "count": 120,
-        "last_received_utc": "2026-11-27T14:06:14.836765+00:00",
-        "last_published_utc": "2026-11-27T14:05:32+00:00"
+        "last_received_utc": "2026-11-27T14:32:16.460590+00:00",
+        "last_published_utc": "2026-11-27T14:31:52+00:00"
       },
       "shockwave_watch": {
         "count": 0,
@@ -918,26 +931,26 @@
     },
     "summary": {
       "total_items": 348,
-      "new_ingested_this_call": 1,
-      "recycled_suppressed_this_call": 40,
+      "new_ingested_this_call": 5,
+      "recycled_suppressed_this_call": 0,
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 15,
-      "hard_vetoed": 53,
-      "recycled_suppressed_total": 169043,
+      "hard_vetoed": 50,
+      "recycled_suppressed_total": 169254,
       "rejected_pit_total": 6
     },
     "items": [
       {
-        "id": "ext-benzinga-332e65091b",
+        "id": "ext-benzinga-86c1cff445",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "VMAR",
-        "headline": "Greenland Energy Company Reports 9.66% Stake in Vision Marine Technologies",
-        "url": "https://www.moomoo.com/stock/GLND-US?chain_id=Name1K9-3FXPhg.1lgis60&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A57%2C%22f%22%3A%22www.moomoo.com%2Fstock%2FGLND-US%22%7D",
+        "symbol": "GLXY",
+        "headline": "Recent Insider Trading Activity at Galaxy Digital Inc.",
+        "url": "https://www.moomoo.com/hant/news/post/1006008238/galaxy-digital-insiders-placed-bullish-bets-worth-us-1-52m",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:05:32+00:00",
-        "received_at_utc": "2026-11-27T14:06:14.836765+00:00",
-        "fingerprint": "a76d59ebca7cb561",
+        "published_at_utc": "2026-11-27T14:31:52+00:00",
+        "received_at_utc": "2026-11-27T14:32:16.460590+00:00",
+        "fingerprint": "63c62694992f3e8f",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -945,7 +958,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 88.4926,
+        "ibkr_fee_rate_pct": 0.3321,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -953,16 +966,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-6c8f192ff9",
+        "id": "ext-benzinga-13e0e5cf45",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ALLG",
-        "headline": "Allegiance Resources Corp. Reports Financial Results for Third Quarter 2026",
-        "url": "https://www.streetinsider.com/Press+Releases?before_id=27404888",
+        "symbol": "BEN",
+        "headline": "Franklin Templeton Mutual Fund Suspends SIP/STP Investments in Overseas Schemes",
+        "url": "https://www.valueresearchonline.com/stories/230350/temporary-suspension-in-existing-sip-stp-investments-in-overseas-schemes-of-franklin-templeton-mutual-fund/",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:05:10+00:00",
-        "received_at_utc": "2026-11-27T14:06:14.836765+00:00",
-        "fingerprint": "7c492aaa7d87b096",
+        "published_at_utc": "2026-11-27T14:31:49+00:00",
+        "received_at_utc": "2026-11-27T14:32:16.460590+00:00",
+        "fingerprint": "e4cb73a508a07834",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -970,7 +983,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
+        "ibkr_fee_rate_pct": 0.265,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -978,16 +991,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-d3b6b6938d",
+        "id": "ext-benzinga-6c1620caa0",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "ALLG",
-        "headline": "Allegiance Resources Corp. Announces CEO and Board Changes",
-        "url": "https://www.newsfilecorp.com/release/326056/Allegiance-Resources-Corp.-Announces-Appointment-of-Chief-Executive-Officer-and-Board-Changes",
+        "symbol": "FLR",
+        "headline": "Fluor Canada Hosts Tipi Transfer Ceremony",
+        "url": "https://energynow.ca/2026/11/a-meaningful-milestone-fluor-canada-tipi-transfer-ceremony/",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:05:10+00:00",
-        "received_at_utc": "2026-11-27T14:06:14.836765+00:00",
-        "fingerprint": "bab5283b4af7b27f",
+        "published_at_utc": "2026-11-27T14:31:49+00:00",
+        "received_at_utc": "2026-11-27T14:32:16.460590+00:00",
+        "fingerprint": "4b4c6febe681b867",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -995,7 +1008,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
+        "ibkr_fee_rate_pct": 0.2613,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1003,16 +1016,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-18455c93e3",
+        "id": "ext-benzinga-7d3e334399",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "CPER",
-        "headline": "CopperCorp Provides Update on Proposed Sale of the Skyline Copper-Gold Project",
-        "url": "https://www.newsfilecorp.com/release/325978/CopperCorp-Provides-Update-on-Proposed-Sale-of-the-Skyline-CopperGold-Project",
+        "symbol": "GAP",
+        "headline": "Gap Inc. Deploys AI Software Engineering Agent 'Devin' to Enhance E-commerce Operations",
+        "url": "https://www.retailtechinnovationhub.com/home/2026/11/27/retail-technology-innovation-of-the-week-peak-shopping-season-focused-gap-inc-plugs-into-cognitions-devin-ai-agent",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:05:04+00:00",
-        "received_at_utc": "2026-11-27T14:06:14.836765+00:00",
-        "fingerprint": "0df702aa10b0224f",
+        "published_at_utc": "2026-11-27T14:31:48+00:00",
+        "received_at_utc": "2026-11-27T14:32:16.460590+00:00",
+        "fingerprint": "204d286ac5cc9ccf",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1020,7 +1033,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 1.3773,
+        "ibkr_fee_rate_pct": 0.3236,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1028,16 +1041,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-9f08c34acf",
+        "id": "ext-benzinga-df624904fd",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "DFNS",
-        "headline": "T3 Defense Inc. Issues Corporate Update on Rising Global Demand for Defense Capabilities",
-        "url": "https://www.streetinsider.com/Press+Releases?before_id=26087681",
+        "symbol": "HUT",
+        "headline": "Hut 8 Receives Approval for Second Phase of Beacon Point Data Center",
+        "url": "https://www.cantechletter.com/2026/11/is-hut8-nasdaqhut-a-buy-right-now/",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:05:03+00:00",
-        "received_at_utc": "2026-11-27T14:06:13.404186+00:00",
-        "fingerprint": "a6e0cdbdcbb2c3a2",
+        "published_at_utc": "2026-11-27T14:31:48+00:00",
+        "received_at_utc": "2026-11-27T14:32:16.460590+00:00",
+        "fingerprint": "686a90d093fd494b",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1045,7 +1058,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 98.2419,
+        "ibkr_fee_rate_pct": 0.2782,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1053,16 +1066,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-7888abe1d9",
+        "id": "ext-benzinga-6f62cc92ac",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "JADE",
-        "headline": "Jade Leader Corp. Announces Change of Auditor",
-        "url": "https://www.morningstar.com/news/accesswire/1344484msn/jade-leader-announces-change-of-auditor",
+        "symbol": "META",
+        "headline": "Meta Launches Instagram for TV in India",
+        "url": "https://www.marketscreener.com/news/meta-platforms-brings-instagram-for-tv-to-india-ce7851d9df8df327",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:05:00+00:00",
-        "received_at_utc": "2026-11-27T14:06:13.404186+00:00",
-        "fingerprint": "285fd504949417dc",
+        "published_at_utc": "2026-11-27T14:31:46+00:00",
+        "received_at_utc": "2026-11-27T14:32:15.080562+00:00",
+        "fingerprint": "b8822f2d08dc5129",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1070,7 +1083,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 33.5651,
+        "ibkr_fee_rate_pct": 0.25,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1078,16 +1091,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-6ca7fefd8d",
+        "id": "ext-benzinga-47394ad3a8",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "TANA",
-        "headline": "Tana Resources Corp. Announces 4:1 Share Consolidation",
-        "url": "https://www.thenewswire.com/press-releases/1kx7FY6nG-tana-resources-announces-4-1-share-consolidation.html",
+        "symbol": "META",
+        "headline": "Meta Cited in South African High Court Ruling Regarding Pseudonymous Content",
+        "url": "https://www.einnews.com/pr_news/959345946/government-welcomes-high-court-ruling-against-pseudonymous-facebook-account",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:04:59+00:00",
-        "received_at_utc": "2026-11-27T14:05:20.066535+00:00",
-        "fingerprint": "de69104738f7df5a",
+        "published_at_utc": "2026-11-27T14:31:46+00:00",
+        "received_at_utc": "2026-11-27T14:32:15.080562+00:00",
+        "fingerprint": "4ba8aa48a9a3f194",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1095,7 +1108,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
+        "ibkr_fee_rate_pct": 0.25,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1103,16 +1116,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-3caf9a9fd3",
+        "id": "ext-benzinga-cab9186f64",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "RPP",
-        "headline": "Regent Pacific Properties Inc. Reports Financial Results for the Quarter Ended September 30, 2026",
-        "url": "https://www.finanzen.at/nachrichten/aktien/regent-pacific-properties-veroeffentlichte-zahlen-zum-vergangenen-quartal-1036804182",
+        "symbol": "WMG",
+        "headline": "Warner Music Group Settles Copyright Lawsuit with Suno",
+        "url": "https://stockanalysis.com/private/suno/",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:04:45+00:00",
-        "received_at_utc": "2026-11-27T14:05:20.066535+00:00",
-        "fingerprint": "3c2569674515fb18",
+        "published_at_utc": "2026-11-27T14:31:45+00:00",
+        "received_at_utc": "2026-11-27T14:32:15.080562+00:00",
+        "fingerprint": "36d211748958b768",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1120,7 +1133,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": null,
+        "ibkr_fee_rate_pct": 0.2782,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1128,16 +1141,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-918e20d8c4",
+        "id": "ext-benzinga-4379f0c6a7",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "TRUG",
-        "headline": "Maxim Downgrades TruGolf Holdings to Hold From Buy",
-        "url": "https://www.marketscreener.com/news/maxim-downgrades-trugolf-holdings-to-hold-from-buy-ce7851d9df8cfe21",
+        "symbol": "SNAP",
+        "headline": "Snap Integrates Linktree for Profile Links",
+        "url": "https://stockanalysis.com/private/linktree/",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:04:44+00:00",
-        "received_at_utc": "2026-11-27T14:05:18.848137+00:00",
-        "fingerprint": "079b87ea15bd96e8",
+        "published_at_utc": "2026-11-27T14:31:44+00:00",
+        "received_at_utc": "2026-11-27T14:32:15.080562+00:00",
+        "fingerprint": "9f001e9c1d4254cd",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1145,7 +1158,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 91.1886,
+        "ibkr_fee_rate_pct": 0.25,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -1153,16 +1166,16 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-benzinga-bc1e0d0988",
+        "id": "ext-benzinga-81c6e782ee",
         "channel": "benzinga",
         "source": "ALPACA_BENZINGA_WS",
-        "symbol": "QCLS",
-        "headline": "Q/C Technologies Reports Quarterly Financial Results",
-        "url": "https://www.moomoo.com/stock/QCLS-US?chain_id=Name1K9-3FXPhg.1lg4c40&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A57%2C%22f%22%3A%22www.moomoo.com%2Fstock%2FSBSW-US%22%7D",
+        "symbol": "JPM",
+        "headline": "JPMorgan and BlackRock Contending to Manage Portion of Singapore's Public Pension Fund",
+        "url": "https://www.marketscreener.com/news/jpmorgan-blackrock-contending-to-manage-portion-of-singapore-s-543-62-billion-public-pension-fund-ce7851d9df8df324",
         "publisher": "Benzinga",
-        "published_at_utc": "2026-11-27T14:04:44+00:00",
-        "received_at_utc": "2026-11-27T14:05:18.848137+00:00",
-        "fingerprint": "21a6d1ef52c63c87",
+        "published_at_utc": "2026-11-27T14:31:44+00:00",
+        "received_at_utc": "2026-11-27T14:32:15.080562+00:00",
+        "fingerprint": "c6dad2b7eb466b90",
         "form_hint": "OTHER",
         "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
         "catalyst_score": 15.0,
@@ -1170,7 +1183,7 @@
         "confirmed_catalyst": false,
         "is_hard_veto": false,
         "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 47.5248,
+        "ibkr_fee_rate_pct": 0.25,
         "status": "STAGED_REVIEW_SHADOW",
         "review_required": true,
         "shadow_only": true,
@@ -2095,11 +2108,11 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 09:31:31 ET",
-    "total_events": 32,
+    "updated_at_et": "2026-11-27 09:32:20 ET",
+    "total_events": 30,
     "counts_by_category": {
       "SEC": 8,
-      "BLOCKED": 24
+      "BLOCKED": 22
     },
     "entries": [
       {
@@ -2191,40 +2204,7 @@
         "detail": "action=LOW_CLARITY_CASH_WAIT \u00b7 tier=TIER_3_UNPARSED_SEC_STUB \u00b7 items=[8.01,9.01] \u00b7 https://www.sec.gov/Archives/edgar/data/1737523/000147793226007329/0001477932-26-007329-index.htm"
       },
       {
-        "id": "cat-121-1795788227",
-        "ts_et": "2026-11-27 09:03:47 ET",
-        "ts_utc": "2026-11-27T14:03:47Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "SAGA"
-        ],
-        "summary": "HARD_VETO [BENZINGA] SAGA: Saga Metals Corp. Closes Final Tranche of Private Placement",
-        "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
-      },
-      {
-        "id": "cat-122-1795788227",
-        "ts_et": "2026-11-27 09:03:47 ET",
-        "ts_utc": "2026-11-27T14:03:47Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "MILI"
-        ],
-        "summary": "HARD_VETO [BENZINGA] MILI: Military Metals Corp. Completes Upsized Non-Brokered Private Placement",
-        "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
-      },
-      {
-        "id": "cat-112-1795788230",
-        "ts_et": "2026-11-27 09:03:50 ET",
-        "ts_utc": "2026-11-27T14:03:50Z",
-        "category": "BLOCKED",
-        "symbols": [
-          "NSU"
-        ],
-        "summary": "HARD_VETO [BENZINGA] NSU: North Shore Uranium Ltd. Closes Non-Brokered Private Placement",
-        "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
-      },
-      {
-        "id": "cat-109-1795788232",
+        "id": "cat-126-1795788232",
         "ts_et": "2026-11-27 09:03:52 ET",
         "ts_utc": "2026-11-27T14:03:52Z",
         "category": "BLOCKED",
@@ -2235,7 +2215,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-103-1795788234",
+        "id": "cat-120-1795788234",
         "ts_et": "2026-11-27 09:03:54 ET",
         "ts_utc": "2026-11-27T14:03:54Z",
         "category": "BLOCKED",
@@ -2246,7 +2226,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-99-1795788235",
+        "id": "cat-116-1795788235",
         "ts_et": "2026-11-27 09:03:55 ET",
         "ts_utc": "2026-11-27T14:03:55Z",
         "category": "BLOCKED",
@@ -2257,7 +2237,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-95-1795788236",
+        "id": "cat-112-1795788236",
         "ts_et": "2026-11-27 09:03:56 ET",
         "ts_utc": "2026-11-27T14:03:56Z",
         "category": "BLOCKED",
@@ -2268,7 +2248,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-96-1795788236",
+        "id": "cat-113-1795788236",
         "ts_et": "2026-11-27 09:03:56 ET",
         "ts_utc": "2026-11-27T14:03:56Z",
         "category": "BLOCKED",
@@ -2279,7 +2259,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-94-1795788237",
+        "id": "cat-111-1795788237",
         "ts_et": "2026-11-27 09:03:57 ET",
         "ts_utc": "2026-11-27T14:03:57Z",
         "category": "BLOCKED",
@@ -2290,7 +2270,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-73-1795788248",
+        "id": "cat-90-1795788248",
         "ts_et": "2026-11-27 09:04:08 ET",
         "ts_utc": "2026-11-27T14:04:08Z",
         "category": "BLOCKED",
@@ -2301,7 +2281,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-70-1795788249",
+        "id": "cat-87-1795788249",
         "ts_et": "2026-11-27 09:04:09 ET",
         "ts_utc": "2026-11-27T14:04:09Z",
         "category": "BLOCKED",
@@ -2312,7 +2292,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-59-1795788254",
+        "id": "cat-76-1795788254",
         "ts_et": "2026-11-27 09:04:14 ET",
         "ts_utc": "2026-11-27T14:04:14Z",
         "category": "BLOCKED",
@@ -2323,7 +2303,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-51-1795788256",
+        "id": "cat-68-1795788256",
         "ts_et": "2026-11-27 09:04:16 ET",
         "ts_utc": "2026-11-27T14:04:16Z",
         "category": "BLOCKED",
@@ -2334,7 +2314,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-50-1795788258",
+        "id": "cat-67-1795788258",
         "ts_et": "2026-11-27 09:04:18 ET",
         "ts_utc": "2026-11-27T14:04:18Z",
         "category": "BLOCKED",
@@ -2345,7 +2325,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-45-1795788261",
+        "id": "cat-62-1795788261",
         "ts_et": "2026-11-27 09:04:21 ET",
         "ts_utc": "2026-11-27T14:04:21Z",
         "category": "BLOCKED",
@@ -2356,7 +2336,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-43-1795788262",
+        "id": "cat-60-1795788262",
         "ts_et": "2026-11-27 09:04:22 ET",
         "ts_utc": "2026-11-27T14:04:22Z",
         "category": "BLOCKED",
@@ -2367,7 +2347,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-28-1795788267",
+        "id": "cat-45-1795788267",
         "ts_et": "2026-11-27 09:04:27 ET",
         "ts_utc": "2026-11-27T14:04:27Z",
         "category": "BLOCKED",
@@ -2378,7 +2358,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-25-1795788270",
+        "id": "cat-42-1795788270",
         "ts_et": "2026-11-27 09:04:30 ET",
         "ts_utc": "2026-11-27T14:04:30Z",
         "category": "BLOCKED",
@@ -2389,7 +2369,7 @@
         "detail": "source=ALPACA_BENZINGA_WS \u00b7 status=STAGED_REVIEW_SHADOW"
       },
       {
-        "id": "cat-18-1795788282",
+        "id": "cat-35-1795788282",
         "ts_et": "2026-11-27 09:04:42 ET",
         "ts_utc": "2026-11-27T14:04:42Z",
         "category": "BLOCKED",
@@ -2488,6 +2468,24 @@
         ],
         "summary": "BLOCKED gate summary: 22 UNQUALIFIED",
         "detail": "Examples: COHR->LITE (sc=40.0, UNQUALIFIED); MS->GS (sc=33.0, UNQUALIFIED); VRTX->REGN (sc=30.0, UNQUALIFIED); UNG->EQT (sc=30.0, UNQUALIFIED); WDC->STX (sc=30.0, UNQUALIFIED)"
+      },
+      {
+        "id": "fr-blk-5-1795789898",
+        "ts_et": "2026-11-27 09:31:38 ET",
+        "ts_utc": "2026-11-27T14:31:38Z",
+        "category": "BLOCKED",
+        "symbols": [
+          "AEM",
+          "AMAT",
+          "CRM",
+          "KLAC",
+          "LRCX",
+          "REGN",
+          "STX",
+          "URI"
+        ],
+        "summary": "BLOCKED gate summary: 13 BELOW_930_INTRADAY_OPEN, 12 BELOW_INTRADAY_VWAP, 3 UNQUALIFIED, 1 0930_0945_OPENING_SHIELD, 1 STAGED_REVIEW",
+        "detail": "Examples: VRTX->REGN (sc=100.0, 0930_0945_OPENING_SHIELD); CAT->URI (sc=70.0, STAGED_REVIEW); NOW->CRM (sc=47.0, UNQUALIFIED); WDC->STX (sc=44.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP); NEM->AEM (sc=40.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       }
     ]
   },
