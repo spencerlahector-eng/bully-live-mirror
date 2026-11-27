@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795810000.6256578,
-  "generated_at_iso": "2026-11-27T20:06:40.625658+00:00",
-  "generated_at_et": "2026-11-27 15:06:40 ET",
+  "generated_at": 1795810053.1209016,
+  "generated_at_iso": "2026-11-27T20:07:33.120902+00:00",
+  "generated_at_et": "2026-11-27 15:07:33 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -37,16 +37,16 @@
   "runtime": {
     "execution_owner": "render",
     "status": "available",
-    "state": "RENDER_PRIMARY_EXECUTION",
-    "enabled": false,
+    "state": "RECONCILED",
+    "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
-    "policy_sha256": null,
-    "observed_at": 1795810001.0390902,
-    "observed_at_et": "2026-11-27 15:06:41 ET",
-    "reconciliation_at": null,
-    "reconciliation_at_et": null,
-    "heartbeat_age_seconds": null,
-    "reconciliation_age_seconds": null,
+    "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
+    "observed_at": 1795810048.6889749,
+    "observed_at_et": "2026-11-27 15:07:28 ET",
+    "reconciliation_at": 1795810048.6485162,
+    "reconciliation_at_et": "2026-11-27 15:07:28 ET",
+    "heartbeat_age_seconds": 4.8,
+    "reconciliation_age_seconds": 4.9,
     "session_window": "REGULAR_SESSION_OPEN",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET"
@@ -905,7 +905,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 15:06:36 ET",
+    "updated_at_et": "2026-11-27 15:07:27 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -929,8 +929,8 @@
       },
       "sec_edgar": {
         "count": 80,
-        "last_received_utc": "2026-11-27T20:01:36.078127+00:00",
-        "last_published_utc": "2026-11-27T20:00:56+00:00"
+        "last_received_utc": "2026-11-27T20:07:14.163251+00:00",
+        "last_published_utc": "2026-11-27T20:06:24+00:00"
       }
     },
     "summary": {
@@ -940,10 +940,37 @@
       "rejected_pit_this_call": 0,
       "confirmed_catalysts": 12,
       "hard_vetoed": 36,
-      "recycled_suppressed_total": 226462,
+      "recycled_suppressed_total": 226580,
       "rejected_pit_total": 6
     },
     "items": [
+      {
+        "id": "ext-sec_edgar-21f5533caf",
+        "channel": "sec_edgar",
+        "source": "SEC_EDGAR_LIVE_ATOM",
+        "symbol": "RNA",
+        "headline": "S-1 - Atrium Therapeutics, Inc. (0002093101) (Filer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2093101/000119312526480175/0001193125-26-480175-index.htm",
+        "publisher": "SEC EDGAR",
+        "published_at_utc": "2026-11-27T20:06:24+00:00",
+        "received_at_utc": "2026-11-27T20:07:14.163251+00:00",
+        "fingerprint": "b2830119dd622bb1",
+        "form_hint": "S-1",
+        "clarity_tier": "HARD_VETO",
+        "catalyst_score": 0.0,
+        "action": "HARD_VETO_BLOCK_LONG",
+        "confirmed_catalyst": false,
+        "is_hard_veto": true,
+        "hard_veto_flags": [
+          "DILUTION_S-1_OFFERING"
+        ],
+        "ibkr_fee_rate_pct": 0.4614,
+        "status": "STAGED_REVIEW_SHADOW",
+        "review_required": true,
+        "shadow_only": true,
+        "trading_enabled": false,
+        "promotion_allowed": false
+      },
       {
         "id": "ext-benzinga-5ee8d02c34",
         "channel": "benzinga",
@@ -1690,35 +1717,6 @@
         "promotion_allowed": false
       },
       {
-        "id": "ext-sec_edgar-c75d518e69",
-        "channel": "sec_edgar",
-        "source": "SEC_EDGAR_LIVE_ATOM",
-        "symbol": "PMI",
-        "headline": "8-K - Picard Medical, Inc. (0002030617) (Filer)",
-        "url": "https://www.sec.gov/Archives/edgar/data/2030617/000143774926038355/0001437749-26-038355-index.htm",
-        "publisher": "SEC EDGAR",
-        "published_at_utc": "2026-11-27T16:09:36+00:00",
-        "received_at_utc": "2026-11-27T16:10:48.652438+00:00",
-        "fingerprint": "50b51df95c8fa9a1",
-        "form_hint": "8-K",
-        "clarity_tier": "TIER_3_UNPARSED_SEC_STUB",
-        "catalyst_score": 15.0,
-        "action": "LOW_CLARITY_CASH_WAIT",
-        "confirmed_catalyst": false,
-        "is_hard_veto": false,
-        "hard_veto_flags": [],
-        "ibkr_fee_rate_pct": 100.6806,
-        "status": "STAGED_REVIEW_SHADOW",
-        "review_required": true,
-        "shadow_only": true,
-        "trading_enabled": false,
-        "promotion_allowed": false,
-        "items_detected": [
-          "4.01",
-          "9.01"
-        ]
-      },
-      {
         "id": "ext-chatgpt-0f0faec941",
         "channel": "chatgpt",
         "source": "CHATGPT_SCHEDULED_TASK",
@@ -2112,10 +2110,10 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 15:06:41 ET",
-    "total_events": 421,
+    "updated_at_et": "2026-11-27 15:07:33 ET",
+    "total_events": 422,
     "counts_by_category": {
-      "SEC": 30,
+      "SEC": 31,
       "BLOCKED": 262,
       "ADMITTED": 100,
       "TRADE": 5,
@@ -2123,17 +2121,6 @@
       "HEARTBEAT": 22
     },
     "entries": [
-      {
-        "id": "fr-adm-183-1795803203",
-        "ts_et": "2026-11-27 13:13:23 ET",
-        "ts_utc": "2026-11-27T18:13:23Z",
-        "category": "ADMITTED",
-        "symbols": [
-          "CF"
-        ],
-        "summary": "ADMITTED 1 candidate(s): CF",
-        "detail": "CF (lead MOS) score=88.0 [ADMITTED] \u00b7 phase=POST_CLOSE_AUDIT"
-      },
       {
         "id": "fr-blk-183-1795803203",
         "ts_et": "2026-11-27 13:13:23 ET",
@@ -2171,7 +2158,7 @@
         "detail": "Examples: ARM->AVGO (sc=64.0, BELOW_INTRADAY_VWAP); COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); WDC->STX (sc=55.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-114-1795803313",
+        "id": "sec-115-1795803313",
         "ts_et": "2026-11-27 13:15:13 ET",
         "ts_utc": "2026-11-27T18:15:13Z",
         "category": "SEC",
@@ -2535,7 +2522,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-89-1795804804",
+        "id": "sec-90-1795804804",
         "ts_et": "2026-11-27 13:40:04 ET",
         "ts_utc": "2026-11-27T18:40:04Z",
         "category": "SEC",
@@ -2870,7 +2857,7 @@
         "detail": "Examples: COHR->LITE (sc=64.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); COHR->FN (sc=59.0, BELOW_930_INTRADAY_OPEN+BELOW_INTRADAY_VWAP)"
       },
       {
-        "id": "sec-75-1795806014",
+        "id": "sec-76-1795806014",
         "ts_et": "2026-11-27 14:00:14 ET",
         "ts_utc": "2026-11-27T19:00:14Z",
         "category": "SEC",
@@ -3061,7 +3048,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); WDC->STX (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN)"
       },
       {
-        "id": "sec-33-1795806703",
+        "id": "sec-34-1795806703",
         "ts_et": "2026-11-27 14:11:43 ET",
         "ts_utc": "2026-11-27T19:11:43Z",
         "category": "SEC",
@@ -3108,7 +3095,7 @@
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
       },
       {
-        "id": "sec-32-1795806817",
+        "id": "sec-33-1795806817",
         "ts_et": "2026-11-27 14:13:37 ET",
         "ts_utc": "2026-11-27T19:13:37Z",
         "category": "SEC",
@@ -3431,7 +3418,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-15-1795808012",
+        "id": "sec-16-1795808012",
         "ts_et": "2026-11-27 14:33:32 ET",
         "ts_utc": "2026-11-27T19:33:32Z",
         "category": "SEC",
@@ -3871,7 +3858,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-6-1795809634",
+        "id": "sec-7-1795809634",
         "ts_et": "2026-11-27 15:00:34 ET",
         "ts_utc": "2026-11-27T20:00:34Z",
         "category": "SEC",
@@ -3891,7 +3878,7 @@
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       },
       {
-        "id": "sec-5-1795809656",
+        "id": "sec-6-1795809656",
         "ts_et": "2026-11-27 15:00:56 ET",
         "ts_utc": "2026-11-27T20:00:56Z",
         "category": "SEC",
@@ -3974,6 +3961,17 @@
         ],
         "summary": "BLOCKED gate summary: 27 UNQUALIFIED, 17 BELOW_930_INTRADAY_OPEN, 4 BELOW_INTRADAY_VWAP, 1 LEAD_BELOW_2PCT_BREAKOUT",
         "detail": "Examples: COHR->LITE (sc=60.0, BELOW_930_INTRADAY_OPEN); STX->WDC (sc=60.0, UNQUALIFIED); NEM->AEM (sc=60.0, UNQUALIFIED); TSM->AMAT (sc=54.0, BELOW_930_INTRADAY_OPEN); CRWD->PANW (sc=54.0, UNQUALIFIED)"
+      },
+      {
+        "id": "sec-0-1795809984",
+        "ts_et": "2026-11-27 15:06:24 ET",
+        "ts_utc": "2026-11-27T20:06:24Z",
+        "category": "SEC",
+        "symbols": [
+          "RNA"
+        ],
+        "summary": "SEC S-1 [HARD_VETO: DILUTION_S-1_OFFERING] RNA (score=0.0): S-1 - Atrium Therapeutics, Inc. (0002093101) (Filer)",
+        "detail": "action=HARD_VETO_BLOCK_LONG \u00b7 tier=HARD_VETO \u00b7 flags=[DILUTION_S-1_OFFERING] \u00b7 https://www.sec.gov/Archives/edgar/data/2093101/000119312526480175/0001193125-26-480175-index.htm"
       },
       {
         "id": "fr-hb-285-1795809988",
