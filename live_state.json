@@ -2,9 +2,9 @@
   "schema": "bully.live-mirror.v1",
   "trading_enabled": false,
   "publisher_host": "render_cloud",
-  "generated_at": 1795825371.448289,
-  "generated_at_iso": "2026-11-28T00:22:51.448289+00:00",
-  "generated_at_et": "2026-11-27 19:22:51 ET",
+  "generated_at": 1795825443.119021,
+  "generated_at_iso": "2026-11-28T00:24:03.119021+00:00",
+  "generated_at_et": "2026-11-27 19:24:03 ET",
   "today_date": "2026-11-27",
   "default_active_date": "2026-11-27",
   "available_dates": [
@@ -41,12 +41,12 @@
     "enabled": true,
     "policy_version": "bs7-progressive-gain-ratchet-v2",
     "policy_sha256": "93bd5a724c32e170abe88be88c805c97c70eb7975bd9895c59747c62d8a08063",
-    "observed_at": 1795825354.7640028,
-    "observed_at_et": "2026-11-27 19:22:34 ET",
-    "reconciliation_at": 1795825354.7636306,
-    "reconciliation_at_et": "2026-11-27 19:22:34 ET",
-    "heartbeat_age_seconds": 17.1,
-    "reconciliation_age_seconds": 17.1,
+    "observed_at": 1795825437.2328477,
+    "observed_at_et": "2026-11-27 19:23:57 ET",
+    "reconciliation_at": 1795825437.2324674,
+    "reconciliation_at_et": "2026-11-27 19:23:57 ET",
+    "heartbeat_age_seconds": 6.3,
+    "reconciliation_age_seconds": 6.3,
     "session_window": "AFTER_HOURS_CASH_PROTECTED",
     "close_gate_rule": "15:50 ET Educated Exit (bs7-educated-exit-v3): Cut <=0% \u00b7 100% Bank <+1.5% \u00b7 50% Bank + House Runner >=+1.5%",
     "allocation_rule": "$1,100 max/trade \u00b7 Option Spread <= 8.0% \u00b7 Call-Only \u00b7 Flatten 15:50 ET",
@@ -665,9 +665,9 @@
   "flight_recorder": {
     "schema": "bully.flight-recorder.v1",
     "trading_enabled": false,
-    "timestamp_utc": "2026-11-28T00:21:42.557222+00:00",
-    "timestamp_et": "2026-11-27 19:21:42 ET",
-    "observed_at": 1795825302.557222,
+    "timestamp_utc": "2026-11-28T00:22:55.215475+00:00",
+    "timestamp_et": "2026-11-27 19:22:55 ET",
+    "observed_at": 1795825375.215475,
     "gate_phase": "POST_CLOSE_AUDIT",
     "late_entry_cutoff_active": false,
     "policy_id": "bs7-educated-exit-v3",
@@ -894,7 +894,7 @@
   "notifications_feed": {
     "trading_enabled": false,
     "shadow_only": true,
-    "updated_at_et": "2026-11-27 19:22:14 ET",
+    "updated_at_et": "2026-11-27 19:23:27 ET",
     "channels": {
       "yahoo": {
         "count": 130,
@@ -929,8 +929,8 @@
       "rejected_pit_this_call": 12,
       "confirmed_catalysts": 10,
       "hard_vetoed": 38,
-      "recycled_suppressed_total": 266970,
-      "rejected_pit_total": 1710
+      "recycled_suppressed_total": 267149,
+      "rejected_pit_total": 1722
     },
     "items": [
       {
@@ -2125,26 +2125,17 @@
       "2026-11-24",
       "2026-11-23"
     ],
-    "updated_at_et": "2026-11-27 19:22:53 ET",
-    "total_events": 231,
+    "updated_at_et": "2026-11-27 19:24:05 ET",
+    "total_events": 232,
     "counts_by_category": {
       "SEC": 78,
       "TRADE": 5,
       "ADMITTED": 8,
       "BLOCKED": 25,
       "SHOCKWAVE": 1,
-      "HEARTBEAT": 114
+      "HEARTBEAT": 115
     },
     "entries": [
-      {
-        "id": "fr-hb-26-1795816908",
-        "ts_et": "2026-11-27 17:01:48 ET",
-        "ts_utc": "2026-11-27T22:01:48Z",
-        "category": "HEARTBEAT",
-        "symbols": [],
-        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 1 admitted \u00b7 56 blocked",
-        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
-      },
       {
         "id": "fr-hb-27-1795816988",
         "ts_et": "2026-11-27 17:03:08 ET",
@@ -3251,6 +3242,15 @@
         "symbols": [],
         "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 58 blocked",
         "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
+      },
+      {
+        "id": "fr-hb-137-1795825375",
+        "ts_et": "2026-11-27 19:22:55 ET",
+        "ts_utc": "2026-11-28T00:22:55Z",
+        "category": "HEARTBEAT",
+        "symbols": [],
+        "summary": "Scanning (POST_CLOSE_AUDIT) \u00b7 0 open pos \u00b7 0 admitted \u00b7 58 blocked",
+        "detail": "Policy=bs7-educated-exit-v3 \u00b7 late_cutoff=False \u00b7 trading_enabled=False"
       }
     ]
   },
@@ -3295,8 +3295,8 @@
       "date": "2026-11-27",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-28T00:22:52.139144+00:00",
-      "observed_at_et": "2026-11-27 19:22:52 ET",
+      "observed_at": "2026-11-28T00:24:03.793009+00:00",
+      "observed_at_et": "2026-11-27 19:24:03 ET",
       "fill_count": 2,
       "realized_gross": "10.00",
       "realized_net": null,
@@ -3357,8 +3357,8 @@
       "date": "2026-11-25",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-28T00:22:52.419543+00:00",
-      "observed_at_et": "2026-11-27 19:22:52 ET",
+      "observed_at": "2026-11-28T00:24:04.071689+00:00",
+      "observed_at_et": "2026-11-27 19:24:04 ET",
       "fill_count": 58,
       "realized_gross": "28.59",
       "realized_net": null,
@@ -4413,8 +4413,8 @@
       "date": "2026-11-24",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-28T00:22:52.627871+00:00",
-      "observed_at_et": "2026-11-27 19:22:52 ET",
+      "observed_at": "2026-11-28T00:24:04.280990+00:00",
+      "observed_at_et": "2026-11-27 19:24:04 ET",
       "fill_count": 19,
       "realized_gross": "3.74",
       "realized_net": null,
@@ -4758,8 +4758,8 @@
       "date": "2026-11-23",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-28T00:22:52.834070+00:00",
-      "observed_at_et": "2026-11-27 19:22:52 ET",
+      "observed_at": "2026-11-28T00:24:04.488550+00:00",
+      "observed_at_et": "2026-11-27 19:24:04 ET",
       "fill_count": 9,
       "realized_gross": "-166.94",
       "realized_net": null,
@@ -4963,8 +4963,8 @@
       "date": "2026-11-20",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-28T00:22:53.105284+00:00",
-      "observed_at_et": "2026-11-27 19:22:53 ET",
+      "observed_at": "2026-11-28T00:24:04.790218+00:00",
+      "observed_at_et": "2026-11-27 19:24:04 ET",
       "fill_count": 54,
       "realized_gross": "-10448.34",
       "realized_net": null,
@@ -6038,8 +6038,8 @@
       "date": "2026-11-19",
       "status": "READY",
       "coverage": "COMPLETE",
-      "observed_at": "2026-11-28T00:22:53.370290+00:00",
-      "observed_at_et": "2026-11-27 19:22:53 ET",
+      "observed_at": "2026-11-28T00:24:05.053078+00:00",
+      "observed_at_et": "2026-11-27 19:24:05 ET",
       "fill_count": 35,
       "realized_gross": null,
       "realized_net": null,
